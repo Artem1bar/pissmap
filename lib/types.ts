@@ -46,4 +46,6 @@ export interface Spot {
   verify?: boolean;
   /** The local-knowledge tip shown on the detail card. */
   tip: string;
+  /** Spot created by the visitor on this device (localStorage), not part of the shared dataset. */
+  userAdded?: boolean;
 }

@@ -16,11 +16,31 @@ export function DropletLogo({ className }: IconProps) {
 }
 
 /** Map-pin teardrop pointing down; used for the marker SVG string too. */
-export function pinSvg(color: string, size = 30): string {
+export function pinSvg(color: string, size = 30, userAdded = false): string {
+  const userOutline = userAdded
+    ? `<path d="M12 23C12 23 4.5 13.9 4.5 8.9A7.5 7.5 0 0 1 19.5 8.9C19.5 13.9 12 23 12 23Z" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-dasharray="2.6 2"/>`
+    : "";
   return `<svg viewBox="0 0 24 24" width="${size}" height="${size}" aria-hidden="true">
     <path d="M12 23C12 23 4.5 13.9 4.5 8.9A7.5 7.5 0 0 1 19.5 8.9C19.5 13.9 12 23 12 23Z" fill="${color}" stroke="#0b0c0f" stroke-width="1.4"/>
     <circle cx="12" cy="9.1" r="3" fill="#0b0c0f" opacity="0.5"/>
+    ${userOutline}
   </svg>`;
+}
+
+export function PlusIcon({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2.2" aria-hidden="true">
+      <path d="M12 5v14M5 12h14" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function TrashIcon({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+      <path d="M4 7h16M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2m3 0-1 13a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1L6 7" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
 }
 
 export function LocateIcon({ className }: IconProps) {

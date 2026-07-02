@@ -5,8 +5,9 @@ import { CATEGORY_META } from "@/lib/categories";
 import { formatDistance, walkMinutes, walkingDirectionsUrl } from "@/lib/geo";
 import { DAY_NAMES, dayHoursLabel } from "@/lib/hours";
 import type { LocalTime, Spot } from "@/lib/types";
+import { suggestIssueUrl } from "@/lib/userSpots";
 import StatusBadge from "./StatusBadge";
-import { BackIcon, CheckIcon, CopyIcon, DirectionsIcon, WheelchairIcon } from "./icons";
+import { BackIcon, CheckIcon, CopyIcon, DirectionsIcon, TrashIcon, WheelchairIcon } from "./icons";
 
 export type OriginKind = "gps" | "map" | "remote";
 
@@ -25,6 +26,8 @@ interface SpotDetailProps {
   meters: number | null;
   emergency: EmergencyInfo | null;
   onBack: () => void;
+  /** Present only for spots the visitor added themselves. */
+  onDelete?: () => void;
 }
 
 const ORIGIN_TEXT: Record<OriginKind, string> = {
@@ -44,7 +47,7 @@ function Pill({ children, title }: { children: React.ReactNode; title?: string }
   );
 }
 
-export default function SpotDetail({ spot, now, meters, emergency, onBack }: SpotDetailProps) {
+export default function SpotDetail({ spot, now, meters, emergency, onBack, onDelete }: SpotDetailProps) {
   const [copied, setCopied] = useState(false);
   const category = CATEGORY_META[spot.category];
 
@@ -121,6 +124,11 @@ export default function SpotDetail({ spot, now, meters, emergency, onBack }: Spo
             🗺️ OSM-mapped
           </Pill>
         ) : null}
+        {spot.userAdded ? (
+          <Pill title="Stored only in this browser — not part of the shared map">
+            ✦ Added by you
+          </Pill>
+        ) : null}
       </div>
 
       <div className="mt-3 flex flex-wrap items-center justify-between gap-x-3 gap-y-1 rounded-lg bg-night-800 px-3 py-2">
@@ -188,6 +196,33 @@ export default function SpotDetail({ spot, now, meters, emergency, onBack }: Spo
         <p className="mt-3 rounded-lg border border-soon/30 bg-soon/10 px-3 py-2 text-xs leading-relaxed text-soon">
           Hours drift in New Orleans — double-check this one before it gets critical.
         </p>
+      ) : null}
+
+      {spot.userAdded ? (
+        <div className="mt-3 rounded-lg border border-night-600 bg-night-800 px-3 py-2.5">
+          <p className="text-xs leading-relaxed text-ink-500">
+            This spot lives only in this browser. Think everyone should know about it?
+          </p>
+          <div className="mt-2 flex items-center gap-2">
+            <a
+              href={suggestIssueUrl(spot)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-gold-600 px-3 py-1 text-xs font-medium text-gold-300 transition-colors hover:bg-gold-400/10"
+            >
+              Suggest for the public map ↗
+            </a>
+            {onDelete ? (
+              <button
+                type="button"
+                onClick={onDelete}
+                className="flex items-center gap-1 rounded-full border border-shut/40 px-3 py-1 text-xs font-medium text-shut transition-colors hover:bg-shut/10"
+              >
+                <TrashIcon className="h-3 w-3" /> Delete
+              </button>
+            ) : null}
+          </div>
+        </div>
       ) : null}
     </div>
   );

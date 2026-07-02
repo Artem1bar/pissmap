@@ -11,7 +11,10 @@ interface MapViewProps {
   spots: readonly Spot[];
   selectedSpot: Spot | null;
   userLoc: LatLng | null;
+  /** When true, the next map click drops a new-spot pin instead of deselecting. */
+  placing: boolean;
   onSelect: (id: string | null) => void;
+  onPlace: (lat: number, lng: number) => void;
   onMoveEnd: (center: LatLng) => void;
 }
 
@@ -26,7 +29,7 @@ function buildPinElement(spot: Spot, onClick: () => void): HTMLDivElement {
   button.type = "button";
   button.className = "pin";
   button.setAttribute("aria-label", spot.name);
-  button.innerHTML = pinSvg(CATEGORY_META[spot.category].color);
+  button.innerHTML = pinSvg(CATEGORY_META[spot.category].color, 30, spot.userAdded === true);
   button.addEventListener("click", (e) => {
     e.stopPropagation();
     onClick();
@@ -39,19 +42,37 @@ function pinButtonOf(marker: maplibregl.Marker): HTMLButtonElement | null {
   return marker.getElement().querySelector("button.pin");
 }
 
-export default function MapView({ spots, selectedSpot, userLoc, onSelect, onMoveEnd }: MapViewProps) {
+export default function MapView({
+  spots,
+  selectedSpot,
+  userLoc,
+  placing,
+  onSelect,
+  onPlace,
+  onMoveEnd,
+}: MapViewProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const markersRef = useRef<Map<string, maplibregl.Marker>>(new Map());
   const userMarkerRef = useRef<maplibregl.Marker | null>(null);
   const onSelectRef = useRef(onSelect);
+  const onPlaceRef = useRef(onPlace);
   const onMoveEndRef = useRef(onMoveEnd);
+  const placingRef = useRef(placing);
 
   // Keep latest callbacks available to map listeners without re-binding them.
   useEffect(() => {
     onSelectRef.current = onSelect;
+    onPlaceRef.current = onPlace;
     onMoveEndRef.current = onMoveEnd;
+    placingRef.current = placing;
   });
+
+  // Crosshair cursor while placing a new spot.
+  useEffect(() => {
+    const canvas = mapRef.current?.getCanvas();
+    if (canvas) canvas.style.cursor = placing ? "crosshair" : "";
+  }, [placing]);
 
   // Map lifecycle — created once.
   useEffect(() => {
@@ -68,7 +89,10 @@ export default function MapView({ spots, selectedSpot, userLoc, onSelect, onMove
       attributionControl: { compact: true },
     });
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
-    map.on("click", () => onSelectRef.current(null));
+    map.on("click", (e) => {
+      if (placingRef.current) onPlaceRef.current(e.lngLat.lat, e.lngLat.lng);
+      else onSelectRef.current(null);
+    });
     map.on("moveend", () => {
       const c = map.getCenter();
       onMoveEndRef.current({ lat: c.lat, lng: c.lng });
