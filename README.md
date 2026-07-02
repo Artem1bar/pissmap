@@ -3,9 +3,10 @@
 **when you gotta geaux** ⚜
 
 New Orleans hands you a drink for the street, then offers you nowhere to put it. PissMap NOLA is
-the fix: an interactive map of **34 field-vetted places to pee** across the city — free public
-restrooms, buy-a-cheap-coffee spots, and hotel lobbies for the bold — with live open/closed
-status, distance sorting, and a panic button.
+the fix: an interactive map of **235 field-vetted places to pee** across the whole city — free
+public restrooms, buy-a-cheap-coffee spots, and hotel lobbies for the bold — with live
+open/closed status, distance sorting, and a panic button. Coverage runs from Bourbon Street to
+New Orleans East, the Lakefront, and across the river to Algiers.
 
 ## Features
 
@@ -25,18 +26,26 @@ status, distance sorting, and a panic button.
 
 ## The data
 
-Compiled **July 2026** from two sources:
+Compiled **July 2026** from three sources:
 
 1. **OpenStreetMap** — every restroom tagged `amenity=toilets` in Orleans Parish (fetched via
    Overpass, some checked by mappers as recently as 2026), plus Nominatim-verified venue
    coordinates. Spots whose restroom is mapped on OSM carry an "OSM-mapped" badge.
 2. **Local knowledge** — the malls, food halls, 24/7 diners, the casino, and the hotel lobbies
    that every service-industry veteran in the Quarter already knows about.
+3. **A 50-agent research fleet** — fifty parallel research agents swept every neighborhood and
+   venue category in the city (libraries, groceries, breweries, hotel lobbies, 24-hour diners,
+   parks, hospitals…), producing 293 candidates. Each surviving candidate was then
+   **adversarially fact-checked by its own verification agent** against live sources — 54 were
+   rejected (closed venues, wrong addresses, coin-operated restrooms posing as free, invented
+   accessibility claims) and 201 made the map. Every fleet-researched spot's sources and
+   evidence live in [`data/provenance.json`](data/provenance.json).
 
 Honesty policy: hours in New Orleans are a jazz standard — everyone plays them differently.
 Spots with best-effort hours carry a `verify` flag and the UI says so out loud. If a spot closed
-or changed, edit [`lib/spots.ts`](lib/spots.ts) and open a PR; the dataset is a single typed,
-tested file.
+or changed, edit the matching file in [`lib/spots/`](lib/spots/) and open a PR; the dataset is
+typed, tested, and split by area. New coordinates come from
+[`scripts/geocode.mjs`](scripts/geocode.mjs) (Nominatim, politely rate-limited).
 
 **Legal note:** public urination is a citable municipal offense in New Orleans, and police do
 write those tickets, especially during Carnival. This project exists so you never have to test it.

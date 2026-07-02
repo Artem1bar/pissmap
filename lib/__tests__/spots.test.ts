@@ -5,7 +5,7 @@ import { MIN_PER_DAY } from "../hours";
 
 describe("dataset integrity", () => {
   it("has a respectable number of spots", () => {
-    expect(SPOTS.length).toBeGreaterThanOrEqual(30);
+    expect(SPOTS.length).toBeGreaterThanOrEqual(200);
   });
 
   it("has unique kebab-case ids", () => {

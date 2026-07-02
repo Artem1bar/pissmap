@@ -122,9 +122,10 @@ export default function AboutModal({ open, onClose }: AboutModalProps) {
         <p className="mt-2 text-sm leading-relaxed text-ink-300">
           Compiled {DATA_COMPILED} from OpenStreetMap — restrooms tagged{" "}
           <code className="rounded bg-night-700 px-1 py-0.5 text-xs">amenity=toilets</code>, some
-          checked as recently as 2026 — plus local knowledge. Spots with a caution note have
-          best-effort hours: New Orleans hours are a jazz standard, and everyone plays them
-          differently.
+          checked as recently as 2026 — plus local knowledge, then expanded citywide by a 50-agent
+          research sweep in which every candidate spot was independently fact-checked against live
+          sources before earning a pin. Spots with a caution note have best-effort hours: New
+          Orleans hours are a jazz standard, and everyone plays them differently.
         </p>
         <p className="mt-3 text-xs leading-relaxed text-ink-500">
           Map data{" "}

@@ -8,8 +8,8 @@ export const NOLA_CENTER: LatLng = { lat: 29.9565, lng: -90.065 };
 
 export const INITIAL_ZOOM = 14.4;
 
-/** [west, south, east, north] — greater New Orleans; keeps users from panning to Kansas. */
-export const MAP_MAX_BOUNDS: [number, number, number, number] = [-90.24, 29.85, -89.88, 30.08];
+/** [west, south, east, north] — all of Orleans Parish, Algiers to New Orleans East; keeps users from panning to Kansas. */
+export const MAP_MAX_BOUNDS: [number, number, number, number] = [-90.24, 29.85, -89.75, 30.1];
 
 export const DATA_COMPILED = "July 2026";
 
