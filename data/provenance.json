@@ -6,9 +6,9 @@
    "https://www.tripadvisor.com/ShowTopic-g60864-i34-k8374850-Public_restrooms-New_Orleans_Louisiana.html"
   ],
   "evidence": [
-   "https://www.nps.gov/jela/planyourvisit/french-quarter-site.htm — official NPS page: address 419 Decatur St, hours Tue-Sat 9:30AM-4:30PM/closed Sun-Mon, amenities list includes 'Restroom', 'Restroom - Accessible', 'Toilet - Flush', 'Wheelchair Accessible', 'Accessible Sites', and states 'Free admission'. Last updated August 29, 2025.",
-   "https://www.nps.gov/jela/planyourvisit/hours.htm — confirms 'Entrance Fee-free. This site is fee-free year-round. No entrance fee or pass is required.' and mailing address 419 Decatur St, New Orleans, LA 70130. Last updated May 23, 2025.",
-   "https://www.nps.gov/jela/planyourvisit/conditions.htm — current alerts/conditions page (last updated June 15, 2026) lists only Acadian Cultural Center (Lafayette) and Barataria Preserve as closed; French Quarter Visitor Center is not listed as closed, confirming normal current operation."
+   "https://www.nps.gov/jela/planyourvisit/french-quarter-site.htm \u2014 official NPS page: address 419 Decatur St, hours Tue-Sat 9:30AM-4:30PM/closed Sun-Mon, amenities list includes 'Restroom', 'Restroom - Accessible', 'Toilet - Flush', 'Wheelchair Accessible', 'Accessible Sites', and states 'Free admission'. Last updated August 29, 2025.",
+   "https://www.nps.gov/jela/planyourvisit/hours.htm \u2014 confirms 'Entrance Fee-free. This site is fee-free year-round. No entrance fee or pass is required.' and mailing address 419 Decatur St, New Orleans, LA 70130. Last updated May 23, 2025.",
+   "https://www.nps.gov/jela/planyourvisit/conditions.htm \u2014 current alerts/conditions page (last updated June 15, 2026) lists only Acadian Cultural Center (Lafayette) and Barataria Preserve as closed; French Quarter Visitor Center is not listed as closed, confirming normal current operation."
   ],
   "lens": "fq-upper",
   "confidence": "high"
@@ -138,12 +138,12 @@
    "https://nola.today/venues/blue-nile"
   ],
   "evidence": [
-   "https://www.bluenilelive.com/ — official site, confirms address 532 Frenchmen Street, New Orleans, LA 70116; full bar; show-dependent door times",
-   "https://nola.today/venues/blue-nile — confirms address 532 Frenchmen Street and active July 2026 show schedule page",
-   "https://www.yelp.com/biz/blue-nile-new-orleans — 289 reviews updated through June 2026, lists current operating hours (Wed-Sun), address given as 534 Frenchmen St (legacy address, same building)",
-   "https://www.tripadvisor.com/Attraction_Review-g60864-d605261-Reviews-Blue_Nile-New_Orleans_Louisiana.html — recent reviews (Dec 2025/Jan 2026) confirming venue is operating",
-   "https://maps.apple.com/place?address=532+Frenchmen+St,+New+Orleans,+LA++70116,+United+States&name=Blue+Nile — confirms address and location in Orleans Parish",
-   "https://frenchmennotes.com/?p=3392 — historical note explaining Blue Nile opened at the 534/532 Frenchmen St building (former Dream Palace/Cafe Istanbul) in Feb 2002, clarifying the address discrepancy between Yelp's legacy listing and the current 532 address used by the venue"
+   "https://www.bluenilelive.com/ \u2014 official site, confirms address 532 Frenchmen Street, New Orleans, LA 70116; full bar; show-dependent door times",
+   "https://nola.today/venues/blue-nile \u2014 confirms address 532 Frenchmen Street and active July 2026 show schedule page",
+   "https://www.yelp.com/biz/blue-nile-new-orleans \u2014 289 reviews updated through June 2026, lists current operating hours (Wed-Sun), address given as 534 Frenchmen St (legacy address, same building)",
+   "https://www.tripadvisor.com/Attraction_Review-g60864-d605261-Reviews-Blue_Nile-New_Orleans_Louisiana.html \u2014 recent reviews (Dec 2025/Jan 2026) confirming venue is operating",
+   "https://maps.apple.com/place?address=532+Frenchmen+St,+New+Orleans,+LA++70116,+United+States&name=Blue+Nile \u2014 confirms address and location in Orleans Parish",
+   "https://frenchmennotes.com/?p=3392 \u2014 historical note explaining Blue Nile opened at the 534/532 Frenchmen St building (former Dream Palace/Cafe Istanbul) in Feb 2002, clarifying the address discrepancy between Yelp's legacy listing and the current 532 address used by the venue"
   ],
   "lens": "frenchmen-marigny",
   "confidence": "high"
@@ -170,7 +170,7 @@
    "https://snugjazz.com/contact/"
   ],
   "evidence": [
-   "https://snugjazz.com/ - official site confirms address 626 Frenchmen Street, New Orleans, La 70116; hours 'Dining Room: Sunday - Thursday: 5pm - 10pm, Friday & Saturday: 5pm - 11pm; Music Room: Nightly Showtimes at 7:30pm & 9:30pm'; live July 2026 event calendar; '© 2026 Snug Harbor Jazz Bistro'; banner 'Now Open 7 Nights a Week Again!'",
+   "https://snugjazz.com/ - official site confirms address 626 Frenchmen Street, New Orleans, La 70116; hours 'Dining Room: Sunday - Thursday: 5pm - 10pm, Friday & Saturday: 5pm - 11pm; Music Room: Nightly Showtimes at 7:30pm & 9:30pm'; live July 2026 event calendar; '\u00a9 2026 Snug Harbor Jazz Bistro'; banner 'Now Open 7 Nights a Week Again!'",
    "https://snugjazz.com/faq/ - official FAQ confirms restrooms exist on-site: 'both our bathrooms are very small 2-stall rooms, but all doorways are ADA accessible'; also confirms dinner is separate from ticketed concerts, walk-ins accepted for dinner (supports category=customers, free=false)",
    "https://www.google.com/maps/place/Snug+Harbor+Jazz+Bistro - independent listing: 4.4 stars, 'Jazz club', address 626 Frenchmen St, New Orleans, LA 70116, phone (504) 949-0696 matches, website snugjazz.com matches, status shows normal open/closed-by-hours (not permanently closed)",
    "https://en.wikipedia.org/wiki/Faubourg_Marigny - confirms Faubourg Marigny coordinates (29.96472, -90.05528) match the Google Maps pin for the venue (29.964167, -90.057912), establishing the address is within New Orleans (Orleans Parish), not Jefferson or St. Bernard Parish"
@@ -202,8 +202,8 @@
    "https://www.nola.com/entertainment_life/eat-drink/late-night-restaurants-starting-to-come-back-in-new-orleans/article_4048c7de-ed42-11ef-9d92-1f628e114296.html"
   ],
   "evidence": [
-   "https://www.buffasbar.com/ (official site: address 1001 Esplanade Avenue, New Orleans, LA 70116; phone (504) 949-0038; Hours section: 'Front Bar 24/7', 'Back Bar Open for live music 7 nights a week!'; live events listed July 3-11, 2026; footer '©2026 Buffa's Bar & Restaurant')",
-   "https://www.google.com/maps/place/Buffa's+Bar+%26+Restaurant (Google Maps listing: 'Buffa's Bar & Restaurant · 4.3 · Restaurant · 1001 Esplanade Ave, New Orleans, LA 70116 · Open 24 hours · buffasbar.com · (504) 949-0038 · Plus code XW8P+5X New Orleans, Louisiana' — no permanently-closed flag, address and phone match official site exactly)"
+   "https://www.buffasbar.com/ (official site: address 1001 Esplanade Avenue, New Orleans, LA 70116; phone (504) 949-0038; Hours section: 'Front Bar 24/7', 'Back Bar Open for live music 7 nights a week!'; live events listed July 3-11, 2026; footer '\u00a92026 Buffa's Bar & Restaurant')",
+   "https://www.google.com/maps/place/Buffa's+Bar+%26+Restaurant (Google Maps listing: 'Buffa's Bar & Restaurant \u00b7 4.3 \u00b7 Restaurant \u00b7 1001 Esplanade Ave, New Orleans, LA 70116 \u00b7 Open 24 hours \u00b7 buffasbar.com \u00b7 (504) 949-0038 \u00b7 Plus code XW8P+5X New Orleans, Louisiana' \u2014 no permanently-closed flag, address and phone match official site exactly)"
   ],
   "lens": "frenchmen-marigny",
   "confidence": "high"
@@ -215,13 +215,13 @@
    "https://www.happycow.net/reviews/satsuma-cafe-new-orleans-21265"
   ],
   "evidence": [
-   "https://satsumacafe.com/locations/dauphine-street/ — confirms address '3218 Dauphine St. New Orleans, LA' and hours '8am-3pm daily', no closure indication",
-   "https://satsumacafe.com/info.html — lists Dauphine St location as operating (contrasts with 'open daily 7-5' vs the locations page's 8am-3pm)",
-   "https://www.yelp.com/biz/satsuma-caf%C3%A9-new-orleans-2 — Yelp listing 'Updated April 2026', 309 photos, 402 reviews, 3218 Dauphine St, New Orleans, no permanently-closed flag",
-   "https://www.happycow.net/reviews/satsuma-cafe-new-orleans-21265 — address '3218 Dauphine St, New Orleans, Louisiana, USA, 70117'; reviewer quote 'Even the restroom is extraordinary' corroborating the memorable-restroom claim; lists hours 'Mon-Sun 7:00am-4:00pm' (another minor hours variant to reconcile)",
-   "https://www.tripadvisor.com/Restaurant_Review-g60864-d2414052-Reviews-Satsuma_Cafe-New_Orleans_Louisiana.html — lists Satsuma Cafe in New Orleans Ninth Ward area",
-   "https://satsuma-cafe.wheree.com/ — lists as active Breakfast & Brunch restaurant in Orleans Parish County, confirms murals/stained glass decor and 8am-3pm hours",
-   "https://www.neworleans.com/listing/satsuma-caf%C3%A9/33592/ — official New Orleans tourism listing"
+   "https://satsumacafe.com/locations/dauphine-street/ \u2014 confirms address '3218 Dauphine St. New Orleans, LA' and hours '8am-3pm daily', no closure indication",
+   "https://satsumacafe.com/info.html \u2014 lists Dauphine St location as operating (contrasts with 'open daily 7-5' vs the locations page's 8am-3pm)",
+   "https://www.yelp.com/biz/satsuma-caf%C3%A9-new-orleans-2 \u2014 Yelp listing 'Updated April 2026', 309 photos, 402 reviews, 3218 Dauphine St, New Orleans, no permanently-closed flag",
+   "https://www.happycow.net/reviews/satsuma-cafe-new-orleans-21265 \u2014 address '3218 Dauphine St, New Orleans, Louisiana, USA, 70117'; reviewer quote 'Even the restroom is extraordinary' corroborating the memorable-restroom claim; lists hours 'Mon-Sun 7:00am-4:00pm' (another minor hours variant to reconcile)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d2414052-Reviews-Satsuma_Cafe-New_Orleans_Louisiana.html \u2014 lists Satsuma Cafe in New Orleans Ninth Ward area",
+   "https://satsuma-cafe.wheree.com/ \u2014 lists as active Breakfast & Brunch restaurant in Orleans Parish County, confirms murals/stained glass decor and 8am-3pm hours",
+   "https://www.neworleans.com/listing/satsuma-caf%C3%A9/33592/ \u2014 official New Orleans tourism listing"
   ],
   "lens": "bywater",
   "confidence": "high"
@@ -309,7 +309,7 @@
    "https://www.circlefoodmarket.com/location (confirms address 1522 St Bernard Ave #1499, New Orleans, LA 70116)",
    "https://www.nola.com/circle-food-store-a-historic-new-orleans-grocery-and-7th-ward-landmark-up-for-sheriffs/article_81edfa59-8553-5d3b-9546-da855e04cc00.html (2018 closure/auction history)",
    "https://www.nola.com/entertainment_life/eat-drink/take-a-peek-inside-as-new-circle-food-market-to-reopen-as-old-school-neighborhood/article_d7344744-4de3-11ea-98c0-7b71be25883b.html (Feb 2020 reopening as Circle Food Market with bakery, pharmacy, butcher, deli)",
-   "https://neworleanshistorical.org/items/show/602 (candidate's own source; found to be STALE — describes pre-2020 vacant state)",
+   "https://neworleanshistorical.org/items/show/602 (candidate's own source; found to be STALE \u2014 describes pre-2020 vacant state)",
    "https://the-circle-food-market.wheree.com/ (wheelchair accessible entrance, parking, and restroom noted)",
    "Search result citing a customer review: 'The restroom has a coded lock and I asked 3 employees for the code and got a very clear black and white answer NO! I didn't qualify as human until after I had bought something.' (confirms purchase-gated restroom access matching category=customers, free=false)",
    "https://www.yelp.com/biz/circle-food-store-new-orleans (36 reviews, updated June 2026, hours Mon-Sat 7:30am-7:30pm, Sun 8am-7pm)",
@@ -464,13 +464,13 @@
    "https://locations.pjscoffee.com/la/neworleans/coffee-shop-la0013.html"
   ],
   "evidence": [
-   "https://locations.pjscoffee.com/la/neworleans/coffee-shop-la0013.html — official locator confirms address '5432 Magazine St. New Orleans, LA 70115', phone (504) 355-2202, hours daily 6:00 AM - 9:00 PM, no closure indication, active online ordering/catering",
-   "https://www.restaurantji.com/la/new-orleans/pjs-coffee-4/ — confirms address, hours 'Open daily 6AM-9PM', status open with take-out/delivery/dine-in, page last updated June 7 2026",
-   "https://www.yelp.com/biz/pjs-coffee-new-orleans-13 — Yelp listing at 5432 Magazine St, updated June 2026, 48 reviews, not marked closed",
-   "https://www.facebook.com/pjsmagazineuptown/ — dedicated Facebook page for this specific Magazine Street Uptown location",
-   "https://foursquare.com/v/pjs-coffee-of-new-orleans/4b05a313f964a52001e022e3 — Foursquare listing 'PJ's Coffee of New Orleans - Uptown - Carrollton - 5432 Magazine St'",
-   "https://www.nola.com/entertainment_life/eat-drink/pjs-coffee-original-location-closes/article_66abdfb8-ddcc-11ef-a273-cf703d174db0.html — confirms it was the DIFFERENT original Maple Street (7624 Maple St) location that permanently closed in 2025, not the Magazine Street location",
-   "https://www.unitedstateszipcodes.org/70115/ — confirms ZIP 70115 is an Orleans Parish, New Orleans ZIP code (Uptown/Garden District area)"
+   "https://locations.pjscoffee.com/la/neworleans/coffee-shop-la0013.html \u2014 official locator confirms address '5432 Magazine St. New Orleans, LA 70115', phone (504) 355-2202, hours daily 6:00 AM - 9:00 PM, no closure indication, active online ordering/catering",
+   "https://www.restaurantji.com/la/new-orleans/pjs-coffee-4/ \u2014 confirms address, hours 'Open daily 6AM-9PM', status open with take-out/delivery/dine-in, page last updated June 7 2026",
+   "https://www.yelp.com/biz/pjs-coffee-new-orleans-13 \u2014 Yelp listing at 5432 Magazine St, updated June 2026, 48 reviews, not marked closed",
+   "https://www.facebook.com/pjsmagazineuptown/ \u2014 dedicated Facebook page for this specific Magazine Street Uptown location",
+   "https://foursquare.com/v/pjs-coffee-of-new-orleans/4b05a313f964a52001e022e3 \u2014 Foursquare listing 'PJ's Coffee of New Orleans - Uptown - Carrollton - 5432 Magazine St'",
+   "https://www.nola.com/entertainment_life/eat-drink/pjs-coffee-original-location-closes/article_66abdfb8-ddcc-11ef-a273-cf703d174db0.html \u2014 confirms it was the DIFFERENT original Maple Street (7624 Maple St) location that permanently closed in 2025, not the Magazine Street location",
+   "https://www.unitedstateszipcodes.org/70115/ \u2014 confirms ZIP 70115 is an Orleans Parish, New Orleans ZIP code (Uptown/Garden District area)"
   ],
   "lens": "magazine-upper",
   "confidence": "high"
@@ -520,7 +520,7 @@
    "http://www.nolalibrary.org/branch/8/rosa-f-keller-library-community-center",
    "https://en.wikipedia.org/wiki/Rosa_F._Keller_Library_and_Community_Center",
    "https://www.yelp.com/biz/rosa-f-keller-library-and-community-center-new-orleans",
-   "https://nolalibrary.libanswers.com/faq/433890 (FAQ: When will Rosa F. Keller Library reopen — confirms Dec 1 2025 closure and Feb 2026 reopening)",
+   "https://nolalibrary.libanswers.com/faq/433890 (FAQ: When will Rosa F. Keller Library reopen \u2014 confirms Dec 1 2025 closure and Feb 2026 reopening)",
    "https://www.instagram.com/p/DRgIIYMEh_M/ (official closure announcement: Dec 1 2025 start, ~2 months, roof repairs)",
    "https://nolalibrary.org/tag/rosa-f-keller-library-community-center/",
    "https://nolalibrary.org/2025/04/29/new-early-literacy-center/ (references Keller as active nearby branch during another branch's 2025 renovation)"
@@ -534,7 +534,7 @@
    "https://www.yelp.com/biz/the-company-burger-new-orleans"
   ],
   "evidence": [
-   "https://thecompanyburger.com/ - official site confirms address 4600 Freret Street, New Orleans, LA 70115 and hours 'Open daily, 11 a.m. – 10 p.m.'",
+   "https://thecompanyburger.com/ - official site confirms address 4600 Freret Street, New Orleans, LA 70115 and hours 'Open daily, 11 a.m. \u2013 10 p.m.'",
    "https://www.yelp.com/biz/the-company-burger-new-orleans - listing title shows 'Updated June 2026 - 720 Photos & 863 Reviews - 4600 Freret St, New Orleans, Louisiana' indicating active, current listing",
    "https://www.tripadvisor.com/Restaurant_Review-g60864-d2355105-Reviews-The_Company_Burger-New_Orleans_Louisiana.html - confirms 4600 Freret St, Ste A, New Orleans, LA 70115; Mon-Sun 11:00am-10:00pm; indoor and outdoor seating; dine-in service where customers order at counter, get numbered placard, and sit at tables in an open dining room",
    "https://order.toasttab.com/online/the-company-burger-freret - active online ordering platform for the Freret location, indicating operational status",
@@ -653,12 +653,12 @@
    "https://loyolamaroon.com/10045262/news/campus/new-year-starts-new-danna-center-opens/"
   ],
   "evidence": [
-   "https://studentaffairs.loyno.edu/student-life-ministry/student-life/danna-center — official page confirming address 6363 St Charles Ave, New Orleans, LA 70118 and hours '7 a.m.-2 a.m.' seven days a week",
-   "https://studentaffairs.loyno.edu/student-life-ministry/student-life/danna-center/shopping-services — official page confirming 'numerous services for students, faculty, staff, and community members,' bookstore location, and Wellness Room adjacent to first-floor women's restrooms",
-   "https://www.loyno.edu/news/may-13-2025_danna-student-center-close-construction-may-13-august-13 — official Loyola news release confirming renovation closure May 13-August 13, 2025",
-   "https://loyolamaroon.com/10045262/news/campus/new-year-starts-new-danna-center-opens/ — student newspaper confirming reopening to students on August 25, 2025 after renovation, including updated restrooms",
-   "https://www.eskewdumezripple.com/danna-center-renovations-at-loyola-university.html and https://alta-architects.com/portfolio/danna-student-center/ — architecture firm project pages documenting the 2025 renovation scope, including restroom updates",
-   "https://x.com/Loyola_NOLA/status/1924866477867339914 — official Loyola social media post confirming DSC closure dates for renovation"
+   "https://studentaffairs.loyno.edu/student-life-ministry/student-life/danna-center \u2014 official page confirming address 6363 St Charles Ave, New Orleans, LA 70118 and hours '7 a.m.-2 a.m.' seven days a week",
+   "https://studentaffairs.loyno.edu/student-life-ministry/student-life/danna-center/shopping-services \u2014 official page confirming 'numerous services for students, faculty, staff, and community members,' bookstore location, and Wellness Room adjacent to first-floor women's restrooms",
+   "https://www.loyno.edu/news/may-13-2025_danna-student-center-close-construction-may-13-august-13 \u2014 official Loyola news release confirming renovation closure May 13-August 13, 2025",
+   "https://loyolamaroon.com/10045262/news/campus/new-year-starts-new-danna-center-opens/ \u2014 student newspaper confirming reopening to students on August 25, 2025 after renovation, including updated restrooms",
+   "https://www.eskewdumezripple.com/danna-center-renovations-at-loyola-university.html and https://alta-architects.com/portfolio/danna-student-center/ \u2014 architecture firm project pages documenting the 2025 renovation scope, including restroom updates",
+   "https://x.com/Loyola_NOLA/status/1924866477867339914 \u2014 official Loyola social media post confirming DSC closure dates for renovation"
   ],
   "lens": "university",
   "confidence": "high"
@@ -752,14 +752,14 @@
    "https://www.yelp.com/biz/mandinas-restaurant-new-orleans"
   ],
   "evidence": [
-   "https://mandinasrestaurant.com/ — official site, confirms current hours (Sun-Thu 11am-9pm, Fri-Sat 11am-9:30pm), active 'We are Open July 4th!' notice indicating ongoing 2026 operation",
-   "https://mandinasrestaurant.com/accessibility-page-01 — fetched directly; this page is a generic WCAG/digital web-accessibility statement and does NOT mention physical ramp/seating/restroom accessibility as claimed — mis-cited by researcher",
-   "https://www.yelp.com/biz/mandinas-restaurant-new-orleans — active Yelp listing with ~991 reviews through June 2026, confirms address 3800 Canal St, New Orleans, LA, and ongoing operation (no closure notice)",
-   "https://www.tripadvisor.com/Restaurant_Review-g60864-d426350-Reviews-Mandina_s_Restaurant-New_Orleans_Louisiana.html — Tripadvisor listing (2026), Mid-City New Orleans",
-   "https://mandina-s-restaurant.wheree.com/ — third-party aggregator explicitly listing Mandina's as located in 'Orleans Parish County, Louisiana', corroborating parish placement",
-   "https://www.nola.com/entertainment_life/eat-drink/mandina-s-reopens-after-short-needed-break-gris-gris-returns-with-new-plan/article_2234c4e0-d281-11ea-a107-3ba3940805d5.html — local news confirming restaurant identity/history and only a brief 2020 hiatus, not permanent closure",
-   "Google Maps accessibility attributes (surfaced via WebSearch snippets referencing Google Maps data) — indicate wheelchair-accessible entrance, seating, and restroom at this location",
-   "https://www.neworleans.com/listing/mandinas-restaurant/32433/ — official New Orleans tourism board listing, corroborates address and neighborhood (Mid-City)"
+   "https://mandinasrestaurant.com/ \u2014 official site, confirms current hours (Sun-Thu 11am-9pm, Fri-Sat 11am-9:30pm), active 'We are Open July 4th!' notice indicating ongoing 2026 operation",
+   "https://mandinasrestaurant.com/accessibility-page-01 \u2014 fetched directly; this page is a generic WCAG/digital web-accessibility statement and does NOT mention physical ramp/seating/restroom accessibility as claimed \u2014 mis-cited by researcher",
+   "https://www.yelp.com/biz/mandinas-restaurant-new-orleans \u2014 active Yelp listing with ~991 reviews through June 2026, confirms address 3800 Canal St, New Orleans, LA, and ongoing operation (no closure notice)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d426350-Reviews-Mandina_s_Restaurant-New_Orleans_Louisiana.html \u2014 Tripadvisor listing (2026), Mid-City New Orleans",
+   "https://mandina-s-restaurant.wheree.com/ \u2014 third-party aggregator explicitly listing Mandina's as located in 'Orleans Parish County, Louisiana', corroborating parish placement",
+   "https://www.nola.com/entertainment_life/eat-drink/mandina-s-reopens-after-short-needed-break-gris-gris-returns-with-new-plan/article_2234c4e0-d281-11ea-a107-3ba3940805d5.html \u2014 local news confirming restaurant identity/history and only a brief 2020 hiatus, not permanent closure",
+   "Google Maps accessibility attributes (surfaced via WebSearch snippets referencing Google Maps data) \u2014 indicate wheelchair-accessible entrance, seating, and restroom at this location",
+   "https://www.neworleans.com/listing/mandinas-restaurant/32433/ \u2014 official New Orleans tourism board listing, corroborates address and neighborhood (Mid-City)"
   ],
   "lens": "midcity",
   "confidence": "high"
@@ -770,9 +770,9 @@
    "https://www.yelp.com/biz/rouses-market-new-orleans"
   ],
   "evidence": [
-   "https://www.rouses.com/locations/rouses-market-29/ — official store page: 'Rouses Market #29, 400 North Carrollton Ave., New Orleans, LA 70119, (504) 488-2129, Hours: 7am-11pm Daily'",
-   "https://www.rouses.com/locations/ — official master store locator listing Store #29 as active among other currently operating Rouses locations, with no closure indicator",
-   "https://www.storeopeninghours.com/retailers/rouses-markets/new-orleans-la — independent third-party directory: 'Rouses Markets Carrollton Ave, New Orleans, LA — 400 North Carrollton Avenue, New Orleans — Open: 7:00 am - 11:00 pm', listed among 7 currently operating New Orleans-area Rouses stores"
+   "https://www.rouses.com/locations/rouses-market-29/ \u2014 official store page: 'Rouses Market #29, 400 North Carrollton Ave., New Orleans, LA 70119, (504) 488-2129, Hours: 7am-11pm Daily'",
+   "https://www.rouses.com/locations/ \u2014 official master store locator listing Store #29 as active among other currently operating Rouses locations, with no closure indicator",
+   "https://www.storeopeninghours.com/retailers/rouses-markets/new-orleans-la \u2014 independent third-party directory: 'Rouses Markets Carrollton Ave, New Orleans, LA \u2014 400 North Carrollton Avenue, New Orleans \u2014 Open: 7:00 am - 11:00 pm', listed among 7 currently operating New Orleans-area Rouses stores"
   ],
   "lens": "midcity",
   "confidence": "high"
@@ -973,7 +973,7 @@
    "https://lakefrontairport.com/about/ (confirms terminal address 6001 Stars & Stripes Blvd, Suite 204, New Orleans, LA 70126, in Orleans Parish; describes Art Deco murals, travertine staircase as public-facing features; Messina's at the Terminal listed as on-site dining)",
    "https://www.nola.com/curious_louisiana/llakefront-airport-in-new-orleans-a-museum-of-art-deco/article_07c108c8-8f59-11ef-a250-3b1bdbb5839a.html (confirms terminal is a free, publicly accessible 'living museum' with murals and travertine staircase, and notes Messina's Runway Cafe as the on-site dining option)",
    "https://en.wikipedia.org/wiki/Lakefront_Airport (confirms airport is located in Orleans Parish, Louisiana, ~5 miles northeast of downtown New Orleans)",
-   "Terminal public hours per multiple sources: Mon-Fri 8am-5pm, Sat-Sun 8am-3pm (not 'daily 8am-5pm' as stated in the candidate's pitch — minor correction)"
+   "Terminal public hours per multiple sources: Mon-Fri 8am-5pm, Sat-Sun 8am-3pm (not 'daily 8am-5pm' as stated in the candidate's pitch \u2014 minor correction)"
   ],
   "lens": "lakefront-uno",
   "confidence": "high"
@@ -1123,12 +1123,12 @@
    "https://www.rouses.com/locations/"
   ],
   "evidence": [
-   "https://www.rouses.com/locations/rouses-market-83/ — official listing: 4645 Freret St., New Orleans, LA 70115, hours 7am-10pm Daily, phone 504-355-0800",
-   "https://www.rouses.com/freret-faire/ — confirms in-store café 'Freret Faire' at same address, open 7am-4pm daily, indicating dine-in food service requiring restrooms under LA health code",
-   "https://www.yelp.com/biz/rouses-market-new-orleans-9 — 'ROUSES MARKET - Updated April 2026 - 37 Photos & 19 Reviews - 4645 Freret St, New Orleans, Louisiana' — active listing, no closure flag, recently updated",
-   "https://www.loopnet.com/property/4645-freret-st-new-orleans-la-70115/22071-614331122/ — confirms parcel/APN 6-14-3-311-22 for 4645 Freret St, New Orleans, LA 70115 (Orleans Parish)",
-   "https://law.justia.com/codes/louisiana/2021/revised-statutes/title-40/rs-1123-3/ and Louisiana Administrative Code Title 51 Part XXIII — LA retail food establishment restroom requirements (reduced-fixture exemption only for ≤500 sq ft establishments, inapplicable to a full supermarket)",
-   "https://www.facebook.com/RousesMarkets/posts/hey-new-orleans-our-new-freret-st-location-is-now-open-located-at-4645-freret-st/10159111666378548/ — original opening announcement confirming same address"
+   "https://www.rouses.com/locations/rouses-market-83/ \u2014 official listing: 4645 Freret St., New Orleans, LA 70115, hours 7am-10pm Daily, phone 504-355-0800",
+   "https://www.rouses.com/freret-faire/ \u2014 confirms in-store caf\u00e9 'Freret Faire' at same address, open 7am-4pm daily, indicating dine-in food service requiring restrooms under LA health code",
+   "https://www.yelp.com/biz/rouses-market-new-orleans-9 \u2014 'ROUSES MARKET - Updated April 2026 - 37 Photos & 19 Reviews - 4645 Freret St, New Orleans, Louisiana' \u2014 active listing, no closure flag, recently updated",
+   "https://www.loopnet.com/property/4645-freret-st-new-orleans-la-70115/22071-614331122/ \u2014 confirms parcel/APN 6-14-3-311-22 for 4645 Freret St, New Orleans, LA 70115 (Orleans Parish)",
+   "https://law.justia.com/codes/louisiana/2021/revised-statutes/title-40/rs-1123-3/ and Louisiana Administrative Code Title 51 Part XXIII \u2014 LA retail food establishment restroom requirements (reduced-fixture exemption only for \u2264500 sq ft establishments, inapplicable to a full supermarket)",
+   "https://www.facebook.com/RousesMarkets/posts/hey-new-orleans-our-new-freret-st-location-is-now-open-located-at-4645-freret-st/10159111666378548/ \u2014 original opening announcement confirming same address"
   ],
   "lens": "rouses",
   "confidence": "high"
@@ -1207,13 +1207,13 @@
    "https://www.yelp.com/biz/ccs-coffee-house-new-orleans-5"
   ],
   "evidence": [
-   "https://www.ccscoffee.com/locations/esplanade-ave — official site, confirms address 2800 Esplanade Ave, New Orleans, LA 70119 and hours 6:00am-8:00pm daily, active/current location",
-   "https://www.ccscoffee.com/locations — official locations page, lists Esplanade Ave as an active current New Orleans location",
-   "https://www.yelp.com/biz/ccs-coffee-house-new-orleans-5 — Yelp listing at 2800 Esplanade Ave, updated December 2025, 75 reviews, no closure flag (contrast with the CLOSED-flagged 900 Jefferson Ave CC's location, confirming Yelp accurately flags closures)",
-   "https://www.tripadvisor.com/Restaurant_Review-g60864-d26898909-Reviews-CC_s_Coffee_House-New_Orleans_Louisiana.html — Tripadvisor listing at same address",
-   "https://www.yellowpages.com/new-orleans-la/mip/ccs-coffee-house-12194909 — confirms address, hours including 1:00-2:00pm midday closure, outdoor seating, dog-friendly",
-   "https://www.toasttab.com/local/cc-s-coffee-house-esplanade/r-a83a86a9-ef5a-4d5e-a7bb-7c7e387d52e1 — active online ordering page for this specific location",
-   "https://www.waze.com/live-map/directions/ccs-coffee-house-esplanade-ave-2800-new-orleans — navigation listing confirming address is a real, mapped location",
+   "https://www.ccscoffee.com/locations/esplanade-ave \u2014 official site, confirms address 2800 Esplanade Ave, New Orleans, LA 70119 and hours 6:00am-8:00pm daily, active/current location",
+   "https://www.ccscoffee.com/locations \u2014 official locations page, lists Esplanade Ave as an active current New Orleans location",
+   "https://www.yelp.com/biz/ccs-coffee-house-new-orleans-5 \u2014 Yelp listing at 2800 Esplanade Ave, updated December 2025, 75 reviews, no closure flag (contrast with the CLOSED-flagged 900 Jefferson Ave CC's location, confirming Yelp accurately flags closures)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d26898909-Reviews-CC_s_Coffee_House-New_Orleans_Louisiana.html \u2014 Tripadvisor listing at same address",
+   "https://www.yellowpages.com/new-orleans-la/mip/ccs-coffee-house-12194909 \u2014 confirms address, hours including 1:00-2:00pm midday closure, outdoor seating, dog-friendly",
+   "https://www.toasttab.com/local/cc-s-coffee-house-esplanade/r-a83a86a9-ef5a-4d5e-a7bb-7c7e387d52e1 \u2014 active online ordering page for this specific location",
+   "https://www.waze.com/live-map/directions/ccs-coffee-house-esplanade-ave-2800-new-orleans \u2014 navigation listing confirming address is a real, mapped location",
    "ZIP code 70119 confirmed entirely within Orleans Parish, LA (via zipdatamaps.com/zip-codes.com aggregated search results)"
   ],
   "lens": "coffee-local",
@@ -1225,8 +1225,8 @@
    "https://www.yelp.com/biz/starbucks-new-orleans-38"
   ],
   "evidence": [
-   "Google Maps live listing (queried 2026-07-02): https://www.google.com/maps/place/Starbucks+Coffee+Company/@29.9428832,-90.0951932,17z — confirms name 'Starbucks Coffee Company', address '2851 S Claiborne Ave, New Orleans, LA 70125', hours '4:30 AM–9 PM' (status shown as 'Closed · Opens 4:30 AM Thursday', i.e. currently outside operating hours but NOT permanently closed), rating 4.1, phone (504) 418-2537, domain starbucks.com, plus code WWV3+5W New Orleans, Louisiana (confirms Orleans Parish), and an owner-posted Rewards program update indicating an active/current listing.",
-   "Attempted (blocked/inconclusive due to shared browse-daemon contention and Google CAPTCHA rate-limiting): starbucks.com official store-locator page for store ID 1025502 (redirected to a generic zoomed-out map rather than resolving to the specific store page — inconclusive, not evidence of non-existence given Maps independently confirms the same address/hours), Yelp business page (403 blocked), Bing/DuckDuckGo review searches for explicit drive-thru vs. walk-in-lobby confirmation (daemon repeatedly redirected to unrelated pages from concurrent sessions)."
+   "Google Maps live listing (queried 2026-07-02): https://www.google.com/maps/place/Starbucks+Coffee+Company/@29.9428832,-90.0951932,17z \u2014 confirms name 'Starbucks Coffee Company', address '2851 S Claiborne Ave, New Orleans, LA 70125', hours '4:30 AM\u20139 PM' (status shown as 'Closed \u00b7 Opens 4:30 AM Thursday', i.e. currently outside operating hours but NOT permanently closed), rating 4.1, phone (504) 418-2537, domain starbucks.com, plus code WWV3+5W New Orleans, Louisiana (confirms Orleans Parish), and an owner-posted Rewards program update indicating an active/current listing.",
+   "Attempted (blocked/inconclusive due to shared browse-daemon contention and Google CAPTCHA rate-limiting): starbucks.com official store-locator page for store ID 1025502 (redirected to a generic zoomed-out map rather than resolving to the specific store page \u2014 inconclusive, not evidence of non-existence given Maps independently confirms the same address/hours), Yelp business page (403 blocked), Bing/DuckDuckGo review searches for explicit drive-thru vs. walk-in-lobby confirmation (daemon repeatedly redirected to unrelated pages from concurrent sessions)."
   ],
   "lens": "coffee-starbucks",
   "confidence": "high"
@@ -1276,7 +1276,7 @@
   "evidence": [
    "https://www.starbucks.com/store-locator/store/68461/hyatt-regency-new-orleans-2nd-601-loyola-ave-new-orleans-la-70113-us (official store locator, hours Mon-Fri 6am-5pm, Sat-Sun 6am-3pm)",
    "https://www.yelp.com/biz/starbucks-new-orleans-8 (Yelp listing 'Updated May 2026', 601 Loyola Ave, New Orleans, 32 reviews, not marked closed)",
-   "https://www.axios.com/local/new-orleans/2025/09/29/3-starbucks-stores-to-close-in-new-orleans (confirms 2025 NOLA Starbucks closures are Elysian Fields Ave, Maple St, Magazine St — Hyatt Regency/601 Loyola not among them)",
+   "https://www.axios.com/local/new-orleans/2025/09/29/3-starbucks-stores-to-close-in-new-orleans (confirms 2025 NOLA Starbucks closures are Elysian Fields Ave, Maple St, Magazine St \u2014 Hyatt Regency/601 Loyola not among them)",
    "https://www.nola.com/news/business/starbucks-coffee-closes-new-orleans/article_61ce84f5-057c-427b-8f50-5c0a83ed3b3b.html (same closure story, no mention of Hyatt Regency location)",
    "https://www.waze.com/live-map/directions/starbucks-(inside-hyatt-regency)-loyola-ave-601-new-orleans (crowd-sourced hours corroborate 6am-3pm weekends, ~5-5:30pm weekdays)",
    "https://www.tripadvisor.com/LocationPhotoDirectLink-g60864-d2346512-i98241511-Hyatt_Regency_New_Orleans-New_Orleans_Louisiana.html (hotel review noting on-site Starbucks with free WiFi)",
@@ -1358,13 +1358,13 @@
    "https://www.yelp.com/biz/raising-canes-chicken-fingers-new-orleans-6"
   ],
   "evidence": [
-   "https://locations.raisingcanes.com/la/new-orleans/1406-st.-charles-ave — official page confirms address 1406 St. Charles Avenue, New Orleans, LA 70130, dine-in hours 10:00 AM-10:00 PM daily, drive-thru/curbside available",
-   "https://www.yelp.com/biz/raising-canes-chicken-fingers-new-orleans-6 — 54 reviews, listing updated October 2025, address and hours match; reviews mention clean, well-stocked bathrooms with staff-managed access",
-   "https://www.tripadvisor.com/Restaurant_Review-g60864-d9783352-Reviews-Raising_Cane_s_Chicken_Fingers-New_Orleans_Louisiana.html — confirms address, hours (10 AM-12 AM Sun-Thu, 10 AM-1 AM Fri-Sat), 18 reviews, no closure signals",
-   "https://www.facebook.com/RaisingCanes1406SaintCharlesAveNewOrleansLA/ — active business page for location #168 at this address",
-   "https://www.ubereats.com/store/raising-canes-chicken-fingers-1406-st-charles-aves/8KimmqZnRoqt2mprEI6ksQ and https://www.grubhub.com/restaurant/raising-canes-chicken-fingers-1406-saint-charles-avenue-new-orleans/3128411 — active delivery listings confirming current operation",
+   "https://locations.raisingcanes.com/la/new-orleans/1406-st.-charles-ave \u2014 official page confirms address 1406 St. Charles Avenue, New Orleans, LA 70130, dine-in hours 10:00 AM-10:00 PM daily, drive-thru/curbside available",
+   "https://www.yelp.com/biz/raising-canes-chicken-fingers-new-orleans-6 \u2014 54 reviews, listing updated October 2025, address and hours match; reviews mention clean, well-stocked bathrooms with staff-managed access",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d9783352-Reviews-Raising_Cane_s_Chicken_Fingers-New_Orleans_Louisiana.html \u2014 confirms address, hours (10 AM-12 AM Sun-Thu, 10 AM-1 AM Fri-Sat), 18 reviews, no closure signals",
+   "https://www.facebook.com/RaisingCanes1406SaintCharlesAveNewOrleansLA/ \u2014 active business page for location #168 at this address",
+   "https://www.ubereats.com/store/raising-canes-chicken-fingers-1406-st-charles-aves/8KimmqZnRoqt2mprEI6ksQ and https://www.grubhub.com/restaurant/raising-canes-chicken-fingers-1406-saint-charles-avenue-new-orleans/3128411 \u2014 active delivery listings confirming current operation",
    "General search for 'permanently closed' turned up no results indicating closure as of mid-2026",
-   "https://en.wikipedia.org/wiki/St._Charles_Streetcar_Line — confirms St. Charles Ave/Lee (Harmony) Circle corridor context supporting the pitch's streetcar-route claim"
+   "https://en.wikipedia.org/wiki/St._Charles_Streetcar_Line \u2014 confirms St. Charles Ave/Lee (Harmony) Circle corridor context supporting the pitch's streetcar-route claim"
   ],
   "lens": "fastfood",
   "confidence": "high"
@@ -1446,12 +1446,12 @@
    "https://libraries.cmac.ws/alvar-library/23275/"
   ],
   "evidence": [
-   "https://neworleans.polarislibrary.com/library/hours.aspx?ctx=5.1033.0.0.1&lp=0 — official NOPL branch-specific hours page confirming Mon-Thu 10am-7pm, Fri-Sat 10am-5pm, Sun closed",
-   "https://libraries.cmac.ws/alvar-library/23275/ — confirms address 913 Alvar St, New Orleans, LA 70117, status Open, Wheelchair Accessible",
-   "https://nolalibrary.org/2020/12/02/alvar-library-since-1940/ — NOPL official blog confirming branch history, ongoing community fixture status since 1940, reopened post-Katrina in 2006",
-   "https://neworleans.libnet.info/event/12301239 — Bywater Book Club event hosted at this branch, evidence of active current programming",
-   "https://librarytechnology.org/library/12742 — independent library directory confirming Alvar Branch Library as active NOPL branch in Orleans Parish",
-   "https://livingnewdeal.org/sites/alvar-street-library-new-orleans-la/ — historical registry corroborating location and WPA-era building"
+   "https://neworleans.polarislibrary.com/library/hours.aspx?ctx=5.1033.0.0.1&lp=0 \u2014 official NOPL branch-specific hours page confirming Mon-Thu 10am-7pm, Fri-Sat 10am-5pm, Sun closed",
+   "https://libraries.cmac.ws/alvar-library/23275/ \u2014 confirms address 913 Alvar St, New Orleans, LA 70117, status Open, Wheelchair Accessible",
+   "https://nolalibrary.org/2020/12/02/alvar-library-since-1940/ \u2014 NOPL official blog confirming branch history, ongoing community fixture status since 1940, reopened post-Katrina in 2006",
+   "https://neworleans.libnet.info/event/12301239 \u2014 Bywater Book Club event hosted at this branch, evidence of active current programming",
+   "https://librarytechnology.org/library/12742 \u2014 independent library directory confirming Alvar Branch Library as active NOPL branch in Orleans Parish",
+   "https://livingnewdeal.org/sites/alvar-street-library-new-orleans-la/ \u2014 historical registry corroborating location and WPA-era building"
   ],
   "lens": "libraries",
   "confidence": "high"
@@ -1606,10 +1606,10 @@
    "https://www.storeopeninghours.com/walmart-chef-menteur-highway-new-orleans-la/amp (lists hours as 6:00am-10:00pm daily)",
    "https://www.loc8nearme.com/louisiana/new-orleans/walmart/99572/ (lists hours as 6AM-10PM daily, phone 504-434-6076)",
    "https://www.allstays.com/c/Walmart/LA-New-Orleans-Wal-Mart-3167.htm (confirms Store #3167 name/address)",
-   "https://ldh.la.gov/directory/detail/13769 (Louisiana Department of Health directory entry for 'Walmart Supercenter 3167' at 4301 Chef Menteur Highway, New Orleans, LA 70126 — independent government confirmation of an active facility)",
+   "https://ldh.la.gov/directory/detail/13769 (Louisiana Department of Health directory entry for 'Walmart Supercenter 3167' at 4301 Chef Menteur Highway, New Orleans, LA 70126 \u2014 independent government confirmation of an active facility)",
    "https://www.loopnet.com/property/4301-chef-menteur-hwy-new-orleans-la-70126/22071-39W933901/ (commercial property record: 114,220 sq ft building on 526,422 sq ft lot, built 2013, APN 3-9W-9-339-01)",
    "ZIP code 70126 confirmed entirely within Orleans Parish, Louisiana (multiple zip-code reference sites)",
-   "https://www.tripadvisor.com/Attraction_Review-g60864-d27082758-Reviews-Walmart_Supercenter-New_Orleans_Louisiana.html (~5,000 reviews, 3.7/5 rating, described as clean with friendly staff — no restroom-access complaints found)"
+   "https://www.tripadvisor.com/Attraction_Review-g60864-d27082758-Reviews-Walmart_Supercenter-New_Orleans_Louisiana.html (~5,000 reviews, 3.7/5 rating, described as clean with friendly staff \u2014 no restroom-access complaints found)"
   ],
   "lens": "malls-bigbox",
   "confidence": "high"
@@ -1640,10 +1640,10 @@
    "https://www.lcmchealth.org/touro/"
   ],
   "evidence": [
-   "https://www.lcmchealth.org/touro/patients-visitors/visitor-information/ — confirms address 1401 Foucher St, New Orleans, LA 70115; visiting hours 8am-8:30pm daily; Information Desk on 1st floor near Foucher St entrance; Cafe Touro; Gift Shop; both parking garages (Buckman, Prytania) connect via 3rd-floor walkways",
-   "https://www.lcmchealth.org/touro/ — confirms active 2026 operation with upcoming July 2026 events (Yoga July 02, Childbirth Education July 07, Cancer Survivor Support Group July 08) and June 2026 news posts; phone 504.897.7011; address 1401 Foucher St.",
-   "Google Maps listing 'Touro Infirmary LCMC Health' — 4.1 rating, General hospital, 1401 Foucher St New Orleans LA 70115, 'Open 24 hours', phone (504) 897-7011 (exact match), directory shows active Gift Shop and Rehabilitation Center tenants, no closure flag",
-   "https://en.wikipedia.org/wiki/Touro_Infirmary — confirms coordinates 29.925841, -90.092261 (Uptown New Orleans / Garden District, near Louisiana Ave & Prytania St), address 1401 Foucher Street, entrances on Foucher Street and Prytania Street, part of LCMC Health System"
+   "https://www.lcmchealth.org/touro/patients-visitors/visitor-information/ \u2014 confirms address 1401 Foucher St, New Orleans, LA 70115; visiting hours 8am-8:30pm daily; Information Desk on 1st floor near Foucher St entrance; Cafe Touro; Gift Shop; both parking garages (Buckman, Prytania) connect via 3rd-floor walkways",
+   "https://www.lcmchealth.org/touro/ \u2014 confirms active 2026 operation with upcoming July 2026 events (Yoga July 02, Childbirth Education July 07, Cancer Survivor Support Group July 08) and June 2026 news posts; phone 504.897.7011; address 1401 Foucher St.",
+   "Google Maps listing 'Touro Infirmary LCMC Health' \u2014 4.1 rating, General hospital, 1401 Foucher St New Orleans LA 70115, 'Open 24 hours', phone (504) 897-7011 (exact match), directory shows active Gift Shop and Rehabilitation Center tenants, no closure flag",
+   "https://en.wikipedia.org/wiki/Touro_Infirmary \u2014 confirms coordinates 29.925841, -90.092261 (Uptown New Orleans / Garden District, near Louisiana Ave & Prytania St), address 1401 Foucher Street, entrances on Foucher Street and Prytania Street, part of LCMC Health System"
   ],
   "lens": "hospitals",
   "confidence": "high"
@@ -1770,7 +1770,7 @@
    "https://www.yelp.com/biz/courtyard-brewery-new-orleans"
   ],
   "evidence": [
-   "https://www.yelp.com/biz/courtyard-brewery-new-orleans (address, hours, 251 reviews, updated June 2026 — confirms active operation)",
+   "https://www.yelp.com/biz/courtyard-brewery-new-orleans (address, hours, 251 reviews, updated June 2026 \u2014 confirms active operation)",
    "https://courtyardbrewery.square.site/ (official site, listed as source but JS-rendered / no static content retrievable)",
    "https://www.goodbeerhunting.com/blog/2017/9/20/confusion-is-craft-the-courtyard-brewery-in-new-orleans-la (independent feature confirming on-site restroom exists and public-facing bar/brewery model)",
    "https://www.google.com/maps/place/1160+Camp+St,+New+Orleans,+LA+70130/@29.940019,-90.0718664,17z (confirms address/coordinates within Orleans Parish/New Orleans)",
@@ -1990,9 +1990,9 @@
    "https://www.neworleans.com/listing/krazy-korner/33856/"
   ],
   "evidence": [
-   "https://www.krazykorner.com/ — official site: '640 Bourbon Street (corner of Bourbon and St. Peter)... Mon-Fri: 5 p.m. - til / Sat & Sun: 2 p.m. - til / Reservations: 504-524-3157' (fetched twice, byte-identical both times)",
-   "Google Maps place page (https://www.google.com/maps/place/Krazy+Korner/@29.9584093,-90.0657016,17z/...) — reproduced identically across 3 separate fetches: 'Krazy Korner 3.8 Night club... Longtime bar, club & live music venue with jazz & blues bands plus a balcony. 640 Bourbon St, New Orleans, LA 70130. Open · Closes 4 AM · Reopens 5 PM Thursday. 5 PM–4 AM ... krazykorner.com (504) 524-3157' — no 'permanently closed' or 'temporarily closed' banner",
-   "https://www.neworleans.com/listing/krazy-korner/33856/ — official New Orleans CVB listing (fetched twice, consistent): 'Krazy Korner ... 640 Bourbon St. New Orleans, LA 70112 ... P: (504) 524-3157 ... Neighborhood: French Quarter ... A good place to go nuts: R&B seven nights a week.' (zip listed as 70112 here, likely a data-entry error on the CVB's own site since two other sources and the street's known location put it in 70130 French Quarter)"
+   "https://www.krazykorner.com/ \u2014 official site: '640 Bourbon Street (corner of Bourbon and St. Peter)... Mon-Fri: 5 p.m. - til / Sat & Sun: 2 p.m. - til / Reservations: 504-524-3157' (fetched twice, byte-identical both times)",
+   "Google Maps place page (https://www.google.com/maps/place/Krazy+Korner/@29.9584093,-90.0657016,17z/...) \u2014 reproduced identically across 3 separate fetches: 'Krazy Korner 3.8 Night club... Longtime bar, club & live music venue with jazz & blues bands plus a balcony. 640 Bourbon St, New Orleans, LA 70130. Open \u00b7 Closes 4 AM \u00b7 Reopens 5 PM Thursday. 5 PM\u20134 AM ... krazykorner.com (504) 524-3157' \u2014 no 'permanently closed' or 'temporarily closed' banner",
+   "https://www.neworleans.com/listing/krazy-korner/33856/ \u2014 official New Orleans CVB listing (fetched twice, consistent): 'Krazy Korner ... 640 Bourbon St. New Orleans, LA 70112 ... P: (504) 524-3157 ... Neighborhood: French Quarter ... A good place to go nuts: R&B seven nights a week.' (zip listed as 70112 here, likely a data-entry error on the CVB's own site since two other sources and the street's known location put it in 70130 French Quarter)"
   ],
   "lens": "bourbon",
   "confidence": "medium"
@@ -2253,7 +2253,7 @@
   ],
   "evidence": [
    "https://www.higginshotelnola.com/faq (confirms address 1000 Magazine St, New Orleans, LA 70130; directions via I-10/St. Charles Ave/Tivoli Circle confirm Orleans Parish location; live 2026 booking widget)",
-   "https://www.higginshotelnola.com/new-orleans-restaurants/kilroys-bar (confirms 'Kilroy's Bar & Lounge' is a real, currently operating lobby-level bar with live menu; hours Mon-Thu 4pm-11pm, Fri-Sun 11am-11pm; site footer shows '© 2026 Higgins Hotel & Conference Center')",
+   "https://www.higginshotelnola.com/new-orleans-restaurants/kilroys-bar (confirms 'Kilroy's Bar & Lounge' is a real, currently operating lobby-level bar with live menu; hours Mon-Thu 4pm-11pm, Fri-Sun 11am-11pm; site footer shows '\u00a9 2026 Higgins Hotel & Conference Center')",
    "https://www.yelp.com/biz/the-higgins-hotel-new-orleans-curio-collection-by-hilton-new-orleans (listing 'Updated June 2026', 424 photos, 98 reviews, no closure indicators)",
    "https://www.tripadvisor.com/Hotel_Review-g60864-d17827879-Reviews-The_Higgins_Hotel_New_Orleans_Curio_Collection_By_Hilton-New_Orleans_Louisiana.html (listing title shows 'Updated 2026 Prices & Reviews')",
    "https://www.expedia.com/New-Orleans-Hotels-The-Higgins-Hotel-New-Orleans.h36876315.Hotel-Information (title: 'Higgins Hotel New Orleans: Latest Reviews 2026')",
@@ -2356,14 +2356,14 @@
    "https://www.tripadvisor.com/ShowUserReviews-g60864-d4812333-r243687223-PJ_s_Coffee_on_Poydras-New_Orleans_Louisiana.html"
   ],
   "evidence": [
-   "https://locations.pjscoffee.com/la/neworleans/coffee-shop-la0038.html — official location page confirming address '1515 Poydras St. New Orleans, LA 70112' and hours Mon-Fri 5:00am-4:00pm, Sat-Sun closed",
-   "https://locations.pjscoffee.com/la/neworleans/ — official directory listing 26 active New Orleans locations including 'Poydras Street - 1515 Poydras St.' with no closed/coming-soon status marker",
-   "https://www.yelp.com/biz/pjs-coffee-new-orleans-15 — Yelp listing '1515 Poydras St, New Orleans, Louisiana', updated May 2026, 38 photos/26 reviews, NOT flagged 'CLOSED' in title",
-   "https://www.yelp.com/biz/pjs-coffee-new-orleans-12 — contrasting example: a genuinely-closed PJ's Coffee (Maple St) IS explicitly titled 'PJ'S COFFEE - CLOSED' on Yelp, showing Yelp does flag true closures and Poydras listing has no such flag",
-   "https://www.nola.com/entertainment_life/eat-drink/pjs-coffee-original-location-closes/article_66abdfb8-ddcc-11ef-a273-cf703d174db0.html — confirms it was the separate Maple Street original location that permanently closed (Jan 2025), not Poydras",
-   "https://maps.apple.com/place?place-id=I171DBE25B1CA6CC4 — Apple Maps entry, address confirmed, hours Mon-Fri 5:00am-4:00pm matching candidate; 'currently closed' reflects real-time hours status not permanent closure",
-   "https://www.neworleanschamber.org/list/member/pj-s-coffee-on-poydras-6055 — Chamber of Commerce listing at '1515 Poydras St., Suite 140, New Orleans LA 70112' with active phone/contact info",
-   "https://www.tripadvisor.com/Restaurant_Review-g60864-d4812333-Reviews-PJ_s_Coffee_on_Poydras-New_Orleans_Louisiana.html — Tripadvisor listing rated 4.3/5 from 14 reviews, dine-in/outdoor seating, clean restroom noted in review content surfaced via search"
+   "https://locations.pjscoffee.com/la/neworleans/coffee-shop-la0038.html \u2014 official location page confirming address '1515 Poydras St. New Orleans, LA 70112' and hours Mon-Fri 5:00am-4:00pm, Sat-Sun closed",
+   "https://locations.pjscoffee.com/la/neworleans/ \u2014 official directory listing 26 active New Orleans locations including 'Poydras Street - 1515 Poydras St.' with no closed/coming-soon status marker",
+   "https://www.yelp.com/biz/pjs-coffee-new-orleans-15 \u2014 Yelp listing '1515 Poydras St, New Orleans, Louisiana', updated May 2026, 38 photos/26 reviews, NOT flagged 'CLOSED' in title",
+   "https://www.yelp.com/biz/pjs-coffee-new-orleans-12 \u2014 contrasting example: a genuinely-closed PJ's Coffee (Maple St) IS explicitly titled 'PJ'S COFFEE - CLOSED' on Yelp, showing Yelp does flag true closures and Poydras listing has no such flag",
+   "https://www.nola.com/entertainment_life/eat-drink/pjs-coffee-original-location-closes/article_66abdfb8-ddcc-11ef-a273-cf703d174db0.html \u2014 confirms it was the separate Maple Street original location that permanently closed (Jan 2025), not Poydras",
+   "https://maps.apple.com/place?place-id=I171DBE25B1CA6CC4 \u2014 Apple Maps entry, address confirmed, hours Mon-Fri 5:00am-4:00pm matching candidate; 'currently closed' reflects real-time hours status not permanent closure",
+   "https://www.neworleanschamber.org/list/member/pj-s-coffee-on-poydras-6055 \u2014 Chamber of Commerce listing at '1515 Poydras St., Suite 140, New Orleans LA 70112' with active phone/contact info",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d4812333-Reviews-PJ_s_Coffee_on_Poydras-New_Orleans_Louisiana.html \u2014 Tripadvisor listing rated 4.3/5 from 14 reviews, dine-in/outdoor seating, clean restroom noted in review content surfaced via search"
   ],
   "lens": "superdome",
   "confidence": "medium"
@@ -2376,7 +2376,7 @@
   "evidence": [
    "http://www.surreysnola.com/ - homepage banner: 'LGD -at 1418 Magazine open Thurs thru Monday, 8am - 3pm' confirms current operating status and hours",
    "http://www.surreysnola.com/contact-us - confirms address 1418 Magazine Street, Lower Garden District, New Orleans and hours '8 a.m. to 3 p.m., Thursday thru Monday (closed Tuesday, Wednesday)'",
-   "https://www.yelp.com/biz/surreys-caf%C3%A9-and-juice-bar-new-orleans-2 - listing title 'SURREY'S CAFÉ & JUICE BAR - Updated June 2026 - 3137 Photos & 2438 Reviews - 1418 Magazine St, New Orleans, Louisiana' with no closure tag, indicating active, recently-updated listing",
+   "https://www.yelp.com/biz/surreys-caf%C3%A9-and-juice-bar-new-orleans-2 - listing title 'SURREY'S CAF\u00c9 & JUICE BAR - Updated June 2026 - 3137 Photos & 2438 Reviews - 1418 Magazine St, New Orleans, Louisiana' with no closure tag, indicating active, recently-updated listing",
    "https://www.yelp.com/biz/surreys-uptown-new-orleans - contrast reference: separate 'SURREY'S UPTOWN - CLOSED' listing at 4807 Magazine St, confirming the two locations are distinct and only the Uptown one has closed",
    "Yelp/aggregated reviews explicitly reference an on-site unisex bathroom 'in the back by an ATM', confirming physical restroom access for patrons at 1418 Magazine St",
    "https://www.tripadvisor.com/Restaurant_Review-g60864-d832153-Reviews-Surrey_s_Juice_Bar-New_Orleans_Louisiana.html - listed as Lower Garden District restaurant (fetch blocked by 403 but search snippet corroborates listing)"
@@ -2582,7 +2582,7 @@
   ],
   "evidence": [
    "https://www.yelp.com/biz/rue-de-la-course-new-orleans (current listing, updated June 2026, 292 reviews, 1140 S Carrollton Ave, not marked closed)",
-   "https://www.yelp.com/biz/rue-de-la-course-new-orleans-2 (DIFFERENT location, 3128 Magazine St, explicitly marked CLOSED — confirms candidate is NOT this defunct location)",
+   "https://www.yelp.com/biz/rue-de-la-course-new-orleans-2 (DIFFERENT location, 3128 Magazine St, explicitly marked CLOSED \u2014 confirms candidate is NOT this defunct location)",
    "https://www.nola.com/news/business/whitney-bank-building-oak-street-new-orleans-sold-real-estate-development-historic-renovation/article_54de334e-b0fe-11ef-8ec9-2b87e6b092c8.html (building sold Nov 2024; notes other tenants vacant since 2022 but does not report Rue de la Course as closed)",
    "https://commons.wikimedia.org/wiki/Category:Rue_de_la_Course,_Oak_at_Carrollton,_New_Orleans (dated photos 2011-2026 showing continuous storefront/signage through March 2026)",
    "https://www.chamberofcommerce.com/business-directory/louisiana/new-orleans/coffee-shop/30429057-rue-de-la-course (current listing, 1140 S Carrollton Ave, 70118)",
@@ -2615,7 +2615,7 @@
    "https://www.neworleans.com/listing/breads-on-oak/33298/"
   ],
   "evidence": [
-   "https://www.breadsonoak.com/ - live official site, shows address, current hours (7:30am-3:00pm daily), © 2026 copyright, active online ordering",
+   "https://www.breadsonoak.com/ - live official site, shows address, current hours (7:30am-3:00pm daily), \u00a9 2026 copyright, active online ordering",
    "https://en.wikipedia.org/wiki/Breads_On_Oak - confirms founding 2012, first all-organic bakery/cafe in New Orleans, went all-plant-based in 2018, still operating (only the later Carondelet St location closed)",
    "https://www.yelp.com/biz/breads-on-oak-cafe-and-bakery-new-orleans - 508 reviews, updated April 2026, address 8640 Oak St, New Orleans",
    "https://www.tripadvisor.com/Restaurant_Review-g60864-d3573636-Reviews-Breads_on_Oak-New_Orleans_Louisiana.html - active listing, 4.7/5 rating, #247 of 1467 restaurants in New Orleans",
@@ -2683,12 +2683,12 @@
    "https://wheelfunrentals.com/la/new-orleans/city-park-new-orleans/"
   ],
   "evidence": [
-   "https://wheelfunrentals.com/la/new-orleans/city-park-new-orleans/ — official site: address '7 Friederichs Ave, New Orleans, Louisiana 70124', phone (504) 300-1289, states 'easy access to parking, restrooms, and everything you need', current seasonal hours table (copyright 2026)",
-   "https://neworleanscitypark.org/visit-city-park/big-lake/ — City Park Conservancy's own official page (copyright 2026) lists Wheel Fun Rentals as the Big Lake bike/boat rental operator with matching phone number 504-300-1289, cross-confirming active operator status",
-   "https://www.facebook.com/WheelfunRentalsNola/ — Facebook page, 3.2K followers, recent post dated 'June 22' (2026), address listed as 'Big Lake Trail, City Park, New Orleans, LA', 90% recommend from 11 reviews",
-   "https://www.yelp.com/biz/wheel-fun-rentals-new-orleans-4 — Yelp listing 'Updated June 2026', 86 reviews, address '7 Friederichs Ave, New Orleans, Louisiana'",
-   "https://www.tripadvisor.com/Attraction_Review-g60864-d8130047-Reviews-Wheel_Fun_Rentals-New_Orleans_Louisiana.html — TripAdvisor listing shows current 2026 reviews page (site blocked direct fetch with 403, but indexed via search with 2026 update date)",
-   "https://en.wikipedia.org/wiki/City_Park,_New_Orleans — confirms City Park is located within Orleans Parish, Louisiana (not Jefferson or St. Bernard Parish)"
+   "https://wheelfunrentals.com/la/new-orleans/city-park-new-orleans/ \u2014 official site: address '7 Friederichs Ave, New Orleans, Louisiana 70124', phone (504) 300-1289, states 'easy access to parking, restrooms, and everything you need', current seasonal hours table (copyright 2026)",
+   "https://neworleanscitypark.org/visit-city-park/big-lake/ \u2014 City Park Conservancy's own official page (copyright 2026) lists Wheel Fun Rentals as the Big Lake bike/boat rental operator with matching phone number 504-300-1289, cross-confirming active operator status",
+   "https://www.facebook.com/WheelfunRentalsNola/ \u2014 Facebook page, 3.2K followers, recent post dated 'June 22' (2026), address listed as 'Big Lake Trail, City Park, New Orleans, LA', 90% recommend from 11 reviews",
+   "https://www.yelp.com/biz/wheel-fun-rentals-new-orleans-4 \u2014 Yelp listing 'Updated June 2026', 86 reviews, address '7 Friederichs Ave, New Orleans, Louisiana'",
+   "https://www.tripadvisor.com/Attraction_Review-g60864-d8130047-Reviews-Wheel_Fun_Rentals-New_Orleans_Louisiana.html \u2014 TripAdvisor listing shows current 2026 reviews page (site blocked direct fetch with 403, but indexed via search with 2026 update date)",
+   "https://en.wikipedia.org/wiki/City_Park,_New_Orleans \u2014 confirms City Park is located within Orleans Parish, Louisiana (not Jefferson or St. Bernard Parish)"
   ],
   "lens": "city-park-deep",
   "confidence": "medium"
@@ -2700,13 +2700,13 @@
    "https://vymaps.com/US/Lakefront-Shelter-2-158959770834905/"
   ],
   "evidence": [
-   "https://www.nolalakefront.com/wp-content/uploads/2018/10/ShelterPavilion-Rental-info.pdf — official NFPAMA rental packet: 'RESTROOM FACILITIES located in/near the shelter must remain open to the general public. The restrooms are closed at 7:30 p.m.' and 'Shelter Nos. 2 and 3 (currently available for rental)'",
-   "https://www.wwltv.com/article/news/local/orleans/lakefront-shelters-bathrooms-in-bad-condition/289-e3ef2e6f-ed52-4eaa-afa4-9caea51c8f19 — March 2021 WWL-TV: Shelter #1 out of service (flooding/Hurricane Zeta) but Shelters #2 & #3 open, cleaned daily by Jani-King, LMA maintenance does spot checks and responds to complaints",
-   "https://nolalakefront.com/wp-content/uploads/2022/04/LMA_Shelter_Permit_Application.pdf — 2022 permit application still lists Shelters 2 & 3 as active rental options",
-   "https://nolalakefront.com/wp-content/uploads/2023/07/1.-RECREATION-MINUTES-JUNE-13-2023__APPROVED07.18.23.pdf — July 2023 LMA Recreation Committee minutes referencing a $30,000/year pressure-washing maintenance contract for the shelters, indicating continued funded operation",
-   "https://en.wikipedia.org/wiki/Lakeshore/Lake_Vista,_New_Orleans — confirms Lake Vista/Lakeshore neighborhood (zip 70124) location and boundaries within Orleans Parish",
-   "https://vymaps.com/US/Lakefront-Shelter-2-158959770834905/ — listing corroborating Shelter 2 location at Lakeshore Drive at Tern St (fetch blocked by 403 but indexed in search)",
-   "https://foursquare.com/v/shelter-no-2/4b9814faf964a520052b35e3 — 'Shelter No. 2 - Lake Shore - Lake Vista - Lakeshore Drive' listing corroborating name/location"
+   "https://www.nolalakefront.com/wp-content/uploads/2018/10/ShelterPavilion-Rental-info.pdf \u2014 official NFPAMA rental packet: 'RESTROOM FACILITIES located in/near the shelter must remain open to the general public. The restrooms are closed at 7:30 p.m.' and 'Shelter Nos. 2 and 3 (currently available for rental)'",
+   "https://www.wwltv.com/article/news/local/orleans/lakefront-shelters-bathrooms-in-bad-condition/289-e3ef2e6f-ed52-4eaa-afa4-9caea51c8f19 \u2014 March 2021 WWL-TV: Shelter #1 out of service (flooding/Hurricane Zeta) but Shelters #2 & #3 open, cleaned daily by Jani-King, LMA maintenance does spot checks and responds to complaints",
+   "https://nolalakefront.com/wp-content/uploads/2022/04/LMA_Shelter_Permit_Application.pdf \u2014 2022 permit application still lists Shelters 2 & 3 as active rental options",
+   "https://nolalakefront.com/wp-content/uploads/2023/07/1.-RECREATION-MINUTES-JUNE-13-2023__APPROVED07.18.23.pdf \u2014 July 2023 LMA Recreation Committee minutes referencing a $30,000/year pressure-washing maintenance contract for the shelters, indicating continued funded operation",
+   "https://en.wikipedia.org/wiki/Lakeshore/Lake_Vista,_New_Orleans \u2014 confirms Lake Vista/Lakeshore neighborhood (zip 70124) location and boundaries within Orleans Parish",
+   "https://vymaps.com/US/Lakefront-Shelter-2-158959770834905/ \u2014 listing corroborating Shelter 2 location at Lakeshore Drive at Tern St (fetch blocked by 403 but indexed in search)",
+   "https://foursquare.com/v/shelter-no-2/4b9814faf964a520052b35e3 \u2014 'Shelter No. 2 - Lake Shore - Lake Vista - Lakeshore Drive' listing corroborating name/location"
   ],
   "lens": "lakefront-uno",
   "confidence": "medium"
@@ -2785,14 +2785,14 @@
    "https://nolalibrary.org/in-the-library/todays-hours/"
   ],
   "evidence": [
-   "https://nolalibrary.org/branch/9/dr-martin-luther-king-jr-library — official NOPL branch page, confirms branch exists and is active",
-   "https://neworleans.polarislibrary.com/Mobile/Hours?organizationID=11 — confirms branch-specific hours Mon-Thu 10am-7pm, Fri-Sat 10am-5pm, Sun closed",
-   "https://nolalibrary.org/in-the-library/todays-hours/ — confirms 'All Other Library Locations' (non-Main) hours are Mon-Thu 10am-7pm, Fri-Sat 10am-5pm, Sun closed, matching this branch",
-   "https://citylibrary.com/public-libraries/martin-luther-king-branch-library-3/ — lists address, phone 504-596-2695, no closure indication",
-   "https://www.yelp.com/biz/martin-luther-king-new-orleans — listing 'Updated October 2025' at 1611 Caffin Ave (Yelp has not updated to new street name), indicates business still listed/active",
-   "https://www.nola.com/multimedia/photos/photos-fats-domino-and-lower-9th-ward-celebrated-in-street-naming-celebration/collection_91150e06-4cc8-11ed-920c-dbe28b5d9f88.html — confirms Caffin Ave renamed to Fats Domino Ave in the Lower 9th Ward",
-   "https://theneworleanstribune.com/2022/10/06/community-to-celebrate-renaming-of-caffin-avenue-to-fats-domino/ — confirms official renaming of Caffin Avenue to Fats Domino Avenue, effective Jan 1, 2022",
-   "https://www.fox8live.com/2021/07/01/street-renamed-new-orleans-legend-spotlights-roots-rock-roll/ — corroborates renaming and community/library location context",
+   "https://nolalibrary.org/branch/9/dr-martin-luther-king-jr-library \u2014 official NOPL branch page, confirms branch exists and is active",
+   "https://neworleans.polarislibrary.com/Mobile/Hours?organizationID=11 \u2014 confirms branch-specific hours Mon-Thu 10am-7pm, Fri-Sat 10am-5pm, Sun closed",
+   "https://nolalibrary.org/in-the-library/todays-hours/ \u2014 confirms 'All Other Library Locations' (non-Main) hours are Mon-Thu 10am-7pm, Fri-Sat 10am-5pm, Sun closed, matching this branch",
+   "https://citylibrary.com/public-libraries/martin-luther-king-branch-library-3/ \u2014 lists address, phone 504-596-2695, no closure indication",
+   "https://www.yelp.com/biz/martin-luther-king-new-orleans \u2014 listing 'Updated October 2025' at 1611 Caffin Ave (Yelp has not updated to new street name), indicates business still listed/active",
+   "https://www.nola.com/multimedia/photos/photos-fats-domino-and-lower-9th-ward-celebrated-in-street-naming-celebration/collection_91150e06-4cc8-11ed-920c-dbe28b5d9f88.html \u2014 confirms Caffin Ave renamed to Fats Domino Ave in the Lower 9th Ward",
+   "https://theneworleanstribune.com/2022/10/06/community-to-celebrate-renaming-of-caffin-avenue-to-fats-domino/ \u2014 confirms official renaming of Caffin Avenue to Fats Domino Avenue, effective Jan 1, 2022",
+   "https://www.fox8live.com/2021/07/01/street-renamed-new-orleans-legend-spotlights-roots-rock-roll/ \u2014 corroborates renaming and community/library location context",
    "Search results citing 1611 Fats Domino Avenue as current library address (CityLibrary aggregator, LibraryThing venue page) vs 1617 Fats Domino Ave for the co-located Dr. Martin Luther King Charter School for Science Tech, confirming 1611 is correct for the library"
   ],
   "lens": "ninth-ward",
@@ -2824,10 +2824,10 @@
    "http://hickswrites.blogspot.com/2011/12/new-orleans-dining-tout-de-suite-in.html"
   ],
   "evidence": [
-   "https://toutdesuitecafe.com/index.html — official site, address '347 Verret Street, Algiers Point, Louisiana 70114', hours 'Tuesday - Sunday 8 a.m. to 1 p.m.', kitchen closes 12:30 p.m.",
-   "https://www.yelp.com/biz/tout-de-suite-cafe-new-orleans — 'Updated June 2026', 433 photos, 285 reviews, address 347 Verret St, New Orleans, LA 70114, no closure indicators",
-   "http://hickswrites.blogspot.com/2011/12/new-orleans-dining-tout-de-suite-in.html — confirms self-service counter format and location diagonally across from Catholic church on Verret/Alix Streets",
-   "https://en.wikipedia.org/wiki/Algiers_Point — confirms Algiers Point is part of Orleans Parish, New Orleans (West Bank)"
+   "https://toutdesuitecafe.com/index.html \u2014 official site, address '347 Verret Street, Algiers Point, Louisiana 70114', hours 'Tuesday - Sunday 8 a.m. to 1 p.m.', kitchen closes 12:30 p.m.",
+   "https://www.yelp.com/biz/tout-de-suite-cafe-new-orleans \u2014 'Updated June 2026', 433 photos, 285 reviews, address 347 Verret St, New Orleans, LA 70114, no closure indicators",
+   "http://hickswrites.blogspot.com/2011/12/new-orleans-dining-tout-de-suite-in.html \u2014 confirms self-service counter format and location diagonally across from Catholic church on Verret/Alix Streets",
+   "https://en.wikipedia.org/wiki/Algiers_Point \u2014 confirms Algiers Point is part of Orleans Parish, New Orleans (West Bank)"
   ],
   "lens": "algiers",
   "confidence": "medium"
@@ -2839,14 +2839,14 @@
    "https://bizneworleans.com/patrick-brennan-acquires-congregation-coffee-roasters/"
   ],
   "evidence": [
-   "https://www.congregationcoffee.com/pages/pelican — official location page confirming address '240 Pelican Ave. New Orleans, LA. 70114' and hours '7am - 3pm | Thursday - Monday', no restroom statement but confirms current operation",
-   "https://www.yelp.com/biz/congregation-coffee-new-orleans — 100 reviews, listing updated June 2026, address and phone (504) 265-0194 confirmed, recent 2026 reviews praising service/coffee/food",
-   "https://bizneworleans.com/patrick-brennan-acquires-congregation-coffee-roasters/ — confirms Patrick Brennan (individually, son of Ralph Brennan) acquired the brand in 2023, not Ralph Brennan Restaurant Group as a corporate entity; reopening at 240 Pelican Ave planned for Nov 2023",
-   "https://www.nola.com/entertainment_life/eat-drink/congregation-coffee-roaster-cafe-returns-with-new-owner/article_c2d728a0-72b7-11ee-9d79-ab7b5b046fa8.html — confirms 2023 closure and reopening under new ownership",
-   "https://www.axios.com/local/new-orleans/2023/05/04/congregation-coffee-closes-roastery-new-orleans — documents May 2023 temporary closure of roastery/subscription (historical, not current)",
-   "https://en.wikipedia.org/wiki/Algiers,_New_Orleans — confirms Algiers Point is the only Orleans Parish community located on the West Bank of the Mississippi River, ruling out Jefferson/St. Bernard Parish concern",
-   "Web search aggregation citing reviews describing the bathroom as 'clean', 'well stocked', with a diaper-changing station at this Algiers Point location — direct evidence of realistic customer restroom access",
-   "https://www.nola.com/news/business/innovation/new-orleans-congregation-coffee-shop-ccs-magazine-jefferson-avenue-reopening-uptown/article_35a7b034-8270-11ef-9f74-4746c5394d4d.html — confirms 2025 second (Uptown) location opening, indicating ongoing healthy business expansion, not decline"
+   "https://www.congregationcoffee.com/pages/pelican \u2014 official location page confirming address '240 Pelican Ave. New Orleans, LA. 70114' and hours '7am - 3pm | Thursday - Monday', no restroom statement but confirms current operation",
+   "https://www.yelp.com/biz/congregation-coffee-new-orleans \u2014 100 reviews, listing updated June 2026, address and phone (504) 265-0194 confirmed, recent 2026 reviews praising service/coffee/food",
+   "https://bizneworleans.com/patrick-brennan-acquires-congregation-coffee-roasters/ \u2014 confirms Patrick Brennan (individually, son of Ralph Brennan) acquired the brand in 2023, not Ralph Brennan Restaurant Group as a corporate entity; reopening at 240 Pelican Ave planned for Nov 2023",
+   "https://www.nola.com/entertainment_life/eat-drink/congregation-coffee-roaster-cafe-returns-with-new-owner/article_c2d728a0-72b7-11ee-9d79-ab7b5b046fa8.html \u2014 confirms 2023 closure and reopening under new ownership",
+   "https://www.axios.com/local/new-orleans/2023/05/04/congregation-coffee-closes-roastery-new-orleans \u2014 documents May 2023 temporary closure of roastery/subscription (historical, not current)",
+   "https://en.wikipedia.org/wiki/Algiers,_New_Orleans \u2014 confirms Algiers Point is the only Orleans Parish community located on the West Bank of the Mississippi River, ruling out Jefferson/St. Bernard Parish concern",
+   "Web search aggregation citing reviews describing the bathroom as 'clean', 'well stocked', with a diaper-changing station at this Algiers Point location \u2014 direct evidence of realistic customer restroom access",
+   "https://www.nola.com/news/business/innovation/new-orleans-congregation-coffee-shop-ccs-magazine-jefferson-avenue-reopening-uptown/article_35a7b034-8270-11ef-9f74-4746c5394d4d.html \u2014 confirms 2025 second (Uptown) location opening, indicating ongoing healthy business expansion, not decline"
   ],
   "lens": "algiers",
   "confidence": "medium"
@@ -2876,10 +2876,10 @@
   ],
   "evidence": [
    "https://www.walmart.com/store/912-new-orleans-la (Walmart official store page; search snippet confirms 'Serving New Orleans East Area | Store 912', 6000 Bullard Ave, New Orleans, LA 70128, hours 6am-10pm daily, phone 504-434-6266)",
-   "https://www.yelp.com/biz/walmart-supercenter-new-orleans-6 (Yelp listing 'Updated June 2026', 47 photos, 36 reviews, address 6000 Bullard Ave, New Orleans, Louisiana — indicates active, currently reviewed business)",
+   "https://www.yelp.com/biz/walmart-supercenter-new-orleans-6 (Yelp listing 'Updated June 2026', 47 photos, 36 reviews, address 6000 Bullard Ave, New Orleans, Louisiana \u2014 indicates active, currently reviewed business)",
    "https://www.allstays.com/c/Walmart/LA-New-Orleans-Wal-Mart-912.htm (confirms address 6000 Bullard Ave, New Orleans LA 70128, Parish: Orleans Parish, phone 504-434-6266)",
    "https://www.loc8nearme.com/louisiana/new-orleans/walmart/99573/ (confirms address 6000 Bullard Ave, New Orleans LA 70128, hours 6AM-10PM daily, no closure notice)",
-   "https://www.walmart.com/store-directory/la/new%20orleans (Walmart's own New Orleans store directory lists Store 912 alongside other active Orleans Parish stores, e.g. Store 1163 Algiers, Store 3167 Gentilly, Store 5022 St. Thomas — confirms 912 is a currently listed, non-delisted store)",
+   "https://www.walmart.com/store-directory/la/new%20orleans (Walmart's own New Orleans store directory lists Store 912 alongside other active Orleans Parish stores, e.g. Store 1163 Algiers, Store 3167 Gentilly, Store 5022 St. Thomas \u2014 confirms 912 is a currently listed, non-delisted store)",
    "https://www.iexitapp.com/business/Walmart%20Supercenter/703295?esmid=1447 (lists store as Exit 245 along I-10 in Louisiana, consistent with the pitch's claim of proximity to I-10)"
   ],
   "lens": "nola-east",
@@ -2933,7 +2933,7 @@
    "https://www.mqvncdc.org/alcee-fortier-business-directory"
   ],
   "evidence": [
-   "Google Maps listing (navigated directly, multiple consistent reads): https://www.google.com/maps/place/Minh+Canh+Market/@30.0378663,-89.9116765,17z/data=!3m1!4b1!4m6!3m5!1s0x889e046c022a624b:0x578698806fccc2a0!8m2!3d30.0378663!4d-89.9116765 -- shows 'Minh Canh Market, 4.5, Grocery store, 4661 Alcee Fortier Blvd, New Orleans, LA 70129, Closed · Opens 8 AM Thursday, 8 AM–6:30 PM, (504) 253-9840', no permanently/temporarily closed flag, co-located Banh Mi Cali (4.9, 27 reviews) and Banh Mi Sao Mai Vietnamese restaurant (4.0, 16 reviews)",
+   "Google Maps listing (navigated directly, multiple consistent reads): https://www.google.com/maps/place/Minh+Canh+Market/@30.0378663,-89.9116765,17z/data=!3m1!4b1!4m6!3m5!1s0x889e046c022a624b:0x578698806fccc2a0!8m2!3d30.0378663!4d-89.9116765 -- shows 'Minh Canh Market, 4.5, Grocery store, 4661 Alcee Fortier Blvd, New Orleans, LA 70129, Closed \u00b7 Opens 8 AM Thursday, 8 AM\u20136:30 PM, (504) 253-9840', no permanently/temporarily closed flag, co-located Banh Mi Cali (4.9, 27 reviews) and Banh Mi Sao Mai Vietnamese restaurant (4.0, 16 reviews)",
    "https://www.mqvncdc.org/alcee-fortier-business-directory -- loaded successfully (200), confirms Alcee Fortier corridor is the commercial heart of Village de l'Est, a Vietnamese-American neighborhood in New Orleans; static page text did not show a specific Minh Canh Market directory entry (directory likely rendered via JS widget not captured)",
    "https://en.wikipedia.org/wiki/New_Orleans_East -- confirms Village de l'Est is a documented subsection/neighborhood within New Orleans East, part of the City of New Orleans (Orleans Parish)",
    "https://www.yelp.com/biz/minh-canh-market-new-orleans -- returned HTTP 403 (blocked), could not independently verify via this source"
@@ -2961,11 +2961,11 @@
    "https://cansecos.com/locations"
   ],
   "evidence": [
-   "https://cansecos.com/locations — official site: 'Esplanade — 3135 Esplanade Ave. — Open 7 days a week 7:00 am - 10:00 pm — 504.322.2595'",
-   "https://www.yelp.com/biz/cansecos-esplanade-market-new-orleans — 'CANSECO'S ESPLANADE MARKET - Updated June 2026 - 33 Photos & 45 Reviews - 3135 Esplanade Ave, New Orleans, Louisiana', matching address and active listing as of June 2026",
-   "https://www.tripadvisor.com/Restaurant_Review-g60864-d27767839-Reviews-Canseco_s_Esplanade_Market-New_Orleans_Louisiana.html — confirms address '3135 Esplanade Ave, New Orleans, LA 70119-3119', open status, 5-star review from December 2024 describing it as an active 'perfect little neighborhood market'",
-   "https://www.nola.com/gambit/news/blake_pontchartrain/blake-pontchartrain-there-are-new-orleans-connections-to-the-history-of-whole-foods/article_d8b2f39a-54dc-11ef-be99-c32a87ffd3ff.html — confirms 3135 Esplanade Ave was a Whole Foods (closed April 2005), site now occupied by Canseco's Market since August 2005, establishing it as a full-size former-supermarket building, not a small bodega",
-   "https://www.loopnet.com/property/3135-esplanade-ave-new-orleans-la-70119/22071-37W303102/ — confirms address is in Orleans Parish (parcel ID 3-7W-3-031-02), zip 70119",
+   "https://cansecos.com/locations \u2014 official site: 'Esplanade \u2014 3135 Esplanade Ave. \u2014 Open 7 days a week 7:00 am - 10:00 pm \u2014 504.322.2595'",
+   "https://www.yelp.com/biz/cansecos-esplanade-market-new-orleans \u2014 'CANSECO'S ESPLANADE MARKET - Updated June 2026 - 33 Photos & 45 Reviews - 3135 Esplanade Ave, New Orleans, Louisiana', matching address and active listing as of June 2026",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d27767839-Reviews-Canseco_s_Esplanade_Market-New_Orleans_Louisiana.html \u2014 confirms address '3135 Esplanade Ave, New Orleans, LA 70119-3119', open status, 5-star review from December 2024 describing it as an active 'perfect little neighborhood market'",
+   "https://www.nola.com/gambit/news/blake_pontchartrain/blake-pontchartrain-there-are-new-orleans-connections-to-the-history-of-whole-foods/article_d8b2f39a-54dc-11ef-be99-c32a87ffd3ff.html \u2014 confirms 3135 Esplanade Ave was a Whole Foods (closed April 2005), site now occupied by Canseco's Market since August 2005, establishing it as a full-size former-supermarket building, not a small bodega",
+   "https://www.loopnet.com/property/3135-esplanade-ave-new-orleans-la-70119/22071-37W303102/ \u2014 confirms address is in Orleans Parish (parcel ID 3-7W-3-031-02), zip 70119",
    "Recent review search (WebSearch) surfaced a December 2025 review describing ongoing operations at the store (quality complaint but no closure), and Tripadvisor 'Neighborhood Favorite' recognitions through 2023, indicating continuous multi-year operation with no permanently-closed signal found"
   ],
   "lens": "grocery-other",
@@ -3081,14 +3081,14 @@
    "https://www.yelp.com/biz/intercontinental-new-orleans-new-orleans-2"
   ],
   "evidence": [
-   "https://www.ihg.com/intercontinental/hotels/us/en/new-orleans/msyha/hoteldetail — official hotel page, confirms address 444 St Charles Ave, active operation, 'expansive lobby'",
-   "https://www.yelp.com/biz/intercontinental-new-orleans-new-orleans-2 — 417 reviews, listing updated July 2026, address 444 Saint Charles Ave, New Orleans, LA 70130, no closure indicators",
-   "https://www.tripadvisor.com/Hotel_Review-g60864-d111974-Reviews-InterContinental_New_Orleans_By_IHG-New_Orleans_Louisiana.html — reviews from May/June 2026 confirming active guest stays, address confirmed as 444 St Charles Ave, New Orleans, LA 70130",
-   "https://www.loopnet.com/property/444-saint-charles-ave-new-orleans-la-70130/22071-104101227/ — property record confirming parcel location and address in Orleans Parish",
-   "https://www.nola.com/news/business/intercontinental-starts-renovation/article_fe20ca92-0b76-5715-bc5b-908c6cebbf33.html — background on completed 2014 renovation, no indication of subsequent closure",
-   "https://canalstreetbeat.com/hotel-intercontinental-to-undergo-multimillion-dollar-renovation/ — confirms hotel remains operating post-renovation with recent 2023-2024 industry awards",
-   "https://www.tripadvisor.com/ShowTopic-g60864-i34-k14335124-Public_Restrooms_in_NOLA-New_Orleans_Louisiana.html — local forum confirming large hotel lobbies (e.g., Hotel Monteleone) are a standard, realistic public restroom strategy in New Orleans, supporting plausibility of lobby restroom access at comparable large hotels like the InterContinental",
-   "https://www.hotelplanner.com/Hotels/170389/Reservations-Intercontinental-New-Orleans-New-Orleans-444-St-Charles-70130 — corroborates address and active booking status"
+   "https://www.ihg.com/intercontinental/hotels/us/en/new-orleans/msyha/hoteldetail \u2014 official hotel page, confirms address 444 St Charles Ave, active operation, 'expansive lobby'",
+   "https://www.yelp.com/biz/intercontinental-new-orleans-new-orleans-2 \u2014 417 reviews, listing updated July 2026, address 444 Saint Charles Ave, New Orleans, LA 70130, no closure indicators",
+   "https://www.tripadvisor.com/Hotel_Review-g60864-d111974-Reviews-InterContinental_New_Orleans_By_IHG-New_Orleans_Louisiana.html \u2014 reviews from May/June 2026 confirming active guest stays, address confirmed as 444 St Charles Ave, New Orleans, LA 70130",
+   "https://www.loopnet.com/property/444-saint-charles-ave-new-orleans-la-70130/22071-104101227/ \u2014 property record confirming parcel location and address in Orleans Parish",
+   "https://www.nola.com/news/business/intercontinental-starts-renovation/article_fe20ca92-0b76-5715-bc5b-908c6cebbf33.html \u2014 background on completed 2014 renovation, no indication of subsequent closure",
+   "https://canalstreetbeat.com/hotel-intercontinental-to-undergo-multimillion-dollar-renovation/ \u2014 confirms hotel remains operating post-renovation with recent 2023-2024 industry awards",
+   "https://www.tripadvisor.com/ShowTopic-g60864-i34-k14335124-Public_Restrooms_in_NOLA-New_Orleans_Louisiana.html \u2014 local forum confirming large hotel lobbies (e.g., Hotel Monteleone) are a standard, realistic public restroom strategy in New Orleans, supporting plausibility of lobby restroom access at comparable large hotels like the InterContinental",
+   "https://www.hotelplanner.com/Hotels/170389/Reservations-Intercontinental-New-Orleans-New-Orleans-444-St-Charles-70130 \u2014 corroborates address and active booking status"
   ],
   "lens": "hotels-cbd",
   "confidence": "medium"
@@ -3125,7 +3125,7 @@
    "https://libguides.uno.edu/security (library security/conduct policy: main lobby entrance/exit, bag checks, and loitering policy for non-affiliated persons not using library services)",
    "https://libguides.uno.edu/map (confirms 2000 Lakeshore Dr, New Orleans, LA 70148 campus address and visitor parking near the library/PAC lot)",
    "https://libguides.uno.edu/special/location (confirms New Orleans, LA location roughly center of UNO Lakefront campus, public transit lines 51/52/55/60 serve it)",
-   "https://www.yelp.com/biz/earl-k-long-library-new-orleans (Yelp listing 'Updated June 2026' at 2000 Lakeshore Dr, New Orleans — not flagged permanently closed)",
+   "https://www.yelp.com/biz/earl-k-long-library-new-orleans (Yelp listing 'Updated June 2026' at 2000 Lakeshore Dr, New Orleans \u2014 not flagged permanently closed)",
    "https://www.uno.edu/news/2023-12-14/earl-k-long-library-special-collection-of-orleans-parish-school-board-memorabilia-expanding (evidence of ongoing active operations)",
    "https://www.facebook.com/ekl.library/ and https://www.instagram.com/p/DKSAlnTP41b/ (active social presence with recent 'Summer Semester begins' posts referencing current hours)"
   ],
@@ -3262,7 +3262,7 @@
    "https://www.yelp.com/biz/the-eliza-jane-new-orleans (confirms address: 315 Magazine St, New Orleans, Louisiana)",
    "https://www.loopnet.com/property/315-magazine-st-new-orleans-la-70130/22071-104100906/ (property record, APN/Parcel ID confirms physical location in Orleans Parish)",
    "https://www.theelizajane.com/dine/the-press-room/ (Press Room lobby bar/lounge description, public-facing 'mingle with... locals')",
-   "https://yourmileagemayvary.com/2026/03/23/hyatt-eliza-jane-leaving-new-orleans/ (confirms March 2025 brand transition from Hyatt Unbound Collection to Marriott Autograph Collection — not a closure, hotel remains operational)",
+   "https://yourmileagemayvary.com/2026/03/23/hyatt-eliza-jane-leaving-new-orleans/ (confirms March 2025 brand transition from Hyatt Unbound Collection to Marriott Autograph Collection \u2014 not a closure, hotel remains operational)",
    "https://www.marriott.com/en-us/hotels/msyej-the-eliza-jane-autograph-collection/overview/ (current Marriott listing, confirms active Autograph Collection status)",
    "https://www.tripadvisor.com/Hotel_Review-g60864-d498233-Reviews-The_Eliza_Jane_Autograph_Collection-New_Orleans_Louisiana.html (recent reviews through 2026 confirming active operation, e.g. review dated June 19)",
    "https://www.hospitalitynet.org/announcement/41014292/the-eliza-jane-joins-marriotts-autograph-collection-in-strategic-brand-transition",
@@ -3290,5 +3290,272 @@
   ],
   "lens": "hotels-cbd",
   "confidence": "low"
+ },
+ "the-alibi-iberville": {
+  "sources": [],
+  "evidence": [
+   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
+  ],
+  "lens": "salvage-from-adversarial-rejection",
+  "confidence": "medium"
+ },
+ "tropical-isle-bourbon": {
+  "sources": [],
+  "evidence": [
+   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
+  ],
+  "lens": "salvage-from-adversarial-rejection",
+  "confidence": "medium"
+ },
+ "juans-flying-burrito-magazine": {
+  "sources": [],
+  "evidence": [
+   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
+  ],
+  "lens": "salvage-from-adversarial-rejection",
+  "confidence": "medium"
+ },
+ "the-rink-chicory-house": {
+  "sources": [],
+  "evidence": [
+   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
+  ],
+  "lens": "salvage-from-adversarial-rejection",
+  "confidence": "medium"
+ },
+ "wendys-tchoupitoulas": {
+  "sources": [],
+  "evidence": [
+   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
+  ],
+  "lens": "salvage-from-adversarial-rejection",
+  "confidence": "medium"
+ },
+ "daisy-dukes-french-quarter": {
+  "sources": [],
+  "evidence": [
+   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
+  ],
+  "lens": "salvage-from-adversarial-rejection",
+  "confidence": "medium"
+ },
+ "central-grocery-decatur": {
+  "sources": [],
+  "evidence": [
+   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
+  ],
+  "lens": "salvage-from-adversarial-rejection",
+  "confidence": "medium"
+ },
+ "roosevelt-grand-lobby": {
+  "sources": [],
+  "evidence": [
+   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
+  ],
+  "lens": "salvage-from-adversarial-rejection",
+  "confidence": "medium"
+ },
+ "good-bird-freret": {
+  "sources": [],
+  "evidence": [
+   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
+  ],
+  "lens": "salvage-from-adversarial-rejection",
+  "confidence": "medium"
+ },
+ "cafetomas-carrollton": {
+  "sources": [],
+  "evidence": [
+   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
+  ],
+  "lens": "salvage-from-adversarial-rejection",
+  "confidence": "medium"
+ },
+ "nola-art-bar-st-claude": {
+  "sources": [],
+  "evidence": [
+   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
+  ],
+  "lens": "salvage-from-adversarial-rejection",
+  "confidence": "medium"
+ },
+ "new-orleans-east-hospital-lobby": {
+  "sources": [],
+  "evidence": [
+   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
+  ],
+  "lens": "salvage-from-adversarial-rejection",
+  "confidence": "medium"
+ },
+ "the-columns-st-charles": {
+  "sources": [],
+  "evidence": [
+   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
+  ],
+  "lens": "salvage-from-adversarial-rejection",
+  "confidence": "medium"
+ },
+ "waffle-house-1911": {
+  "sources": [],
+  "evidence": [
+   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
+  ],
+  "lens": "salvage-from-adversarial-rejection",
+  "confidence": "medium"
+ },
+ "xavier-university-library": {
+  "sources": [],
+  "evidence": [
+   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
+  ],
+  "lens": "salvage-from-adversarial-rejection",
+  "confidence": "medium"
+ },
+ "nopl-mid-city": {
+  "sources": [],
+  "evidence": [
+   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
+  ],
+  "lens": "salvage-from-adversarial-rejection",
+  "confidence": "medium"
+ },
+ "mcdonalds-st-charles": {
+  "sources": [],
+  "evidence": [
+   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
+  ],
+  "lens": "salvage-from-adversarial-rejection",
+  "confidence": "medium"
+ },
+ "audubon-aquarium-lobby": {
+  "sources": [
+   "https://audubonnatureinstitute.org/aquarium-accessibility",
+   "https://audubonnatureinstitute.org/woldenberg-park",
+   "https://audubonnatureinstitute.org/aquarium"
+  ],
+  "evidence": [
+   "Audubon official site states Woldenberg Park has no public restrooms and directs visitors to the Aquarium & Insectarium lobby; accessibility page lists restrooms near lobby/entrance before paid areas"
+  ],
+  "lens": "gap-icons",
+  "confidence": "high"
+ },
+ "acorn-cafe-childrens-museum": {
+  "sources": [
+   "https://lcm.org/plan-your-visit/",
+   "https://www.acornnola.com/location/acorn/"
+  ],
+  "evidence": [
+   "LCM's plan-your-visit page names Acorn Cafe among Community Spaces open to the public without museum admission"
+  ],
+  "lens": "gap-icons",
+  "confidence": "high"
+ },
+ "mercedes-place-holy-cross": {
+  "sources": [
+   "https://www.yelp.com/biz/mercedes-place-new-orleans"
+  ],
+  "evidence": [
+   "Yelp listing updated July 2026 with current daily hours and active recent reviews"
+  ],
+  "lens": "gap-holy-cross",
+  "confidence": "high"
+ },
+ "burnells-lower-9th-market": {
+  "sources": [
+   "https://www.alt923.com/2025/08/29/meet-the-man-running-the-only-grocery-store-in-the-lower-9th-ward/",
+   "https://www.yelp.com/biz/lower-9th-ward-market-new-orleans"
+  ],
+  "evidence": [
+   "August 2025 media profile confirms active operation; Yelp updated March 2026 with no closure indicators"
+  ],
+  "lens": "gap-holy-cross",
+  "confidence": "medium"
+ },
+ "all-souls-community-center": {
+  "sources": [
+   "https://allsoulsnoladotorg.wordpress.com/contact/",
+   "https://allsoulsnoladotorg.wordpress.com/about/"
+  ],
+  "evidence": [
+   "Organization's own site lists current weekday hours and active programs"
+  ],
+  "lens": "gap-holy-cross",
+  "confidence": "medium"
+ },
+ "cafe-reconcile": {
+  "sources": [
+   "https://cafereconcile.org/visit-the-cafe",
+   "https://www.yelp.com/biz/cafe-reconcile-new-orleans-6"
+  ],
+  "evidence": [
+   "Official site lists current Tue-Fri hours; Yelp reviews updated June 2026"
+  ],
+  "lens": "gap-central-city",
+  "confidence": "high"
+ },
+ "southern-food-beverage-museum": {
+  "sources": [
+   "https://www.southernfood.org/sofab",
+   "https://www.yelp.com/biz/southern-food-and-beverage-museum-new-orleans-3"
+  ],
+  "evidence": [
+   "Yelp listing updated April 2026 shows active status distinct from closed Toups South"
+  ],
+  "lens": "gap-central-city",
+  "confidence": "medium"
+ },
+ "zony-mash-beer-project": {
+  "sources": [
+   "https://www.zonymashbeer.com/",
+   "https://www.zonymashbeer.com/contact"
+  ],
+  "evidence": [
+   "Official brewery site fetched directly with current hours"
+  ],
+  "lens": "gap-central-city",
+  "confidence": "high"
+ },
+ "ashe-cultural-arts-center": {
+  "sources": [
+   "https://www.ashenola.org/contact",
+   "https://www.yelp.com/biz/ashe-cultural-arts-center-new-orleans"
+  ],
+  "evidence": [
+   "Official site contact page lists current hours; Yelp updated May 2026"
+  ],
+  "lens": "gap-central-city",
+  "confidence": "high"
+ },
+ "churchs-s-claiborne": {
+  "sources": [
+   "https://locations.churchs.com/la/new-orleans/1600-s.-claiborne-avenue",
+   "https://www.yelp.com/biz/churchs-chicken-new-orleans-2"
+  ],
+  "evidence": [
+   "Official Church's location page and Yelp (June 2026) confirm hours"
+  ],
+  "lens": "gap-central-city",
+  "confidence": "high"
+ },
+ "magnolia-marketplace": {
+  "sources": [
+   "https://www.nola.com/news/business/magnolia-marketplace-10-years-in-the-making-opens-in-central-city/article_3bbc3c48-e91d-5224-ab88-c726162db65e.html",
+   "https://locations.fivebelow.com/la/new-orleans/2900-s-claiborne-ave"
+  ],
+  "evidence": [
+   "Store hours pages show current 2026 listings"
+  ],
+  "lens": "gap-central-city",
+  "confidence": "high"
+ },
+ "reach-center-7th-ward": {
+  "sources": [
+   "https://nolalibrary.org/in-the-library/reach-center/"
+  ],
+  "evidence": [
+   "Official NOPL page lists hours and explicitly confirms open walk-in access"
+  ],
+  "lens": "gap-central-city",
+  "confidence": "high"
  }
 }

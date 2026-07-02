@@ -3,10 +3,10 @@
 **when you gotta geaux** ⚜
 
 New Orleans hands you a drink for the street, then offers you nowhere to put it. PissMap NOLA is
-the fix: an interactive map of **235 field-vetted places to pee** across the whole city — free
+the fix: an interactive map of **264 field-vetted places to pee** across the whole city — free
 public restrooms, buy-a-cheap-coffee spots, and hotel lobbies for the bold — with live
 open/closed status, distance sorting, and a panic button. Coverage runs from Bourbon Street to
-New Orleans East, the Lakefront, and across the river to Algiers.
+New Orleans East, the Lakefront, the Lower 9th, and across the river to Algiers.
 
 ## Features
 
@@ -38,8 +38,12 @@ Compiled **July 2026** from three sources:
    parks, hospitals…), producing 293 candidates. Each surviving candidate was then
    **adversarially fact-checked by its own verification agent** against live sources — 54 were
    rejected (closed venues, wrong addresses, coin-operated restrooms posing as free, invented
-   accessibility claims) and 201 made the map. Every fleet-researched spot's sources and
-   evidence live in [`data/provenance.json`](data/provenance.json).
+   accessibility claims) and 201 made the map. A follow-up round then salvaged 17 of those
+   rejections by applying the verifiers' own corrections (right hours, right names, claims
+   removed) and added 12 more spots from targeted research in thin neighborhoods (Central City,
+   Holy Cross, the Lower 9th) plus icon checks (the Aquarium lobby is the riverfront's official
+   restroom; both ferry terminals genuinely have none until 2027). Every researched spot's
+   sources and evidence live in [`data/provenance.json`](data/provenance.json).
 
 Honesty policy: hours in New Orleans are a jazz standard — everyone plays them differently.
 Spots with best-effort hours carry a `verify` flag and the UI says so out loud. If a spot closed

@@ -195,4 +195,17 @@ export const EAST_SPOTS: readonly Spot[] = [
     verify: true,
     tip: "Free public restrooms near the front entrance, open 6am to 10pm daily. Not glamorous, but it's one of the few reliable stops on the far east side of the parish.",
   },
+  {
+    id: "new-orleans-east-hospital-lobby",
+    name: "New Orleans East Hospital (Lobby)",
+    category: "public",
+    lat: 30.02915,
+    lng: -89.97491,
+    address: "5620 Read Blvd, New Orleans, LA 70127",
+    neighborhood: "New Orleans East",
+    hours: daily(T(8), T(17)),
+    free: true,
+    verify: true,
+    tip: "The first-floor restroom sits across from the ATM outside Café East — the hospital's own visitor FAQ says so. Lobby hours are 8 to 5 daily; after that, the second-floor ER entrance is the door that never closes.",
+  },
 ];
