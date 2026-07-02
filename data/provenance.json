@@ -4077,5 +4077,1639 @@
   ],
   "lens": "gap-nord",
   "confidence": "high"
+ },
+ "nice-guys-nola-earhart": {
+  "sources": [
+   "https://www.yelp.com/biz/nice-guys-nola-new-orleans-2",
+   "https://www.niceguysnola.com/",
+   "https://www.toasttab.com/local/order/nice-guys-nola-910-earhart-blvd-new-orleans-la-70125"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/nice-guys-nola-new-orleans-2 (Updated June 2026, 610 reviews, confirms address 7910 Earhart Blvd, New Orleans, LA 70125, active listing)",
+   "https://www.opentable.com/r/nice-guys-nola-new-orleans (Last updated May 2026, reservations actively open, confirms sit-down dine-in service)",
+   "https://www.toasttab.com/local/order/nice-guys-nola-910-earhart-blvd-new-orleans-la-70125 (menu last updated 5/16/2026, confirms address and active ordering)",
+   "https://www.nola.com/entertainment_life/eat-drink/former-little-gem-saloon-reopening-as-nice-guys-nola-expands/article_a82dc2aa-e631-11ee-9097-c74c94970da0.html (press coverage confirming owners Glenn and Allison Charles actively expanding the Nice Guys NOLA brand with additional venues, indicating ongoing thriving operation)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d24861412-Reviews-Nice_Guys_NOLA-New_Orleans_Louisiana.html (reviews including one specifically discussing restroom conditions, corroborating existence of a public-facing restroom used by dine-in customers)",
+   "https://maps.apple.com/place?place-id=I7A6B4D94339521C7&address=7910+Earhart+Blvd%2C+New+Orleans%2C+LA++70125%2C+United+States (confirms address/coordinates 29.9600308,-90.113719, within Orleans Parish)",
+   "ZIP code 70125 confirmed entirely within Orleans Parish per zipdatamaps.com, city-data.com, and ciclt.net Orleans Parish zip list (covers Broadmoor, BW Cooper, Central City, Gert Town, Marlyville-Fontainebleau, Mid-City)"
+  ],
+  "lens": "hollygrove-leonidas",
+  "confidence": "high"
+ },
+ "lebanons-cafe-carrollton": {
+  "sources": [
+   "https://www.yelp.com/biz/lebanons-cafe-new-orleans",
+   "https://www.lebanonscafe.com/",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d426317-Reviews-Lebanon_s_Cafe-New_Orleans_Louisiana.html"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/lebanons-cafe-new-orleans (Updated June 2026, 481 photos, 685 reviews, no closure banner)",
+   "https://www.yelp.com/biz/lebanons-cafe-new-orleans?start=140 (Oct 2025 snapshot: 674 reviews, confirms address 1500 S Carrollton Ave, New Orleans, LA 70118)",
+   "https://www.vianolavie.org/2023/11/15/the-original-copy-examining-authenticity-in-lebanons-cafe/ (independent detailed description confirming full-service dine-in restaurant with interior hallway restroom accessible from dining area)",
+   "https://www.loopnet.com/property/1500-s-carrollton-ave-new-orleans-la-70118/22071-716205201/ (parcel record confirms address, Orleans Parish tax records)",
+   "https://lebanons-cafe.wheree.com/ (explicitly lists 'Leonidas Neighbourhood, Orleans Parish County', May 2026 update, and wheelchair accessible restroom/entrance/seating)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d426317-Reviews-Lebanon_s_Cafe-New_Orleans_Louisiana.html (active listing, Leonidas)",
+   "https://www.lebanonscafe.com/ (official site, matches hours and address)"
+  ],
+  "lens": "hollygrove-leonidas",
+  "confidence": "high"
+ },
+ "b-spot-calhoun": {
+  "sources": [
+   "https://bspotnola.com/",
+   "https://www.yelp.com/biz/b-spot-nola-new-orleans",
+   "https://hoodline.com/2019/07/check-out-the-4-most-popular-spots-in-new-orleans-marlyville-fontainebleau-neighborhood/"
+  ],
+  "evidence": [
+   "https://bspotnola.com/ - official site, live, confirms address and exact hours (Thu 10-3, Fri 10-5, Sat 9-5, Sun 9-3, Mon 10-3), notes dine-in table service with 90-min policy and reservations, no closure notice",
+   "https://www.yelp.com/biz/b-spot-nola-new-orleans - 'Updated April 2026 - 366 Photos & 167 Reviews', 3150 Calhoun St, New Orleans, LA, Soul Food category, active listing",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d27994667-Reviews-B_spot_Nola-New_Orleans_Louisiana.html - listed as active restaurant with recent reviews mentioning brunch/cocktails/service",
+   "https://www.yelp.com/biz/kokopellis-new-orleans - 'KOKOPELLIS - CLOSED - Updated October 2025 - 3150 Calhoun St, New Orleans' corroborates pitch's claim about the former tenant at the same address",
+   "https://trulia.com/p/la/new-orleans/3150-calhoun-st-new-orleans-la-70125--2184567038 - confirms address location in Marlyville-Fontainebleau, New Orleans (Orleans Parish)",
+   "https://hoodline.com/2019/07/check-out-the-4-most-popular-spots-in-new-orleans-marlyville-fontainebleau-neighborhood/ - original source cited in candidate confirming neighborhood context (formerly featured Moe's Original BBQ at same address)"
+  ],
+  "lens": "fontainebleau-marlyville",
+  "confidence": "high"
+ },
+ "teds-frostop-calhoun": {
+  "sources": [
+   "https://www.tedsfrostop.com/",
+   "https://www.yelp.com/biz/teds-frostop-new-orleans",
+   "https://www.corner.inc/place/76448"
+  ],
+  "evidence": [
+   "https://www.tedsfrostop.com/ - official site confirms address 3100 Calhoun St, New Orleans, LA 70125; hours Mon-Fri 7am-5pm, Sat-Sun 8am-3pm; covered outdoor seating, interior dining, pinball/video games; no closure notice",
+   "https://www.yelp.com/biz/teds-frostop-new-orleans - listing title shows 'Updated June 2026 - 147 Photos & 142 Reviews', address 3100 Calhoun St matches",
+   "https://prcno.org/frostop-will-not-be-demolished-but-its-future-remains-uncertain/ - Historic District Landmarks Commission denied demolition request; developer withdrew appeal; diner not demolished, remains standing/operating though redevelopment plans for the site are unresolved",
+   "https://www.nola.com/news/business/frostop-demolished-tulane-apartments/article_0b067caf-a38c-46b0-96e6-8d7fd533f117.html - background on demolition proposal and 2025 acquisition of the restaurant business including recipes/branding, indicating continuity of operations",
+   "https://hoodline.com/2026/03/tulane-housing-push-flattens-uptown-burger-icon-ted-s-frostop/ and https://nationaltoday.com/us/la/new-orleans/news/2026/04/10/new-orleans-fights-to-save-iconic-teds-frostop-diner-from-demolition/ - confirm timeline of the demolition fight through April 2026, with the diner still standing/operating during the dispute",
+   "https://www.yellowpages.com/new-orleans-la/mip/teds-frostop-460214972 - independent directory listing corroborates address in Orleans Parish"
+  ],
+  "lens": "fontainebleau-marlyville",
+  "confidence": "high"
+ },
+ "milan-lounge-prytania": {
+  "sources": [
+   "https://www.yelp.com/biz/milan-lounge-new-orleans",
+   "https://www.nola.com/news/milan-lounge-reopening/article_1b9458ae-7eec-4ae2-916f-db0ba08a0b01.html",
+   "https://www.postcard.inc/places/milan-lounge-new-orleans-EOIF-s51X87"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/milan-lounge-new-orleans - confirms address 3629 Prytania St, New Orleans, LA, 46 reviews updated May 2026, Sat 11am-3am/Sun 12pm-2am hours",
+   "https://www.nola.com/news/milan-lounge-reopening/article_1b9458ae-7eec-4ae2-916f-db0ba08a0b01.html - confirms Milan Lounge closed original Prytania/Milan corner location March 31 2025 (lease expired) and reopened at 3629 Prytania St in August 2025 under owner Paige Wilkinson, with Get Your Mom & Dim Sum providing food",
+   "https://www.nola.com/entertainment_life/eat-drink/soon-enough-former-milan-lounge/article_7faef083-c7cb-4d59-a2ec-c35b74d18db5.html - confirms original Milan/Prytania corner building was taken over by different operator (John Michael Rowland) and reopened as separate concept 'Soon Enough', distinct from Milan Lounge's relocation",
+   "https://www.yelp.com/biz/the-library-new-orleans - confirms 'The Library' gastropub is an established co-tenant at the same 3629 Prytania St address, reviews updated June 2026, corroborating the shared-building claim and continued activity at the address into 2026",
+   "https://www.tripadvisor.com/ShowUserReviews-g60864-d5840532-r255583894-Milan_Lounge-New_Orleans_Louisiana.html and related TripAdvisor/user review snippets - confirm walk-in dive bar with an on-site public restroom accessible to patrons"
+  ],
+  "lens": "milan-touro",
+  "confidence": "high"
+ },
+ "soon-enough-milan": {
+  "sources": [
+   "https://www.yelp.com/biz/soon-enough-bar-new-orleans",
+   "https://www.nola.com/entertainment_life/eat-drink/soon-enough-former-milan-lounge/article_7faef083-c7cb-4d59-a2ec-c35b74d18db5.html",
+   "https://www.soonenoughnola.com/"
+  ],
+  "evidence": [
+   "https://www.soonenoughnola.com/ \u2014 official site confirms address '1312 Milan Street' and hours 'Monday-Thursday: 4:00 P.M. - Midnight; Friday & Saturday: 1:00 P.M. - 1:00 A.M.; Sunday: 1:00 P.M. - Midnight', exact match to candidate",
+   "https://www.nola.com/entertainment_life/eat-drink/soon-enough-former-milan-lounge/article_7faef083-c7cb-4d59-a2ec-c35b74d18db5.html \u2014 confirms Soon Enough opened quietly in late December 2025 in the former Milan Lounge space (which closed after nearly a century, lease ended April 2025), Uptown New Orleans, no-reservation walk-in cocktail bar with $9-13 drinks, doorbell is speakeasy aesthetic not an access gate",
+   "https://www.yelp.com/biz/soon-enough-bar-new-orleans \u2014 listing title 'SOON ENOUGH BAR - Updated June 2026 - 30 Photos & 14 Reviews - 1312 Milan St, New Orleans, Louisiana' indicating active, recently updated listing",
+   "https://data.nola.gov/api/views/uiry-as9x/rows.pdf \u2014 NOLA municipal dataset search snippet titled 'BusinessName Address Suite City Milan Neighborhood Bar LLC dba Soon Enough', indicating a registered/licensed business entity",
+   "Search snippet indicating zip 70115 for 1312 Milan St corresponds to Orleans Parish, and 'Milan' is a recognized New Orleans neighborhood per neworleans.com listing",
+   "Search snippets referencing January 2026 reviews and May 2026 Untappd check-ins with no closure signals found in searches for 'closed' or 'permanently closed 2026'"
+  ],
+  "lens": "milan-touro",
+  "confidence": "high"
+ },
+ "cafe-abyssinia-magazine": {
+  "sources": [
+   "https://www.yelp.com/biz/cafe-abyssinia-new-orleans-3",
+   "https://www.cafeabyssinia.com/"
+  ],
+  "evidence": [
+   "https://www.cafeabyssinia.com/ \u2014 official site, address confirmed: 3511 Magazine St New Orleans La 70115, Tel (504)-894-6238, copyright 2025",
+   "https://www.cafeabyssinia.com/contact-reservation \u2014 official site reservation page ('Book A Table'), confirms full-service dine-in with table reservations, but lists conflicting hours (Mon-Fri 12pm-11pm, Sat 11am-12am, Sun 12pm-12am) likely stale template data",
+   "https://www.yelp.com/biz/cafe-abyssinia-new-orleans-3 \u2014 Yelp listing title shows 'Updated May 2026 - 271 Photos & 345 Reviews', strong signal of active operation as of the search date",
+   "https://africanrestaurantweek.com/restaurants/cafe-abyssinia/ \u2014 independently corroborates hours: Sun-Tue 11am-9pm, Wed closed, Thu-Sat 11am-9pm; notes delivery/takeout via Grubhub/Uber Eats plus dine-in",
+   "https://usmenuguide.com/places/united-states/louisiana/new-orleans/cafe-abyssinia-new-orleans/ \u2014 confirms neighborhood 'Touro', hours 11am-9pm daily except Wed closed, full-service sit-down with outside seating and reservations",
+   "https://www.nola.com/entertainment_life/ian_mcnulty/nola-restaurant-closures-2025/article_e537ae18-87a4-430e-a4fe-7aad96361226.html \u2014 NOLA.com's 2025 New Orleans restaurant closures roundup (found via search) does not list Cafe Abyssinia among closures",
+   "WebSearch result snippet for 'cafe-abyssinia.wheree.com' \u2014 'CAFE ABYSSINIA - Reviews, Photos & Phone Number - Updated June 2026 - African Restaurant in New Orleans, Orleans Parish County', confirming parish and recency",
+   "WebSearch aggregate (2026 reviews) \u2014 describes comfortable interior dining, spacious outdoor seating, indoor and outdoor dine-in options, recent positive 2026 reviews on food/service/atmosphere"
+  ],
+  "lens": "milan-touro",
+  "confidence": "high"
+ },
+ "cr-coffee-shop-magazine": {
+  "sources": [
+   "https://crcoffeenola.com/magazine-street",
+   "https://www.yelp.com/biz/cr-coffee-shop-new-orleans-3"
+  ],
+  "evidence": [
+   "https://crcoffeenola.com/magazine-street",
+   "https://crcoffeenola.com/locations",
+   "https://www.yelp.com/biz/cr-coffee-shop-new-orleans-3",
+   "https://magazinestreet.com/merchant/cr-coffee/",
+   "https://en.wikipedia.org/wiki/Touro,_New_Orleans"
+  ],
+  "lens": "milan-touro",
+  "confidence": "high"
+ },
+ "afrodisiac-franklin-ave": {
+  "sources": [
+   "https://afrodisiacnola.com/",
+   "https://www.yelp.com/biz/afrodisiac-new-orleans",
+   "https://www.nola.com/entertainment_life/eat-drink/new-orleans-restaurants-what-to-eat-at-afrodisiac-gentilly/article_e278c7a8-f28d-11ee-950d-83d17355d187.html"
+  ],
+  "evidence": [
+   "https://afrodisiacnola.com/ \u2014 official site, lists address 5363 Franklin Avenue, New Orleans, LA 70122 and hours Wed-Thu 4-9pm, Fri-Sat 1-10pm, Sun 1-6pm, closed Mon-Tue (matches candidate hours exactly, including the Sunday slot)",
+   "https://www.yelp.com/biz/afrodisiac-new-orleans \u2014 Updated June 2026, 177 photos, 102 reviews, confirms address and active operation",
+   "https://www.nola.com/entertainment_life/eat-drink/new-orleans-restaurants-what-to-eat-at-afrodisiac-gentilly/article_e278c7a8-f28d-11ee-950d-83d17355d187.html \u2014 nola.com Where NOLA Eats coverage, Gentilly location",
+   "https://www.nola.com/gambit/food_drink/afrodisiac-blends-jamaican-and-creole-cuisines-in-gentilly/article_27f6513e-d142-11ec-b2d4-d30c21b7df86.html \u2014 Gambit feature confirming Shaka and Caron Garel as owners, cottage building with terraced patio, 2022 opening after 8 years as a food truck",
+   "https://gentillymessenger.com/afrodisiac-is-bringing-its-jamaican-creole-cuisine-to-franklin-avenue/ \u2014 local news confirming Franklin Avenue brick-and-mortar opening",
+   "https://www.toasttab.com/local/order/afrodisiac-nola-5363-franklin-ave/ \u2014 active online ordering platform, confirms address and current operation",
+   "https://www.clover.com/online-ordering/afrodisiac-new-orleans \u2014 active Clover ordering page, further confirms operation",
+   "https://www.instagram.com/afrodisiacnola/ and https://www.facebook.com/afrodisiacnola/ \u2014 active social presence"
+  ],
+  "lens": "filmore-st-anthony",
+  "confidence": "high"
+ },
+ "fiorellas-original-cafe": {
+  "sources": [
+   "https://originalfiorellas.com/",
+   "https://nolaplaces.com/place/fiorellas-original-cafe/",
+   "https://www.yelp.com/biz/fiorellas-the-original-new-orleans"
+  ],
+  "evidence": [
+   "https://originalfiorellas.com/ - official site confirms address 5325 Franklin Avenue, New Orleans, LA 70122; describes 'Dine In or Call Ahead and Takeout' and active current menu/specials, indicating ongoing operations",
+   "https://originalfiorellas.com/contact/ - official contact page confirms exact hours: Monday-Friday 11am-7pm, Saturday-Sunday closed, and phone (504) 309-0352, matching candidate hoursText verbatim",
+   "https://nolaplaces.com/place/fiorellas-original-cafe/ - confirms neighborhood as Gentilly (at the Milneburg border), address at Franklin Ave and Filmore Ave, and describes it as counter service with a real dine-in seating area ('walk in, order, then sit for your food to be called'), supporting realistic restroom access for a seated customer",
+   "https://www.yelp.com/biz/fiorellas-the-original-new-orleans - Yelp listing at 5325 Franklin Ave, updated as recently as May 2026, active (not marked CLOSED) with 183 reviews, in contrast to two other distinct Fiorella's-family restaurants in New Orleans (45 French Market Pl and 1136 Decatur St) that ARE marked CLOSED on Yelp, confirming this specific Franklin Ave location remains open and is not confused with its closed sister locations",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d9820315-Reviews-The_Original_Fiorellas_Cafe-New_Orleans_Louisiana.html - independently lists the venue under 'Gentilly Terrace' area, corroborating the neighborhood and continued listing as an active restaurant"
+  ],
+  "lens": "filmore-st-anthony",
+  "confidence": "high"
+ },
+ "ba-mien-restaurant": {
+  "sources": [
+   "https://www.yelp.com/biz/ba-mien-restaurant-new-orleans",
+   "http://bamien.com/",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d10109261-Reviews-Ba_Mien-New_Orleans_Louisiana.html"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/ba-mien-restaurant-new-orleans (updated July 2026, 120 photos, 54 reviews, confirms address, hours Tue-Sun 8AM-4PM closed Monday)",
+   "http://bamien.com/ (official site, corroborates 2001 founding, three-regions concept)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d10109261-Reviews-Ba_Mien-New_Orleans_Louisiana.html (current listing at 13235 Chef Menteur Hwy)",
+   "WebSearch aggregated reviews showing 2025 (May, July, August) and 2026 dated reviews confirming active operation, dine-in seating, community tables, and tableside beef/vinegar fondue service",
+   "https://www.unitedstateszipcodes.org/70129/ (confirms ZIP 70129 is entirely within Orleans Parish, New Orleans East)",
+   "https://www.businessyab.com/explore/united_states/louisiana/orleans_parish/new_orleans/village_de_lest_area/chef_menteur_highway/13235/ba-mien-restaurant-504-255-0500.html (URL path confirms Orleans Parish + Village de l'Est neighborhood tag)",
+   "https://nomenu.com/restaurants/ba-mien (corroborates address and 2001 post-Katrina reopening history; hours figure here conflicts with majority sources and is treated as stale)",
+   "https://www.facebook.com/bamien/ (active business page, though limited detail retrievable)"
+  ],
+  "lens": "village-de-lest-deep",
+  "confidence": "high"
+ },
+ "chubbies-fried-chicken": {
+  "sources": [
+   "https://www.yelp.com/biz/chubbies-fried-chicken-new-orleans",
+   "https://chubbiesfamousfriedchicken.com/"
+  ],
+  "evidence": [
+   "https://chubbiesfamousfriedchicken.com/ - official site confirms address, Mon-Fri 11AM-6PM hours, and dine-in seating ('reserve your seat today')",
+   "https://www.yelp.com/biz/chubbies-fried-chicken-new-orleans - listing 'Updated June 2026', 128 reviews, active business",
+   "https://wanderlog.com/place/details/1545914/chubbies-fried-chicken - current hours Mon-Fri 11AM-6PM/Sat-Sun closed; reviews dated January 2026 and July 2025 confirming active operation and food quality; one Nov 2025 review notes new ownership",
+   "https://bizneworleans.com/go-where-everybody-knows-your-name/ (June 30, 2023) - confirms 'small, casual dining area inside' plus drive-thru/to-go, ownership by Ursula Newell-Davis since ~mid-2022, 41-year neighborhood reputation",
+   "https://bigeasymagazine.com/2022/09/08/new-and-local-owner-breathes-new-life-into-algiers-staple-chubbies/ - confirms founding in 1982 by Gary 'Chubbie' Mire and wife Julie (purchased former Sunrise Chicken), and sale to Ursula Newell-Davis on August 29, 2022 - contradicts pitch's 'family-owned since 1982' framing",
+   "https://en.wikipedia.org/wiki/Algiers,_New_Orleans - confirms Algiers is the only Orleans Parish neighborhood on the West Bank (15th Ward), ruling out Jefferson Parish location concern"
+  ],
+  "lens": "lower-coast-algiers",
+  "confidence": "high"
+ },
+ "chick-fil-a-algiers-plaza": {
+  "sources": [
+   "https://www.yelp.com/biz/chick-fil-a-new-orleans-7",
+   "https://www.chick-fil-a.com/locations/la/algiers"
+  ],
+  "evidence": [
+   "https://www.chick-fil-a.com/locations/la/algiers (official page: confirms address 4130 General Degaulle Dr, New Orleans, LA 70131; hours Mon-Fri 6:00 AM-10:00 PM, Sat 8:00 AM-10:00 PM, Sun closed; dine-in, drive-thru, carry-out, curbside, catering all offered; no closure indication)",
+   "https://www.yelp.com/biz/chick-fil-a-new-orleans-7 (listing 'Updated January 2026' / search results show 'Last Updated May 2026', 22 photos, active reviews - confirms ongoing operation, no permanently-closed flag found)",
+   "https://bizneworleans.com/algiers-chick-fil-a-opens-jan-14/ (local business press confirming opening and location context as West Bank's Chick-fil-A near Algiers Plaza/Village Aurora retail corridor)",
+   "https://www.facebook.com/ChickfilAAlgiers/ and https://www.instagram.com/chickfilaalgiers/ (active official social media presence for this specific location)",
+   "https://www.loopnet.com/Listing/4130-General-Degaulle-Dr-New-Orleans-LA/29387389/ (confirms 4,500 SF Chick-fil-A building delivered 2022 at this address, part of retail center with Ross, TJ Maxx, Petco, Five Below, Buffalo Wild Wings, Walgreens as co-tenants, consistent with 'Algiers Plaza' description)"
+  ],
+  "lens": "lower-coast-algiers",
+  "confidence": "high"
+ },
+ "firehouse-subs-algiers-plaza": {
+  "sources": [
+   "https://www.firehousesubs.com/store-locator/store/1613/4150-general-degaulle-dr-ste-c--new-orleans--louisiana--70131",
+   "https://www.yelp.com/biz/firehouse-subs-new-orleans"
+  ],
+  "evidence": [
+   "https://www.firehousesubs.com/store-locator/store/1613/4150-general-degaulle-dr-ste-c--new-orleans--louisiana--70131 - official store locator confirms address, phone (504) 372-3208, store #1613 active listing",
+   "https://www.yelp.com/biz/firehouse-subs-new-orleans - Yelp listing updated November 2025, 24 photos, 21 reviews, hours 10:00am-9:00pm daily, no closure indication, review notes clean restroom on site",
+   "https://www.tripadvisor.ca/Restaurant_Review-g60864-d25514364-Reviews-Firehouse_Subs-New_Orleans_Louisiana.html - Tripadvisor listing updated 2026, active",
+   "https://www.grubhub.com/restaurant/firehouse-subs-4150-general-de-gaulle-dr-new-orleans/3067984 - active delivery/order listing",
+   "https://www.doordash.com/city/new-orleans-la/b/firehouse-subs-2764 - active DoorDash listing",
+   "https://www.ezcater.com/catering/firehouse-subs-new-orleans - active catering listing at same address",
+   "https://www.point2homes.com/cre/commercial-property/us/la/new-orleans/algiers-plaza-join-tj-maxx-ross-winn-dixie-petco/ - commercial listing confirms Firehouse Subs as tenant of Algiers Plaza alongside Winn-Dixie, Chick-fil-A, matching pitch text",
+   "https://www.facebook.com/FirehouseSubsAlgiersPlaza/ - active Facebook business page",
+   "https://en.wikipedia.org/wiki/Algiers,_New_Orleans - confirms Algiers (zip 70131) is part of Orleans Parish, West Bank, not Jefferson Parish"
+  ],
+  "lens": "lower-coast-algiers",
+  "confidence": "high"
+ },
+ "trader-joes-tulane-ave": {
+  "sources": [
+   "https://www.axios.com/local/new-orleans/2025/08/11/trader-joes-open-new-orleans-store-tulane-avenue",
+   "https://locations.traderjoes.com/la/new-orleans/811/",
+   "https://www.yelp.com/biz/trader-joes-new-orleans"
+  ],
+  "evidence": [
+   "https://locations.traderjoes.com/la/new-orleans/811/ - official location page confirms address 2501 Tulane Ave, New Orleans, LA 70119 and shows live 2026 holiday hours, no closure indication",
+   "https://www.yelp.com/biz/trader-joes-new-orleans - listing 'Updated June 2026', 19 reviews, hours Mon-Sun 9:00am-9:00pm, no closure signals",
+   "https://www.axios.com/local/new-orleans/2025/08/11/trader-joes-open-new-orleans-store-tulane-avenue - confirms opening Aug 14, 2025, first New Orleans Trader Joe's, Tulane/Gravier neighborhood location",
+   "https://www.fox8live.com/2025/08/11/trader-joes-first-new-orleans-location-opening-this-week/ - confirms opening date and address",
+   "https://www.nola.com/entertainment_life/trader-joes-opening-what-to-know/article_4a1d7610-37b3-425c-b382-98db284ef0e6.html - confirms ~10,000 sq ft store, 123-space parking lot, hours 9am-9pm daily, Tulane/Gravier neighborhood near VA hospital, part of Mid-City area",
+   "https://www.storeopeninghours.com/trader-joes-new-orleans-la - independent third-party confirmation of address and 9:00am-9:00pm daily hours"
+  ],
+  "lens": "tulane-gravier-biodistrict",
+  "confidence": "high"
+ },
+ "boswells-jamaican-grill": {
+  "sources": [
+   "https://www.yelp.com/biz/boswells-jamaican-grill-new-orleans-3",
+   "https://www.eatokra.com/businesses/boswell-s-jamaican-grill",
+   "https://www.facebook.com/boswellsjamaicangrill/"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/boswells-jamaican-grill-new-orleans-3 (Updated April 2026, 277 reviews, confirms address, hours Mon-Thu 11am-6pm/Fri 11am-6:30pm/Sat 11am-7pm/Sun closed, describes dine-in area)",
+   "https://www.eatokra.com/businesses/boswell-s-jamaican-grill (confirms address 3521 Tulane Ave, Black-owned business listing, active status)",
+   "https://boswells-jamaican-grill.wheree.com/ (Updated June 2026, explicitly locates business in 'Orleans Parish County, Louisiana')",
+   "https://www.facebook.com/boswellsjamaicangrill/ (active business page referenced across search results)",
+   "https://www.eatokra.com/blog/features/boswell-s-jamaican-grill-bold-caribbean-legacy-in-the-big-easy (feature article on restaurant history/ownership, confirms ongoing operation)",
+   "https://www.nola.com/gambit/food_drink/restaurant_reviews/boswells-jamaican-grill-jerky-boys/article_bb8e7e7c-17f5-56f6-980f-e1a13a5c0257.html (Gambit/nola.com restaurant review referencing interior dine-in space)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d477677-Reviews-Boswell_s_Jamaican_Grill-New_Orleans_Louisiana.html (4.5 rating, active listing, no closure flag)",
+   "Search aggregation confirming no 'permanently closed' or 'temporarily closed' signals across Yelp, Facebook, EatOkra, Tripadvisor, Grubhub, Uber Eats, ezCater listings"
+  ],
+  "lens": "tulane-gravier-biodistrict",
+  "confidence": "high"
+ },
+ "vandal-hookah-lounge-tulane": {
+  "sources": [
+   "https://vandalnola.com/",
+   "https://www.yelp.com/biz/vandal-hookah-lounge-new-orleans",
+   "https://www.opentable.com/r/vandal-hookah-lounge-new-orleans"
+  ],
+  "evidence": [
+   "https://vandalnola.com/ - official site confirms address 3835 Tulane Ave, New Orleans, LA 70119 and live status 'Open today 03:00 pm \u2013 02:00 am'",
+   "https://www.yelp.com/biz/vandal-hookah-lounge-new-orleans - 'Updated June 2026 - 200 Photos & 147 Reviews', confirms full bar, food, outdoor patio, 21+ hookah lounge",
+   "https://www.opentable.com/r/vandal-hookah-lounge-new-orleans - listed as 'Updated 2026, Mediterranean Restaurant in New Orleans, LA', accepting reservations",
+   "https://www.grubhub.com/restaurant/vandal-hookah-lounge-3835-tulane-ave-new-orleans/1938179 - active delivery/order listing confirming ongoing operation",
+   "https://local.yahoo.com/info-224327672-vandal-hookah-lounge-new-orleans/ - confirms address 3835 Tulane Ave, New Orleans, LA 70119-6910 and hours Mon-Thu 3-2am / Fri-Sat 11am-3am / Sun 11am-2am (matches candidate); 'currently closed' reflects real-time hours status, not permanent closure",
+   "https://www.loopnet.com/property/3835-tulane-ave-new-orleans-la-70119/22071-105303301/ and https://www.realty.com/commercial-listings/1039557230/3835-Tulane-Avenue-New-Orleans-LA-70119 - confirm property is in Orleans Parish, Mid-City, previously housed Treo restaurant/bar, now Vandal Hookah Lounge, 3,230 sq ft with commercial kitchen, full bar, and outdoor patio",
+   "Web search aggregation independently returned identical hours: Mon-Thu 3pm-2am, Fri-Sat 11am-3am, Sun 11am-2am, phone (504) 582-9324"
+  ],
+  "lens": "tulane-gravier-biodistrict",
+  "confidence": "high"
+ },
+ "erin-rose-conti": {
+  "sources": [
+   "https://www.yelp.com/biz/erin-rose-new-orleans",
+   "https://www.tripadvisor.com/Attraction_Review-g60864-d2159362-Reviews-Erin_Rose-New_Orleans_Louisiana.html",
+   "https://www.tripadvisor.com/ShowUserReviews-g60864-d3394027-r164298534-Killer_Poboys_in_Erin_Rose_Bar-New_Orleans_Louisiana.html"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/erin-rose-new-orleans (960 photos, 870 reviews, updated June 2026, confirms address 811 Conti St)",
+   "http://www.erinrosebar.com/ (official site: address 811 Conti St, phone 504-910-9602, hours 'Open 21 hours a day starting at 10:00am', mentions Killer Poboys food partnership)",
+   "https://www.tripadvisor.com/Attraction_Review-g60864-d2159362-Reviews-Erin_Rose-New_Orleans_Louisiana.html (reviews current to 2026, no closure signals)",
+   "https://intoxicology.net/erin-rose-bar-new-orleans-review/ (describes bar as small, two rooms, full-service with drinks/socializing)",
+   "Search-derived Yelp review snippet: 'the bathroom is essentially the size of a closet, right off of the bar so be prepared to squeeze in' and note that the men's room is a one-seater that doesn't lock",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d3394027-Reviews-Killer_Poboys_in_Erin_Rose_Bar-New_Orleans_Louisiana.html (confirms Killer Poboys window operates inside/back of Erin Rose bar)",
+   "WebSearch for 'Erin Rose New Orleans closed permanently' returned no 2025-2026 closure results; only a 2020 pandemic-era temporary closure article (nola.com), since resolved"
+  ],
+  "lens": "fq-final-misses",
+  "confidence": "high"
+ },
+ "cane-and-table-decatur": {
+  "sources": [
+   "https://www.caneandtablenola.com/",
+   "https://www.yelp.com/biz/cane-and-table-new-orleans-2",
+   "https://resy.com/cities/new-orleans-la/venues/cane-and-table"
+  ],
+  "evidence": [
+   "https://www.caneandtablenola.com/locations \u2014 official site confirms address '1113 Decatur St. New Orleans, La. 70116' and hours '5 PM - 10 PM (Last Seating)' nightly with Mon-Fri happy hour 5-7 PM",
+   "https://www.yelp.com/biz/cane-and-table-new-orleans-2 \u2014 'Updated June 2026' listing, 656 reviews, no closure indication, confirms address and cocktail bar category",
+   "https://www.nola.com/entertainment_life/eat-drink/new-orleans-restaurant-closures/article_28718e48-0f2c-4dc8-93f1-adbef5a6666f.html \u2014 dedicated 2026 New Orleans closures article does NOT list Cane & Table among closed restaurants",
+   "https://www.theinfatuation.com/new-orleans/reviews/cane-table \u2014 third-party review explicitly describes the on-site restroom (iron bar door lock detail), confirming a real customer-accessible restroom exists on premises; also describes full table service and courtyard seating",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d4830559-Reviews-Cane_And_Table-New_Orleans_Louisiana.html \u2014 4.4/5 rating, ranked among New Orleans restaurants, James Beard Outstanding Bar Program semifinalist, confirms active full-service operation"
+  ],
+  "lens": "fq-final-misses",
+  "confidence": "high"
+ },
+ "sylvain-chartres": {
+  "sources": [
+   "https://www.yelp.com/biz/sylvain-new-orleans",
+   "https://www.nola.com/entertainment_life/eat-drink/sylvain-restaurant-in-french-quarter-mixes-modern-timeless/article_b2d88ee3-2890-42c0-8e89-19a14661d65f.html",
+   "https://www.opentable.com/r/sylvain-new-orleans"
+  ],
+  "evidence": [
+   "https://www.sylvainnola.com/ - official site confirms address, phone, operating restaurant, walk-ins welcome",
+   "https://www.sylvainnola.com/hours - official hours page (dinner Mon-Sun 4pm start, brunch Fri-Sun 10:30am-3pm)",
+   "https://www.yelp.com/biz/sylvain-new-orleans - 1,418 reviews, updated June 2026, hours listed as Fri/Sat 10:30am-12am, Sun 10:30am-10pm",
+   "https://www.opentable.com/r/sylvain-new-orleans - accepts reservations, confirms active operation",
+   "https://www.nola.com/entertainment_life/eat-drink/new-orleans-restaurant-closures/article_28718e48-0f2c-4dc8-93f1-adbef5a6666f.html - 2026 NOLA closures list; Sylvain NOT listed",
+   "https://www.nola.com/entertainment_life/ian_mcnulty/nola-restaurant-closures-2025/article_e537ae18-87a4-430e-a4fe-7aad96361226.html - 2025 NOLA closures list; Sylvain NOT listed",
+   "https://www.nola.com/entertainment_life/eat-drink/sylvain-restaurant-in-french-quarter-mixes-modern-timeless/article_b2d88ee3-2890-42c0-8e89-19a14661d65f.html - background on 1796 carriage house building, French Quarter location",
+   "Dated diner reviews (via Yelp/OpenTable aggregation) from June 9, 10, 13, and 15, 2026 confirm active recent operation just weeks before verification date",
+   "https://www.redfin.com/LA/New-Orleans/625-Chartres-St-70130/home/85415385 and https://www.zillow.com/homedetails/625-Chartres-St-New-Orleans-LA-70130/317314951_zpid/ - confirm 625 Chartres St is in New Orleans, Orleans Parish, zip 70130"
+  ],
+  "lens": "fq-final-misses",
+  "confidence": "high"
+ },
+ "coops-place-decatur": {
+  "sources": [
+   "https://www.coopsplace.net/",
+   "https://www.yelp.com/biz/coops-place-new-orleans",
+   "https://www.coopsplace.net/Location/"
+  ],
+  "evidence": [
+   "https://www.coopsplace.net/Location/ - confirms exact address 1109 Decatur St, New Orleans, LA 70116",
+   "https://www.coopsplace.net/ - confirms hours Mon/Tue/Thu 11am-10pm, closed Wed, Fri-Sun 11am-11pm/10pm, and 'Decatur Street staple since 1983'",
+   "https://www.yelp.com/biz/coops-place-new-orleans - listing 'Updated July 2026' with 2415 photos and 3709 reviews, confirms address and category Cajun/Creole restaurant, indicates active current operation",
+   "Tripadvisor review dated April 2026 (via search snippet from tripadvisor.com/Restaurant_Review-g60864-d492376) describing restroom as outside, rustic, confirming public restroom exists and is used by customers",
+   "Search snippet confirming no reservations, 21+ policy due to video poker machines, sit-down table service, located next to Molly's at the Market in French Quarter"
+  ],
+  "lens": "fq-final-misses",
+  "confidence": "high"
+ },
+ "tipitinas-napoleon": {
+  "sources": [
+   "https://tipitinas.com/location/",
+   "https://www.yelp.com/biz/tipitinas-new-orleans-2"
+  ],
+  "evidence": [
+   "https://tipitinas.com/location/ \u2014 confirms address '501 Napoleon Ave, New Orleans, LA 70115' and office hours 'Monday\u2013Friday 10:00AM\u20134:00PM' verbatim",
+   "https://tipitinas.com/ \u2014 live 2026-2027 event calendar showing continuous show schedule through March 2027 with varying doors times (4:45pm-8pm depending on show), confirming active operation and disproving closure",
+   "https://www.yelp.com/biz/tipitinas-new-orleans-2 \u2014 Yelp listing titled 'Updated July 2026' with 179 reviews at the same address, corroborating current operation (fetch blocked by 403 but search snippet confirms live listing)",
+   "https://en.wikipedia.org/wiki/Tipitina's \u2014 confirms venue identity, address, and ownership history (purchased by members of Galactic in Dec 2018); last revised Feb 2026 with no closure noted for the Uptown location (only the separate French Quarter branch is noted closed)",
+   "https://www.neworleans.com/articles/post/tipitinas-free-fridays-concert-series-2026/ and https://www.offbeat.com/news/tipitinas-announces-return-of-free-friday-concert-series/ \u2014 confirm active 2026 'Free Fridays' 20th-anniversary concert series (21+, no cover, doors 8pm, weekly May-Sep 2026), corroborating both ongoing operation and the bar/restroom-access-via-attendance model",
+   "https://www.ticketmaster.com/tipitinas-tickets-new-orleans/venue/221668 and Songkick venue listing \u2014 third-party ticketing platforms show active 2026-2027 event schedule at this venue, corroborating operational status independent of the venue's own site"
+  ],
+  "lens": "music-venues",
+  "confidence": "high"
+ },
+ "maple-leaf-bar-oak-st": {
+  "sources": [
+   "https://www.mapleleafbar.com/",
+   "https://www.yelp.com/biz/maple-leaf-bar-new-orleans"
+  ],
+  "evidence": [
+   "https://www.mapleleafbar.com/ - official site confirms address 8316 Oak St, New Orleans, LA 70118 and active July 2026 event calendar",
+   "https://www.mapleleafbar.com/calendar - live calendar showing dated July 2026 shows and explicit 'Leaf Closed' notices (July 4, 7, 8, 14, 15), '21+' and ID-required policy, mostly no-cover shows",
+   "https://en.wikipedia.org/wiki/Maple_Leaf_Bar - confirms address, Carrollton/Orleans Parish location, continuous operation since 1974 (except temporary 2005 Katrina closure)",
+   "https://www.yelp.com/biz/maple-leaf-bar-new-orleans - corroborates address and current listing (accessed via search snippet, June 2026 update noted; direct fetch blocked by 403)",
+   "https://www.mapleleafbar.com/events/rebirth-brass-band-10pm-20-5 and https://www.mapleleafbar.com/events/rebirth-brass-band-doors-10pm-show-11pm-20-48 - confirm active Rebirth Brass Band Tuesday residency with $20 cover",
+   "https://www.tripadvisor.com/ShowUserReviews-g60864-d143324-r452454306-Maple_Leaf_Bar-New_Orleans_Louisiana.html - reviewer confirms Tuesday Rebirth Brass Band shows",
+   "Web search confirms hours Mon-Thu 5pm-1am, Fri-Sat 5pm-2am, Sun 4pm-1am with July Tue/Wed seasonal closure note, matching candidate hoursText"
+  ],
+  "lens": "music-venues",
+  "confidence": "high"
+ },
+ "the-joy-theater": {
+  "sources": [
+   "https://thejoytheater.com/shows/",
+   "https://thejoytheater.com/ufaq/box-office-hours-fees/",
+   "https://www.yelp.com/biz/the-joy-theater-new-orleans"
+  ],
+  "evidence": [
+   "https://thejoytheater.com/shows/ - confirms address and active show calendar through Dec 2026 (42 Dugg, Snarky Puppy, Kurt Vile, etc.)",
+   "https://thejoytheater.com/ufaq/box-office-hours-fees/ - confirms box office opens 1 hour prior to scheduled door time, event-based only, matching candidate hoursText",
+   "https://thejoytheater.com/faqs/ - confirms 'multiple premium full bars on all levels for our guests'",
+   "https://liveforlivemusic.com/news/joy-theater-jazz-fest-after-dark-2026-series-preview/ - confirms active 2026 Jazz Fest concert series at the venue",
+   "https://www.nola.com/news/business/new-orleans-staples-closures/article_5aea6369-e1a8-46eb-89fd-5383f90cb4c1.html - Joy Theater NOT listed among recently closed NOLA businesses",
+   "https://en.wikipedia.org/wiki/Joy_Theater - confirms location, history, and 2011 reopening as event venue",
+   "WebSearch aggregated 2026 reviews (Tripadvisor/Yelp) - reviewers describe clean bathrooms and bar service at the venue"
+  ],
+  "lens": "music-venues",
+  "confidence": "high"
+ },
+ "the-civic-theatre": {
+  "sources": [
+   "https://civicnola.com/",
+   "https://www.yelp.com/biz/the-civic-theatre-new-orleans",
+   "https://www.ticketmaster.com/civic-theatre-tickets-new-orleans/venue/222458"
+  ],
+  "evidence": [
+   "https://civicnola.com/ - confirms address 510 O'Keefe Avenue, New Orleans LA 70113, active 2026 event calendar including sold-out Elmiene show (normal operations signal)",
+   "https://civicnola.com/calendar/ - lists Bitch Cabal ft. Mannequin Pussy & Wednesday (Nov 10 2026) and Hot Mulligan (Nov 17 2026), matching pitch exactly, plus 5 other confirmed 2026 shows through November",
+   "https://civicnola.com/faqs/ - states box office open 'every Friday from 12PM-5PM and one hour before doors on show days'; ADA seating on first floor only, no elevator to upper levels",
+   "https://www.ticketmaster.com/civic-theatre-tickets-new-orleans/venue/222458 - independent ticketing platform confirms venue and 2026 event schedule",
+   "https://www.livenation.com/venue/KovZpZAEeA7A/civic-theatre-events - independent confirmation of 2026 show schedule",
+   "https://en.wikipedia.org/wiki/Civic_Theatre_(New_Orleans) - updated January 2026, no closure mentioned; confirms 1906 building history, renovated post-Katrina, reopened 2013, 1200 capacity",
+   "https://www.yelp.com/biz/the-civic-theatre-new-orleans - business listing shows address, phone (504) 272-0865, 34 reviews, updated June 2026 (fetch blocked by 403 but search snippet corroborates)",
+   "WebSearch query for closure/lawsuit/fire/sale news in 2026 returned no negative signals"
+  ],
+  "lens": "music-venues",
+  "confidence": "high"
+ },
+ "santos-bar": {
+  "sources": [
+   "https://www.yelp.com/biz/santos-bar-new-orleans",
+   "https://www.wwoz.org/organizations/santos-bar",
+   "https://www.restaurantji.com/la/new-orleans/santos-bar-/"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/santos-bar-new-orleans - confirms address 1135 Decatur St, New Orleans, LA 70116; page 'Updated June 2026'; hours 4pm-5am",
+   "https://nola.today/venues/santos-bar - venue schedule page showing address 1135 Decatur Street and noted 'Updated about 10 hours Ago' relative to July 2026 check, indicating active/current operation",
+   "https://www.bandsintown.com/v/10026673-santos-bar - shows active concert schedule for Santos Bar extending into 2026-2027, confirming ongoing operations",
+   "https://www.livenation.com/venue/rZ7HnEZ17f6Zg/santos-bar-events - 2026 show schedule and venue information, further confirming active booking calendar",
+   "https://www.wwoz.org/organizations/santos-bar - independent New Orleans public radio org listing corroborating venue identity/address",
+   "https://www.frenchquarter.com/nola/santos-bar/17424/ - independent French Quarter business directory confirming location and description as French Quarter rock/punk venue",
+   "Search for closure signals ('Santos Bar New Orleans closed OR closing OR permanently closed') returned no evidence of closure; results instead show active 2026 event scheduling",
+   "Search on cover/entry policy confirms model of free walk-in bar access with occasional ticketed/cover shows for special events, consistent with 'customers' category and free=false flag"
+  ],
+  "lens": "music-venues",
+  "confidence": "high"
+ },
+ "kermits-treme-mother-in-law-lounge": {
+  "sources": [
+   "https://www.kermitslounge.com/",
+   "https://www.yelp.com/biz/kermits-treme-mother-in-law-lounge-new-orleans-3",
+   "https://www.neworleans.com/listing/kermits-treme-mother-in-law-lounge/32588/"
+  ],
+  "evidence": [
+   "https://www.kermitslounge.com/ (official site, hours listing)",
+   "https://www.kermitslounge.com/what-s-going-on (official site, current schedule page)",
+   "https://www.yelp.com/biz/kermits-treme-mother-in-law-lounge-new-orleans-3 (updated May/June 2026, hours: Mon/Tue/Thu/Sat 4pm-12am, Wed/Fri closed, Sun 11am-12am, active listing)",
+   "https://www.neworleans.com/listing/kermits-treme-mother-in-law-lounge/32588/ (official tourism board listing, confirms address/active status)",
+   "https://en.wikipedia.org/wiki/Mother-in-Law_Lounge (confirms location at Claiborne & Columbus, 7th Ward, New Orleans; coordinates confirm Orleans Parish)",
+   "https://veritenews.org/2025/05/07/kermit-ruffins-stepping-down-from-managing-mother-in-law-lounge/ (May 2025: Ruffins steps down from management but retains ownership; bar stays open under new manager)",
+   "https://www.nola.com/entertainment_life/keith_spera/kermit-ruffins-cuts-back-treme-mother-in-law-lounge-hours/article_975dd374-1d1e-11ef-8164-877897fa52df.html (dated May 28, 2024 \u2014 the 'reduced summer hours' story is stale/2024, not current, and was excluded from the hours correction)"
+  ],
+  "lens": "treme-7th-bar-canon",
+  "confidence": "high"
+ },
+ "bullets-sports-bar": {
+  "sources": [
+   "https://www.yelp.com/biz/bullets-sports-bar-new-orleans",
+   "https://punchdrink.com/venues/bullets-sports-bar/",
+   "https://www.tourneworleans.com/this-new-orleans-bartender-was-shot-and-then-named-his-bar-bullets/"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/bullets-sports-bar-new-orleans",
+   "https://punchdrink.com/venues/bullets-sports-bar/",
+   "https://punchdrink.com/articles/inside-bullets-sports-bar-new-orleans-jazz-bar/",
+   "https://www.tourneworleans.com/this-new-orleans-bartender-was-shot-and-then-named-his-bar-bullets/",
+   "https://www.vice.com/en/article/this-new-orleans-bartender-was-shot-7-times-and-then-named-his-bar-bullets/",
+   "https://www.axios.com/local/new-orleans/2025/06/11/bullets-sports-bar-music-new-orleans-7th-ward",
+   "https://www.wwoz.org/organizations/bullets-sports-bar",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d2518434-Reviews-Bullet_s_Sports_Bar-New_Orleans_Louisiana.html",
+   "https://www.eatokra.com/businesses/bullet-s-sports-bar",
+   "https://neworleans.edefeed.com/local/bullets-sports-bar-2441-a-p-tureaud-ave-new-orleans-la-70119/",
+   "https://www.songkick.com/venues/926006-bullets-sports-bar"
+  ],
+  "lens": "treme-7th-bar-canon",
+  "confidence": "high"
+ },
+ "rock-n-bowl": {
+  "sources": [
+   "https://www.rocknbowl.com/",
+   "https://www.yelp.com/biz/rock-n-bowl-new-orleans-4"
+  ],
+  "evidence": [
+   "https://www.rocknbowl.com/ (official site: confirms address 3016 South Carrollton Ave, New Orleans, LA 70118; phone 504-861-1700; hours Tue-Fri 5p-til, Sat 4p-til; special adjusted hours for July 1, 3, 4 opening at 6p \u2014 matches candidate's July 4th note)",
+   "https://www.rocknbowl.com/new-orleans (confirms bowling + live music venue with 'Eats' food menu section, i.e. kitchen/bar on site)",
+   "https://www.rocknbowl.com/events/calendar and rocknbowl.com/new-orleans-live-music-calendar (live shows scheduled through June 2026, confirming active 2026 operation)",
+   "https://www.yelp.com/biz/rock-n-bowl-new-orleans-4 (search snippet shows 'Updated June 2026 - 167 Photos & 217 Reviews', confirming currently active listing; direct WebFetch blocked by 403)",
+   "https://www.tripadvisor.com/Attraction_Review-g60864-d208771-Reviews-Rock_n_Bowl_Mid_City_Lanes-New_Orleans_Louisiana.html (2026-dated active listing; confirms wheelchair accessibility and on-site parking lot)",
+   "https://www.loopnet.com/property/3016-s-carrollton-ave-new-orleans-la-70118/22071-716402808/ and https://www.realtytrac.com/property/la/new-orleans/70118/3016-s-carrollton-ave/190126602/ (independent property records confirming address 3016 S Carrollton Ave, New Orleans, LA 70118, Gert Town neighborhood, Orleans Parish)",
+   "https://en.wikipedia.org/wiki/Rock_n'_Bowl (confirms venue moved to 3016 South Carrollton at Earhart Blvd in 2009, next to Ye Olde College Inn)"
+  ],
+  "lens": "bowling-entertainment",
+  "confidence": "high"
+ },
+ "fulton-alley": {
+  "sources": [
+   "https://www.fultonalley.com/location/fulton-street/",
+   "https://www.yelp.com/biz/fulton-alley-new-orleans"
+  ],
+  "evidence": [
+   "https://www.fultonalley.com/location/fulton-street/ (official hours page, fetched directly, matches candidate hours exactly: Wed-Thu 4pm-11pm, Fri 4pm-12am, Sat 11am-12am, Sun 11am-11pm, closed Mon-Tue)",
+   "https://www.yelp.com/biz/fulton-alley-new-orleans (Yelp listing 'Updated May 2026', 324 reviews, active)",
+   "https://www.tripadvisor.com/Attraction_Review-g60864-d5862520-Reviews-Fulton_Alley-New_Orleans_Louisiana.html (2026 Tripadvisor listing; review notes visiting bar without bowling)",
+   "https://www.fultonalley.com/ (confirms Warehouse District location, walk-in bar areas: Main Bar, Bourbon Bar, VIP Lounge, two blocks from Convention Center)"
+  ],
+  "lens": "bowling-entertainment",
+  "confidence": "high"
+ },
+ "the-country-club-bywater": {
+  "sources": [
+   "https://thecountryclubneworleans.com/pool/",
+   "https://www.yelp.com/biz/the-country-club-new-orleans"
+  ],
+  "evidence": [
+   "https://thecountryclubneworleans.com/pool/ \u2014 official site, hours match exactly (Mon-Fri 10am-11pm, Sat-Sun 9:30am-11pm), $20 day pass, walk-in only, 21+, confirms 'Completely renovated' with no closure/renovation-in-progress notice",
+   "https://thecountryclubneworleans.com/ \u2014 homepage confirms address 634 Louisa St, New Orleans, LA 70117, restaurant/bar/pool club description",
+   "https://www.yelp.com/biz/the-country-club-new-orleans \u2014 'Updated June 2026 - 1570 Photos & 701 Reviews', confirms address and ongoing operation",
+   "WGNO article (NOLA Pool Passport) \u2014 confirms 'unisex bathrooms' plus separate men's/women's showers, changing rooms, and lockers next to the bar, and walk-in-only pool policy",
+   "WebSearch result citing a February 2026 customer review praising the food, confirming recent active operation"
+  ],
+  "lens": "bowling-entertainment",
+  "confidence": "high"
+ },
+ "black-and-gold-wash-and-fold": {
+  "sources": [
+   "https://blackandgoldwashandfold.com/",
+   "https://www.yelp.com/biz/black-and-gold-wash-and-fold-new-orleans?start=10"
+  ],
+  "evidence": [
+   "https://blackandgoldwashandfold.com/ (official site: address 2533 Carondelet Street, New Orleans, LA 70130; hours 8:30am-9pm daily; phone 504-298-2222)",
+   "https://www.yelp.com/biz/black-and-gold-wash-and-fold-new-orleans (Yelp listing 'Updated May 2026', 36 reviews, same address/hours, snippet confirming 'the bathroom clean and the attendant was most helpful')",
+   "https://www.yelp.com/biz/black-and-gold-wash-and-fold-new-orleans?start=10 (Yelp listing 'Updated September 2025', 37 reviews, same address)",
+   "https://www.realtyhop.com/building/2533-carondelet-street-new-orleans-la-70113 (confirms property location/zip in New Orleans)",
+   "https://www.zillow.com/homedetails/2533-Carondelet-St-New-Orleans-LA-70130/2086689301_zpid/ (confirms address, New Orleans, LA 70130)",
+   "https://www.helpmecovid.com/us/5851640_black-and-gold-wash-and-fold-laundromat (search snippet: 'an attendant in the building most of the time... customers feel safe taking a short walk while their laundry is washing')",
+   "https://bippermedia.com/us/sr/black-gold-wash-fold-new-orleans/ and https://black-gold-wash-fold.wheree.com/ (aggregator listings corroborating cleanliness reputation and current operation, business history since 1954/2010)"
+  ],
+  "lens": "laundromats",
+  "confidence": "high"
+ },
+ "nobl-boulder-lounge": {
+  "sources": [
+   "https://www.climbnobl.com/rates",
+   "https://www.climbnobl.com/",
+   "https://www.yelp.com/biz/new-orleans-boulder-lounge-new-orleans"
+  ],
+  "evidence": [
+   "https://www.climbnobl.com/rates \u2014 confirms $20 adult/$15 youth standard day pass (also $16/$12 reduced, $24/$18 sustainer), AOR waiver required, no membership needed, includes full facility access",
+   "https://www.climbnobl.com/ \u2014 confirms hours exactly matching candidate: Mon 4-9pm, Tue/Thu 7am-9pm, Wed 12-9pm, Fri 12-8pm, Sat 9am-7pm, Sun 12-7pm",
+   "https://www.yelp.com/biz/new-orleans-boulder-lounge-new-orleans \u2014 listing updated May 2026, 41 reviews, address confirmed as 2360 St Claude Ave, New Orleans, LA 70117, described as clean/comfortable facility",
+   "https://www.loopnet.com/Listing/2360-St-Claude-Ave-New-Orleans-LA/9205445/ \u2014 confirms property location at this address within New Orleans/Orleans Parish",
+   "https://www.neworleans.com/listing/new-orleans-boulder-lounge/32950/ \u2014 official city tourism listing confirming venue and Bywater/St. Claude location",
+   "https://wanderlog.com/place/details/1788174/new-orleans-boulder-lounge \u2014 recent reviews describing single-day passes with full facility access"
+  ],
+  "lens": "gyms-daypass",
+  "confidence": "high"
+ },
+ "seven-three-distilling": {
+  "sources": [
+   "https://www.seventhreedistilling.com/tours-tasting",
+   "https://www.yelp.com/biz/seven-three-distilling-new-orleans",
+   "https://www.seventhreedistilling.com/news/local-discount"
+  ],
+  "evidence": [
+   "https://www.seventhreedistilling.com/ \u2014 confirms address (301 N Claiborne Ave, New Orleans, LA 70112) and hours (Open Daily 11:30am-6:30pm)",
+   "https://www.seventhreedistilling.com/tours-tasting \u2014 confirms tours require advance reservation, distinct from walk-in bar/retail access",
+   "https://www.seventhreedistilling.com/news/local-discount \u2014 confirms verbatim '20% off your purchase of three or more bottles... valid local ID' offer",
+   "https://www.yelp.com/biz/seven-three-distilling-new-orleans \u2014 Yelp listing shows 'Updated June 2026', 793 photos, 493 reviews, indicating active current operation",
+   "https://www.tripadvisor.com/Attraction_Review-g60864-d12684016-Reviews-Seven_Three_Distilling_Co-New_Orleans_Louisiana.html \u2014 2026 reviews present, no closure indication",
+   "https://www.tripadvisor.com/AttractionProductReview-g60864-d19442447-Seven_Three_Distilling_Tour_and_Tasting-New_Orleans_Louisiana.html \u2014 bookable 2026 tour product, confirms ongoing operations",
+   "Web search summary corroborated: 'Seven Three Distilling Company is a craft distillery, tasting room, and event venue... features a spacious gift shop, followed by a small lounge and inviting tasting room... You can book online or walk in'"
+  ],
+  "lens": "distilleries",
+  "confidence": "high"
+ },
+ "roulaison-distilling": {
+  "sources": [
+   "https://www.roulaison.com/contact.html",
+   "https://www.yelp.com/biz/roulaison-distilling-new-orleans-2",
+   "https://www.roulaison.com/"
+  ],
+  "evidence": [
+   "https://www.roulaison.com/contact.html",
+   "https://www.roulaison.com/",
+   "https://www.roulaison.com/home.html",
+   "https://www.yelp.com/biz/roulaison-distilling-new-orleans-2 (Yelp listing shows 'Updated May 2026', 29 reviews)",
+   "https://www.tripadvisor.com/Attraction_Review-g60864-d12978334-Reviews-Roulaison_Distilling_Co-New_Orleans_Louisiana.html (shows 2026 Reviews, one reviewer mentions stopping 'for a restroom break')",
+   "https://www.distillery.news/places/united-states/louisiana/new-orleans/distilleries/roulaison-distilling-co/ (corroborates Wed/Sun closed hours and Broadmoor neighborhood, Orleans Parish)",
+   "https://feastinthyme.com/roulaison-distilling-new-orleans-review/ (referenced in search results, describes tasting room and entrance details)"
+  ],
+  "lens": "distilleries",
+  "confidence": "high"
+ },
+ "skeeta-hawk-brewing": {
+  "sources": [
+   "https://skeetahawkbrewing.com/",
+   "https://www.yelp.com/biz/skeeta-hawk-brewing-new-orleans",
+   "https://skeeta-hawk-brewing.wheree.com/"
+  ],
+  "evidence": [
+   "https://skeetahawkbrewing.com/ - official site confirms address 455 North Dorgenois Street, New Orleans, LA 70119, and full weekly hours including Sunday 11am-8pm",
+   "https://www.yelp.com/biz/skeeta-hawk-brewing-new-orleans - Yelp listing updated June 2026, 23 reviews, phone +15042693366, same address, confirms operating status",
+   "https://www.tripadvisor.com/Attraction_Review-g60864-d27120757-Reviews-Skeeta_Hawk_Brewing_LLC-New_Orleans_Louisiana.html - Tripadvisor 2026 listing with recent reviews describing the brewery as currently open with indoor/outdoor seating",
+   "https://www.nola.com/entertainment_life/eat-drink/bagels-coffee-and-new-skeeta-hawk-brewing-combine-on-one-corner-on-lafitte-greenway/ - nola.com article establishing Flour Moon Bagels (457 N Dorgenois) as an adjacent, separate business sharing a patio with Skeeta Hawk Brewing (455 N Dorgenois), not the same establishment",
+   "https://www.yelp.com/biz/flour-moon-bagels-new-orleans - confirms Flour Moon Bagels' separate address at 457 N Dorgenois St",
+   "Web search aggregation citing multiple listings (Explore Louisiana, neworleans.com, Wanderlog, Craftapped) noting the brewery was 'designed with the maximum number of bathrooms they could squeeze in' and is wheelchair accessible",
+   "https://skeetahawkbrewing.com/contact/ - confirms address and contact info, no closure indication"
+  ],
+  "lens": "breweries-final",
+  "confidence": "high"
+ },
+ "care-forgot-beercraft": {
+  "sources": [
+   "https://www.careforgotbeer.com/",
+   "https://www.yelp.com/biz/care-forgot-beercraft-new-orleans",
+   "https://bigeasymagazine.com/2024/05/30/care-forgot-beercraft-is-crafting-a-love-letter-to-nola-through-beer/"
+  ],
+  "evidence": [
+   "https://www.careforgotbeer.com/ (live fetch: hours shown as Mon closed, Tue 2-8pm, Wed-Thu 2-10pm, Fri-Sat 12-10pm, Sun 12-8pm)",
+   "https://www.yelp.com/biz/care-forgot-beercraft-new-orleans (title shows 'Updated June 2026 - 60 Photos & 32 Reviews', address 1728 St Charles Ave, New Orleans, LA)",
+   "https://www.city-data.com/restaurants/LA/CARE-FORGOT-BEERCRAFT.html (health inspections dated 7/25/2025, 7/23/2025, 4/10/2025, 8/28/2024, 4/30/2024 opening \u2014 confirms active licensed operation at 1728 St. Charles Ave, New Orleans, LA 70130)",
+   "https://bigeasymagazine.com/2024/05/30/care-forgot-beercraft-is-crafting-a-love-letter-to-nola-through-beer/ (source of candidate's hoursText and 57-seat/deck/AC description, dated May 2024 \u2014 likely stale for current hours)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d33036794-Reviews-Care_Forgot-New_Orleans_Louisiana.html (rated 5.0/5, #479 of 1467 restaurants, active listing)",
+   "https://care-forgot-beercraft.wheree.com/ (aggregator listing 'Updated June 2026')",
+   "https://www.instagram.com/careforgotbeer/",
+   "https://www.facebook.com/careforgotbeer/"
+  ],
+  "lens": "breweries-final",
+  "confidence": "high"
+ },
+ "betsys-pancake-house": {
+  "sources": [
+   "https://www.yelp.com/biz/betsys-pancake-house-new-orleans",
+   "https://www.grubhub.com/restaurant/betsys-pancake-house-2542-canal-st-new-orleans/5150800"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/betsys-pancake-house-new-orleans (search snippet: 'Updated June 2026 - 266 Photos & 243 Reviews - 2542 Canal St, New Orleans, Louisiana - Breakfast & Brunch - +15048220213')",
+   "https://wgno.com/news/louisiana/orleans-parish/long-time-nola-restaurant-betsys-pancake-house-may-close-for-good-due-to-growing-crime-concerns/ (2022 closure scare context, confirms restaurant was still deciding fate, did not close)",
+   "https://www.wwltv.com/article/news/local/orleans/betsys-pancake-house-in-new-orleans-could-close-over-crime-concerns/289-1ea13b71-48fd-41ac-91af-4313291f5af3",
+   "https://www.grubhub.com/restaurant/betsys-pancake-house-2542-canal-st-new-orleans/5150800 (active delivery/pickup listing)",
+   "https://www.explorelouisiana.com/restaurants/betsys-pancake-house",
+   "https://labelleesplanade.com/blog/betsys-pancake-house/",
+   "https://betsys-pancake-house.wheree.com/ (Updated May 2026 listing with hours matching candidate)",
+   "https://www.walkscore.com/score/2542-canal-st-new-orleans-la-70119 (confirms address location in Mid-City/Tulane-Gravier area, Orleans Parish, zip 70119)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d464535-Reviews-Betsy_s_Pancake_House-New_Orleans_Louisiana.html (listed, though direct fetch was blocked with 403)"
+  ],
+  "lens": "breakfast-diners-final",
+  "confidence": "high"
+ },
+ "wakin-bakin-french-quarter": {
+  "sources": [
+   "https://www.wakinbakin.com/",
+   "https://www.yelp.com/biz/wakin-bakin-new-orleans-3",
+   "https://www.axios.com/local/new-orleans/2026/06/18/mid-city-loses-wakin-bakin-after-15-years"
+  ],
+  "evidence": [
+   "https://www.google.com/maps/search/wakin+bakin+900+dumaine (900 Dumaine St listing: 4.6\u2605/697 reviews, live hours 'Closes soon \u00b7 2 PM \u00b7 Opens 7 AM Fri', phone (504) 233-3877, owner post 2h ago: 'July 15th will be our final day of service at 4408 Banks St... Please dine with us one last time before we close the door on the Midcity chapter of Wakin' Bakin'')",
+   "https://www.google.com/maps/search/wakin+bakin+4408+banks+st (Mid-City/Banks St listing: 4.4\u2605, owner post dated Jun 8 2026 listing both addresses as open, 7AM-2PM)",
+   "https://www.facebook.com/WakinBakinNOLA/ (5.6K followers, verified page: 'Takeout \u00b7 Dine-in \u00b7 Outdoor seating', post from '2h' ago beginning 'We've accumulated so much fun within these walls!' matching the Maps closure-announcement post, 112 reactions)",
+   "https://www.instagram.com/wakinbakin/ (4,175 followers; bio: '\ud83d\udd397a-2p daily\ud83d\udd39 \u269c\ufe0f Midcity & French Quarter \u269c\ufe0f NOLA')",
+   "https://www.wakinbakin.com/ and https://www.wakinbakin.com/about-us/ and https://www.wakinbakin.com/contact-us/ (official site, page-sitemap last-mod 2026-06-12; About page lists 'Jeanne Beard \u2013 The General Manager of French Quarter'; Contact page has stale 'French Quarter coming soon' copy inconsistent with live evidence)",
+   "https://www.yelp.com/biz/wakin-bakin-new-orleans-3 and https://www.axios.com/local/new-orleans/2026/06/18/mid-city-loses-wakin-bakin-after-15-years \u2014 both blocked (403/Cloudflare) and could not be directly verified, but the closure claim they reportedly support is independently corroborated by first-party Google Business and Facebook posts from the business itself"
+  ],
+  "lens": "breakfast-diners-final",
+  "confidence": "high"
+ },
+ "ruby-slipper-uptown-magazine": {
+  "sources": [
+   "https://www.yelp.com/biz/ruby-slipper-new-orleans-21",
+   "https://resy.com/cities/new-orleans-la/venues/ruby-slipper-uptown"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/ruby-slipper-new-orleans-21 (Updated May 2026, 1306 photos, 965 reviews, address 2802 Magazine St)",
+   "https://www.nola.com/entertainment_life/eat-drink/breakfast-spot-ruby-slipper-expands-uptown-taking-over-magazine-street-eatery/article_4a244bfb-2777-5749-a8ca-c4b30635d830.html (confirms Ruby Slipper took over the 2802 Magazine St space from Brick & Spoon, opening Jan 2017)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d12217931-Reviews-Ruby_Slipper_Uptown-New_Orleans_Louisiana.html (lists neighborhood as Irish Channel, New Orleans)",
+   "https://www.doordash.com/store/ruby-slipper-cafe-new-orleans-283429 (zip 70130)",
+   "https://www.loopnet.com/Listing/17164103/2802-Magazine-St-New-Orleans-LA/ (property record confirms 2802 Magazine St, New Orleans, LA 70130)",
+   "https://www.grubhub.com/restaurant/ruby-slipper--new-orleans-uptown-2802-magazine-st-new-orleans/2034745/reviews (Feb 2026 review describing dine-in wait, seating, and restroom conditions at this location)",
+   "https://www.grubhub.com/restaurant/ruby-slipper-cafe-uptown-2802-magazine-st-new-orleans/2034745",
+   "https://resy.com/cities/new-orleans-la/venues/ruby-slipper-uptown (reservation platform listing, consistent with sit-down dine-in service)",
+   "https://members.lra.org/member-directory/Details/the-ruby-slipper-cafe-uptown-3754348 (Louisiana Restaurant Association member listing)"
+  ],
+  "lens": "breakfast-diners-final",
+  "confidence": "high"
+ },
+ "ruby-slipper-cbd": {
+  "sources": [
+   "https://www.yelp.com/biz/ruby-slipper-new-orleans-22"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/ruby-slipper-central-business-district-new-orleans-2 (Updated June 2026, 9,359 photos, 7,709 reviews, address 200 Magazine St, hours Mon-Fri 7-2, Sat-Sun 7-3, phone 504-420-6100)",
+   "https://www.instagram.com/rubyslippernola/ (active account named 'Ruby Slipper NOLA 200 Magazine')",
+   "https://www.ubereats.com/store/ruby-slipper-magazine-st/3kXLvOSATVKFf0CZqRZvZA (active delivery listing)",
+   "https://www.fsrmagazine.com/industry-news/ruby-slipper-and-ruby-sunshine-named-top-breakfast-chain-by-newsweek/ (chain named #2 breakfast chain, Newsweek 2025 Readers' Choice)",
+   "https://www.eaten.io/p/The-Ruby-Slipper-Cafe-200-Magazine-St-New-Orleans--66732d (confirms address 200 Magazine St, New Orleans, LA 70130, USA)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d1959520-Reviews-Ruby_Slipper_Cbd-New_Orleans_Louisiana.html (TripAdvisor listing confirming CBD location)",
+   "https://www.neworleans.com/listing/the-ruby-slipper-cafe-cbd/32851/ (official tourism board listing)",
+   "https://www.nola.com/entertainment_life/eat-drink/betting-on-new-orleans-brunch-again-ruby-slipper-reopens-for-business-in-much-changed-cbd/article_b1e5365e-d8cd-11ea-a6bd-737c0d8a4dfb.html (nola.com coverage of this CBD location, full-service sit-down dining confirmed with indoor/outdoor seating and full bar)"
+  ],
+  "lens": "breakfast-diners-final",
+  "confidence": "high"
+ },
+ "the-bulldog-uptown": {
+  "sources": [
+   "https://www.thebulldog.bar/contact-3",
+   "https://www.thebulldog.bar/about",
+   "https://www.yelp.com/biz/the-bulldog-new-orleans-2",
+   "https://magazinestreet.com/merchant/the-bulldog/"
+  ],
+  "evidence": [
+   "https://www.thebulldog.bar/contact-3 \u2014 official page: address '3236 Magazine St. New Orleans, LA 70115', phone 504-891-1516, hours 'Mon-Sun 11 a.m. - 1:00 a.m.'",
+   "https://www.thebulldog.bar/about \u2014 official page confirms craft beer/cocktail bar, full pub food menu ('award-winning pub fare'), dog-friendly patio with beer-tap fountain, over-21 entry, no ticket/cover requirement mentioned",
+   "https://www.yelp.com/biz/the-bulldog-new-orleans-2 \u2014 322 photos, 446 reviews, page updated June 2026 (via search snippet; direct fetch returned 403), confirms address 3236 Magazine St and structured hours Mon-Thu 11am-12am, Fri-Sat 11am-1am, Sun 11am-12am matching candidate hoursText",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d4354199-Reviews-The_Bulldog-New_Orleans_Louisiana.html \u2014 lists address as 3236 Magazine St, Irish Channel, with 2026 review activity indicating ongoing operation",
+   "https://clustrmaps.com/a/342arb \u2014 public records confirm 'The Bulldog Inc' as occupant at 3236 Magazine St, New Orleans, LA",
+   "https://magazinestreet.com/merchant/the-bulldog/ \u2014 Magazine Street Merchants Association listing corroborates the venue as an active Magazine Street business"
+  ],
+  "lens": "magazine-final",
+  "confidence": "high"
+ },
+ "the-rum-house-magazine": {
+  "sources": [
+   "https://www.therumhouse.com/",
+   "https://www.yelp.com/biz/the-rum-house-new-orleans",
+   "https://order.toasttab.com/online/the-rum-house-caribbean-taqueria-3128-magazine-street"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/the-rum-house-new-orleans (Updated June 2026, 1976 reviews, address 3128 Magazine St, New Orleans, LA)",
+   "https://magazinestreet.com/merchant/rum-house/ (Magazine Street Merchants Association listing; promotes Restaurant Week July 10-19, 2026; describes rum bar, happy hour Mon-Fri 3-6pm, dine-in service)",
+   "https://www.loopnet.com/property/3128-magazine-st-new-orleans-la-70115/22071-411202009/ (confirms property location in Orleans Parish)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d1954966-Reviews-The_Rum_House-New_Orleans_Louisiana.html (positive review dated May 2025, Irish Channel New Orleans)",
+   "https://wanderlog.com/place/details/71086/the-rum-house (independently confirms hours: Sun-Tue and Thu-Sat 11AM-10PM, Wed Closed; address 3128 Magazine St, New Orleans, LA 70115)",
+   "Web search results referencing customer reviews describing on-site restroom ('bar bathroom,' one stall each for men and women) confirming physical restroom access for customers"
+  ],
+  "lens": "magazine-final",
+  "confidence": "high"
+ },
+ "basin-seafood-spirits": {
+  "sources": [
+   "https://www.basinneworleans.com/about",
+   "https://www.yelp.com/biz/basin-seafood-and-spirits-new-orleans",
+   "https://www.basinneworleans.com/"
+  ],
+  "evidence": [
+   "https://www.basinneworleans.com/ (official site: address, phone, hours Mon 11-9, Tue-Wed closed, Thu 3-9, Fri-Sun 11-9, happy hour details)",
+   "https://www.basinneworleans.com/about (official About page: Baru chef-owner Edgar Caro + Antonio Mata, sidewalk + indoor + courtyard seating, Gulf fish concept)",
+   "https://www.yelp.com/biz/basin-seafood-and-spirits-new-orleans (Yelp listing 'Updated June 2026', 1018 photos, 705 reviews \u2014 strong signal of active 2026 operation)",
+   "https://www.opentable.com/r/basin-seafood-and-spirits ('Updated 2026' live reservation listing; hours Fri 11:30am-9:30pm, Sat 11am-9:30pm, Sun 11am-9pm)",
+   "http://www.loopnet.com/Listing/17851072/3222-Magazine-St-New-Orleans-LA/ (property record confirming address location in New Orleans/Orleans Parish)",
+   "https://www.zillow.com/homedetails/3222-Magazine-St-New-Orleans-LA-70115/333566452_zpid/ (confirms address/ZIP 70115 in New Orleans)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d4827925-Reviews-Basin_Seafood_Spirits-New_Orleans_Louisiana.html (Irish Channel neighborhood listing, active reviews)",
+   "https://www.toasttab.com/local/order/basin-seafood-and-spirits-3222-magazine-street (live online ordering system, confirms address and active operation)"
+  ],
+  "lens": "magazine-final",
+  "confidence": "high"
+ },
+ "adolfos-frenchmen": {
+  "sources": [
+   "https://www.yelp.com/biz/adolfos-new-orleans",
+   "https://www.adolfosneworleans.com/about-2"
+  ],
+  "evidence": [
+   "https://www.adolfosneworleans.com/general-5 (FAQ: daily 5:30pm first seating - 9:30pm last seating, walk-in only, no closure notice)",
+   "https://www.adolfosneworleans.com/about-2 (location above Apple Barrel Bar, 40-seat dining room, history)",
+   "https://www.yelp.com/biz/adolfos-new-orleans (listing 'Updated June 2026', 714 photos, 1083 reviews, 611 Frenchmen St)",
+   "Facebook post dated May 9, 2026 on facebook.com/AdolfosInc referencing current staff (Loyola graduates) -- indicates active operation in May 2026",
+   "https://www.nola.com/entertainment_life/eat-drink/frenchmen-street-restaurant-adolfo-s-closed-indefinitely-but-that-doesn-t-mean-forever/article_4b45beea-7a3f-11ec-a714-03acf0cc2beb.html (2022 article re: chef's hospitalization/prior temporary closure -- historical, not current)",
+   "WebSearch result confirming 611 Frenchmen St / 609 Frenchmen St (Apple Barrel Bar) both in Orleans Parish, ZIP 70116, Marigny neighborhood",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d445261-Reviews-Adolfo_s-New_Orleans_Louisiana.html (listing exists, referenced in multiple searches, blocked from direct fetch by 403)"
+  ],
+  "lens": "frenchmen-final",
+  "confidence": "high"
+ },
+ "spicy-mango": {
+  "sources": [
+   "https://www.nola.com/entertainment_life/eat-drink/spicy-mango-morrow-new-orleans/article_f939c88f-c92d-4ae1-b4d6-0fda0064685f.html",
+   "https://www.yelp.com/biz/spicy-mango-new-orleans-2"
+  ],
+  "evidence": [
+   "https://www.nola.com/entertainment_life/eat-drink/spicy-mango-morrow-new-orleans/article_f939c88f-c92d-4ae1-b4d6-0fda0064685f.html",
+   "https://www.nola.com/gambit/food_drink/larry-morrow-opens-caribbean-inspired-spicy-mango-in-marigny/article_48c1f363-8ac1-4e64-90e9-cb0df9232bef.html",
+   "https://www.axios.com/local/new-orleans/2025/06/30/spicy-mango-larry-morrow-new-restaurant",
+   "https://www.yelp.com/biz/spicy-mango-new-orleans-2",
+   "https://blainerestaurantreport.wordpress.com/2025/12/07/spicy-mango-new-orleans-la-report-935/",
+   "https://www.nola.com/entertainment_life/eat-drink/new-orleans-restaurant-closures/article_28718e48-0f2c-4dc8-93f1-adbef5a6666f.html (Spicy Mango absent from 2026 closures list)",
+   "https://welcometonola.com/place/spicy-mango/",
+   "https://www.opentable.com/r/spicy-mango-new-orleans"
+  ],
+  "lens": "frenchmen-final",
+  "confidence": "high"
+ },
+ "besame": {
+  "sources": [
+   "https://besame-nola.com/",
+   "https://www.yelp.com/biz/b%C3%A9same-new-orleans-2",
+   "https://www.hiusa.org/find-hostels/louisiana/new-orleans-1028-canal-street"
+  ],
+  "evidence": [
+   "https://besame-nola.com/ - homepage confirms full sit-down restaurant with bar, no gating, address 110 S. Rampart St., New Orleans, LA 70112, hours matching candidate exactly",
+   "https://besame-nola.com/location - confirms address and identical hours: Mon 12-9, Tue-Wed 4-9, Thu 12-9, Fri 12-10, Sat 10:30-10, Sun 10:30-8, happy hour weekdays until 5pm",
+   "https://www.yelp.com/biz/b%C3%A9same-new-orleans-2 - 'Updated June 2026 - 575 Photos & 306 Reviews' at 110 S Rampart, New Orleans, Louisiana, confirming active operation",
+   "https://resy.com/cities/new-orleans-la/venues/besame - restaurant listed on Resy for reservations, consistent with public customers-category access",
+   "Search result citing a February 2026 review praising Yucatan pork and steak with chimichurri, confirming recent operation",
+   "General web search confirms HI New Orleans hostel describes B\u00e9same as its 'local restaurant partner' accessible through the lobby, distinct from a hostel-guest-only amenity"
+  ],
+  "lens": "hostels-lobbies",
+  "confidence": "high"
+ },
+ "mammoth-espresso": {
+  "sources": [
+   "https://www.yelp.com/biz/mammoth-espresso-new-orleans",
+   "https://mammothcoffee.co/pages/locations"
+  ],
+  "evidence": [
+   "https://mammothcoffee.co/pages/locations",
+   "https://www.yelp.com/biz/mammoth-espresso-new-orleans",
+   "https://downtownnola.com/listings/mammoth-espresso/",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d10215295-Reviews-Mammoth_Espresso-New_Orleans_Louisiana.html",
+   "https://www.loopnet.com/property/821-baronne-st-new-orleans-la-70113/22071-103104808/",
+   "https://www.postcard.inc/places/mammoth-espresso-new-orleans-8R4VxYaC6c6"
+  ],
+  "lens": "cafes-final",
+  "confidence": "high"
+ },
+ "hivolt-coffee": {
+  "sources": [
+   "https://www.yelp.com/biz/hivolt-coffee-new-orleans-2",
+   "https://www.hivoltcoffeepickup.com/"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/hivolt-coffee-new-orleans-2 \u2014 'Updated June 2026', 286 photos, 347 reviews, address 1829 Sophie Wright Pl, hours Mon-Sat 7:00am-5:00pm closed Sunday",
+   "https://www.city-data.com/restaurants/LA/HIVOLT-COFFEE.html \u2014 official NOLA Health Dept inspection record: complaint inspection Aug 20, 2025 and follow-up Aug 21, 2025 at 1829 Sophie Wright Place, New Orleans, LA 70130, no closure indication",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d5455886-Reviews-Hivolt_Coffee-New_Orleans_Louisiana.html \u2014 rated 4.6/5, ranked #438 of 1,466 New Orleans restaurants, Lower Garden District",
+   "https://sprudge.com/build-outs-summer-hivolt-coffee-new-orleans-lower-garden-district-43780.html \u2014 Sprudge feature confirming full cafe build-out with pour-over bar, espresso machine, indoor/outdoor seating, owned by Benji Lee (also owner of The Saint Bar & Lounge)",
+   "https://www.hivoltcoffeepickup.com/ \u2014 official site referenced for online/call-in ordering, phone (504) 324-8818, consistent with candidate source",
+   "https://www.facebook.com/HivoltCoffee/ \u2014 Facebook page shows a 'Closing Soon' status tag tied to an old Oct 2024 post reference, contradicted by much more recent 2025-2026 operational evidence; treated as stale/unreliable platform metadata",
+   "https://www.novacircle.com/spots/north-america/united-states/orleans-parish/orleans-parish/new-orleans/hivolt-3613e1 \u2014 confirms Orleans Parish location, gluten-free/vegan menu, gourmet coffee shop"
+  ],
+  "lens": "cafes-final",
+  "confidence": "high"
+ },
+ "petite-clouet-cafe": {
+  "sources": [
+   "https://www.yelp.com/biz/petite-clouet-cafe-new-orleans",
+   "https://www.facebook.com/petiteclouet/"
+  ],
+  "evidence": [
+   "https://www.wwoz.org/organizations/petite-clouet-cafe (confirms address 3100 Royal St, Status: Active, description matches Royal & Clouet Bywater corner)",
+   "Google Maps live listing for 'Petite Clouet Cafe New Orleans' (confirms 3100 Royal St, New Orleans, LA 70117, Open \u00b7 Closes 5 PM, hours 7 AM-5 PM, category Coffee shop, 4.7 rating)",
+   "https://www.yelp.com/biz/petite-clouet-cafe-new-orleans (search snippet title shows 'Updated June 2026 - 64 Photos & 53 Reviews', hours 7:00am-5:00pm daily, indoor+outdoor seating, health score 98/100)",
+   "https://www.facebook.com/petiteclouet/ (listed as active business page, corroborates name/location)",
+   "Wikipedia/search corroboration on Bywater neighborhood boundaries confirming Royal & Clouet St intersection is within Orleans Parish, bounded by Clouet St to the west and the Industrial Canal (St. Bernard Parish line) well to the east",
+   "WebSearch aggregation of Wanderlog reviews confirming 'cozy indoor seating and great outdoor area' at this cafe",
+   "https://joe.coffee/locations/la/new-orleans/petite-clouet-caf-new-orleans/ (independent coffee-shop directory listing, corroborates existence and location)"
+  ],
+  "lens": "cafes-final",
+  "confidence": "high"
+ },
+ "poor-boys-bar": {
+  "sources": [
+   "https://poorboysbar.com/info/",
+   "https://www.yelp.com/biz/poor-boys-bar-new-orleans",
+   "https://nola.today/venues/poor-boys-bar"
+  ],
+  "evidence": [
+   "https://poorboysbar.com/info/ - official site confirms address and exact hours (Sun-Thu 5PM-4AM, Fri-Sat 5PM-6AM)",
+   "https://www.yelp.com/biz/poor-boys-bar-new-orleans - active listing at 1328 St Bernard Ave, updated June 2026",
+   "https://www.ticketmaster.com/poor-boys-bar-tickets-new-orleans/venue/340725 - lists active July 2026 events (e.g. Jon Anderson & The Band Geeks, July 22, 2026) confirming ongoing operation",
+   "https://neworleansedm.com/listing/poor-boys/ - lists a July 14, 2026 event ('Open Decks At Poor Boys w/ LVCD') at 1328 St Bernard Ave",
+   "https://www.yelp.com/biz/poor-boys-new-orleans - 'POOR BOYS - CLOSED' listing is for a DIFFERENT address (1334 St Bernard Ave, category Lounges), not the candidate venue; used to rule out false-closure signal",
+   "https://www.instagram.com/poorboysbar/?hl=en - bio 'Often imitated, never duplicated' corroborates existence of a separate/imitator entity distinct from this venue",
+   "https://www.songkick.com/venues/3379254-poor-boys-bar - independent corroboration of venue and address"
+  ],
+  "lens": "stclaude-corridor-final",
+  "confidence": "high"
+ },
+ "siberia-st-claude": {
+  "sources": [
+   "https://www.siberianola.com/",
+   "https://www.siberianola.com/calendar",
+   "https://www.yelp.com/biz/siberia-new-orleans",
+   "https://www.bandsintown.com/v/10001747-siberia"
+  ],
+  "evidence": [
+   "https://www.siberianola.com/ - official site, self-contradictory hours, confirms address and active operation",
+   "https://www.siberianola.com/calendar - confirms active calendar/booking, no closure indication",
+   "https://www.yelp.com/biz/siberia-new-orleans - listing updated June 2026, 107 reviews, hours Mon-Thu 6pm-2am / Fri-Sun 3pm-2am",
+   "https://www.bandsintown.com/v/10001747-siberia - 2026 concert schedule listed",
+   "https://www.jambase.com/venue/siberia - 40+ confirmed shows July-December 2026 with named acts",
+   "https://www.songkick.com/venues/1152996-siberia - confirms upcoming 2026 shows including The Fauns Jul 23 2026",
+   "https://nola.today/stories/carnaval-lounge-reverts-to-siberia - confirms Carnaval Lounge reverted to Siberia, reopened August 12, 2022",
+   "https://www.offbeat.com/articles/a-frozen-refuge-storied-music-venue-siberia-returns-to-saint-claude-avenue/ - OffBeat coverage of the 2022 return",
+   "https://www.offbeat.com/articles/siberia-becomes-carnaval-lounge-2/ - 2019 article documenting the original rebrand (historical context only, not current status)",
+   "https://clustrmaps.com/a/33v9h7 - confirms property address, coordinates 29.9690086,-90.0559176, Orleans Parish/St. Roch location"
+  ],
+  "lens": "stclaude-corridor-final",
+  "confidence": "high"
+ },
+ "sweet-lorraines-jazz-club": {
+  "sources": [
+   "https://www.sweetlorrainesjazzclub.com/",
+   "https://www.yelp.com/biz/sweet-lorraines-new-orleans",
+   "https://www.wwoz.org/organizations/sweet-lorraines"
+  ],
+  "evidence": [
+   "https://www.sweetlorrainesjazzclub.com/ (official site: address '1931 St. Claude Ave. New Orleans, LA 70116'; hours Tue/Thu/Sun 5PM-11PM, Fri/Sat 5PM-12AM, closed Mon & Wed; food menu confirmed; no closure notice)",
+   "https://www.yelp.com/biz/sweet-lorraines-new-orleans (search snippet: 'Updated April 2026 - 51 Photos & 47 Reviews'; hours match; marked not wheelchair accessible)",
+   "https://www.loopnet.com/property/1931-saint-claude-ave-new-orleans-la-70116/22071-37W103624/ (property record confirms parcel is in New Orleans, LA 70116 / Orleans Parish, APN 3-7W-1-036-24)",
+   "https://www.nola.com/gambit/news/the_latest/sweet-lorraine-146-s-turns-10/article_892c9ab9-9970-5806-bcd6-fac088c08e07.html (history: rechristened/grand opening Sept 1999, Sylvester family venues on site since 1940s)",
+   "https://myemail.constantcontact.com/Historic-jazz-club--Sweet-Lorraine-s--reopens-after-two-years.html (documents 2012 closure after Hurricane Isaac, reopened Oct 2016 with streetcar line opening; not a current closure signal)",
+   "https://www.wwoz.org/organizations/sweet-lorraines (listed as active WWOZ-affiliated venue/organization)"
+  ],
+  "lens": "stclaude-corridor-final",
+  "confidence": "high"
+ },
+ "jj-sports-lounge": {
+  "sources": [
+   "https://www.yelp.com/biz/j-and-js-sports-lounge-new-orleans",
+   "http://www.jjssportslounge.com/"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/j-and-js-sports-lounge-new-orleans",
+   "http://www.jjssportslounge.com/",
+   "https://www.tripadvisor.com/Attraction_Review-g60864-d5834156-Reviews-J_J_s_Sports_Lounge-New_Orleans_Louisiana.html",
+   "https://scoundrelsfieldguide.com/louisiana/new-orleans/bywater/jjs-sports-lounge/",
+   "https://www.chamberofcommerce.com/business-directory/louisiana/new-orleans/bar/2002306947-j-j-s-sports-lounge",
+   "https://www.facebook.com/jandjssports",
+   "https://www.instagram.com/jjssportslounge/"
+  ],
+  "lens": "bywater-final",
+  "confidence": "high"
+ },
+ "bud-rips-9th-ward": {
+  "sources": [
+   "https://www.yelp.com/biz/bud-rips-old-9th-ward-bar-new-orleans",
+   "https://www.staylocal.org/directory#!biz/id/63c87c1e540ac045557ad03d"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/bud-rips-old-9th-ward-bar-new-orleans (listing shows 'Updated June 2026', hours Mon-Fri 3pm-3am, Sat 1pm-3am, Sun 3pm-3am)",
+   "https://www.nola.com/entertainment_life/eat-drink/oyster-bars-happy-hour-bywater-marigny/article_baf7c5ba-1e3d-4f35-9436-03b8c69a0467.html (recent feature referencing Bud Rip's current weekly oyster happy hour)",
+   "https://www.staylocal.org/directory#!biz/id/63c87c1e540ac045557ad03d (StayLocal directory listing, certified locally-owned independent business)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d8559324-Reviews-Bud_Rips-New_Orleans_Louisiana.html (active reviews, Bywater/Ninth Ward location confirmed)",
+   "https://foursquare.com/v/bud-rips/4b500645f964a5205e1b27e3 (Bar in Bywater, address confirmed)",
+   "https://www.neworleans.com/listing/bud-rips/33162/ (official tourism listing, active)",
+   "Facebook/press coverage of Rosalita's Backyard Tacos weekly Taco Tuesday pop-up (6-9pm) operating inside Bud Rip's -- recent activity signal",
+   "https://bud-rips-old-9th-ward-bar.wheree.com/ (lists venue under Orleans Parish County, LA, updated June 2026)"
+  ],
+  "lens": "bywater-final",
+  "confidence": "high"
+ },
+ "the-domino-bywater": {
+  "sources": [
+   "https://www.yelp.com/biz/the-domino-new-orleans",
+   "https://neworleans.riverbeats.life/bywater-introduces-new-neighborhood-wine-bar-the-domino/"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/the-domino-new-orleans (listing 'Updated May 2026', address/phone confirmed)",
+   "https://www.instagram.com/stclaudedomino/ (active account, hours in bio: Mon-Tue 8pm-1am, Wed-Sun 3pm-2am)",
+   "https://www.instagram.com/p/DPG372ojZSA/ (live event post dated Sept 27, 2025, confirming active operation)",
+   "https://www.facebook.com/thedominola/ (Mar 2025 'Closing Soon' flag found via search snippet, but superseded by later 2025-2026 activity)",
+   "https://www.frenchquarter.com/nola/the-domino/17903/ (walk-in wine dive bar, no cover/ticket, hours: Sun-Sat 3pm-2am)",
+   "https://neworleans.riverbeats.life/bywater-introduces-new-neighborhood-wine-bar-the-domino/ (T. Cole Newton's neighborhood bar, no kitchen, full bar service, casual walk-in)",
+   "https://www.theadvocate.com/gambit/new_orleans/news/the_latest/article_3cba7b65-9a46-5573-b90f-63712bf4cb59.html (background: T. Cole Newton of Twelve Mile Limit opened The Domino in Bywater)",
+   "https://www.restaurantji.com/la/new-orleans/the-domino-/ (address confirmation: 3044 St Claude Ave, New Orleans, LA 70117)",
+   "WebSearch results indicating July 30, 2026 'Wet Hot American Book Fair' event and recurring monthly poly speed dating night at the venue"
+  ],
+  "lens": "bywater-final",
+  "confidence": "high"
+ },
+ "liuzzas-by-the-track": {
+  "sources": [
+   "https://www.liuzzasbtt.com/",
+   "https://www.liuzzasbtt.com/contact",
+   "https://www.yelp.com/biz/liuzzas-by-the-track-new-orleans"
+  ],
+  "evidence": [
+   "https://www.liuzzasbtt.com/ - official site confirms address 1518 N Lopez Street, New Orleans, LA 70119; hours Mon-Sat 11am-8pm, closed Sundays (open for Saints games); dine-in and takeout service available",
+   "https://www.liuzzasbtt.com/contact - contact page corroborates address and phone (504) 218-7888",
+   "https://www.yelp.com/biz/liuzzas-by-the-track-new-orleans - Yelp listing titled 'Updated May 2026' with 436 reviews, address 1518 N Lopez St, New Orleans, Louisiana, confirming active operation",
+   "https://liuzzas-by-the-track.wheree.com/ - lists restaurant as 'Southern Restaurant in New Orleans, Orleans Parish County', updated June 2026, confirming parish and active status",
+   "https://www.opentable.com/r/liuzzas-by-the-track-new-orleans - listing titled 'Updated 2026' confirming current operating status and reservation availability",
+   "Tripadvisor review titled 'Don't confuse the Liuzza's' (via search snippet) explicitly mentions a mural in the women's restroom, confirming restroom exists and is accessible to dine-in customers",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d477702-Reviews-Liuzza_s_by_the_Track-New_Orleans_Louisiana.html - listed as Mid-City District, New Orleans restaurant (fetch blocked 403 but search snippet corroborates)"
+  ],
+  "lens": "esplanade-ridge-final",
+  "confidence": "high"
+ },
+ "lolas-esplanade": {
+  "sources": [
+   "https://lolasneworleans.com/",
+   "https://www.yelp.com/biz/lolas-new-orleans",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d464574-Reviews-Lola_s-New_Orleans_Louisiana.html"
+  ],
+  "evidence": [
+   "https://lolasneworleans.com/ - official site confirms address, full-service dining with indoor/patio/courtyard seating, reservations recommended, 'No TO GO'S today' banner implying normally offers takeout too but is primarily dine-in",
+   "https://www.yelp.com/biz/lolas-new-orleans - listing 'Updated June 2026', 640 photos, 487 reviews, address 3312 Esplanade Ave 70119, Spanish restaurant category",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d464574-Reviews-Lola_s-New_Orleans_Louisiana.html - Bayou St. John location, active reviews",
+   "https://www.tripadvisor.com/ShowUserReviews-g60864-d464574-r785915738-Lola_s-New_Orleans_Louisiana.html - recent review 'Delicious tapas and sangria!' confirming full bar/sangria offering",
+   "https://www.opentable.com/r/lolas-new-orleans - live reservation system, confirms operating as reservable full-service restaurant",
+   "https://www.instagram.com/lolasneworleans/ - restaurant's own account, source for corrected hours: closed Monday, Tue-Thu 6pm-9:30pm, Fri-Sat 5:30pm-10pm, Sun 5:30pm-9:30pm",
+   "https://order.toasttab.com/online/lolas - active online ordering platform confirming operational status and address",
+   "https://www.redfin.com/LA/New-Orleans/3312-Esplanade-Ave-70119/home/85420074 and https://www.homes.com/property/3312-esplanade-ave-new-orleans-la/wjx498xzcq0y6/ - property records confirming address exists in New Orleans, LA 70119 (Orleans Parish)",
+   "https://www.wwltv.com/article/life/food/napoleons-food-reviews/review-lolas-restaurant-brings-spanish-charm-to-esplanade/289-293443355 - local TV news restaurant review confirming legitimate, established operating restaurant on Esplanade"
+  ],
+  "lens": "esplanade-ridge-final",
+  "confidence": "high"
+ },
+ "aguasanta-oak-st": {
+  "sources": [
+   "https://aguasantanola.com/",
+   "https://www.yelp.com/biz/aguasanta-new-orleans",
+   "https://www.nola.com/entertainment_life/eat-drink/la-tia-mexican-restaurant-to-open-aguasanta-in-new-orleans/article_c553e4e8-f75e-11ee-8d85-373dc40f544d.html"
+  ],
+  "evidence": [
+   "https://aguasantanola.com/ (confirms address 8312 Oak Street, New Orleans, LA 70118; hours Mon-Thu 4-9pm, Fri-Sat 4-10pm; full-service dining room with bar, OpenTable reservations)",
+   "https://www.yelp.com/biz/aguasanta-new-orleans (Yelp page updated May 2026, 80 photos, 45 reviews, address 8312 Oak St, New Orleans)",
+   "https://www.nola.com/entertainment_life/eat-drink/la-tia-mexican-restaurant-to-open-aguasanta-in-new-orleans/article_c553e4e8-f75e-11ee-8d85-373dc40f544d.html (La Tia team / Chef Luis Nava opening Aguasanta)",
+   "https://www.nola.com/gambit/food_drink/aguasanta-brings-together-mexican-dishes-and-global-flavors-on-oak-street/article_1bc52526-8a62-11ef-ab5c-6f6aab5d6def.html (describes former Chiba/Magasin/Mukbang space, seafood bar retained from Chiba sushi bar)",
+   "https://www.myneworleans.com/chef-luis-nava-opens-aguasanta-on-oak-street/ (opening coverage, mid-September 2024)",
+   "https://www.instagram.com/p/DTL2BB9CdyZ/ (Instagram post dated January 6, 2026, confirming recent activity)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d31225044-Reviews-AGUASANTA-New_Orleans_Louisiana.html (4.6/5 rating, active recent reviews, no closure indication)"
+  ],
+  "lens": "carrollton-oak-final",
+  "confidence": "high"
+ },
+ "paulies-italian-deli-oak-st": {
+  "sources": [
+   "https://www.pauliesneworleans.com/",
+   "https://www.yelp.com/biz/paulies-new-orleans",
+   "https://www.nola.com/entertainment_life/eat-drink/restaurant-uptown-new-orleans/article_2540d3e4-a7de-490e-8429-846499c9f589.html"
+  ],
+  "evidence": [
+   "https://www.pauliesneworleans.com/ - official site confirms address 8201 Oak St., New Orleans, LA 70118-2041, phone 504-412-8326, and posts daily hours in footer (Sun/Mon 11-4, Tue 11-9, Wed 11-12am, Thu-Sat 11-9)",
+   "https://www.nola.com/entertainment_life/eat-drink/restaurant-uptown-new-orleans/article_2540d3e4-a7de-490e-8429-846499c9f589.html - published June 19, 2025 (updated June 23, 2025), confirms opening in May 2025, owner Paul Tufaro (ex-Empire State Delicatessen, 21 years downtown) quote: 'a chill, casual, relaxed hang-out place where people want to come, maybe sit down for a few hours and not go anywhere' -- confirms sit-down seating for customers",
+   "https://www.axios.com/local/new-orleans/2025/12/10/paulies-nyc-deli-sandwich-shop-oak-street - Axios New Orleans coverage dated December 10, 2025, confirms ongoing operation into late 2025",
+   "https://www.yelp.com/biz/paulies-new-orleans - Yelp listing title shows 'Updated April 2026 - 70 Photos & 31 Reviews - 8201 Oak St, New Orleans, Louisiana' confirming active/current listing with no closure flag, and hours grouping (Mon-Wed 11am-4pm, Thu-Sat 11am-9pm, Sun 11am-4pm) matching candidate entry appeared in aggregated search snippet",
+   "https://www.neworleans.com/blog/post/guide-to-new-orleans-riverbend-neighborhood/ and related Riverbend/Oak Street sources confirm 8201 Oak St is in the Riverbend/Uptown New Orleans neighborhood, Orleans Parish (not Jefferson Parish)",
+   "https://oakstbrewery.com/ and https://www.yelp.com/biz/oak-st-brewery-new-orleans - confirm Oak Street Brewery operates at 8201 Oak St Suite 2, distinct from Paulie's at Suite 1 in the same multi-tenant building -- explains shared address, not a conflict/closure signal",
+   "https://www.grubhub.com/restaurant/paulies-8201-oak-st-new-orleans/11601992 and https://www.ezcater.com/catering/paulies-delicatessen-3 - active delivery/catering listings at the same address, consistent with ongoing operation"
+  ],
+  "lens": "carrollton-oak-final",
+  "confidence": "high"
+ },
+ "riccobonos-panola-street-cafe": {
+  "sources": [
+   "https://www.yelp.com/biz/riccobono-s-panola-st-cafe-new-orleans",
+   "https://www.panolastreetcafe.com/",
+   "http://foodio54.com/restaurants/Marlyville-Fontainebleau-New-Orleans-LA"
+  ],
+  "evidence": [
+   "https://www.panolastreetcafe.com/ - official site confirms address 7801 Panola Street, New Orleans, LA 70118, hours 'Everyday 8am-2pm', no closure notice, describes itself as ongoing 'New Orleans fixture' since 1998",
+   "https://www.yelp.com/biz/riccobono-s-panola-st-cafe-new-orleans - page title shows 'Updated June 2026 - 211 Photos & 277 Reviews', indicating active, current listing",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d426401-Reviews-Riccobono_Panola_St_Cafe-New_Orleans_Louisiana.html - review dated February 23, 2026 ('Great restaurant') confirms active operation into 2026",
+   "https://www.restaurantji.com/la/new-orleans/riccobonos-panola-street-cafe-/ - confirms hours Mon-Sun 8AM-2PM and lists 'dine-in,' 'take-out,' and 'delivery' as service options, confirming full-service seating (not takeout-only)",
+   "https://www.trulia.com/sitemaps/Louisiana-real-estate/Orleans-Parish-22071/70118/Panola-St/ - confirms Panola St, 70118 falls within Orleans Parish (not Jefferson Parish), satisfying the jurisdiction check",
+   "https://www.neworleans.com/listing/riccobonos-panola-street-cafe/33148/ - official NOLA tourism board listing corroborates address and ongoing operation"
+  ],
+  "lens": "fontainebleau-marlyville",
+  "confidence": "medium"
+ },
+ "mahonys-po-boys-magazine": {
+  "sources": [
+   "https://www.yelp.com/biz/mahonys-po-boys-and-seafood-new-orleans-4",
+   "https://www.mahonyspoboys.com/",
+   "https://www.nola.com/entertainment_life/eat-drink/mahonys-po-boys-reopens-in-new-orleans-with-new-owners/article_38d8f60c-75e4-11ef-bb34-efdc2be5784e.html"
+  ],
+  "evidence": [
+   "Yelp listing 'MAHONY'S PO-BOYS & SEAFOOD - Updated May 2026 - 848 Photos & 829 Reviews - 3454 Magazine St' with reviews dated as recently as March 2026, confirming active operation: https://www.yelp.com/biz/mahonys-po-boys-and-seafood-new-orleans-4",
+   "A DISTINCT, separate Yelp listing for the OLD French Quarter location (901 Iberville St) is explicitly marked 'CLOSED - Updated April 2026', confirming the current entry's Magazine St address is the correct currently-operating location and is not confused with the defunct site: https://www.yelp.com/biz/mahonys-po-boys-and-seafood-new-orleans-2",
+   "nola.com: 'Mahony's Po-Boys reopens in New Orleans with new owners' - reopened at 3454 Magazine St in October 2024 under new owners Robert LeBlanc, Tristan Ferchl, and chef Josh Williams (LeBlanc + Smith hospitality group, also behind Barrel Proof and The Will & The Way): https://www.nola.com/entertainment_life/eat-drink/mahonys-po-boys-reopens-in-new-orleans-with-new-owners/article_38d8f60c-75e4-11ef-bb34-efdc2be5784e.html",
+   "Axios: 'Mahony's Po-Boys reopens Uptown: See the new menu' independently confirms address, October 2024 reopening, and new ownership: https://www.axios.com/local/new-orleans/2024/10/04/mahonys-po-boys-reopens-uptown-see-the-menu",
+   "Official restaurant site confirms address 3454 Magazine Street, hours Mon-Sun 11:00am-8:00pm (matches candidate hoursText exactly), phone 504.766.6697: https://www.mahonyspoboys.com/",
+   "Search coverage (Biz New Orleans, Where Y'at Magazine Street patio dining feature) describes the venue as 'built in a shotgun house with a compact patio leading to its front porch' offering 'takeout, dine-in, and outdoor seating' with table service -- confirming realistic restroom access for a sit-down customer, not a takeout-only window: https://bizneworleans.com/mahonys-po-boys-reopens-in-new-magazine-street-location/ , https://www.whereyat.com/magazine-street-patio-dining",
+   "OpenTable maintains an active reservation listing 'Updated 2026' for the restaurant, consistent with ongoing full-service dine-in operation: https://www.opentable.com/r/mahonys-poboys-and-seafood-new-orleans",
+   "Address 3454 Magazine St, New Orleans, LA 70115 places the venue in the Uptown/Touro area, well within Orleans Parish city limits (Magazine Street here runs nowhere near the Jefferson Parish line, which begins much further upriver near the 8200 block)."
+  ],
+  "lens": "milan-touro",
+  "confidence": "medium"
+ },
+ "pascals-manale-napoleon": {
+  "sources": [
+   "https://www.yelp.com/biz/pascals-manale-new-orleans",
+   "https://www.pascalsmanale.com/",
+   "https://www.nola.com/entertainment_life/eat-drink/brennans-buy-pascals-manale-classic-new-orleans-restaurant/article_c4635aba-c43c-11ed-b52d-eb21c7f10dde.html"
+  ],
+  "evidence": [
+   "https://www.pascalsmanale.com/ (fetched directly: confirms address 1838 Napoleon Avenue, New Orleans, LA 70115; hours Mon 4-9pm, Tue-Thu 11am-9pm, Fri 11am-10pm, Sat 3-10pm, Sun 3-9pm; no closure indication, operating under Dickie Brennan & Co.)",
+   "https://www.nola.com/entertainment_life/eat-drink/brennans-buy-pascals-manale-classic-new-orleans-restaurant/article_c4635aba-c43c-11ed-b52d-eb21c7f10dde.html (confirms 2023 acquisition by Dickie Brennan & Co.)",
+   "https://www.yelp.com/biz/pascals-manale-new-orleans (June 2026 review activity, 1838 Napoleon Ave listing, address and operating status)",
+   "https://www.google.com/maps/place/1838+Napoleon+Ave,+New+Orleans,+LA+70115 (coordinates 29.9293227, -90.1027409 confirm Orleans Parish location in Uptown New Orleans)",
+   "https://pascals-manale-by-dickie-brennan-co.weeblyte.com/ (independently lists venue as located in Orleans Parish County)",
+   "WebSearch aggregation (Gayot/accessibility listings) confirming wheelchair-accessible toilet, entrance, parking, and seating"
+  ],
+  "lens": "milan-touro",
+  "confidence": "medium"
+ },
+ "audubon-clubhouse-dickie-brennan": {
+  "sources": [
+   "https://www.audubonclubhouse.com/",
+   "https://www.yelp.com/biz/audubon-clubhouse-by-dickie-brennan-new-orleans",
+   "https://audubonnatureinstitute.org/audubon-clubhouse"
+  ],
+  "evidence": [
+   "https://www.audubonclubhouse.com/ - official site, states 'Monday \u2013 Friday 11am \u2013 8:30pm' and 'Saturday \u2013 Sunday 10am \u2013 8:30pm', confirms full-service sit-down restaurant open to the public with reservations",
+   "https://www.audubonclubhouse.com/reservations - confirms same hours and explicitly states walk-ins welcome for parties under 8, phone reservations for 8+, private dining for 12+",
+   "https://audubonnatureinstitute.org/audubon-clubhouse - operator's parent nonprofit page; lists slightly different (and likely stale) hours including Fri 11am-3pm/Sat 10am-3pm matching the candidate's claim, but page also still shows an outdated 2023 renovation-closure notice, indicating low reliability/staleness",
+   "https://www.yelp.com/biz/audubon-clubhouse-by-dickie-brennan-new-orleans - Yelp listing 'Updated April 2026', address 6975 Magazine St, New Orleans, LA 70118 confirmed, no closure indicated",
+   "https://www.yelp.com/biz/audubon-park-clubhouse-new-orleans - Yelp listing 'Updated June 2026', 90 reviews, 169 photos, active listing at same address",
+   "https://www.opentable.com/r/audubon-clubhouse-by-dickie-brennan-and-co-new-orleans - OpenTable page shows active reservation booking rated 4.4 stars from 404 diners, reservations available for June/July 2026, confirming ongoing operation",
+   "Web search result citing a recent review: reviewer celebrating a 25th anniversary noted 'even the restroom smelled clean and had the look of being cleaned frequently,' corroborating realistic indoor restroom access for paying customers"
+  ],
+  "lens": "black-pearl-riverside",
+  "confidence": "medium"
+ },
+ "the-back-nine-pontchartrain-park": {
+  "sources": [
+   "https://hoodline.com/2025/11/new-flavor-on-the-fairway-the-back-nine-to-open-at-joseph-m-bartholomew-sr-municipal-golf-course-in-new-orleans/",
+   "https://nola.gov/next/parks-parkways/news/2025-11-17-joseph-m-bartholomew,-sr-municipal-golf-course-announces-transition-to-new-restaurant-v/",
+   "https://www.instagram.com/back9nola/"
+  ],
+  "evidence": [
+   "https://nola.gov/next/parks-parkways/news/2025-11-17-joseph-m-bartholomew,-sr-municipal-golf-course-announces-transition-to-new-restaurant-v/ - official city announcement confirming opening Jan 3 2026, owner Keith Swanier II, public-facing positioning ('business lunch, romantic date, family outing')",
+   "https://hoodline.com/2025/11/new-flavor-on-the-fairway-the-back-nine-to-open-at-joseph-m-bartholomew-sr-municipal-golf-course-in-new-orleans/ - corroborates opening, replacing The Munch Factory, elevated NOLA menu, table service",
+   "https://www.facebook.com/joebartgolf/posts/meet-your-new-19th-hole-%EF%B8%8F-the-back-nine-is-now-at-joseph-m-bartholomew-sr-munici/924104073710050/ - golf course's own Facebook confirming Back Nine is now operating on site",
+   "https://www.instagram.com/back9nola/ - active Instagram account with phone number 504-777-6517, no closure indicators",
+   "https://whatnow.com/new-orleans/restaurants/elevated-classic-new-orleans-food-coming-to-golf-course-clubhouse/ - independent local press confirming address 6514 Congress Dr, hours Tue-Sun 8am-7pm closed Monday, full bar, dine-in and golf-cart service, public + golfer audience",
+   "https://www.yelp.com/biz/joseph-m-bartholomew-municipal-golf-course-new-orleans - confirms golf course location at 6514 Congress Dr, New Orleans, Orleans Parish",
+   "https://www.golfpass.com/travel-advisor/courses/14341-joseph-m-bartholomew-golf-course - independent confirmation of course location and public access"
+  ],
+  "lens": "filmore-st-anthony",
+  "confidence": "medium"
+ },
+ "red-apple-lake-forest": {
+  "sources": [
+   "https://www.yelp.com/biz/red-apple-new-orleans-2",
+   "https://www.beyondmenu.com/43640/new-orleans/red-apple---new-orleans-east-new-orleans-70127/info.aspx",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d25497542-Reviews-Red_Apple-New_Orleans_Louisiana.html"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/red-apple-new-orleans-2 \u2014 active listing, 'Updated June 2026', 17 reviews, 27 photos, address 9954 Lake Forest Blvd",
+   "https://www.beyondmenu.com/43640/new-orleans/red-apple---new-orleans-east-new-orleans-70127/info.aspx \u2014 confirms address '9954 Lake Forest Blvd Suite 6, New Orleans, LA 70127' and hours 'Monday-Saturday: 11:00 AM - 9:30 PM, Sunday: Closed' (though tags service as 'Pickup only', contradicted by other sources)",
+   "https://www.restaurantji.com/la/new-orleans/red-apple-/ \u2014 reviewer quote confirms small on-site dine-in seating: 'if you want to dine in, they have one or two small tables, but it's not large enough for a big group'",
+   "https://www.restaurant.com/locations/red-apple-new-orleans-9954-lake-forest-blvd \u2014 describes as 'Chinese dine in and take out restaurant', offers reservations",
+   "https://www.bbb.org/us/la/new-orleans/profile/restaurants/red-apple-0985-90001888 \u2014 BBB profile confirms address '9954 Lake Forest Blvd Suite 6, New Orleans, LA 70127', business active, file opened 2009, A+ rating",
+   "https://www.loopnet.com/property/9954-lake-forest-blvd-new-orleans-la-70127/22071-39W016374/ \u2014 confirms address is a real 1-story commercial shopping center ('Center East') with co-tenants Subway and Taco Bell, located in Orleans Parish",
+   "https://www.yelp.com/biz/red-apple-new-orleans \u2014 a DIFFERENT Red Apple location (1611 Franklin Ave) is marked CLOSED on Yelp; this is a distinct venue and does not affect the Lake Forest Blvd location's status",
+   "https://www.redappleneworleans.com/ \u2014 restaurant's own site (blocked by 403 on fetch, but search snippet confirms name/address consistency and 'Pickup Available' branding)"
+  ],
+  "lens": "plum-orchard-read-west",
+  "confidence": "medium"
+ },
+ "saint-manchu-nola": {
+  "sources": [
+   "https://www.yelp.com/biz/saint-manchu-new-orleans-2",
+   "https://www.saintmanchunola.com/",
+   "https://www.grubhub.com/restaurant/saint-manchu-nola-10038-chef-menteur-hwy-new-orleans/3075545"
+  ],
+  "evidence": [
+   "https://www.saintmanchunola.com/ \u2014 official site confirms address '10038 Chef Menteur Hwy, New Orleans, LA 70127' and hours 'Mon-Sun: 10:00 AM - 7:00 PM', matching candidate exactly",
+   "https://www.yelp.com/biz/saint-manchu-new-orleans-2 \u2014 'Updated May 2026' listing with 16 reviews at this address, confirms active operation into 2026",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d23434248-Reviews-Saint_Manchu_NOLA-New_Orleans_Louisiana.html \u2014 lists service options as 'Dine in, take out, or delivery', address matches",
+   "https://restaurantguru.com/Saint-Manchu-New-Orleans \u2014 shows 'Open now', address matches, Orleans Parish location",
+   "https://local.yahoo.com/info-219626140-saint-manchu-new-orleans/ \u2014 corroborates address, category (Seafood Restaurant), and active/open status",
+   "https://www.grubhub.com/restaurant/saint-manchu-nola-10038-chef-menteur-hwy-new-orleans/3075545 \u2014 corroborates address and active delivery/pickup listing",
+   "https://www.zip-codes.com/zip-code/70127/zip-code-70127.asp and related zip lookups \u2014 confirm 70127 is entirely within Orleans Parish, New Orleans East, consistent with Read Blvd/Plum Orchard neighborhood claim",
+   "https://www.yelp.com/biz/manchu-north-broad-new-orleans \u2014 'CLOSED' listing for a DIFFERENT Manchu location (Saint Philip St, Seventh Ward), correctly distinguished from the Chef Menteur Hwy venue being evaluated"
+  ],
+  "lens": "plum-orchard-read-west",
+  "confidence": "medium"
+ },
+ "yumi-sushi-hibachi-algiers": {
+  "sources": [
+   "https://www.yelp.com/biz/yumi-sushi-and-hibachi-new-orleans-2",
+   "https://yumisushihibachila.kwickmenu.com/"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/yumi-sushi-and-hibachi-new-orleans-2 (Updated February 2026, 280 photos, 106 reviews, address 5163 General De Gaulle Dr, New Orleans, LA)",
+   "https://yumisushihibachila.kwickmenu.com/ (official ordering site confirms address '5163 General DeGaulle Drive STE N, New Orleans, LA 70131', phone (504) 345-2684, hours matching candidate exactly, dine-in table service referenced)",
+   "https://blainerestaurantreport.wordpress.com/2023/09/14/yumi-sushi-hibachi-new-orleans-la-report-629/ (first-person dine-in review confirming sit-down table service, dishes served to tables, and explicit confirmation that Yumi replaced Oishii Sushi House under new ownership at the same address)",
+   "https://www.loopnet.com/Listing/5145-5163-General-Degaulle-Dr-New-Orleans-LA/6531359/ (confirms 5163 General De Gaulle Dr is a neighborhood strip center in Algiers with restaurant tenant space)",
+   "https://en.wikipedia.org/wiki/Algiers,_New_Orleans (confirms Algiers is the only Orleans Parish community on the West Bank, ruling out Jefferson/St. Bernard Parish)",
+   "https://www.grubhub.com/restaurant/yumi-sushi--hibachi-5163-general-de-gaulle-dr-new-orleans/7411864 and https://www.doordash.com/en/store/yumi-sushi-&-hibachi-new-orleans-24913700/ and https://www.ubereats.com/store/yumi-sushi-&-hibachi/u9GhEu0aRAqRJjg5F-Iglw (active current third-party delivery listings, no closure indicators)"
+  ],
+  "lens": "lower-coast-algiers",
+  "confidence": "medium"
+ },
+ "family-food-store-general-meyer": {
+  "sources": [
+   "https://www.yelp.com/biz/family-food-store-new-orleans",
+   "https://www.city-data.com/restaurants/LA/ALGIERS-DISCOUNT-FOOD-STORE.html"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/family-food-store-new-orleans (listing title shows 'Updated March 2026', address/phone match)",
+   "https://www.city-data.com/restaurants/LA/ALGIERS-DISCOUNT-FOOD-STORE.html (health inspection dated July 21, 2025, violations 'corrected', 13 total inspections on record)",
+   "https://algiers-discount-food-store.wheree.com/ (independent aggregator confirming restrooms, wheelchair accessible, takeaway service as amenities; updated November 2025)",
+   "https://nextdoor.com/pages/algiers-discount-food-store-new-orleans-la/ (neighbor commentary: 'go-to grocery destination for flavorful comfort food ingredients', no closure indication)",
+   "https://www.instagram.com/algiersdiscountstore/ (active account, 636 followers, 28 posts, phone orders daily, hours listed)",
+   "https://www.chamberofcommerce.com/business-directory/louisiana/new-orleans/grocery-store/45989925-algiers-discount-food-store (active directory listing)",
+   "https://www.yellowpages.com/new-orleans-la/mip/algiers-discount-food-store-5303669 (active listing, address confirmed)",
+   "Grocery-usa.nears.me and Wheree both consistently report 5:30 AM opening vs candidate's claimed 6:00 AM opening"
+  ],
+  "lens": "lower-coast-algiers",
+  "confidence": "medium"
+ },
+ "algiers-sports-bar": {
+  "sources": [
+   "https://www.yelp.com/biz/algiers-sports-bar-new-orleans",
+   "https://pooltrips.com/pool-places/algiers-sports-bar-1/"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/algiers-sports-bar-new-orleans (address, hours confirmed, listing updated January 2026)",
+   "https://pooltrips.com/pool-places/algiers-sports-bar-1/ (address confirmed, explicitly states wheelchair access: No, pool table and darts confirmed)",
+   "https://www.restaurantji.com/la/new-orleans/algiers-sports-bar-/ (status: Open, address and hours match, active recent reviews with no closure indication)",
+   "https://en.wikipedia.org/wiki/Algiers,_New_Orleans and search corroboration confirming Algiers is the only Orleans Parish neighborhood on the West Bank (rules out Jefferson Parish concern)",
+   "https://foursquare.com/v/algiers-sports-bar--4801-general-meyer-avenue/4ad4c04df964a5203bf320e3 (independent listing corroborating name/address)",
+   "https://untappd.com/v/algiers-sports-bar-4801-general-meyer-avenue/1701699 (independent listing corroborating name/address)"
+  ],
+  "lens": "lower-coast-algiers",
+  "confidence": "medium"
+ },
+ "bao-mi-tulane-ave": {
+  "sources": [
+   "https://www.yelp.com/biz/bao-mi-new-orleans",
+   "https://www.grubhub.com/restaurant/bao-mi-2000-tulane-ave--suite-b-new-orleans/3277881"
+  ],
+  "evidence": [
+   "https://www.facebook.com/baominola/ (confirms address 2000 Tulane Avenue, New Orleans, LA; recent May post; 1.3K likes)",
+   "Google Maps listing (via browse tool, live): '2000 Tulane Ave Ste B, New Orleans, LA 70112 \u00b7 Open \u00b7 Closes 4 PM Thursday \u00b7 10:30 AM\u20134 PM' rating 4.6, phone (504) 302-7964, located inside Louisiana State University Health Foundation building",
+   "https://www.loopnet.com/property/2000-tulane-ave-new-orleans-la-70112/22071-105105101/ (confirms official parcel/APN record at 2000 Tulane Ave, New Orleans, LA 70112, Orleans Parish)",
+   "https://www.yelp.com/biz/bao-mi-new-orleans (search-summarized: 'Updated June 2026 - 103 Photos & 55 Reviews', hours Mon 10:30am-3pm, Tue-Fri 10:30am-4pm, closed weekends, address 2000 Tulane Ave Ste B, New Orleans, LA 70112)",
+   "https://www.grubhub.com/restaurant/bao-mi-2000-tulane-ave--suite-b-new-orleans/3277881 (listed as active delivery/pickup restaurant)",
+   "Search-aggregated reviews (restaurantguru/restaurantjump/sagemenu via WebSearch) confirming indoor countertop seating: 'customers can eat at the countertop that's at the window/wall', location 'corner of Bolivar and Tulane, right next to Smoothie King', zip 70112",
+   "https://www.crexi.com/lease/properties/893120/louisiana-contemporary-commercial-building-in-no-biodistrict (independent commercial listing corroborating 2000 Tulane Ave location in New Orleans bio-district)"
+  ],
+  "lens": "tulane-gravier-biodistrict",
+  "confidence": "medium"
+ },
+ "gasa-gasa": {
+  "sources": [
+   "https://www.gasagasanola.com/calendar",
+   "https://www.nola.com/gambit/news/the_latest/new-orleans-uptown-music-club-gasa-gasa-is-reopening/article_a63d5bcc-d8ed-11ef-a109-d79c67984e84.html",
+   "https://tulanehullabaloo.com/68963/arcade/gasa-gasa-reopens-to-excitement-of-uptown-community-2/"
+  ],
+  "evidence": [
+   "https://www.gasagasanola.com/calendar - official calendar, address confirmed as 4920 Freret Street, New Orleans, LA",
+   "https://www.ticketmaster.com/gasa-gasa-tickets-new-orleans/venue/337092 - lists 41 upcoming events through Aug 2026, address 4920 Freret St, New Orleans, LA 70118 (zip discrepancy noted but resolved below), events dated July 2/3/5/9-10 and Aug 2/23, 2026",
+   "https://www.loopnet.com/property/4920-freret-st-new-orleans-la-70115/22071-614324514/ - confirms 4920 Freret St is in zip 70115 (matches candidate, contradicts Ticketmaster's 70118)",
+   "https://www.walkscore.com/score/4920-freret-st-new-orleans-la-70115 - independently confirms 70115 zip for this address",
+   "https://www.google.com/maps/search/4920%20Freret%20Street,%20New%20Orleans,%20LA%2070115,%20USA - Google Maps confirms 70115",
+   "https://www.yelp.com/biz/gasa-gasa-new-orleans - listing shows 'Updated June 2026' with 56 reviews, address 4920 Freret St",
+   "https://www.nola.com/gambit/news/the_latest/new-orleans-uptown-music-club-gasa-gasa-is-reopening/article_a63d5bcc-d8ed-11ef-a109-d79c67984e84.html - reports March 7, 2025 reopening under co-founder Micah Burns",
+   "https://tulanehullabaloo.com/68963/arcade/gasa-gasa-reopens-to-excitement-of-uptown-community-2/ - corroborates reopening, community excitement, and small DIY venue character",
+   "https://www.nola.com/gambit/music/gasa-gasa-closes-leaving-future-of-uptown-venue-uncertain/article_84340d9e-830a-11ee-9ccf-c72c2491fc4a.html - the only closure article found is the original late-2023 closure, already accounted for in the pitch; no subsequent 2025/2026 closure reporting found",
+   "https://www.indieonthemove.com/venues/gasa-gasa-new-orleans-louisiana - describes venue as small dive bar/music venue with cover charge depending on show, standing room only"
+  ],
+  "lens": "music-venues",
+  "confidence": "medium"
+ },
+ "republic-nola": {
+  "sources": [
+   "https://www.yelp.com/biz/republic-nola-new-orleans",
+   "https://nola.today/venues/republic-nola",
+   "https://www.axs.com/venues/125522/republic-nola-new-orleans-tickets/staticDetails"
+  ],
+  "evidence": [
+   "https://republicnola.com/ \u2014 official site, confirms address '828 S. Peters Street | Arts/Warehouse District | New Orleans, LA 70130', phone 504.528.8282",
+   "https://republicnola.com/calendar/upcoming-shows/ \u2014 live calendar showing a show the day of fetch (Gris Gris, doors 10pm) and continuous bookings through October 2026 (Mike Posner 7/17/26, San Holo 8/1/26, Boy Harsher 10/26/26), confirming active operation and event-driven (not fixed nightly) hours, including at least one Monday show",
+   "https://republicnola.com/faq/ \u2014 confirms 18+/21+ ticketed entry via Eventbrite, walk-up Box Office hours (Mon-Fri 11am-5pm + 1hr pre-doors), guest list and re-entry policy (realistic public restroom access for ticket/cover-paying guests), ADA-accessible first floor, and location '2 blocks from the Convention Center' confirming Orleans Parish/Warehouse District placement",
+   "https://www.yelp.com/biz/republic-nola-new-orleans \u2014 blocked by bot-detection (403) during verification attempt, not used as evidence either way",
+   "https://www.axs.com/venues/125522/republic-nola-new-orleans-tickets/staticDetails \u2014 blocked by bot-detection during verification attempt, not used as evidence either way"
+  ],
+  "lens": "music-venues",
+  "confidence": "medium"
+ },
+ "seals-class-act": {
+  "sources": [
+   "https://www.neworleans.com/listing/seals-class-act/34291/",
+   "https://www.yelp.com/biz/seals-class-act-new-orleans",
+   "https://www.facebook.com/p/Seals-Class-Act-Outreach-Social-and-Pleasure-club-100066820471904/"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/seals-class-act-new-orleans \u2014 confirms name, address 2169 Aubry St, phone, hours pattern (Mon/Wed/Thu/Sat/Sun 6pm-3am, Fri 6pm-5am, closed Tue), reviews through Dec 2025",
+   "http://www.city-data.com/restaurants/LA/SEAL-S-CLASS-ACT.html \u2014 Orleans Parish health inspection record at 2169 Aubry Street; most recent inspection March 21, 2025 with a cited violation for 'toilet room cleanliness' (proves on-site restroom exists and business was actively operating in 2025)",
+   "https://onestopapp.nola.gov/SummaryContent.aspx?type=Code+Incident&id=298583 \u2014 City of New Orleans LAMA sanitation code case tied to Seal's Class Act LLC at 2169 Aubry St, judgment issued 10/9/2024, fine paid; confirms ongoing operation, not closure",
+   "https://www.504area.com/new-orleans/east-bank/nightlife/seal_s-class-act.htm \u2014 independent listing corroborating address, hours, and description as 7th Ward dive bar with pool table, live music, TV",
+   "https://restaurantguru.com/Seals-Class-Act-New-Orleans \u2014 4.8/5 rating with recent 2026 visitor feedback confirming ongoing operation",
+   "https://www.neworleans.com/listing/seals-class-act/34291/ \u2014 official New Orleans & Co. tourism listing (existence confirmed via search index; direct fetch returned only site header)",
+   "https://www.facebook.com/p/Seals-Class-Act-Outreach-Social-and-Pleasure-club-100066820471904/ \u2014 venue's own page identifying it as an Outreach Social and Pleasure Club with live music Fri & Sun nights"
+  ],
+  "lens": "treme-7th-bar-canon",
+  "confidence": "medium"
+ },
+ "candlelight-lounge": {
+  "sources": [
+   "https://www.yelp.com/biz/candlelight-lounge-new-orleans",
+   "https://punchdrink.com/venues/candlelight-lounge/",
+   "https://www.tripadvisor.com/ShowTopic-g60864-i34-k5483840-Candlelight_Lounge_Treme_Brass_Band_only_Wednesdays-New_Orleans_Louisiana.html"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/candlelight-lounge-new-orleans (updated June 2026, lists hours Mon-Tue/Thu-Sat 3pm-2am, Wed closed)",
+   "https://www.facebook.com/Candlelightlounge925/ (active page, Feb 2025 posts re: Rebirth Brass Band performances)",
+   "https://punchdrink.com/venues/candlelight-lounge/ (confirms address, describes as neighborhood live-music bar with 'set-up' liquor model, no closure signals)",
+   "https://www.tripadvisor.com/ShowTopic-g60864-i34-k5483840-Candlelight_Lounge_Treme_Brass_Band_only_Wednesdays-New_Orleans_Louisiana.html (confirms Treme Brass Band plays Wednesdays; no closure mentioned)",
+   "https://acloserwalknola.com/places/candlelight-lounge-grease-lounge/ (confirms coordinates 29.965557,-90.070692 in Treme, Orleans Parish; notes venue's post-Katrina significance as last redoubt of live music in Treme)",
+   "https://www.wwoz.org/organizations/candlelight-lounge (New Orleans' authoritative music-venue directory lists it as an active organization)",
+   "Search-aggregated info confirms late owner Leona Grandison died April 2020 (COVID-19) and venue reopened under family ownership, corroborating the pitch's specific claim"
+  ],
+  "lens": "treme-7th-bar-canon",
+  "confidence": "medium"
+ },
+ "hanks-bar": {
+  "sources": [
+   "https://www.yelp.com/biz/hanks-bar-new-orleans",
+   "https://www.restaurantji.com/la/new-orleans/hanks-bar-/"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/hanks-bar-new-orleans",
+   "https://www.restaurantji.com/la/new-orleans/hanks-bar-/",
+   "https://www.facebook.com/p/Hanks-Bar-100063746135444/",
+   "https://wanderlog.com/place/details/730730/hanks-bar",
+   "https://ag.homefacts.com/properties/Louisiana/Orleans-Parish/New-Orleans/70116/N-Robertson-St-9.html",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d26949524-Reviews-Hank_s_Bar-New_Orleans_Louisiana.html",
+   "https://www.yelp.com/biz/hanks-restaurant-new-orleans (stale duplicate listing marked closed - superseded by active Hank's Bar listing)"
+  ],
+  "lens": "treme-7th-bar-canon",
+  "confidence": "medium"
+ },
+ "whiskey-and-sticks": {
+  "sources": [
+   "https://www.yelp.com/biz/whiskey-and-sticks-new-orleans",
+   "https://whiskeysticks.toast.site/",
+   "https://www.eatokra.com/businesses/whiskey-sticks"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/whiskey-and-sticks-new-orleans",
+   "https://www.eatokra.com/businesses/whiskey-sticks",
+   "https://whiskeysticks.toast.site/",
+   "https://whiskey-sticks.wheree.com/",
+   "https://www.n49.com/biz/6511402/whiskey-&-sticks-la-new-orleans-2513-bayou-rd-70119/",
+   "https://www.restaurantji.com/la/new-orleans/whiskey-and-sticks-/",
+   "https://www.instagram.com/whiskey.sticks.nola/",
+   "https://nolarolla.com/new-orleans-wheelchair-accessible/new-orleans-wheelchair-accessible-bars/",
+   "https://www.neworleans.com/listing/whiskey-&-sticks/36812/",
+   "https://bizneworleans.com/whiskey-and-sticks/"
+  ],
+  "lens": "treme-7th-bar-canon",
+  "confidence": "medium"
+ },
+ "verrets-lounge": {
+  "sources": [
+   "https://www.nola.com/entertainment_life/eat-drink/welcome-to-the-neighborhood-bar-verret-s-in-central-city/article_6fcd0a14-82d5-5bd5-962d-f8475377869c.html",
+   "https://www.yelp.com/biz/verrets-bar-and-lounge-new-orleans-2",
+   "https://www.neworleans.com/listing/verrets-lounge/34302/"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/verrets-bar-and-lounge-new-orleans-2 (Yelp listing updated April/May 2026, 41 reviews, 35 photos, address 1738 Washington Ave New Orleans LA 70113)",
+   "https://www.tripadvisor.com/Attraction_Review-g60864-d27945976-Reviews-Verret_s_Lounge-New_Orleans_Louisiana.html (confirms address 1738 Washington Ave, LA 70113-1726; hours Thu-Wed 3PM-1AM, Sat-Sun 11AM-2AM)",
+   "https://local.yahoo.com/info-164727504-verret-s-lounge-new-orleans/ (confirms same address and same hours pattern as TripAdvisor; independent structured-data source)",
+   "https://www.nola.com/entertainment_life/eat-drink/welcome-to-the-neighborhood-bar-verret-s-in-central-city/article_6fcd0a14-82d5-5bd5-962d-f8475377869c.html (nola.com/Advocate feature: located at Washington Ave and Baronne St in Central City, 'recently reopened,' full bar, no food beyond Zapp's, open every day, patio in development)",
+   "https://punchdrink.com/venues/verrets-lounge/ (independent trade publication profile confirming operations, motto, drink menu)",
+   "https://www.instagram.com/verretsnola/ and https://www.facebook.com/verretsnola/ (active official social presence)",
+   "https://www.toasttab.com/local/verrets-lounge-1738-washington-ave/r-33693f78-9393-4df5-814c-7a8716880d0d (active online ordering page tied to same address, indicating current operations)"
+  ],
+  "lens": "central-city-bars-venues",
+  "confidence": "medium"
+ },
+ "holy-sheets-laundromat": {
+  "sources": [
+   "https://www.holy-sheets.com/",
+   "https://www.yelp.com/biz/holy-sheets-laundromat-new-orleans"
+  ],
+  "evidence": [
+   "https://www.holy-sheets.com/ - official site, confirms address 1743 N. Broad Street, New Orleans, LA 70119 and hours Mon-Sun 8AM-9PM, last load 7:30PM; self-service + full-service wash-dry-fold with pick-up/delivery",
+   "https://www.holy-sheets.com/contact - official contact page reconfirms identical address and hours; no restroom mention either way",
+   "https://www.yelp.com/biz/holy-sheets-laundromat-new-orleans - Yelp listing updated March 2026 (18 photos), address and hours match, indicates active/current operation",
+   "https://holy-sheets-laundromat.wheree.com/ - aggregator citing reviews describing 'friendly staff' and attended service, consistent with a staffed (not unattended coin-op) facility",
+   "https://www.qualitybusinessawards.com/2026/the-best-Laundromat-in-New-Orleans-Louisiana/Holy-Sheets-Laundromat - 2026 'best laundromat' recognition, positive operating-status signal",
+   "https://www.instagram.com/holysheetslaundry/ - active social presence promoting a new Uptown location 'coming soon', indicating business is growing, not closing",
+   "https://www.yellowpages.com/new-orleans-la/mip/holy-sheets-laundromat-577680499 and https://www.neworleanschamber.org/list/member/holy-sheets-laundromat-22406 - independent directory listings corroborating address and active status"
+  ],
+  "lens": "laundromats",
+  "confidence": "medium"
+ },
+ "new-orleans-city-hall": {
+  "sources": [
+   "https://nola.gov/contact-us/",
+   "https://www.yelp.com/biz/city-of-new-orleans-new-orleans-2",
+   "https://www.yelp.com/biz/new-orleans-city-hall-new-orleans"
+  ],
+  "evidence": [
+   "https://nola.gov/contact-us/ \u2014 confirms address 1300 Perdido St and phone; no hours listed on this specific page but corroborates address",
+   "https://www.yelp.com/biz/new-orleans-city-hall-new-orleans \u2014 listing 'Updated June 2026', 41 photos, 17 reviews, hours M-F 8am-5pm; reviewer mentions metal detectors at entry",
+   "https://www.yelp.com/biz/city-of-new-orleans-new-orleans-2 \u2014 listing 'Updated June 2026', 2,175 photos, 162 reviews, confirms active/current operation and hours M-F 8am-5pm, closed weekends",
+   "https://www.nola.com/news/politics/city-council-approves-land-swap-in-effort-to-build-new-city-hall-on-duncan-plaza/article_ea4372d2-e7a0-11ee-ac40-3b884131ac5a.html \u2014 confirms relocation is only at land-swap-approval stage (March 2024), no funding/timeline, City Hall remains at Perdido St",
+   "https://nola.gov/next/mayors-office/news/articles/february-2025/2025-02-03-update-%E2%80%93-city-hall-offices-closed-to-the-public/ \u2014 documents a temporary one-week closure (Feb 3-7, 2025), long resolved, not indicative of current status",
+   "https://nola.gov/next/city-planning/news/april-14,-2026,-city-planning-commission-meeting-change-of-location/ \u2014 April 2026 notice moving one meeting away from City Hall implies City Hall is the normal ongoing venue",
+   "https://www.nola.com/news/politics/all-gender-bathrooms-in-new-orleans-city-hall-approved-by-mayor-records-show/article_7e7035cc-2bdd-5252-8af3-81d61c752865.amp.html \u2014 confirms first-floor restrooms at City Hall are a recognized facility undergoing ADA-compliance/all-gender renovation discussion",
+   "https://www.axios.com/local/new-orleans/2025/07/18/one-option-to-solve-new-orleans-public-restroom-problem \u2014 context on New Orleans' scarcity of ~20 public restrooms citywide, situating City Hall within that landscape (fetch blocked by 403 but referenced via search snippet)"
+  ],
+  "lens": "government-public-buildings",
+  "confidence": "medium"
+ },
+ "louisiana-supreme-court-museum": {
+  "sources": [
+   "https://www.sclahs.org/about-the-society/history/museum/",
+   "https://heartoflouisiana.com/louisiana-supreme-court/",
+   "https://www.lsba.org/NewsArticle.aspx?Article=c7d0aa5b-8799-4bfa-a1a8-73e5c21e9ff3"
+  ],
+  "evidence": [
+   "https://www.sclahs.org/about-the-society/history/museum/ \u2014 confirms museum location, self-guided access, 8:30am-4:30pm Mon-Fri hours, free entry, Plessy v. Ferguson and Chief Justice portrait exhibits",
+   "https://www.lsba.org/NewsArticle.aspx?Article=c7d0aa5b-8799-4bfa-a1a8-73e5c21e9ff3 \u2014 confirms courthouse/clerk's office new hours 8:30am-4:30pm effective July 1 (changed from 9am-5pm), at 400 Royal Street",
+   "https://lasc.libguides.com/content/hours-directions \u2014 official Law Library of Louisiana page confirms Mon-Fri 8:30am-4:30pm hours, public welcome, ID + security screener required, no food/beverage/cameras (mobile devices ok)",
+   "https://heartoflouisiana.com/louisiana-supreme-court/ \u2014 confirms visitors welcome, museum and public law library on site, Plessy v. Ferguson exhibit, rare law books",
+   "https://www.yelp.com/biz/supreme-court-of-louisiana-new-orleans \u2014 Yelp listing actively updated as of June 2026, indicating the venue is currently operating (not closed/defunct)"
+  ],
+  "lens": "government-public-buildings",
+  "confidence": "medium"
+ },
+ "orleans-parish-civil-district-court": {
+  "sources": [
+   "https://www.orleanscivilclerk.com/hours.html",
+   "https://www.yelp.com/biz/civil-district-court-parish-of-orleans-new-orleans"
+  ],
+  "evidence": [
+   "https://www.orleanscivilclerk.com/hours.html \u2014 official Clerk of Court page confirming address (421 Loyola Ave, Room 402) and hours (Mon-Fri 8:30 AM-5:00 PM) exactly as claimed",
+   "https://www.yelp.com/biz/civil-district-court-parish-of-orleans-new-orleans \u2014 Yelp listing titled 'Updated June 2026', confirming the courthouse is currently active/operating, address 421 Loyola Ave, New Orleans, LA",
+   "https://www.orleanscivildistrictcourt.org/ \u2014 official court site, live and current, corroborating the institution's active status",
+   "Web search for closure/relocation news in 2025-2026 turned up no results indicating permanent closure; only historical references (2020 COVID closure, routine Louisiana Supreme Court closure orders for holidays/emergencies) were found"
+  ],
+  "lens": "government-public-buildings",
+  "confidence": "medium"
+ },
+ "algiers-courthouse": {
+  "sources": [
+   "https://friendsofthealgierscourthouse.org/",
+   "https://www.yelp.com/biz/algiers-courthouse-new-orleans"
+  ],
+  "evidence": [
+   "https://www.orleanscivildistrictcourt.org/second-city-court-clerk \u2014 official source confirming address (225 Morgan Street, Room 206, New Orleans, LA 70114) and hours 'Monday through Friday 9:00 AM to 4:00PM'",
+   "https://friendsofthealgierscourthouse.org/ and /history.html \u2014 confirms nonprofit Friends of the Algiers Courthouse (501c3, EIN 72-1306631) partnership and 1896 building history",
+   "https://www.yelp.com/biz/algiers-courthouse-new-orleans \u2014 listing 'Updated May 2026' with 16 reviews/41 photos, no closure indicator, confirms address",
+   "https://neworleanshistorical.org/items/show/1457 \u2014 confirms 1896 construction, Moorish-influenced Richardsonian style, location near Algiers/Canal St Ferry",
+   "https://sah-archipedia.org/buildings/LA-02-OR213 \u2014 architectural/historical confirmation of building at this address",
+   "https://www.algiersconstable.com/index.php/contact/2-main-office \u2014 confirms Algiers Constable office at 225 Morgan St, active phone (504) 598-5365",
+   "https://www.waze.com/live-map/directions/algiers-courthouse-morgan-st-225-new-orleans \u2014 business listing attributes indicate restroom and wheelchair accessibility"
+  ],
+  "lens": "government-public-buildings",
+  "confidence": "medium"
+ },
+ "atelier-vie": {
+  "sources": [
+   "https://ateliervie.com/",
+   "https://ateliervie.com/visit/",
+   "https://www.yelp.com/biz/atelier-vie-new-orleans"
+  ],
+  "evidence": [
+   "https://ateliervie.com/ (official site homepage, confirms $30/person tasting fee as of May 2026 mention, no closure notices)",
+   "https://ateliervie.com/visit/ (confirms address '1001 S. Broad Street... GPS navigation to 3928 Euphrosine St.', entry process via call box, weekend tasting hours 10am/noon/2pm, text/call 504-534-8590 to book)",
+   "https://www.explorelouisiana.com/tastings/atelier-vie (state tourism board listing, corroborates appointment-based tastings weekends 10am/noon/2pm)",
+   "https://www.tripadvisor.com/Attraction_Review-g60864-d6468671-Reviews-Atelier_Vie-New_Orleans_Louisiana.html (confirms address '1001 S Broad St ArtEgg Building, New Orleans, LA 70125-1423, Gert Town', hours 'Open every weekend from 10-2 on Saturday & Sunday for our Bottle Sales Hours')",
+   "https://www.yelp.com/biz/atelier-vie-new-orleans (listing updated December 2025, still active, same address)",
+   "https://www.artegg.com/ (confirms ArtEgg Studios is an active, functioning multi-tenant arts/commercial building at 1001 S Broad St, ~40 tenants, 25th anniversary event held May 2026)"
+  ],
+  "lens": "distilleries",
+  "confidence": "medium"
+ },
+ "guys-po-boys": {
+  "sources": [
+   "https://www.yelp.com/biz/guys-po-boys-new-orleans",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d1213180-Reviews-Guy_s_Po_Boys-New_Orleans_Louisiana.html",
+   "https://guys-po-boys.hey-restaurants.com/"
+  ],
+  "evidence": [
+   "https://www.yelp.com/biz/guys-po-boys-new-orleans (updated June 2026, 443 reviews, hours Mon-Sat 11am-4pm confirmed, address 5259 Magazine St confirmed)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d1213180-Reviews-Guy_s_Po_Boys-New_Orleans_Louisiana.html (January 2026 dine-in review, November 2025 review, 'wheelchair accessible', 'small number of tables' for dine-in, hours confirmed 'Open until 4:00 PM')",
+   "https://guys-po-boys.hey-restaurants.com/ (official site: hours Mon-Sat 11am-4pm confirmed, dine-in/takeaway/delivery offered, address confirmed)",
+   "https://www.nola.com/entertainment_life/eat-drink/article_2fce6aa0-618f-509d-bd82-0927c63186ac.html (historical truck-crash closure resolved with reopening \u2014 not a current closure signal)",
+   "Walk Score / neighborhood search confirming 5259 Magazine St is in Orleans Parish, Uptown neighborhood, zip 70115"
+  ],
+  "lens": "poboys-lunch-final",
+  "confidence": "medium"
+ },
+ "favela-chic": {
+  "sources": [
+   "https://www.yelp.com/biz/favela-chic-new-orleans",
+   "https://favelachicnola.com/"
+  ],
+  "evidence": [
+   "https://favelachicnola.com/ \u2014 official site confirms address 525 Frenchmen St, New Orleans, LA 70116, phone (504) 312-3912, describes it as 'a bar, restaurant, and live music venue' with '3 rooms with 3 different bars,' serving pizza and Latin food, offering table reservations and VIP sections; no closure indication, actively promotes bookings/food ordering/private events",
+   "https://www.yelp.com/biz/favela-chic-new-orleans \u2014 listing title shows 'Updated May 2026 - 152 Photos & 126 Reviews', address 525 Frenchmen St, New Orleans, Louisiana, category Pizza/Restaurant",
+   "https://nola.today/venues/favela-chic \u2014 page metadata shows 'Updated about 10 hours Ago' confirming active/current listing maintenance in 2026",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d12347780-Reviews-Favela_Chic-New_Orleans_Louisiana.html \u2014 listing active (not marked permanently closed), shows hours Mon-Sat 6pm-2am/Sun closed, recent reviews as of August 2025 describing indoor seating ('low tops with plastic chairs'), praising pizza and tacos, confirming ongoing operation with sit-down interior space",
+   "https://www.songkick.com/venues/4117299-favela-chic \u2014 lists upcoming concerts/tickets for the venue into 2026-2027, corroborating ongoing live-music operations",
+   "Aggregator search snippet (Grubhub/Seamless-sourced) \u2014 hours Mon-Thu & Sun 6pm-3am, Fri 5pm-3am, Sat 4pm-3am, phone (504) 312-3912 matches official site"
+  ],
+  "lens": "frenchmen-final",
+  "confidence": "medium"
+ },
+ "ayu-bakehouse": {
+  "sources": [
+   "https://www.yelp.com/biz/ayu-bakehouse-new-orleans",
+   "https://www.ayubakehouse.com/"
+  ],
+  "evidence": [
+   "https://www.ayubakehouse.com/ \u2014 official site confirms address 801 Frenchmen Street, New Orleans, LA (zip listed as 70116) and hours: Mon-Tue 8am-2pm, Wed-Sun 8am-3:30pm, matching candidate exactly",
+   "https://www.yelp.com/biz/ayu-bakehouse-new-orleans \u2014 236 reviews, 554 photos, updated June 2026, listing address as 801 Frenchmen St, New Orleans, LA 70117 (matches candidate zip)",
+   "https://www.axios.com/local/new-orleans/2024/09/09/ayu-bakehouse-bakery-sliced-bread-king-cake \u2014 feature confirming ongoing operation and popularity, 'worth a stop year-round'",
+   "https://ayu-bakehouse.placejoys.com/ \u2014 confirms indoor counter seating, gender-neutral and wheelchair-accessible restrooms toward the back of the venue",
+   "https://www.nola.com/entertainment_life/eat-drink/new-bakery-caf-ayu-opens-on-frenchmen-street-reviving-one-long-idled-corner/article_ba6967ea-d54d-11ec-b8d0-d74cafc453ca.html \u2014 nola.com opening coverage confirming location and format",
+   "Real estate listings (LoopNet, Trulia, McEnery Company) show both 70116 and 70117 zip codes in use for 801 Frenchmen St, confirming a genuine local zip ambiguity rather than an address error"
+  ],
+  "lens": "frenchmen-final",
+  "confidence": "medium"
+ },
+ "ideal-market-s-broad": {
+  "sources": [
+   "https://www.idealmarket.com/store-locations/",
+   "https://www.yelp.com/biz/ideal-market-new-orleans-9",
+   "https://www.myneworleans.com/an-ideal-grocery/"
+  ],
+  "evidence": [
+   "https://www.idealmarket.com/store-locations/ \u2014 official locator confirms '250 South Broad, LA 70119, (504) 822-8861, Mon-Sun: 6am-10pm' as an active (non-'Coming Soon') location",
+   "https://ldh.la.gov/directory/detail/13407 \u2014 Louisiana Dept. of Health lists 'Ideal Discount Market' with physical address '250 S Broad St, New Orleans, LA 70119', confirming Orleans Parish location",
+   "https://www.yelp.com/biz/ideal-market-new-orleans-9 \u2014 53 photos, 59+ reviews, updated as recently as April 2026, confirms address, grocery/deli/bakery format, wheelchair accessible, delivery offered",
+   "https://welcometonola.com/place/ideal-market-2/ \u2014 independently corroborates address (250 S Broad St #4) and daily operating hours, 423 reviews, 3.9 stars, no closure indication",
+   "https://www.myneworleans.com/an-ideal-grocery/ \u2014 press profile of the Ideal Market chain confirming supermarket format (produce, bakery, deli, prepared foods) typical across its locations, though focused on the Metairie flagship store rather than this specific location"
+  ],
+  "lens": "groceries-final",
+  "confidence": "medium"
+ },
+ "mardi-gras-zone": {
+  "sources": [
+   "https://www.yelp.com/biz/mardi-gras-zone-new-orleans",
+   "https://www.mardigraszone.com/supermarket.html",
+   "https://www.nola.com/gambit/cue_magazine/whats-in-store-mardi-gras-zone/article_4fd606f7-8edb-5b9c-b532-f8827fd19e3d.html"
+  ],
+  "evidence": [
+   "https://www.mardigraszone.com/supermarket.html \u2014 official site confirms 2706 Royal Street walk-in supermarket, local pickup for Greater New Orleans customers",
+   "https://www.yelp.com/biz/mardi-gras-zone-new-orleans \u2014 listing 'Updated June 2026', 96 photos, 119 reviews, no closure flag",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d6576982-Reviews-Mardi_Gras_Zone-New_Orleans_Louisiana.html \u2014 not marked closed; hours '7:00 AM - 1:00 AM' daily; address 2706 Royal St, New Orleans, LA 70117-7358",
+   "https://maps.apple.com/place?place-id=I4A6B2F5B5E9BB02C \u2014 hours 'Every Day 7:00AM \u2013 1:00AM', status 'Open'",
+   "https://overlookmaps.com/places/mardi-gras-zone-new-orleans-1365137483244892 \u2014 independent aggregator, status 'Open', 'Closes 1:00 AM'",
+   "https://www.nola.com/gambit/cue_magazine/whats-in-store-mardi-gras-zone/article_4fd606f7-8edb-5b9c-b532-f8827fd19e3d.html \u2014 background: store established 2005 post-Katrina, two-level layout (groceries/deli downstairs, Mardi Gras merchandise upstairs), confirming genuine walk-in retail format"
+  ],
+  "lens": "groceries-final",
+  "confidence": "medium"
+ },
+ "high-grinds-coffee": {
+  "sources": [
+   "https://www.nola.com/entertainment_life/eat-drink/high-grinds-thc-coffee/article_a7866ce7-62d0-4bb9-b317-a2cdbafea8a4.html",
+   "https://bizneworleans.com/high-grinds-opens-on-st-charles-ave/",
+   "https://www.yelp.com/biz/high-grinds-coffee-new-orleans"
+  ],
+  "evidence": [
+   "https://highgrindscoffee.com/ \u2014 confirms address 1722 St. Charles Ave, hours Mon-Fri 7-6/Sat-Sun 8-3, 1600 sq ft indoor venue with 20 cafe chairs + 8 barstools, full-service dine-in with event hosting",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d34003235-Reviews-High_Grinds_Coffee-New_Orleans_Louisiana.html \u2014 shows live 'Open until 6:00 PM' status, matching hours, seating feature listed, review mentions 'plenty of spaces to relax and work'",
+   "https://bizneworleans.com/high-grinds-opens-on-st-charles-ave/ \u2014 confirms 1722 St. Charles Ave address, opened Dec. 2, 2025, quotes owner describing a lingering-friendly cafe atmosphere",
+   "https://www.nola.com/entertainment_life/eat-drink/high-grinds-thc-coffee/article_a7866ce7-62d0-4bb9-b317-a2cdbafea8a4.html \u2014 pre-opening preview confirming historic 1850s building, ground-floor cafe with seating areas (though this article lists address as 1724, a minor discrepancy vs. the post-opening 1722 confirmed by the business's own site and other sources)",
+   "https://www.yelp.com/biz/high-grinds-coffee-new-orleans \u2014 lists address as 1722 Saint Charles Ave, active listing with 16 photos as of March 2026, no closure indicators"
+  ],
+  "lens": "cafes-final",
+  "confidence": "medium"
+ },
+ "deutsches-haus": {
+  "sources": [
+   "https://deutscheshaus.org/",
+   "https://www.yelp.com/biz/deutsches-haus-new-orleans-2",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d17820520-Reviews-Deutsches_Haus-New_Orleans_Louisiana.html"
+  ],
+  "evidence": [
+   "https://deutscheshaus.org/ (official site, confirms address 1700 Moss St, active operations)",
+   "https://deutscheshaus.org/the-haus/ (venue description as biergarten/restaurant/social club)",
+   "https://deutscheshaus.org/events/fruhlingsfest-2026/ (confirms Fr\u00fchlingsfest scheduled April 10-12, 2026 \u2014 venue actively operating)",
+   "https://www.whereyat.com/deutsches-haus-new-orleans-oktoberfest (confirms Oktoberfest 2025 held Oct 10-11, 17-18, 24-25, 2025)",
+   "https://www.nola.com/entertainment_life/eat-drink/new-deutsches-haus-opens-by-bayou-st-john-creating-a-different-kind-of-social-space/article_3274a97a-5cd5-5e87-a6d0-25d6a9589835.html (background on 2018 move to Moss St location on Bayou St. John, Orleans Parish)",
+   "https://www.yelp.com/biz/deutsches-haus-new-orleans-2 (135 photos, 41 reviews, listing current as of June 2026, confirms address and active status; also source of alternate/possibly outdated hours and accessibility/restroom amenity data)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d17820520-Reviews-Deutsches_Haus-New_Orleans_Louisiana.html (restaurant reviews confirm bar/food operation)",
+   "https://deutscheshaus.org/history/ (confirms Moss Street site history and Orleans Parish location, formerly Camp Nicholls/3rd District police station site)"
+  ],
+  "lens": "esplanade-ridge-final",
+  "confidence": "medium"
+ },
+ "cibo-italian-eatery-deli": {
+  "sources": [
+   "https://cibonola.com/",
+   "https://www.yelp.com/biz/cibo-new-orleans-3"
+  ],
+  "evidence": [
+   "https://cibonola.com/ (own site, evening-only hours: Mon-Fri 7pm-1am, Sat 7pm-2am, Sun 7:30pm-12am)",
+   "https://www.yellowpages.com/new-orleans-la/mip/cibo-italian-eatery-and-deli-503066462 (corroborates same hours and Ste A address)",
+   "https://order.online/store/cibo-carrollton-ave-23627135 (live ordering platform, same address)",
+   "https://www.yelp.com/biz/cibo-new-orleans-3 (updated June 2026, 175 reviews, active listing)",
+   "https://www.doordash.com/store/cibo-italian-eatery-and-deli-new-orleans-23627135/ (4.5 stars, 500+ reviews, active)",
+   "https://www.ubereats.com/store/cibo:-italian-eatery-&-deli/lT2W5lc8QcSx8KBxYfbTZA (active delivery listing)",
+   "https://www.facebook.com/p/CIBO-100063472153032 (job postings as recent as March 2026 indicating ongoing operations)",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d10125461-Reviews-Cibo_Italian_Eatery_and_Deli-New_Orleans_Louisiana.html (confirms indoor + outdoor patio seating under oak trees; note: its listed daytime hours conflict with all other sources and were treated as unreliable)",
+   "https://www.bbb.org/us/la/new-orleans/profile/restaurants/cibo-italian-eatery-and-deli-0985-90043211 (confirms address, active profile since 2024)"
+  ],
+  "lens": "carrollton-oak-final",
+  "confidence": "medium"
+ },
+ "laundromat-zone-old-gentilly": {
+  "sources": [
+   "https://laundromatzonenola.com/",
+   "https://laundryarchive.com/laundromats/la/new-orleans/3544/laundromat-zone"
+  ],
+  "evidence": [
+   "https://laundryarchive.com/laundromats/la/new-orleans/3544/laundromat-zone",
+   "https://www.chamberofcommerce.com/business-directory/louisiana/new-orleans/laundromat/2001064028-laundromat-zone",
+   "https://www.yelp.com/biz/laundromat-zone-new-orleans-4",
+   "https://laundromatzonenola.com/",
+   "https://www.yelp.com/biz/laundromat-zone-new-orleans (sister Claiborne location \u2014 restroom mentioned in reviews)",
+   "https://wanderboat.ai/local-businesses/united-states/new-orleans/laundromat-zone/vNfKEih2Q263hh8z8gWhvg (sister location restroom reviews)",
+   "https://www.yellowpages.com/new-orleans-la/mip/laundromat-zone-554954973"
+  ],
+  "lens": "laundromats",
+  "confidence": "low"
  }
 }
