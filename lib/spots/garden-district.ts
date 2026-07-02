@@ -397,4 +397,17 @@ export const GARDEN_DISTRICT_SPOTS: readonly Spot[] = [
     verify: true,
     tip: "Punk-rock burrito institution on lower Magazine, open 11 to 10 daily. Order at the bar if the tables are full — customers get the restroom, no questions.",
   },
+  {
+    id: "hotel-saint-vincent-lobby",
+    name: "Hotel Saint Vincent (Lobby)",
+    category: "lobby",
+    lat: 29.93423,
+    lng: -90.07283,
+    address: "1507 Magazine St, New Orleans, LA 70130",
+    neighborhood: "Lower Garden District",
+    hours: "24/7",
+    free: true,
+    wheelchair: true,
+    tip: "A restored 1861 orphanage turned scene-y hotel — the lobby opens onto the Paradise Lounge and Chapel Club. Accessible public washroom on the amenity list; the décor alone is worth the detour.",
+  },
 ];

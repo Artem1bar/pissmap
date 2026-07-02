@@ -510,24 +510,6 @@
   "lens": "magazine-upper",
   "confidence": "high"
  },
- "rosa-f-keller-library": {
-  "sources": [
-   "http://www.nolalibrary.org/branch/8/rosa-f-keller-library-community-center",
-   "https://en.wikipedia.org/wiki/Rosa_F._Keller_Library_and_Community_Center",
-   "https://www.yelp.com/biz/rosa-f-keller-library-and-community-center-new-orleans"
-  ],
-  "evidence": [
-   "http://www.nolalibrary.org/branch/8/rosa-f-keller-library-community-center",
-   "https://en.wikipedia.org/wiki/Rosa_F._Keller_Library_and_Community_Center",
-   "https://www.yelp.com/biz/rosa-f-keller-library-and-community-center-new-orleans",
-   "https://nolalibrary.libanswers.com/faq/433890 (FAQ: When will Rosa F. Keller Library reopen \u2014 confirms Dec 1 2025 closure and Feb 2026 reopening)",
-   "https://www.instagram.com/p/DRgIIYMEh_M/ (official closure announcement: Dec 1 2025 start, ~2 months, roof repairs)",
-   "https://nolalibrary.org/tag/rosa-f-keller-library-community-center/",
-   "https://nolalibrary.org/2025/04/29/new-early-literacy-center/ (references Keller as active nearby branch during another branch's 2025 renovation)"
-  ],
-  "lens": "freret-broadmoor",
-  "confidence": "high"
- },
  "the-company-burger-freret": {
   "sources": [
    "https://thecompanyburger.com/",
@@ -3411,14 +3393,6 @@
   "lens": "salvage-from-adversarial-rejection",
   "confidence": "medium"
  },
- "nopl-mid-city": {
-  "sources": [],
-  "evidence": [
-   "Salvaged from the adversarial-verification round: the verifier confirmed the venue exists and operates; this entry applies the corrections (hours/name/claims) from its rejection note."
-  ],
-  "lens": "salvage-from-adversarial-rejection",
-  "confidence": "medium"
- },
  "mcdonalds-st-charles": {
   "sources": [],
   "evidence": [
@@ -3556,6 +3530,552 @@
    "Official NOPL page lists hours and explicitly confirms open walk-in access"
   ],
   "lens": "gap-central-city",
+  "confidence": "high"
+ },
+ "four-seasons-lobby": {
+  "sources": [
+   "https://www.fourseasons.com/neworleans/dining/lounges/chandelier-bar/",
+   "https://www.fourseasons.com/neworleans/accommodations/accessibility-overview/"
+  ],
+  "evidence": [
+   "Hotel's own pages confirm lobby-level bar and wheelchair-accessible public washroom"
+  ],
+  "lens": "gap-hotels-2",
+  "confidence": "high"
+ },
+ "windsor-court-lobby": {
+  "sources": [
+   "https://www.tripadvisor.com/Hotel_Review-g60864-d89158-Reviews-The_Windsor_Court-New_Orleans_Louisiana.html",
+   "https://thewindsorcourt.com/dining/polo-club/"
+  ],
+  "evidence": [
+   "2026 TripAdvisor review describes the lobby restroom directly"
+  ],
+  "lens": "gap-hotels-2",
+  "confidence": "high"
+ },
+ "loews-new-orleans-lobby": {
+  "sources": [
+   "https://www.loewshotels.com/new-orleans",
+   "https://www.loewshotels.com/new-orleans/discover/services-amenities"
+  ],
+  "evidence": [
+   "Hotel amenities page confirms wheelchair-accessible public washroom"
+  ],
+  "lens": "gap-hotels-2",
+  "confidence": "high"
+ },
+ "hilton-riverside-lobby": {
+  "sources": [
+   "https://www.hilton.com/en/hotels/msynhhh-hilton-new-orleans-riverside/dining/dragos-seafood/",
+   "https://www.hilton.com/en/hotels/msynhhh-hilton-new-orleans-riverside/amenities/"
+  ],
+  "evidence": [
+   "Hotel amenities page confirms accessible lobby-level washroom; Drago's inside main entrance"
+  ],
+  "lens": "gap-hotels-2",
+  "confidence": "high"
+ },
+ "nopsi-hotel-lobby": {
+  "sources": [
+   "https://www.nopsihotel.com/",
+   "https://www.yelp.com/biz/nopsi-hotel-new-orleans-2"
+  ],
+  "evidence": [
+   "Hotel confirms ADA restroom; Yelp active through July 2026"
+  ],
+  "lens": "gap-hotels-2",
+  "confidence": "high"
+ },
+ "old-no-77-lobby": {
+  "sources": [
+   "https://www.old77hotel.com/statements-policies/accessibility",
+   "https://www.old77hotel.com/"
+  ],
+  "evidence": [
+   "Hotel accessibility page explicitly lists an accessible lobby restroom"
+  ],
+  "lens": "gap-hotels-2",
+  "confidence": "high"
+ },
+ "troubadour-hotel-lobby": {
+  "sources": [
+   "https://www.thetroubadour.com/restaurant",
+   "https://www.yelp.com/biz/troubadour-lounge-and-listening-room-new-orleans-2"
+  ],
+  "evidence": [
+   "Ground-floor signature restaurant off the lobby; active 2026"
+  ],
+  "lens": "gap-hotels-2",
+  "confidence": "high"
+ },
+ "renaissance-pere-marquette-lobby": {
+  "sources": [
+   "https://www.marriott.com/en-us/hotels/msybr-renaissance-new-orleans-pere-marquette-french-quarter-area-hotel/overview/",
+   "https://www.yelp.com/biz/renaissance-new-orleans-pere-marquette-french-quarter-area-hotel-new-orleans"
+  ],
+  "evidence": [
+   "Accessible public washroom confirmed; lobby coffee shop active"
+  ],
+  "lens": "gap-hotels-2",
+  "confidence": "high"
+ },
+ "hotel-saint-vincent-lobby": {
+  "sources": [
+   "https://www.yelp.com/biz/hotel-saint-vincent-new-orleans",
+   "https://www.papercitymag.com/culture/hotel-saint-vincent-new-orleans-vacation-magazine-street/"
+  ],
+  "evidence": [
+   "Accessible public washroom listed among amenities; venues active 2025-2026"
+  ],
+  "lens": "gap-hotels-2",
+  "confidence": "high"
+ },
+ "q-and-c-hotel-lobby": {
+  "sources": [
+   "https://wheelchairtravel.org/new-orleans-hotels/",
+   "https://www.qandc.com/"
+  ],
+  "evidence": [
+   "Accessibility documentation notes lobby restrooms"
+  ],
+  "lens": "gap-hotels-2",
+  "confidence": "high"
+ },
+ "wrong-iron": {
+  "sources": [
+   "https://wrongiron.com/",
+   "https://www.yelp.com/biz/wrong-iron-new-orleans"
+  ],
+  "evidence": [
+   "Official site live with current hours; Yelp June 2026"
+  ],
+  "lens": "gap-midcity-2",
+  "confidence": "high"
+ },
+ "bayou-beer-garden": {
+  "sources": [
+   "https://bayoubeergarden.com/",
+   "https://www.yelp.com/biz/bayou-beer-garden-new-orleans"
+  ],
+  "evidence": [
+   "Official site live; Yelp June 2026"
+  ],
+  "lens": "gap-midcity-2",
+  "confidence": "high"
+ },
+ "bayou-wine-garden": {
+  "sources": [
+   "https://bayoubeergarden.com/wine-garden/",
+   "https://www.yelp.com/biz/bayou-wine-garden-new-orleans"
+  ],
+  "evidence": [
+   "Official site confirms address and hours; researcher corrected street name"
+  ],
+  "lens": "gap-midcity-2",
+  "confidence": "high"
+ },
+ "liuzzas-restaurant": {
+  "sources": [
+   "https://liuzzas.com/",
+   "https://www.yelp.com/biz/liuzzas-restaurant-and-bar-new-orleans-3"
+  ],
+  "evidence": [
+   "Official site footer '2026' with live hours"
+  ],
+  "lens": "gap-midcity-2",
+  "confidence": "high"
+ },
+ "katies-restaurant": {
+  "sources": [
+   "https://www.katiesinmidcity.com/"
+  ],
+  "evidence": [
+   "Hours from official restaurant site"
+  ],
+  "lens": "gap-midcity-2",
+  "confidence": "high"
+ },
+ "pals-lounge": {
+  "sources": [
+   "https://www.yelp.com/biz/pals-lounge-new-orleans-2"
+  ],
+  "evidence": [
+   "Yelp July 2026 active"
+  ],
+  "lens": "gap-midcity-2",
+  "confidence": "medium"
+ },
+ "twelve-mile-limit": {
+  "sources": [
+   "https://twelvemilelimit.com/"
+  ],
+  "evidence": [
+   "Hours from official site"
+  ],
+  "lens": "gap-midcity-2",
+  "confidence": "high"
+ },
+ "laurel-street-bakery": {
+  "sources": [
+   "https://laurelstreetbakery.com/",
+   "https://bizneworleans.com/laurel-street-bakery-marks-20-years-of-resilience/"
+  ],
+  "evidence": [
+   "20-year anniversary coverage; official site live"
+  ],
+  "lens": "gap-midcity-2",
+  "confidence": "high"
+ },
+ "banks-street-bar": {
+  "sources": [
+   "https://www.yelp.com/biz/banks-street-bar-and-grill-new-orleans-2",
+   "https://www.wwoz.org/organizations/banks-street-bar"
+  ],
+  "evidence": [
+   "WWOZ lists as active venue; Yelp May 2026"
+  ],
+  "lens": "gap-midcity-2",
+  "confidence": "high"
+ },
+ "chickie-wah-wah": {
+  "sources": [
+   "https://chickiewahwah.com/",
+   "https://www.yelp.com/biz/chickie-wah-wah-new-orleans"
+  ],
+  "evidence": [
+   "Official site with live 2026 calendar"
+  ],
+  "lens": "gap-midcity-2",
+  "confidence": "high"
+ },
+ "creole-creamery": {
+  "sources": [
+   "https://creolecreamery.com/locations/",
+   "https://www.yelp.com/biz/creole-creamery-new-orleans"
+  ],
+  "evidence": [
+   "Yelp June 2026; consistent hours across sources"
+  ],
+  "lens": "gap-uptown-2",
+  "confidence": "high"
+ },
+ "domilises-poboys": {
+  "sources": [
+   "https://www.domilisespoboys.com/",
+   "https://www.yelp.com/biz/domilise-po-boys-and-bar-new-orleans"
+  ],
+  "evidence": [
+   "Official site confirms hours; Yelp May 2026"
+  ],
+  "lens": "gap-uptown-2",
+  "confidence": "high"
+ },
+ "le-bon-temps-roule": {
+  "sources": [
+   "https://lbtrnola.com/",
+   "https://www.yelp.com/biz/le-bon-temps-roule-new-orleans"
+  ],
+  "evidence": [
+   "Official site lists 24/7 operation; Yelp May 2026"
+  ],
+  "lens": "gap-uptown-2",
+  "confidence": "medium"
+ },
+ "joey-ks": {
+  "sources": [
+   "https://joeyksrestaurant.com/",
+   "https://www.yelp.com/biz/joey-ks-restaurant-and-bar-new-orleans"
+  ],
+  "evidence": [
+   "Official site is authoritative on Sunday closure"
+  ],
+  "lens": "gap-uptown-2",
+  "confidence": "high"
+ },
+ "superior-seafood": {
+  "sources": [
+   "https://superiorseafoodnola.com/hours-location/",
+   "https://www.yelp.com/biz/superior-seafood-and-oyster-bar-new-orleans"
+  ],
+  "evidence": [
+   "Official hours page; Yelp June 2026"
+  ],
+  "lens": "gap-uptown-2",
+  "confidence": "high"
+ },
+ "snake-and-jakes": {
+  "sources": [
+   "https://snakeandjakes.com/",
+   "https://www.yelp.com/biz/snake-and-jakes-christmas-club-lounge-new-orleans"
+  ],
+  "evidence": [
+   "Official site active; Yelp June 2026 consistent late hours"
+  ],
+  "lens": "gap-uptown-2",
+  "confidence": "medium"
+ },
+ "f-and-m-patio-bar": {
+  "sources": [
+   "https://fandmpatiobar.com/",
+   "https://www.yelp.com/biz/f-and-m-patio-bar-new-orleans"
+  ],
+  "evidence": [
+   "Official site lists hours; Yelp May 2026"
+  ],
+  "lens": "gap-uptown-2",
+  "confidence": "high"
+ },
+ "henrys-uptown-bar": {
+  "sources": [
+   "https://www.yelp.com/biz/henrys-uptown-bar-new-orleans"
+  ],
+  "evidence": [
+   "Active May 2026; hours vary across sources so left unknown"
+  ],
+  "lens": "gap-uptown-2",
+  "confidence": "medium"
+ },
+ "st-georges-morning-call": {
+  "sources": [
+   "https://www.edola.org/st-georges-dragon-cafe-a-place-for-food-fellowship-dignity-and-love/",
+   "https://www.stgeorge-nola.org/outreach-ministries",
+   "https://www.findhelp.org/st.-george's-episcopal-church--new-orleans-la--dragon-cafe/6129125360664576?postal=70112"
+  ],
+  "evidence": [
+   "Diocese article and program listing describe restroom access as a stated feature"
+  ],
+  "lens": "gap-uptown-2",
+  "confidence": "high"
+ },
+ "lakeview-grocery": {
+  "sources": [
+   "https://www.lakeviewgrocery.com/",
+   "https://www.lakeviewgrocery.com/cove/",
+   "https://www.yelp.com/biz/lakeview-grocery-new-orleans"
+  ],
+  "evidence": [
+   "Official site lists hours and The Cove seating; Yelp June 2026"
+  ],
+  "lens": "gap-lakeside-2",
+  "confidence": "high"
+ },
+ "velvet-cactus-lakeview": {
+  "sources": [
+   "https://thevelvetcactus.com/new-orleans/",
+   "https://www.yelp.com/biz/the-velvet-cactus-new-orleans"
+  ],
+  "evidence": [
+   "Yelp June 2026 confirms accessibility attributes"
+  ],
+  "lens": "gap-lakeside-2",
+  "confidence": "high"
+ },
+ "cansecos-filmore-market": {
+  "sources": [
+   "https://cansecos.com/locations",
+   "https://www.nola.com/news/business/cansecos-market-expands-its-gentilly-location/article_9a1d7f4c-c74d-11ed-bc3b-6704a763c273.html",
+   "https://www.yelp.com/biz/cansecos-market-new-orleans"
+  ],
+  "evidence": [
+   "Official locations page; nola.com expansion coverage; Yelp June 2026"
+  ],
+  "lens": "gap-lakeside-2",
+  "confidence": "high"
+ },
+ "pjs-coffee-algiers": {
+  "sources": [
+   "https://locations.pjscoffee.com/la/neworleans/coffee-shop-la0184.html",
+   "https://www.yelp.com/biz/pjs-coffee-new-orleans-32"
+  ],
+  "evidence": [
+   "Official locator LA0184; Yelp April 2026"
+  ],
+  "lens": "gap-lakeside-2",
+  "confidence": "high"
+ },
+ "nighthawk-napoletana": {
+  "sources": [
+   "https://www.nighthawknapoletana.com/",
+   "https://www.nola.com/entertainment_life/eat-drink/nighthawk-pizzeria-coming-to-algiers-after-tavolino-closes/article_dcbd56f6-2026-11ee-87c1-579225c1f665.html",
+   "https://www.yelp.com/biz/nighthawk-napoletana-new-orleans"
+  ],
+  "evidence": [
+   "Opened 2023 replacing Tavolino; Yelp June 2026"
+  ],
+  "lens": "gap-lakeside-2",
+  "confidence": "high"
+ },
+ "pjs-coffee-s-claiborne": {
+  "sources": [
+   "https://locations.pjscoffee.com/la/neworleans/coffee-shop-la0087.html"
+  ],
+  "evidence": [
+   "Official locator with hours and phone"
+  ],
+  "lens": "gap-chains-2",
+  "confidence": "high"
+ },
+ "pjs-coffee-read-blvd": {
+  "sources": [
+   "https://locations.pjscoffee.com/la/neworleans/coffee-shop-la0091.html"
+  ],
+  "evidence": [
+   "Official locator; Yelp March 2026"
+  ],
+  "lens": "gap-chains-2",
+  "confidence": "high"
+ },
+ "wendys-bullard": {
+  "sources": [
+   "https://locations.wendys.com/united-states/la/new-orleans/6020-bullard-avenue",
+   "https://www.yelp.com/biz/wendys-new-orleans-15"
+  ],
+  "evidence": [
+   "Official locator lists dine-in service"
+  ],
+  "lens": "gap-chains-2",
+  "confidence": "high"
+ },
+ "burger-king-de-gaulle": {
+  "sources": [
+   "https://www.bk.com/store-locator/store/restaurant_781/",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d4514918-Reviews-Burger_King-New_Orleans_Louisiana.html"
+  ],
+  "evidence": [
+   "Official locator confirms dine-in; interior photos in reviews"
+  ],
+  "lens": "gap-chains-2",
+  "confidence": "medium"
+ },
+ "mcdonalds-canal-midcity": {
+  "sources": [
+   "https://www.mcdonalds.com/us/en-us/location/la/new-orleans/2757-canal-st/2838.html",
+   "https://www.yelp.com/biz/mcdonalds-new-orleans-26"
+  ],
+  "evidence": [
+   "Official location page lists 24-hour dine-in"
+  ],
+  "lens": "gap-chains-2",
+  "confidence": "medium"
+ },
+ "popeyes-elysian-fields": {
+  "sources": [
+   "https://locations.popeyes.com/la/new-orleans/6232-elysian-fields-ave",
+   "https://www.yelp.com/biz/popeyes-louisiana-kitchen-new-orleans-16"
+  ],
+  "evidence": [
+   "Official locator lists dine-in service"
+  ],
+  "lens": "gap-chains-2",
+  "confidence": "high"
+ },
+ "popeyes-de-gaulle": {
+  "sources": [
+   "https://locations.popeyes.com/la/new-orleans/2079/",
+   "https://www.yelp.com/biz/popeyes-louisiana-kitchen-new-orleans-9"
+  ],
+  "evidence": [
+   "Official locator entry; Yelp Feb 2026"
+  ],
+  "lens": "gap-chains-2",
+  "confidence": "high"
+ },
+ "popeyes-s-carrollton": {
+  "sources": [
+   "https://locations.popeyes.com/la/new-orleans/3100-s-carrollton-ave"
+  ],
+  "evidence": [
+   "Official locations page"
+  ],
+  "lens": "gap-chains-2",
+  "confidence": "medium"
+ },
+ "raising-canes-chef-menteur": {
+  "sources": [
+   "https://locations.raisingcanes.com/la/new-orleans/4740-chef-menteur-hwy"
+  ],
+  "evidence": [
+   "Official locator separates dine-in hours (10-5) from drive-thru hours"
+  ],
+  "lens": "gap-chains-2",
+  "confidence": "high"
+ },
+ "burger-king-chef-menteur": {
+  "sources": [
+   "https://www.bk.com/restaurants/la/new-orleans/4454-chef-menteur-hwy-5783.html",
+   "https://www.tripadvisor.com/Restaurant_Review-g60864-d9735668-Reviews-Burger_King-New_Orleans_Louisiana.html"
+  ],
+  "evidence": [
+   "Active BK store page; reviews confirm operation"
+  ],
+  "lens": "gap-chains-2",
+  "confidence": "medium"
+ },
+ "lyons-rec-center": {
+  "sources": [
+   "https://nordc.org/Parks/lyons",
+   "https://nordc.org/nordc/media/Assets/Files/NORD-CENTERS-ONE-SHEETS-(SUMMER-2026)-(2)_1.pdf"
+  ],
+  "evidence": [
+   "Official NORD Summer 2026 schedule confirms hours and walk-in programming"
+  ],
+  "lens": "gap-nord",
+  "confidence": "high"
+ },
+ "stallings-st-claude-rec": {
+  "sources": [
+   "https://nordc.org/Parks/stallingsstclaude",
+   "https://nordc.org/nordc/media/Assets/Files/NORD-CENTERS-ONE-SHEETS-(SUMMER-2026)-(2)_1.pdf"
+  ],
+  "evidence": [
+   "Official NORD page updated 6/3/2026; Summer 2026 schedule matches"
+  ],
+  "lens": "gap-nord",
+  "confidence": "high"
+ },
+ "milne-rec-center": {
+  "sources": [
+   "https://nordc.org/Parks/Milne-Rec-Center",
+   "https://nordc.org/nordc/media/Assets/Files/NORD-CENTERS-ONE-SHEETS-(SUMMER-2026)-(2)_1.pdf"
+  ],
+  "evidence": [
+   "Official Summer 2026 schedule confirms hours and programming"
+  ],
+  "lens": "gap-nord",
+  "confidence": "high"
+ },
+ "gernon-brown-rec-center": {
+  "sources": [
+   "https://nordc.org/Parks/gernonbrown",
+   "https://nordc.org/nordc/media/Assets/Files/NORD-CENTERS-ONE-SHEETS-(SUMMER-2026)-(2)_1.pdf"
+  ],
+  "evidence": [
+   "Official Summer 2026 schedule confirms hours and free-play programs"
+  ],
+  "lens": "gap-nord",
+  "confidence": "high"
+ },
+ "cut-off-rec-center": {
+  "sources": [
+   "https://nordc.org/Parks/cut-off",
+   "https://nordc.org/nordc/media/Assets/Files/NORD-CENTERS-ONE-SHEETS-(SUMMER-2026)-(2)_1.pdf"
+  ],
+  "evidence": [
+   "Dedicated facility flyer in official Summer 2026 schedule confirms hours"
+  ],
+  "lens": "gap-nord",
+  "confidence": "high"
+ },
+ "rosenwald-rec-center": {
+  "sources": [
+   "https://nordc.org/Parks/rosenwald",
+   "https://nordc.org/nordc/media/Assets/Files/NORD-CENTERS-ONE-SHEETS-(SUMMER-2026)-(2)_1.pdf"
+  ],
+  "evidence": [
+   "NORD banner names only the pool as closed; rec center page updated 6/3/2026 shows normal hours"
+  ],
+  "lens": "gap-nord",
   "confidence": "high"
  }
 }
