@@ -46,6 +46,8 @@ export interface Spot {
   verify?: boolean;
   /** The local-knowledge tip shown on the detail card. */
   tip: string;
+  /** A participating partner venue: shows a gold PARTNER ribbon + deal line. */
+  partner?: { deal: string };
   /** Spot created by the visitor on this device (localStorage), not part of the shared dataset. */
   userAdded?: boolean;
 }

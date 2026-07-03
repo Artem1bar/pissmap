@@ -139,6 +139,15 @@ export default function SpotDetail({ spot, now, meters, emergency, onBack, onDel
         ) : null}
       </div>
 
+      {spot.partner ? (
+        <div className="mt-3 flex items-center gap-2 rounded-xl border border-gold-600 bg-gradient-to-r from-gold-400/20 to-transparent px-3 py-2">
+          <span className="shrink-0 rounded-full bg-gold-400 px-2 py-0.5 text-[10px] font-black uppercase tracking-wider text-night-950">
+            Partner
+          </span>
+          <span className="text-sm font-medium text-gold-300">{spot.partner.deal}</span>
+        </div>
+      ) : null}
+
       <div className="mt-3 flex flex-wrap items-center justify-between gap-x-3 gap-y-1 rounded-lg bg-night-800 px-3 py-2">
         <StatusBadge hours={spot.hours} now={now} />
         <span className="text-xs text-ink-500">

@@ -228,6 +228,32 @@ dialog::backdrop {
   font-family: inherit;
 }
 
+/* ——— Print (sticker sheets) ——— */
+
+.print-root {
+  display: none;
+}
+@media print {
+  /* Print the dark brand faithfully (stickers, pitch, press) instead of white. */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-root {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 0.2in;
+    justify-content: center;
+    align-content: flex-start;
+  }
+  @page {
+    margin: 0.4in;
+  }
+}
+
 /* ——— Reduced motion ——— */
 
 @media (prefers-reduced-motion: reduce) {

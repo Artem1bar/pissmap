@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { CATEGORY_META } from "@/lib/categories";
 import { DATA_COMPILED } from "@/lib/constants";
 import { formatDistance, walkMinutes } from "@/lib/geo";
@@ -134,6 +135,19 @@ export default function SpotList({
         <p className="mt-1.5">
           Public urination is a citable offense in New Orleans. This map exists so you never find
           out exactly how citable.
+        </p>
+        <p className="mt-2 flex flex-wrap gap-x-2 gap-y-1 text-ink-500">
+          <Link href="/press" className="hover:text-gold-300">
+            Press
+          </Link>
+          <span aria-hidden="true">·</span>
+          <Link href="/partners" className="hover:text-gold-300">
+            Partners
+          </Link>
+          <span aria-hidden="true">·</span>
+          <Link href="/stickers" className="hover:text-gold-300">
+            Stickers
+          </Link>
         </p>
       </footer>
     </div>
