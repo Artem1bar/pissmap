@@ -27,3 +27,15 @@ export const SPOTS: readonly Spot[] = [
   ...EAST_SPOTS,
   ...ALGIERS_SPOTS,
 ];
+
+/** id → Spot, for O(1) lookup by permalinks, OG images, and review validation. */
+export const SPOT_BY_ID: ReadonlyMap<string, Spot> = new Map(SPOTS.map((spot) => [spot.id, spot]));
+
+export function getSpotById(id: string): Spot | undefined {
+  return SPOT_BY_ID.get(id);
+}
+
+/** True when `id` names a real curated spot (not a user's private localStorage pin). */
+export function isKnownSpotId(id: string): boolean {
+  return SPOT_BY_ID.has(id);
+}
