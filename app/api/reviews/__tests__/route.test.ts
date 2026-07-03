@@ -10,6 +10,7 @@ import type { Db } from "@/lib/db";
 const holder = vi.hoisted(() => ({ db: null as Db | null }));
 vi.mock("@/lib/db", () => ({
   getDb: () => holder.db,
+  resolveDb: async () => holder.db,
   isDbConfigured: () => holder.db !== null,
 }));
 

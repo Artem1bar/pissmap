@@ -7,6 +7,9 @@ import { DAY_NAMES, dayHoursLabel } from "@/lib/hours";
 import type { LocalTime, Spot } from "@/lib/types";
 import { suggestIssueUrl } from "@/lib/userSpots";
 import StatusBadge from "./StatusBadge";
+import { DropletScoreChip } from "./reviews/Droplets";
+import { TheBowl } from "./reviews/TheBowl";
+import { useReviews } from "./reviews/useReviews";
 import { BackIcon, CheckIcon, CopyIcon, DirectionsIcon, TrashIcon, WheelchairIcon } from "./icons";
 
 export type OriginKind = "gps" | "map" | "remote";
@@ -50,6 +53,8 @@ function Pill({ children, title }: { children: React.ReactNode; title?: string }
 export default function SpotDetail({ spot, now, meters, emergency, onBack, onDelete }: SpotDetailProps) {
   const [copied, setCopied] = useState(false);
   const category = CATEGORY_META[spot.category];
+  // Curated spots have reviews; a visitor's private pins don't.
+  const reviews = useReviews(spot.id, !spot.userAdded);
 
   const copyAddress = async () => {
     try {
@@ -129,6 +134,9 @@ export default function SpotDetail({ spot, now, meters, emergency, onBack, onDel
             ✦ Added by you
           </Pill>
         ) : null}
+        {!spot.userAdded && reviews.status === "ready" && reviews.count > 0 ? (
+          <DropletScoreChip avg={reviews.avg} count={reviews.count} />
+        ) : null}
       </div>
 
       <div className="mt-3 flex flex-wrap items-center justify-between gap-x-3 gap-y-1 rounded-lg bg-night-800 px-3 py-2">
@@ -196,6 +204,10 @@ export default function SpotDetail({ spot, now, meters, emergency, onBack, onDel
         <p className="mt-3 rounded-lg border border-soon/30 bg-soon/10 px-3 py-2 text-xs leading-relaxed text-soon">
           Hours drift in New Orleans — double-check this one before it gets critical.
         </p>
+      ) : null}
+
+      {!spot.userAdded ? (
+        <TheBowl spotId={spot.id} spotName={spot.name} data={reviews} />
       ) : null}
 
       {spot.userAdded ? (

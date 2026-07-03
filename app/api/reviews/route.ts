@@ -1,4 +1,4 @@
-import { getDb } from "@/lib/db";
+import { resolveDb } from "@/lib/db";
 import {
   aggregateForSpot,
   countRecentByIp,
@@ -20,7 +20,7 @@ export const dynamic = "force-dynamic";
 
 /** GET /api/reviews?spotId= — approved reviews (newest first, max 50) + aggregate. */
 export async function GET(request: Request): Promise<Response> {
-  const db = getDb();
+  const db = await resolveDb();
   if (!db) return notConfigured();
 
   const spotId = new URL(request.url).searchParams.get("spotId");
@@ -45,7 +45,7 @@ export async function GET(request: Request): Promise<Response> {
  * the honeypot, which fakes success so bots learn nothing.
  */
 export async function POST(request: Request): Promise<Response> {
-  const db = getDb();
+  const db = await resolveDb();
   if (!db) return notConfigured();
 
   let raw: unknown;

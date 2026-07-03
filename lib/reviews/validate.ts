@@ -1,17 +1,14 @@
 import { createHash } from "node:crypto";
 import { isKnownSpotId } from "../spots";
+import { BODY_MAX, MIN_COMPOSE_MS, NICKNAME_MAX, RATE_DAY_MAX, RATE_HOUR_MAX } from "./limits";
 
 // All review anti-spam lives here as pure functions — no database, no request
 // object — so every rejection path is unit-testable in isolation. The POST route
 // is a thin shell that calls validateReview(), hashes the IP, checks the DB rate
 // limit, and inserts. Defense in depth mirrors the DB check constraints.
 
-export const BODY_MAX = 280;
-export const NICKNAME_MAX = 24;
-/** A human takes at least a few seconds to rate + type. Below this, it's a bot. */
-export const MIN_COMPOSE_MS = 3000;
-export const RATE_HOUR_MAX = 3;
-export const RATE_DAY_MAX = 10;
+// Re-exported so existing importers (and tests) keep a single entry point.
+export { BODY_MAX, MIN_COMPOSE_MS, NICKNAME_MAX, RATE_DAY_MAX, RATE_HOUR_MAX };
 
 /** Raw, untrusted shape straight off `request.json()`. Everything is `unknown`. */
 export interface RawReviewInput {

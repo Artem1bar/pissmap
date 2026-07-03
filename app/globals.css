@@ -174,6 +174,22 @@ body {
   animation: spin 0.9s linear infinite;
 }
 
+/* ——— Review ticker ——— */
+
+@keyframes reveal-fade {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.reveal-fade {
+  animation: reveal-fade 320ms ease;
+}
+
 /* ——— Dialog ——— */
 
 dialog::backdrop {
@@ -219,7 +235,8 @@ dialog::backdrop {
   .pin--selected,
   .user-dot::before,
   .geaux-btn::before,
-  .spinner {
+  .spinner,
+  .reveal-fade {
     animation: none !important;
     transition: none !important;
   }

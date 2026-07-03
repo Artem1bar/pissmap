@@ -3,6 +3,7 @@ import { DATA_COMPILED } from "@/lib/constants";
 import { formatDistance, walkMinutes } from "@/lib/geo";
 import type { LocalTime, Spot } from "@/lib/types";
 import StatusBadge from "./StatusBadge";
+import { ReviewTicker } from "./reviews/ReviewTicker";
 import { LocateIcon, WheelchairIcon } from "./icons";
 
 export interface SpotListItem {
@@ -33,6 +34,7 @@ export default function SpotList({
 }: SpotListProps) {
   return (
     <div className="flex flex-col">
+      <ReviewTicker onSelect={onSelect} />
       <div className="flex items-center justify-between gap-2 px-4 pb-1.5 pt-3 md:px-5">
         <p className="text-[11px] font-medium uppercase tracking-wider text-ink-500">
           {items.length} spot{items.length === 1 ? "" : "s"}

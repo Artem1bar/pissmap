@@ -1,4 +1,4 @@
-import { getDb } from "@/lib/db";
+import { resolveDb } from "@/lib/db";
 import { listRecentApproved } from "@/lib/db/queries";
 import { jsonResponse, notConfigured, REVIEWS_CACHE } from "@/lib/reviews/http";
 
@@ -7,7 +7,7 @@ export const dynamic = "force-dynamic";
 
 /** GET /api/reviews/recent — the last 30 approved reviews across all spots (the ticker feed). */
 export async function GET(): Promise<Response> {
-  const db = getDb();
+  const db = await resolveDb();
   if (!db) return notConfigured();
 
   const reviews = await listRecentApproved(db, 30);

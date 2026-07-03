@@ -1,10 +1,13 @@
 import { and, desc, eq, sql } from "drizzle-orm";
+import type { PublicReview } from "../reviews/types";
 import type { Db } from "./index";
 import { reviews, scans, type ReviewStatus } from "./schema";
 
 // Every database read/write the app performs lives here, typed against the
 // Drizzle client `getDb()` returns. Tests drive the exact same functions against
 // a PGlite instance (cast to Db), so the SQL is exercised for real, not mocked.
+
+export type { PublicReview };
 
 /** What the POST route hands us after validation + IP hashing. */
 export interface NewReview {
@@ -13,16 +16,6 @@ export interface NewReview {
   body: string;
   nickname: string | null;
   ipHash: string;
-}
-
-/** A review as shown to the public — no IP, no status (always approved here). */
-export interface PublicReview {
-  id: string;
-  spotId: string;
-  rating: number;
-  body: string;
-  nickname: string | null;
-  createdAt: string;
 }
 
 /** A review as shown to the moderator — adds status + hashed IP for triage. */
