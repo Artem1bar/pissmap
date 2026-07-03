@@ -16,6 +16,26 @@ export function hasRealDomain(): boolean {
   return Boolean(process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_PROJECT_PRODUCTION_URL);
 }
 
+/** The shareable permalink path for a spot, e.g. "/spot/erin-rose". */
+export function spotPath(id: string): string {
+  return `/spot/${encodeURIComponent(id)}`;
+}
+
+/** The short scan path a QR code encodes, e.g. "/s/erin-rose". */
+export function scanPath(id: string): string {
+  return `/s/${encodeURIComponent(id)}`;
+}
+
+/** Absolute permalink URL for a spot. */
+export function spotUrl(id: string): string {
+  return `${siteUrl()}${spotPath(id)}`;
+}
+
+/** Absolute scan URL (what a QR sticker encodes). */
+export function scanUrl(id: string): string {
+  return `${siteUrl()}${scanPath(id)}`;
+}
+
 function stripTrailingSlash(url: string): string {
   return url.endsWith("/") ? url.slice(0, -1) : url;
 }

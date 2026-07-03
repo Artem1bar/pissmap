@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   applyFilters,
   DEFAULT_FILTERS,
@@ -13,7 +13,8 @@ import {
 import { haversineMeters } from "@/lib/geo";
 import { nolaTime } from "@/lib/hours";
 import { NOLA_CENTER } from "@/lib/constants";
-import { SPOTS } from "@/lib/spots";
+import { spotPath } from "@/lib/site";
+import { isKnownSpotId, SPOTS } from "@/lib/spots";
 import type { LatLng, LocalTime } from "@/lib/types";
 import AboutModal from "./AboutModal";
 import AddSpotModal from "./AddSpotModal";
@@ -72,9 +73,14 @@ function getPosition(timeoutMs = 8000): Promise<LatLng> {
   });
 }
 
-export default function AppShell() {
+interface AppShellProps {
+  /** When present (a /spot/[id] permalink), the app opens with this spot selected. */
+  initialSpotId?: string;
+}
+
+export default function AppShell({ initialSpotId }: AppShellProps) {
   const [filters, setFilters] = useState<Filters>(DEFAULT_FILTERS);
-  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [selectedId, setSelectedId] = useState<string | null>(initialSpotId ?? null);
   const now = useNolaTime();
   const [userLoc, setUserLoc] = useState<LatLng | null>(null);
   const [locating, setLocating] = useState(false);
@@ -82,7 +88,7 @@ export default function AppShell() {
   const [emergency, setEmergency] = useState<EmergencyState | null>(null);
   const [finding, setFinding] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
-  const [sheetOpen, setSheetOpen] = useState(false);
+  const [sheetOpen, setSheetOpen] = useState(Boolean(initialSpotId));
   const [addFlow, setAddFlow] = useState<AddFlow | null>(null);
   const mapCenterRef = useRef<LatLng>(NOLA_CENTER);
   const userSpots = useUserSpots();
@@ -123,6 +129,32 @@ export default function AppShell() {
 
   const handleMoveEnd = useCallback((center: LatLng) => {
     mapCenterRef.current = center;
+  }, []);
+
+  // Keep the address bar in sync with the selection so any view is shareable.
+  // replaceState (not push) — browsing many spots shouldn't bury the back button.
+  useEffect(() => {
+    const path = selectedId && isKnownSpotId(selectedId) ? spotPath(selectedId) : "/";
+    if (window.location.pathname !== path) {
+      window.history.replaceState(null, "", path);
+    }
+  }, [selectedId]);
+
+  // Reflect browser back/forward into the selection.
+  useEffect(() => {
+    const onPopState = () => {
+      const match = window.location.pathname.match(/^\/spot\/(.+)$/);
+      const id = match ? decodeURIComponent(match[1]) : null;
+      if (id && isKnownSpotId(id)) {
+        setSelectedId(id);
+        setEmergency(null);
+        setSheetOpen(true);
+      } else {
+        setSelectedId(null);
+      }
+    };
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
   }, []);
 
   const locate = useCallback(async () => {

@@ -9,7 +9,7 @@ import { displayName, relativeTime } from "@/lib/reviews/format";
 // entirely cookie-based (httpOnly), so this component never sees the secret
 // after login.
 
-type Tab = "pending" | "approved";
+type Tab = "pending" | "approved" | "scans";
 type Screen = "checking" | "disabled" | "no-db" | "unauthed" | "ready" | "error";
 
 interface AdminReview {
@@ -29,10 +29,18 @@ interface Counts {
   approved: number;
 }
 
+interface ScanRow {
+  slug: string;
+  spotName: string;
+  total: number;
+  last7: number;
+}
+
 export default function AdminConsole() {
   const [screen, setScreen] = useState<Screen>("checking");
   const [tab, setTab] = useState<Tab>("pending");
   const [reviews, setReviews] = useState<AdminReview[]>([]);
+  const [scans, setScans] = useState<ScanRow[]>([]);
   const [counts, setCounts] = useState<Counts>({ pending: 0, approved: 0 });
   const [busyId, setBusyId] = useState<string | null>(null);
 
@@ -42,7 +50,8 @@ export default function AdminConsole() {
   useEffect(() => {
     let active = true;
     void (async () => {
-      const res = await fetch(`/api/admin/reviews?status=${tab}`, { cache: "no-store" });
+      const url = tab === "scans" ? "/api/admin/scans" : `/api/admin/reviews?status=${tab}`;
+      const res = await fetch(url, { cache: "no-store" });
       if (!active) return;
       if (res.status === 401) {
         setScreen("unauthed");
@@ -58,8 +67,12 @@ export default function AdminConsole() {
         setScreen("error");
         return;
       }
-      setReviews(data.reviews);
-      setCounts(data.counts);
+      if (tab === "scans") {
+        setScans(data.scans);
+      } else {
+        setReviews(data.reviews);
+        setCounts(data.counts);
+      }
       setScreen("ready");
     })();
     return () => {
@@ -150,10 +163,15 @@ export default function AdminConsole() {
         <TabButton active={tab === "approved"} onClick={() => setTab("approved")}>
           Approved <Badge muted>{counts.approved}</Badge>
         </TabButton>
+        <TabButton active={tab === "scans"} onClick={() => setTab("scans")}>
+          Scans
+        </TabButton>
       </div>
 
       <div className="mt-4 space-y-3">
-        {reviews.length === 0 ? (
+        {tab === "scans" ? (
+          <ScansTable scans={scans} />
+        ) : reviews.length === 0 ? (
           <p className="py-16 text-center text-sm text-ink-500">
             {tab === "pending" ? "Inbox zero. The queue is clear. 🧼" : "Nothing approved yet."}
           </p>
@@ -169,6 +187,38 @@ export default function AdminConsole() {
           ))
         )}
       </div>
+    </div>
+  );
+}
+
+function ScansTable({ scans }: { scans: ScanRow[] }) {
+  if (scans.length === 0) {
+    return (
+      <p className="py-16 text-center text-sm text-ink-500">
+        No scans yet. Print some stickers. <span aria-hidden="true">🏷️</span>
+      </p>
+    );
+  }
+  return (
+    <div className="overflow-x-auto rounded-2xl border border-night-600">
+      <table className="w-full text-sm">
+        <thead>
+          <tr className="border-b border-night-700 text-left text-[11px] uppercase tracking-wider text-ink-500">
+            <th className="px-3 py-2 font-medium">Spot</th>
+            <th className="px-3 py-2 text-right font-medium">Total</th>
+            <th className="px-3 py-2 text-right font-medium">7 days</th>
+          </tr>
+        </thead>
+        <tbody>
+          {scans.map((s) => (
+            <tr key={s.slug} className="border-b border-night-800 last:border-0">
+              <td className="px-3 py-2 text-ink-100">{s.spotName}</td>
+              <td className="px-3 py-2 text-right font-mono text-ink-300">{s.total}</td>
+              <td className="px-3 py-2 text-right font-mono text-gold-300">{s.last7}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }

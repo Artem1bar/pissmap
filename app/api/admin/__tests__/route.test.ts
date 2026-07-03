@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { ADMIN_COOKIE, adminToken } from "@/lib/admin/auth";
 import { createTestDb } from "@/lib/db/__tests__/testdb";
-import { insertReview, listByStatus } from "@/lib/db/queries";
+import { insertReview, insertScan, listByStatus } from "@/lib/db/queries";
 import type { Db } from "@/lib/db";
 
 const holder = vi.hoisted(() => ({ db: null as Db | null }));
@@ -13,6 +13,7 @@ vi.mock("@/lib/db", () => ({
 
 const { POST: LOGIN } = await import("../login/route");
 const { GET: LIST, POST: MODERATE } = await import("../reviews/route");
+const { GET: SCANS } = await import("../scans/route");
 
 const SECRET = "test-admin-secret";
 
@@ -147,5 +148,23 @@ describe("POST /api/admin/reviews (moderation)", () => {
       }),
     );
     expect(missing.status).toBe(404);
+  });
+});
+
+describe("GET /api/admin/scans", () => {
+  it("401s without a cookie", async () => {
+    const res = await SCANS(new Request("http://x/api/admin/scans"));
+    expect(res.status).toBe(401);
+  });
+
+  it("returns per-spot scan counts with resolved names", async () => {
+    await insertScan(holder.db!, "clover-grill");
+    await insertScan(holder.db!, "clover-grill");
+    const res = await SCANS(new Request("http://x/api/admin/scans", { headers: { cookie: cookie() } }));
+    expect(res.status).toBe(200);
+    const data = await res.json();
+    const clover = data.scans.find((s: { slug: string }) => s.slug === "clover-grill");
+    expect(clover.total).toBe(2);
+    expect(clover.spotName).toBe("Clover Grill");
   });
 });

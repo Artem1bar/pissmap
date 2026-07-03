@@ -1,4 +1,4 @@
-import { isAdminEnabled, requestAuthorized } from "@/lib/admin/auth";
+import { guardAdmin } from "@/lib/admin/guard";
 import { resolveDb } from "@/lib/db";
 import { countByStatus, listByStatus, setReviewStatus } from "@/lib/db/queries";
 import type { ReviewStatus } from "@/lib/db/schema";
@@ -10,20 +10,9 @@ export const dynamic = "force-dynamic";
 const NO_STORE = "no-store";
 const STATUSES: ReviewStatus[] = ["pending", "approved", "rejected"];
 
-/** Reject unauthorized/disabled requests; returns null when the caller may proceed. */
-function guard(request: Request): Response | null {
-  if (!isAdminEnabled()) {
-    return jsonResponse({ ok: false, reason: "admin-disabled" }, { status: 503, cache: NO_STORE });
-  }
-  if (!requestAuthorized(request)) {
-    return jsonResponse({ ok: false, error: "Unauthorized." }, { status: 401, cache: NO_STORE });
-  }
-  return null;
-}
-
 /** GET /api/admin/reviews?status=pending|approved|rejected — a moderation queue + counts. */
 export async function GET(request: Request): Promise<Response> {
-  const denied = guard(request);
+  const denied = guardAdmin(request);
   if (denied) return denied;
 
   const db = await resolveDb();
@@ -48,7 +37,7 @@ const ACTIONS: Record<string, ReviewStatus> = { approve: "approved", reject: "re
 
 /** POST /api/admin/reviews — body { id, action: "approve" | "reject" }. */
 export async function POST(request: Request): Promise<Response> {
-  const denied = guard(request);
+  const denied = guardAdmin(request);
   if (denied) return denied;
 
   const db = await resolveDb();

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Geist, Geist_Mono } from "next/font/google";
+import { siteUrl } from "@/lib/site";
 import { SPOTS } from "@/lib/spots";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./globals.css";
@@ -20,14 +21,10 @@ const fraunces = Fraunces({
   style: ["normal", "italic"],
 });
 
-const SITE_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
-  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-  : "http://localhost:3000";
-
 const DESCRIPTION = `${SPOTS.length} field-vetted places to take a leak in New Orleans — public restrooms, buy-a-coffee spots, and hotel lobbies. Open-now hours, walking directions, zero judgment.`;
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
+  metadataBase: new URL(siteUrl()),
   title: {
     default: "PissMap NOLA — where to pee in New Orleans",
     template: "%s · PissMap NOLA",
