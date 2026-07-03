@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { CATEGORIES, CATEGORY_META } from "@/lib/categories";
 import { DATA_COMPILED } from "@/lib/constants";
+import { GITHUB_ISSUES_URL } from "@/lib/links";
 import { SPOTS } from "@/lib/spots";
 import { CloseIcon } from "./icons";
 
@@ -109,6 +110,23 @@ export default function AboutModal({ open, onClose }: AboutModalProps) {
             spend all Carnival.
           </li>
         </ol>
+
+        <SectionTitle>The Bowl — community reviews</SectionTitle>
+        <p className="mt-2 text-sm leading-relaxed text-ink-300">
+          Every spot has a live review feed: rate the porcelain in golden droplets and leave a note
+          for the next desperate soul. Reviews are anonymous — no accounts, ever — and{" "}
+          <strong className="text-ink-100">moderated before they go live</strong>. Keep it useful
+          and kind: no doxxing, no hate, no fake spots. See something that shouldn&apos;t be here?{" "}
+          <a
+            href={GITHUB_ISSUES_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-night-400 underline-offset-2 hover:text-gold-300"
+          >
+            Flag it on GitHub
+          </a>{" "}
+          and it comes down.
+        </p>
 
         <SectionTitle>The legal bit</SectionTitle>
         <p className="mt-2 text-sm leading-relaxed text-ink-300">

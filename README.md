@@ -3,7 +3,7 @@
 **when you gotta geaux** ⚜
 
 New Orleans hands you a drink for the street, then offers you nowhere to put it. PissMap NOLA is
-the fix: an interactive map of **312 field-vetted places to pee** across the whole city — free
+the fix: an interactive map of **412 field-vetted places to pee** across the whole city — free
 public restrooms, buy-a-cheap-coffee spots, and hotel lobbies for the bold — with live
 open/closed status, distance sorting, and a panic button. Coverage runs from Bourbon Street to
 New Orleans East, the Lakefront, the Lower 9th, and across the river to Algiers.
@@ -62,30 +62,92 @@ write those tickets, especially during Carnival. This project exists so you neve
 
 ## Stack
 
-- [Next.js 16](https://nextjs.org) (App Router) + React 19 + TypeScript, fully static output
+- [Next.js 16](https://nextjs.org) (App Router) + React 19 + TypeScript
 - [MapLibre GL JS](https://maplibre.org) with CARTO's free dark basemap (keyless)
 - Tailwind CSS v4, Fraunces + Geist via `next/font`
-- Vitest — 40 tests over the hours/geo/filter/dataset logic (~98% statement coverage of `lib/`)
+- Optional community layer: [Drizzle ORM](https://orm.drizzle.team) over
+  [Neon Postgres](https://neon.tech) (HTTP driver) in production, [PGlite](https://pglite.dev)
+  in dev + tests — same SQL, no Docker
+- Vitest — 133 tests over hours/geo/filters/dataset **and** the review anti-spam, database
+  queries (against real PGlite), admin auth, and URL helpers
 
-No backend, no database, no environment variables, no secrets. The whole thing prerenders.
+**The read-only map needs no backend, no database, no env vars, and no secrets** — with nothing
+configured it prerenders and works exactly as it always has, and the review UI shows a friendly
+"coming soon." The database only ever powers the optional community features, and the map never
+depends on it being up.
 
 ## Develop
 
 ```bash
 npm install
-npm run dev        # dev server
-npm test           # vitest suite
-npm run coverage   # coverage report
-npm run lint       # eslint
-npm run typecheck  # tsc --noEmit
-npm run build      # production build (fully static)
+npm run dev          # dev server (read-only map + "reviews coming soon")
+npm run dev:local    # dev server with an in-memory PGlite store, seeded — reviews + /admin live
+npm test             # vitest suite
+npm run coverage     # coverage report
+npm run lint         # eslint
+npm run typecheck    # tsc --noEmit
+npm run build        # production build
+npm run db:generate  # compile lib/db/schema.ts → SQL migrations (no live DB needed)
+npm run db:push      # apply migrations to Neon (needs DATABASE_URL)
 ```
+
+`npm run dev:local` is the fastest way to see the whole app: it spins up an in-memory Postgres,
+applies the real migrations, and seeds a handful of reviews and scans. Log into `/admin` with the
+secret `devsecret`.
+
+## Community reviews
+
+Every spot has **The Bowl** — a live, pump.fun-style review feed: rate the porcelain in golden
+droplets and leave a note. Reviews are **anonymous-first** (an optional nickname, no accounts ever)
+and **pre-moderated** — nothing is public until a human approves it at `/admin`.
+
+- **Anti-spam is all server-side:** an off-screen honeypot, a minimum compose time, URL rejection,
+  and a per-IP rate limit (3/hour, 10/day) keyed on a salted hash of the IP — never the raw IP.
+- **Storage** is Drizzle + Neon in production and PGlite in dev/tests, behind one `getDb()` seam.
+  With no `DATABASE_URL`, every review endpoint returns an honest `503` and the UI degrades to
+  "coming soon."
+- **Moderate from your phone** at `/admin` (approve / reject / retract, plus a scan-counts table).
+  Gated by a constant-time secret check and an httpOnly cookie.
+
+## Growth kit
+
+- **`/stickers`** — a studio that generates print-ready QR stickers (single 3″ or a sheet of 9)
+  for any spot or the whole app. The QR encodes `/s/<spot>`, which logs the scan and redirects to
+  the spot's permalink.
+- **`/spot/<id>`** — a shareable, statically-generated permalink per spot, each with its own
+  title and dark/gold OG share card.
+- **`/partners`** + **`/partners/pitch`** — a partner tier (gold `PARTNER` ribbon + deal line on
+  the map) and a print-friendly one-pager for venue owners.
+- **`/press`** — a press kit with the story and live, computed-from-the-dataset stats.
+
+## Environment & ops
+
+Copy [`.env.example`](.env.example) to `.env.local`. **None of these are required to run the map.**
+
+| Variable | What it unlocks |
+| --- | --- |
+| `DATABASE_URL` | Reviews + scans (Neon Postgres). Absent → the map still works; reviews say "coming soon." |
+| `ADMIN_SECRET` | The `/admin` moderation console. Absent → admin is disabled. |
+| `IP_SALT` | Salt for hashing reviewer IPs (rate limiting). |
+| `NEXT_PUBLIC_SITE_URL` | The public base URL for permalinks, OG images, and QR codes. Falls back to the Vercel URL, then localhost. |
+
+**Ops checklist (once, after provisioning):**
+
+1. Vercel dashboard → **Storage/Integrations → add Neon** (creates `DATABASE_URL`). Then locally:
+   `vercel env pull .env.local && npm run db:push`.
+2. Set `ADMIN_SECRET` and `IP_SALT` (long random strings) in Vercel, and `NEXT_PUBLIC_SITE_URL`
+   once the domain is live.
+3. **Buy the domain**, point it at Vercel, set `NEXT_PUBLIC_SITE_URL`, redeploy.
+4. Only then print stickers from `/stickers`.
+5. Before any paid/bartered partner deal, upgrade Vercel to Pro (Hobby is non-commercial).
 
 ## Deploy
 
-It's a static Next.js app — `npm run build` and host anywhere. On [Vercel](https://vercel.com):
-push the repo and import it; zero configuration needed. The OG image, favicon, apple icon, and
-PWA manifest are all generated from code.
+Push the repo and import it on [Vercel](https://vercel.com); with no env vars it deploys the
+read-only map with zero configuration. Add `DATABASE_URL` (and friends — see **Environment & ops**
+above) to light up reviews and moderation. The spot permalinks prerender statically, while the
+review APIs and QR redirect run on demand; the OG images, favicon, apple icon, and PWA manifest are
+all generated from code.
 
 ## Attribution
 
