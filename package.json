@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "dev:local": "PISSMAP_LOCAL_DB=1 next dev",
+    "dev:local": "PISSMAP_LOCAL_DB=1 ADMIN_SECRET=devsecret IP_SALT=devsalt next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
