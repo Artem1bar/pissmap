@@ -50,6 +50,10 @@ export async function GET(request: Request): Promise<Response> {
       ok: true,
       system: {
         db: await dbStatus(),
+        // Whether the IP-hash salt is set — NOT the salt itself. An unset salt
+        // leaves per-IP rate limits hashing with an empty salt (weak); surfacing
+        // it here lets Artem catch a missing IP_SALT before real traffic.
+        ipSaltConfigured: Boolean(process.env.IP_SALT),
         siteUrl: siteUrl(),
         hasRealDomain: hasRealDomain(),
         spots: SPOTS.length,

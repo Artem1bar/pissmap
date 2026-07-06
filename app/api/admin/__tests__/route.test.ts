@@ -184,6 +184,7 @@ describe("GET /api/admin/system", () => {
     expect(system.spots).toBeGreaterThan(400);
     expect(typeof system.siteUrl).toBe("string");
     expect(typeof system.hasRealDomain).toBe("boolean");
+    expect(typeof system.ipSaltConfigured).toBe("boolean");
     // Never a secret in sight.
     expect(JSON.stringify(system)).not.toContain(SECRET);
     void id;

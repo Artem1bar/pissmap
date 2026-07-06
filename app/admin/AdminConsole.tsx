@@ -39,6 +39,7 @@ interface ScanRow {
 
 interface SystemData {
   db: "connected" | "unconfigured" | "error";
+  ipSaltConfigured: boolean;
   siteUrl: string;
   hasRealDomain: boolean;
   spots: number;
@@ -665,6 +666,13 @@ function SystemPanel({ system }: { system: SystemData | null }) {
           </ConfigRow>
           <ConfigRow label="Moderation">
             <span className="font-medium text-open">● On</span>
+          </ConfigRow>
+          <ConfigRow label="IP salt">
+            {system.ipSaltConfigured ? (
+              <span className="font-medium text-open">Set</span>
+            ) : (
+              <span className="font-medium text-soon">Missing — rate limits are weak</span>
+            )}
           </ConfigRow>
           <ConfigRow label="Site URL">
             <span className="truncate font-mono text-xs text-ink-300">{system.siteUrl}</span>

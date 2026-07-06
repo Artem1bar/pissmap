@@ -89,25 +89,42 @@ npm run typecheck    # tsc --noEmit
 npm run build        # production build
 npm run db:generate  # compile lib/db/schema.ts → SQL migrations (no live DB needed)
 npm run db:push      # apply migrations to Neon (needs DATABASE_URL)
+npm run preflight [url]  # probe a deployment (health, sitemap, /s redirect, OG, admin) → LAUNCH READY
 ```
 
 `npm run dev:local` is the fastest way to see the whole app: it spins up an in-memory Postgres,
 applies the real migrations, and seeds a handful of reviews and scans. Log into `/admin` with the
 secret `devsecret`.
 
-## Community reviews
+## Community layer
 
 Every spot has **The Bowl** — a live, pump.fun-style review feed: rate the porcelain in golden
 droplets and leave a note. Reviews are **anonymous-first** (an optional nickname, no accounts ever)
-and **pre-moderated** — nothing is public until a human approves it at `/admin`.
+and **pre-moderated** — nothing is public until a human approves it at `/admin`. The list shows a
+💧 score once a spot has ≥3 reviews, and you can sort by nearest, top-rated, or recently reviewed.
 
-- **Anti-spam is all server-side:** an off-screen honeypot, a minimum compose time, URL rejection,
-  and a per-IP rate limit (3/hour, 10/day) keyed on a salted hash of the IP — never the raw IP.
+Two more loops keep the 412 spots honest as they inevitably drift:
+
+- **Report a problem** — every spot has a "something wrong?" control (closed / wrong-hours /
+  no-restroom / other). Reports land in `/admin`, grouped by spot with a reason breakdown.
+- **Live overrides** — from the Reports tab a moderator can `hide` a spot (drops it from map, list,
+  and GOTTA GEAUX) or `warn` it (an amber banner on the detail card): a same-day patch, no redeploy.
+  The dataset stays the source of truth; overrides are a small runtime layer (`GET /api/overrides`,
+  cached, degrades to empty on any failure).
+- **Suggest a spot** — save a personal pin, then "submit to the public map." Suggestions land in
+  `/admin`; accepting one yields a copy-ready dataset entry a human verifies and merges. Runtime
+  never edits dataset code.
+
+- **Anti-spam is all server-side**, shared across reviews, reports, and suggestions
+  ([`lib/antispam.ts`](lib/antispam.ts)): an off-screen honeypot, a minimum compose time, URL
+  rejection, and per-IP rate limits keyed on a salted hash of the IP — never the raw IP. (Reviews
+  3/hr·10/day, reports 5/day, suggestions 3/day.)
 - **Storage** is Drizzle + Neon in production and PGlite in dev/tests, behind one `getDb()` seam.
-  With no `DATABASE_URL`, every review endpoint returns an honest `503` and the UI degrades to
-  "coming soon."
-- **Moderate from your phone** at `/admin` (approve / reject / retract, plus a scan-counts table).
-  Gated by a constant-time secret check and an httpOnly cookie.
+  With no `DATABASE_URL`, write endpoints return an honest `503` and reads degrade to empty — the
+  map is never blocked.
+- **Moderate from your phone** at `/admin`: reviews (approve/reject/retract), reports (resolve/
+  dismiss + set overrides), suggestions (accept→JSON/reject), a **System** tab (config + live
+  counts), and scans. Gated by a constant-time secret check and an httpOnly cookie.
 
 ## Growth kit
 
@@ -126,10 +143,16 @@ Copy [`.env.example`](.env.example) to `.env.local`. **None of these are require
 
 | Variable | What it unlocks |
 | --- | --- |
-| `DATABASE_URL` | Reviews + scans (Neon Postgres). Absent → the map still works; reviews say "coming soon." |
+| `DATABASE_URL` | The community layer — reviews, reports, overrides, suggestions, scans (Neon Postgres). Absent → the map still works; the community UI says "coming soon." |
 | `ADMIN_SECRET` | The `/admin` moderation console. Absent → admin is disabled. |
-| `IP_SALT` | Salt for hashing reviewer IPs (rate limiting). |
+| `IP_SALT` | Salt for hashing submitter IPs (per-IP rate limiting on reviews/reports/suggestions). |
 | `NEXT_PUBLIC_SITE_URL` | The public base URL for permalinks, OG images, and QR codes. Falls back to the Vercel URL, then localhost. |
+
+**Is it wired up?** `GET /api/health` returns a secret-free snapshot —
+`{ db, adminConfigured, siteUrl, spots, commit }` — and `npm run preflight https://<domain>` runs a
+full go/no-go checklist (health, `/api/reviews/recent`, `/s/<id>` redirect, sitemap, robots, an OG
+image, the admin login page) and prints **LAUNCH READY** only when every check passes. The `/admin`
+**System** tab shows the same config + counts from your phone.
 
 **Ops checklist (once, after provisioning):**
 
@@ -138,8 +161,12 @@ Copy [`.env.example`](.env.example) to `.env.local`. **None of these are require
 2. Set `ADMIN_SECRET` and `IP_SALT` (long random strings) in Vercel, and `NEXT_PUBLIC_SITE_URL`
    once the domain is live.
 3. **Buy the domain**, point it at Vercel, set `NEXT_PUBLIC_SITE_URL`, redeploy.
-4. Only then print stickers from `/stickers`.
+4. Run `npm run preflight https://<domain>` — print stickers from `/stickers` only after it says
+   **LAUNCH READY**.
 5. Before any paid/bartered partner deal, upgrade Vercel to Pro (Hobby is non-commercial).
+
+The **launch execution kit** — press pitches, the first-50 sticker plan, the partner playbook, and a
+social pack — lives in [`docs/launch/`](docs/launch/).
 
 ## Deploy
 
