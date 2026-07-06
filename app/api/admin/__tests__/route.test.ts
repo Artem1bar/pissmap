@@ -14,6 +14,7 @@ vi.mock("@/lib/db", () => ({
 const { POST: LOGIN } = await import("../login/route");
 const { GET: LIST, POST: MODERATE } = await import("../reviews/route");
 const { GET: SCANS } = await import("../scans/route");
+const { GET: SYSTEM } = await import("../system/route");
 
 const SECRET = "test-admin-secret";
 
@@ -148,6 +149,52 @@ describe("POST /api/admin/reviews (moderation)", () => {
       }),
     );
     expect(missing.status).toBe(404);
+  });
+});
+
+describe("GET /api/admin/system", () => {
+  it("401s without a cookie", async () => {
+    const res = await SYSTEM(new Request("http://x/api/admin/system"));
+    expect(res.status).toBe(401);
+  });
+
+  it("returns config status + moderation counts for the System tab", async () => {
+    const id = await seedPending();
+    await insertScan(holder.db!, "clover-grill");
+    const res = await SYSTEM(
+      new Request("http://x/api/admin/system", { headers: { cookie: cookie() } }),
+    );
+    expect(res.status).toBe(200);
+    expect(res.headers.get("cache-control")).toBe("no-store");
+    const { system } = await res.json();
+    expect(system.db).toBe("connected");
+    expect(system.reviews).toEqual({ pending: 1, approved: 0, rejected: 0 });
+    expect(system.scans.total).toBe(1);
+    expect(system.spots).toBeGreaterThan(400);
+    expect(typeof system.siteUrl).toBe("string");
+    expect(typeof system.hasRealDomain).toBe("boolean");
+    // Never a secret in sight.
+    expect(JSON.stringify(system)).not.toContain(SECRET);
+    void id;
+  });
+
+  it("degrades to db:error with zeroed counts instead of 500ing when the DB throws", async () => {
+    // A configured-but-broken database (Neon outage, bad URL): queries reject.
+    holder.db = {
+      select: () => {
+        throw new Error("connection refused");
+      },
+      execute: () => Promise.reject(new Error("connection refused")),
+    } as unknown as Db;
+
+    const res = await SYSTEM(
+      new Request("http://x/api/admin/system", { headers: { cookie: cookie() } }),
+    );
+    expect(res.status).toBe(200);
+    const { system } = await res.json();
+    expect(system.db).toBe("error");
+    expect(system.reviews).toEqual({ pending: 0, approved: 0, rejected: 0 });
+    expect(system.scans).toEqual({ total: 0, last7: 0 });
   });
 });
 

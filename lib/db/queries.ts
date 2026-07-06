@@ -35,6 +35,11 @@ export interface ScanStat {
   last7: number;
 }
 
+export interface ScanTotals {
+  total: number;
+  last7: number;
+}
+
 function iso(value: Date): string {
   return value.toISOString();
 }
@@ -206,4 +211,31 @@ export async function scanStats(db: Db): Promise<ScanStat[]> {
     .groupBy(scans.slug)
     .orderBy(desc(sql`count(*)`));
   return rows.map((r) => ({ slug: r.slug, total: Number(r.total), last7: Number(r.last7) }));
+}
+
+/** Site-wide scan totals for the admin System tab (all slugs collapsed). */
+export async function scanTotals(db: Db): Promise<ScanTotals> {
+  const [row] = await db
+    .select({
+      total: sql<string>`count(*)`,
+      last7: sql<string>`count(*) filter (where ${scans.createdAt} >= now() - interval '7 days')`,
+    })
+    .from(scans);
+  return { total: Number(row?.total ?? 0), last7: Number(row?.last7 ?? 0) };
+}
+
+/** Every review count in one query, zero-filled for statuses with no rows. */
+export async function reviewCountsByStatus(db: Db): Promise<Record<ReviewStatus, number>> {
+  const rows = await db
+    .select({ status: reviews.status, count: sql<string>`count(*)` })
+    .from(reviews)
+    .groupBy(reviews.status);
+  const counts: Record<ReviewStatus, number> = { pending: 0, approved: 0, rejected: 0 };
+  for (const r of rows) counts[r.status as ReviewStatus] = Number(r.count);
+  return counts;
+}
+
+/** A cheap liveness probe: resolves when the connection answers, throws otherwise. */
+export async function pingDb(db: Db): Promise<void> {
+  await db.execute(sql`select 1`);
 }

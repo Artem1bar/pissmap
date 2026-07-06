@@ -9,7 +9,10 @@ import {
   listApprovedForSpot,
   listByStatus,
   listRecentApproved,
+  pingDb,
+  reviewCountsByStatus,
   scanStats,
+  scanTotals,
   setReviewStatus,
 } from "../queries";
 import { createTestDb } from "./testdb";
@@ -163,5 +166,44 @@ describe("scans", () => {
     expect(erin?.last7).toBe(2);
     // Ordered by total descending — erin-rose (3) before cafe-du-monde (1).
     expect(stats[0].slug).toBe("erin-rose");
+  });
+
+  it("collapses every slug into site-wide scan totals", async () => {
+    const db = await createTestDb();
+    await insertScan(db, "erin-rose");
+    await insertScan(db, "cafe-du-monde");
+    await db.insert(scans).values({
+      slug: "erin-rose",
+      createdAt: new Date(Date.now() - 10 * 86_400_000),
+    });
+
+    const totals = await scanTotals(db);
+    expect(totals.total).toBe(3);
+    expect(totals.last7).toBe(2);
+  });
+
+  it("reports zero totals with no scans", async () => {
+    const db = await createTestDb();
+    expect(await scanTotals(db)).toEqual({ total: 0, last7: 0 });
+  });
+});
+
+describe("reviewCountsByStatus", () => {
+  it("counts every status in one pass, zero-filling the empties", async () => {
+    const db = await createTestDb();
+    const a = await seedApproved(db, "erin-rose", 5);
+    await seedApproved(db, "cafe-du-monde", 4);
+    await insertReview(db, { ...base, spotId: "erin-rose" }); // pending
+    await setReviewStatus(db, a, "approved");
+
+    const counts = await reviewCountsByStatus(db);
+    expect(counts).toEqual({ pending: 1, approved: 2, rejected: 0 });
+  });
+});
+
+describe("pingDb", () => {
+  it("resolves against a live connection", async () => {
+    const db = await createTestDb();
+    await expect(pingDb(db)).resolves.toBeUndefined();
   });
 });

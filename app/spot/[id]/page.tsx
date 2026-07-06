@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import AppShell from "@/components/AppShell";
 import { CATEGORY_META } from "@/lib/categories";
-import { spotPath } from "@/lib/site";
+import { placeJsonLd } from "@/lib/jsonld";
+import { spotPath, spotUrl } from "@/lib/site";
 import { getSpotById, SPOTS } from "@/lib/spots";
 
 // One shareable, statically-generated page per curated spot. Unknown ids 404
@@ -48,6 +49,17 @@ export async function generateMetadata({
 
 export default async function SpotPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  if (!getSpotById(id)) notFound();
-  return <AppShell initialSpotId={id} />;
+  const spot = getSpotById(id);
+  if (!spot) notFound();
+  // schema.org Place data, baked into the static HTML for rich search results.
+  const jsonLd = placeJsonLd(spot, spotUrl(spot.id));
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <AppShell initialSpotId={id} />
+    </>
+  );
 }

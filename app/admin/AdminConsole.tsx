@@ -9,7 +9,7 @@ import { displayName, relativeTime } from "@/lib/reviews/format";
 // entirely cookie-based (httpOnly), so this component never sees the secret
 // after login.
 
-type Tab = "pending" | "approved" | "scans";
+type Tab = "pending" | "approved" | "scans" | "system";
 type Screen = "checking" | "disabled" | "no-db" | "unauthed" | "ready" | "error";
 
 interface AdminReview {
@@ -36,11 +36,29 @@ interface ScanRow {
   last7: number;
 }
 
+interface SystemData {
+  db: "connected" | "unconfigured" | "error";
+  siteUrl: string;
+  hasRealDomain: boolean;
+  spots: number;
+  commit: string;
+  reviews: { pending: number; approved: number; rejected: number };
+  scans: { total: number; last7: number };
+}
+
+const TAB_ENDPOINTS: Record<Tab, string> = {
+  pending: "/api/admin/reviews?status=pending",
+  approved: "/api/admin/reviews?status=approved",
+  scans: "/api/admin/scans",
+  system: "/api/admin/system",
+};
+
 export default function AdminConsole() {
   const [screen, setScreen] = useState<Screen>("checking");
   const [tab, setTab] = useState<Tab>("pending");
   const [reviews, setReviews] = useState<AdminReview[]>([]);
   const [scans, setScans] = useState<ScanRow[]>([]);
+  const [system, setSystem] = useState<SystemData | null>(null);
   const [counts, setCounts] = useState<Counts>({ pending: 0, approved: 0 });
   const [busyId, setBusyId] = useState<string | null>(null);
 
@@ -50,7 +68,7 @@ export default function AdminConsole() {
   useEffect(() => {
     let active = true;
     void (async () => {
-      const url = tab === "scans" ? "/api/admin/scans" : `/api/admin/reviews?status=${tab}`;
+      const url = TAB_ENDPOINTS[tab];
       const res = await fetch(url, { cache: "no-store" });
       if (!active) return;
       if (res.status === 401) {
@@ -69,6 +87,8 @@ export default function AdminConsole() {
       }
       if (tab === "scans") {
         setScans(data.scans);
+      } else if (tab === "system") {
+        setSystem(data.system);
       } else {
         setReviews(data.reviews);
         setCounts(data.counts);
@@ -156,7 +176,7 @@ export default function AdminConsole() {
         </button>
       </header>
 
-      <div className="mt-4 flex gap-2">
+      <div className="mt-4 -mx-4 flex gap-2 overflow-x-auto px-4 pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         <TabButton active={tab === "pending"} onClick={() => setTab("pending")}>
           Pending {counts.pending > 0 ? <Badge>{counts.pending}</Badge> : null}
         </TabButton>
@@ -166,10 +186,15 @@ export default function AdminConsole() {
         <TabButton active={tab === "scans"} onClick={() => setTab("scans")}>
           Scans
         </TabButton>
+        <TabButton active={tab === "system"} onClick={() => setTab("system")}>
+          System
+        </TabButton>
       </div>
 
       <div className="mt-4 space-y-3">
-        {tab === "scans" ? (
+        {tab === "system" ? (
+          <SystemPanel system={system} />
+        ) : tab === "scans" ? (
           <ScansTable scans={scans} />
         ) : reviews.length === 0 ? (
           <p className="py-16 text-center text-sm text-ink-500">
@@ -219,6 +244,85 @@ function ScansTable({ scans }: { scans: ScanRow[] }) {
           ))}
         </tbody>
       </table>
+    </div>
+  );
+}
+
+const DB_LABELS: Record<SystemData["db"], { label: string; color: string }> = {
+  connected: { label: "Connected", color: "text-open" },
+  unconfigured: { label: "Not configured", color: "text-soon" },
+  error: { label: "Error", color: "text-shut" },
+};
+
+function SystemPanel({ system }: { system: SystemData | null }) {
+  if (!system) {
+    return <p className="py-16 text-center text-sm text-ink-500">Reading the gauges…</p>;
+  }
+  const db = DB_LABELS[system.db];
+  return (
+    <div className="space-y-3">
+      <section className="rounded-2xl border border-night-600 bg-night-900 p-4">
+        <h2 className="text-[11px] font-semibold uppercase tracking-wider text-ink-500">Config</h2>
+        <dl className="mt-2 space-y-2 text-sm">
+          <ConfigRow label="Database">
+            <span className={`font-medium ${db.color}`}>● {db.label}</span>
+          </ConfigRow>
+          <ConfigRow label="Moderation">
+            <span className="font-medium text-open">● On</span>
+          </ConfigRow>
+          <ConfigRow label="Site URL">
+            <span className="truncate font-mono text-xs text-ink-300">{system.siteUrl}</span>
+          </ConfigRow>
+          <ConfigRow label="Domain">
+            {system.hasRealDomain ? (
+              <span className="font-medium text-open">Live</span>
+            ) : (
+              <span className="font-medium text-soon">Placeholder — print no stickers yet</span>
+            )}
+          </ConfigRow>
+          <ConfigRow label="Commit">
+            <span className="font-mono text-xs text-ink-300">{system.commit}</span>
+          </ConfigRow>
+          <ConfigRow label="Spots">
+            <span className="font-mono text-ink-300">{system.spots}</span>
+          </ConfigRow>
+        </dl>
+      </section>
+
+      <section className="rounded-2xl border border-night-600 bg-night-900 p-4">
+        <h2 className="text-[11px] font-semibold uppercase tracking-wider text-ink-500">Reviews</h2>
+        <div className="mt-2 grid grid-cols-3 gap-2">
+          <Stat label="Pending" value={system.reviews.pending} accent="text-gold-300" />
+          <Stat label="Approved" value={system.reviews.approved} accent="text-open" />
+          <Stat label="Rejected" value={system.reviews.rejected} accent="text-ink-400" />
+        </div>
+      </section>
+
+      <section className="rounded-2xl border border-night-600 bg-night-900 p-4">
+        <h2 className="text-[11px] font-semibold uppercase tracking-wider text-ink-500">Scans</h2>
+        <div className="mt-2 grid grid-cols-2 gap-2">
+          <Stat label="All time" value={system.scans.total} accent="text-ink-200" />
+          <Stat label="Last 7 days" value={system.scans.last7} accent="text-gold-300" />
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function ConfigRow({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <div className="flex items-center justify-between gap-3">
+      <dt className="shrink-0 text-ink-500">{label}</dt>
+      <dd className="min-w-0 text-right">{children}</dd>
+    </div>
+  );
+}
+
+function Stat({ label, value, accent }: { label: string; value: number; accent: string }) {
+  return (
+    <div className="rounded-xl bg-night-800 px-3 py-2.5 text-center">
+      <div className={`font-mono text-xl font-bold ${accent}`}>{value}</div>
+      <div className="mt-0.5 text-[11px] text-ink-500">{label}</div>
     </div>
   );
 }
@@ -366,7 +470,7 @@ function TabButton({
     <button
       type="button"
       onClick={onClick}
-      className={`flex items-center gap-1.5 rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
+      className={`flex shrink-0 items-center gap-1.5 rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
         active
           ? "bg-gold-400 text-night-950"
           : "border border-night-600 text-ink-300 hover:border-gold-600"
