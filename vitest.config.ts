@@ -12,6 +12,10 @@ export default defineConfig({
   test: {
     include: ["lib/**/*.test.ts", "app/**/*.test.ts"],
     environment: "node",
+    // The first test (or beforeEach) in a DB file pays a one-time PGlite (WASM)
+    // boot, which can exceed the defaults on cold caches or loaded machines.
+    testTimeout: 20_000,
+    hookTimeout: 20_000,
     coverage: {
       provider: "v8",
       include: ["lib/**/*.ts"],
