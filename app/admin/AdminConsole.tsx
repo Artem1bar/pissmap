@@ -3,13 +3,14 @@
 import { useCallback, useEffect, useState } from "react";
 import { Droplets } from "@/components/reviews/Droplets";
 import { displayName, relativeTime } from "@/lib/reviews/format";
+import { formatSuggestionEntry } from "@/lib/suggestions";
 
 // Phone-first moderation console. It probes /api/admin/reviews on mount and
 // switches between login, disabled, and the queue based on the response. Auth is
 // entirely cookie-based (httpOnly), so this component never sees the secret
 // after login.
 
-type Tab = "pending" | "approved" | "reports" | "scans" | "system";
+type Tab = "pending" | "approved" | "reports" | "suggestions" | "scans" | "system";
 type Screen = "checking" | "disabled" | "no-db" | "unauthed" | "ready" | "error";
 
 interface AdminReview {
@@ -45,6 +46,20 @@ interface SystemData {
   reviews: { pending: number; approved: number; rejected: number };
   scans: { total: number; last7: number };
   reportsOpen: number;
+  suggestionsNew: number;
+}
+
+interface AdminSuggestion {
+  id: number;
+  name: string;
+  lat: number;
+  lng: number;
+  category: "public" | "customers" | "lobby";
+  tip: string;
+  hoursText: string | null;
+  nickname: string | null;
+  status: string;
+  createdAt: string;
 }
 
 interface AdminReportRow {
@@ -75,6 +90,7 @@ const TAB_ENDPOINTS: Record<Tab, string> = {
   pending: "/api/admin/reviews?status=pending",
   approved: "/api/admin/reviews?status=approved",
   reports: "/api/admin/reports",
+  suggestions: "/api/admin/suggestions",
   scans: "/api/admin/scans",
   system: "/api/admin/system",
 };
@@ -87,6 +103,8 @@ export default function AdminConsole() {
   const [system, setSystem] = useState<SystemData | null>(null);
   const [reportGroups, setReportGroups] = useState<ReportGroup[]>([]);
   const [reportsOpen, setReportsOpen] = useState(0);
+  const [suggestions, setSuggestions] = useState<AdminSuggestion[]>([]);
+  const [suggestionsNew, setSuggestionsNew] = useState(0);
   const [counts, setCounts] = useState<Counts>({ pending: 0, approved: 0 });
   const [busyId, setBusyId] = useState<string | null>(null);
 
@@ -118,10 +136,14 @@ export default function AdminConsole() {
       } else if (tab === "system") {
         setSystem(data.system);
         setReportsOpen(data.system.reportsOpen);
+        setSuggestionsNew(data.system.suggestionsNew);
       } else if (tab === "reports") {
         const groups: ReportGroup[] = data.groups ?? [];
         setReportGroups(groups);
         setReportsOpen(groups.reduce((n, g) => n + g.count, 0));
+      } else if (tab === "suggestions") {
+        setSuggestions(data.suggestions ?? []);
+        setSuggestionsNew(data.counts?.new ?? 0);
       } else {
         setReviews(data.reviews);
         setCounts(data.counts);
@@ -233,6 +255,9 @@ export default function AdminConsole() {
         <TabButton active={tab === "reports"} onClick={() => setTab("reports")}>
           Reports {reportsOpen > 0 ? <Badge>{reportsOpen}</Badge> : null}
         </TabButton>
+        <TabButton active={tab === "suggestions"} onClick={() => setTab("suggestions")}>
+          Suggestions {suggestionsNew > 0 ? <Badge>{suggestionsNew}</Badge> : null}
+        </TabButton>
         <TabButton active={tab === "scans"} onClick={() => setTab("scans")}>
           Scans
         </TabButton>
@@ -246,6 +271,11 @@ export default function AdminConsole() {
           <SystemPanel system={system} />
         ) : tab === "reports" ? (
           <ReportsPanel groups={reportGroups} busyId={busyId} onAction={reportAction} />
+        ) : tab === "suggestions" ? (
+          <SuggestionsPanel
+            suggestions={suggestions}
+            onActed={() => setSuggestionsNew((n) => Math.max(0, n - 1))}
+          />
         ) : tab === "scans" ? (
           <ScansTable scans={scans} />
         ) : reviews.length === 0 ? (
@@ -453,6 +483,167 @@ function ReportGroupCard({
   );
 }
 
+const CATEGORY_LABELS: Record<AdminSuggestion["category"], string> = {
+  public: "Free & public",
+  customers: "Buy something",
+  lobby: "Hotel lobby",
+};
+
+function SuggestionsPanel({
+  suggestions,
+  onActed,
+}: {
+  suggestions: AdminSuggestion[];
+  onActed: () => void;
+}) {
+  if (suggestions.length === 0) {
+    return (
+      <p className="py-16 text-center text-sm text-ink-500">
+        No new suggestions yet. <span aria-hidden="true">🗺️</span>
+      </p>
+    );
+  }
+  return (
+    <div className="space-y-3">
+      {suggestions.map((s) => (
+        <SuggestionCard key={s.id} suggestion={s} onActed={onActed} />
+      ))}
+    </div>
+  );
+}
+
+function SuggestionCard({
+  suggestion,
+  onActed,
+}: {
+  suggestion: AdminSuggestion;
+  onActed: () => void;
+}) {
+  const [phase, setPhase] = useState<"new" | "busy" | "accepted" | "rejected">("new");
+  const [copied, setCopied] = useState(false);
+
+  const act = async (action: "accept" | "reject") => {
+    setPhase("busy");
+    try {
+      const res = await fetch("/api/admin/suggestions", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ id: suggestion.id, action }),
+      });
+      if (res.ok) {
+        setPhase(action === "accept" ? "accepted" : "rejected");
+        onActed();
+      } else {
+        setPhase("new");
+      }
+    } catch {
+      setPhase("new");
+    }
+  };
+
+  if (phase === "rejected") return null;
+
+  const entry = formatSuggestionEntry({
+    name: suggestion.name,
+    lat: suggestion.lat,
+    lng: suggestion.lng,
+    category: suggestion.category,
+    tip: suggestion.tip,
+    hoursText: suggestion.hoursText,
+  });
+  const mapLink = `https://www.google.com/maps?q=${suggestion.lat},${suggestion.lng}`;
+
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(entry);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1600);
+    } catch {
+      // Clipboard unavailable — the block is still selectable by hand.
+    }
+  };
+
+  return (
+    <article className={`rounded-2xl border border-night-600 bg-night-900 p-3.5 ${phase === "busy" ? "opacity-40" : ""}`}>
+      <div className="flex items-center justify-between gap-2">
+        <span className="truncate text-sm font-semibold text-ink-100">{suggestion.name}</span>
+        <span className="shrink-0 rounded-full border border-night-600 px-2 py-0.5 text-[11px] text-ink-300">
+          {CATEGORY_LABELS[suggestion.category]}
+        </span>
+      </div>
+
+      {suggestion.tip ? (
+        <p className="mt-2 whitespace-pre-wrap break-words text-sm leading-snug text-ink-300">
+          {suggestion.tip}
+        </p>
+      ) : null}
+
+      <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[11px] text-ink-500">
+        <a
+          href={mapLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-mono text-gold-300 underline-offset-2 hover:underline"
+        >
+          {suggestion.lat.toFixed(5)}, {suggestion.lng.toFixed(5)} ↗
+        </a>
+        {suggestion.hoursText ? (
+          <>
+            <span aria-hidden="true">·</span>
+            <span>hours: {suggestion.hoursText}</span>
+          </>
+        ) : null}
+        <span aria-hidden="true">·</span>
+        <span>{displayName(suggestion.nickname, String(suggestion.id))}</span>
+        <span aria-hidden="true">·</span>
+        <span>{relativeTime(suggestion.createdAt)}</span>
+      </div>
+
+      {phase === "accepted" ? (
+        <div className="mt-3">
+          <div className="flex items-center justify-between">
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-open">
+              Accepted — copy into lib/spots/
+            </p>
+            <button
+              type="button"
+              onClick={copy}
+              className="rounded-full border border-gold-600 px-2.5 py-0.5 text-[11px] font-medium text-gold-300 transition-colors hover:bg-gold-400/10"
+            >
+              {copied ? "Copied!" : "Copy"}
+            </button>
+          </div>
+          <pre className="mt-1.5 overflow-x-auto rounded-lg bg-night-950 p-3 text-[11px] leading-relaxed text-ink-200">
+            <code>{entry}</code>
+          </pre>
+          <p className="mt-1 text-[11px] text-ink-500">
+            Verify + geocode the TODOs before it goes live.
+          </p>
+        </div>
+      ) : (
+        <div className="mt-3 flex gap-2">
+          <button
+            type="button"
+            disabled={phase === "busy"}
+            onClick={() => act("accept")}
+            className="flex-1 rounded-xl bg-open/90 py-2 text-sm font-bold text-night-950 transition-colors hover:bg-open disabled:opacity-50"
+          >
+            ✓ Accept
+          </button>
+          <button
+            type="button"
+            disabled={phase === "busy"}
+            onClick={() => act("reject")}
+            className="flex-1 rounded-xl border border-shut/50 py-2 text-sm font-bold text-shut transition-colors hover:bg-shut/10 disabled:opacity-50"
+          >
+            ✕ Reject
+          </button>
+        </div>
+      )}
+    </article>
+  );
+}
+
 const DB_LABELS: Record<SystemData["db"], { label: string; color: string }> = {
   connected: { label: "Connected", color: "text-open" },
   unconfigured: { label: "Not configured", color: "text-soon" },
@@ -496,6 +687,13 @@ function SystemPanel({ system }: { system: SystemData | null }) {
               className={`font-mono ${system.reportsOpen > 0 ? "text-shut" : "text-ink-300"}`}
             >
               {system.reportsOpen}
+            </span>
+          </ConfigRow>
+          <ConfigRow label="New suggestions">
+            <span
+              className={`font-mono ${system.suggestionsNew > 0 ? "text-gold-300" : "text-ink-300"}`}
+            >
+              {system.suggestionsNew}
             </span>
           </ConfigRow>
         </dl>

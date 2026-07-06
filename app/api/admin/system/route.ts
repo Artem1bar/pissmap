@@ -2,6 +2,7 @@ import { guardAdmin } from "@/lib/admin/guard";
 import { resolveDb } from "@/lib/db";
 import {
   countReportsByStatus,
+  countSuggestionsByStatus,
   reviewCountsByStatus,
   scanTotals,
   type ScanTotals,
@@ -29,13 +30,15 @@ export async function GET(request: Request): Promise<Response> {
   let reviews: Record<ReviewStatus, number> = { pending: 0, approved: 0, rejected: 0 };
   let scans: ScanTotals = { total: 0, last7: 0 };
   let reportsOpen = 0;
+  let suggestionsNew = 0;
   try {
     const db = await resolveDb();
     if (db) {
-      [reviews, scans, reportsOpen] = await Promise.all([
+      [reviews, scans, reportsOpen, suggestionsNew] = await Promise.all([
         reviewCountsByStatus(db),
         scanTotals(db),
         countReportsByStatus(db, "open"),
+        countSuggestionsByStatus(db, "new"),
       ]);
     }
   } catch {
@@ -54,6 +57,7 @@ export async function GET(request: Request): Promise<Response> {
         reviews,
         scans,
         reportsOpen,
+        suggestionsNew,
       },
     },
     { cache: NO_STORE },

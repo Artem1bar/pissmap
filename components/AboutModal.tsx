@@ -10,6 +10,8 @@ import { CloseIcon } from "./icons";
 interface AboutModalProps {
   open: boolean;
   onClose: () => void;
+  /** Starts the add-a-spot flow — the standalone path into suggesting a spot. */
+  onAddSpot?: () => void;
 }
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
@@ -18,7 +20,7 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function AboutModal({ open, onClose }: AboutModalProps) {
+export default function AboutModal({ open, onClose, onAddSpot }: AboutModalProps) {
   const ref = useRef<HTMLDialogElement | null>(null);
 
   useEffect(() => {
@@ -126,6 +128,25 @@ export default function AboutModal({ open, onClose }: AboutModalProps) {
             Flag it on GitHub
           </a>{" "}
           and it comes down.
+        </p>
+
+        <SectionTitle>Spot wrong? Spot missing?</SectionTitle>
+        <p className="mt-2 text-sm leading-relaxed text-ink-300">
+          Closed, moved, or the hours are off? Tap{" "}
+          <strong className="text-ink-100">&ldquo;Something wrong with this spot?&rdquo;</strong> on
+          any spot to flag it — a moderator patches the live map without waiting for a redeploy. Know
+          a spot we&apos;re missing?{" "}
+          <button
+            type="button"
+            onClick={() => {
+              ref.current?.close();
+              onAddSpot?.();
+            }}
+            className="font-medium text-gold-300 underline decoration-night-400 underline-offset-2 hover:text-gold-200"
+          >
+            Add it to your map
+          </button>{" "}
+          and submit it for review. Everything&apos;s moderated before it reaches the public map.
         </p>
 
         <SectionTitle>The legal bit</SectionTitle>

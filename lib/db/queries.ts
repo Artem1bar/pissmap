@@ -7,10 +7,13 @@ import {
   reports,
   reviews,
   scans,
+  suggestions,
   type OverrideKind,
   type ReportReason,
   type ReportStatus,
   type ReviewStatus,
+  type SpotCategory,
+  type SuggestionStatus,
 } from "./schema";
 
 // Every database read/write the app performs lives here, typed against the
@@ -371,4 +374,121 @@ export async function upsertOverride(
 
 export async function deleteOverride(db: Db, spotId: string): Promise<void> {
   await db.delete(overrides).where(eq(overrides.spotId, spotId));
+}
+
+// ——— Suggested spots (Phase 3) ———
+
+export interface NewSuggestion {
+  name: string;
+  lat: number;
+  lng: number;
+  category: SpotCategory;
+  tip: string;
+  hoursText: string | null;
+  nickname: string | null;
+  ipHash: string;
+}
+
+export interface AdminSuggestion {
+  id: number;
+  name: string;
+  lat: number;
+  lng: number;
+  category: SpotCategory;
+  tip: string;
+  hoursText: string | null;
+  nickname: string | null;
+  ipHash: string;
+  status: SuggestionStatus;
+  createdAt: string;
+}
+
+export async function insertSuggestion(db: Db, suggestion: NewSuggestion): Promise<void> {
+  await db.insert(suggestions).values({
+    name: suggestion.name,
+    lat: suggestion.lat,
+    lng: suggestion.lng,
+    category: suggestion.category,
+    tip: suggestion.tip,
+    hoursText: suggestion.hoursText,
+    nickname: suggestion.nickname,
+    ipHash: suggestion.ipHash,
+  });
+}
+
+/** Rolling daily suggestion count for one hashed IP — the 3/day cap's raw material. */
+export async function countRecentSuggestionsByIp(
+  db: Db,
+  ipHash: string,
+): Promise<{ lastDay: number }> {
+  const [row] = await db
+    .select({
+      lastDay: sql<string>`count(*) filter (where ${suggestions.createdAt} >= now() - interval '24 hours')`,
+    })
+    .from(suggestions)
+    .where(eq(suggestions.ipHash, ipHash));
+  return { lastDay: Number(row?.lastDay ?? 0) };
+}
+
+export async function listSuggestionsByStatus(
+  db: Db,
+  status: SuggestionStatus,
+  limit = 200,
+): Promise<AdminSuggestion[]> {
+  const rows = await db
+    .select({
+      id: suggestions.id,
+      name: suggestions.name,
+      lat: suggestions.lat,
+      lng: suggestions.lng,
+      category: suggestions.category,
+      tip: suggestions.tip,
+      hoursText: suggestions.hoursText,
+      nickname: suggestions.nickname,
+      ipHash: suggestions.ipHash,
+      status: suggestions.status,
+      createdAt: suggestions.createdAt,
+    })
+    .from(suggestions)
+    .where(eq(suggestions.status, status))
+    .orderBy(desc(suggestions.createdAt))
+    .limit(limit);
+  return rows.map((r) => ({
+    id: r.id,
+    name: r.name,
+    lat: r.lat,
+    lng: r.lng,
+    category: r.category as SpotCategory,
+    tip: r.tip,
+    hoursText: r.hoursText,
+    nickname: r.nickname,
+    ipHash: r.ipHash,
+    status: r.status as SuggestionStatus,
+    createdAt: iso(r.createdAt),
+  }));
+}
+
+export async function countSuggestionsByStatus(
+  db: Db,
+  status: SuggestionStatus,
+): Promise<number> {
+  const [row] = await db
+    .select({ count: sql<string>`count(*)` })
+    .from(suggestions)
+    .where(eq(suggestions.status, status));
+  return Number(row?.count ?? 0);
+}
+
+/** Accept or reject a suggestion. Returns false when the id doesn't exist. */
+export async function setSuggestionStatus(
+  db: Db,
+  id: number,
+  status: SuggestionStatus,
+): Promise<boolean> {
+  const updated = await db
+    .update(suggestions)
+    .set({ status })
+    .where(eq(suggestions.id, id))
+    .returning({ id: suggestions.id });
+  return updated.length > 0;
 }

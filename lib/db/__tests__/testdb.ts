@@ -23,7 +23,9 @@ export async function createTestDb(): Promise<Db> {
     await migrate(db, { migrationsFolder: "./lib/db/migrations" });
     shared = { client, db: db as unknown as Db };
   } else {
-    await shared.client.exec("DELETE FROM reviews; DELETE FROM scans; DELETE FROM reports; DELETE FROM overrides;");
+    await shared.client.exec(
+      "DELETE FROM reviews; DELETE FROM scans; DELETE FROM reports; DELETE FROM overrides; DELETE FROM suggestions;",
+    );
   }
   return shared.db;
 }

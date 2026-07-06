@@ -6,8 +6,8 @@ import { formatDistance, walkMinutes, walkingDirectionsUrl } from "@/lib/geo";
 import { DAY_NAMES, dayHoursLabel } from "@/lib/hours";
 import type { SpotOverride } from "@/lib/overrides";
 import type { LocalTime, Spot } from "@/lib/types";
-import { suggestIssueUrl } from "@/lib/userSpots";
 import { ReportProblem } from "./ReportProblem";
+import { SuggestSpot } from "./SuggestSpot";
 import StatusBadge from "./StatusBadge";
 import { DropletScoreChip } from "./reviews/Droplets";
 import { TheBowl } from "./reviews/TheBowl";
@@ -243,25 +243,16 @@ export default function SpotDetail({ spot, now, meters, emergency, onBack, warn,
           <p className="text-xs leading-relaxed text-ink-500">
             This spot lives only in this browser. Think everyone should know about it?
           </p>
-          <div className="mt-2 flex items-center gap-2">
-            <a
-              href={suggestIssueUrl(spot)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full border border-gold-600 px-3 py-1 text-xs font-medium text-gold-300 transition-colors hover:bg-gold-400/10"
+          <SuggestSpot spot={spot} />
+          {onDelete ? (
+            <button
+              type="button"
+              onClick={onDelete}
+              className="mt-2 flex items-center gap-1 rounded-full border border-shut/40 px-3 py-1 text-xs font-medium text-shut transition-colors hover:bg-shut/10"
             >
-              Suggest for the public map ↗
-            </a>
-            {onDelete ? (
-              <button
-                type="button"
-                onClick={onDelete}
-                className="flex items-center gap-1 rounded-full border border-shut/40 px-3 py-1 text-xs font-medium text-shut transition-colors hover:bg-shut/10"
-              >
-                <TrashIcon className="h-3 w-3" /> Delete
-              </button>
-            ) : null}
-          </div>
+              <TrashIcon className="h-3 w-3" /> Delete
+            </button>
+          ) : null}
         </div>
       ) : null}
     </div>

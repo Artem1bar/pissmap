@@ -2,7 +2,7 @@ import { PGlite } from "@electric-sql/pglite";
 import { drizzle } from "drizzle-orm/pglite";
 import { migrate } from "drizzle-orm/pglite/migrator";
 import * as schema from "./schema";
-import { overrides, reports, reviews, scans } from "./schema";
+import { overrides, reports, reviews, scans, suggestions } from "./schema";
 import type { Db } from "./index";
 
 // A local, in-memory Postgres for dogfooding reviews + moderation without Neon.
@@ -83,6 +83,29 @@ const SEED_OVERRIDES: Array<{ spotId: string; kind: "hide" | "warn"; note: strin
   { spotId: "mollys-at-the-market", kind: "warn", note: "Reported closed for a private event — verifying." },
 ];
 
+// A pending crowd suggestion so the /admin Suggestions tab has a card to accept.
+const SEED_SUGGESTIONS: Array<{
+  name: string;
+  lat: number;
+  lng: number;
+  category: "public" | "customers" | "lobby";
+  tip: string;
+  hoursText: string | null;
+  nickname: string | null;
+  ago: number;
+}> = [
+  {
+    name: "Bywater Bakery",
+    lat: 29.96348,
+    lng: -90.0503,
+    category: "customers",
+    tip: "Neighborhood bakery with a restroom — grab a king cake slice and you're set.",
+    hoursText: "7am–3pm most days",
+    nickname: "BywaterBecky",
+    ago: 6 * HOUR,
+  },
+];
+
 async function seed(db: Db): Promise<void> {
   const now = Date.now();
   await db.insert(reviews).values(
@@ -109,4 +132,17 @@ async function seed(db: Db): Promise<void> {
     })),
   );
   await db.insert(overrides).values(SEED_OVERRIDES);
+  await db.insert(suggestions).values(
+    SEED_SUGGESTIONS.map((s) => ({
+      name: s.name,
+      lat: s.lat,
+      lng: s.lng,
+      category: s.category,
+      tip: s.tip,
+      hoursText: s.hoursText,
+      nickname: s.nickname,
+      ipHash: "seed",
+      createdAt: new Date(now - s.ago),
+    })),
+  );
 }

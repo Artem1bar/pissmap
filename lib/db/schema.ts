@@ -1,5 +1,15 @@
 import { sql } from "drizzle-orm";
-import { check, index, integer, pgTable, serial, text, timestamp, uuid } from "drizzle-orm/pg-core";
+import {
+  check,
+  doublePrecision,
+  index,
+  integer,
+  pgTable,
+  serial,
+  text,
+  timestamp,
+  uuid,
+} from "drizzle-orm/pg-core";
 
 // The community layer's entire persistence surface. Driver-agnostic (pg-core),
 // so the same schema runs on Neon (production, HTTP driver) and PGlite (dev +
@@ -92,7 +102,43 @@ export const overrides = pgTable(
   ],
 );
 
+/**
+ * A crowd suggestion for a brand-new public spot. Never auto-merged: a moderator
+ * accepts or rejects, and an accepted one yields a copy-ready dataset entry that
+ * a human verifies + geocodes before it graduates into lib/spots/.
+ */
+export const suggestions = pgTable(
+  "suggestions",
+  {
+    id: serial("id").primaryKey(),
+    name: text("name").notNull(),
+    lat: doublePrecision("lat").notNull(),
+    lng: doublePrecision("lng").notNull(),
+    /** public | customers | lobby */
+    category: text("category").notNull(),
+    tip: text("tip").notNull().default(""),
+    /** Free-text hours the suggester typed, verified later by a human. */
+    hoursText: text("hours_text"),
+    nickname: text("nickname"),
+    ipHash: text("ip_hash").notNull(),
+    /** new → accepted | rejected */
+    status: text("status").notNull().default("new"),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index("suggestions_status_created_idx").on(t.status, t.createdAt.desc()),
+    index("suggestions_ip_created_idx").on(t.ipHash, t.createdAt.desc()),
+    check("suggestions_category_values", sql`${t.category} in ('public', 'customers', 'lobby')`),
+    check("suggestions_status_values", sql`${t.status} in ('new', 'accepted', 'rejected')`),
+    check("suggestions_name_len", sql`char_length(${t.name}) between 1 and 80`),
+    check("suggestions_tip_len", sql`char_length(${t.tip}) <= 280`),
+    check("suggestions_nickname_len", sql`${t.nickname} is null or char_length(${t.nickname}) <= 24`),
+  ],
+);
+
 export type ReviewStatus = "pending" | "approved" | "rejected";
 export type ReportStatus = "open" | "resolved" | "dismissed";
 export type ReportReason = "closed" | "wrong-hours" | "no-restroom" | "other";
 export type OverrideKind = "hide" | "warn";
+export type SuggestionStatus = "new" | "accepted" | "rejected";
+export type SpotCategory = "public" | "customers" | "lobby";

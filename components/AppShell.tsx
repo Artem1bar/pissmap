@@ -408,7 +408,7 @@ export default function AppShell({ initialSpotId }: AppShellProps) {
         />
       </div>
 
-      <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
+      <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} onAddSpot={startAdding} />
       <AddSpotModal
         coords={addFlow?.stage === "form" ? { lat: addFlow.lat, lng: addFlow.lng } : null}
         onSave={saveNewSpot}

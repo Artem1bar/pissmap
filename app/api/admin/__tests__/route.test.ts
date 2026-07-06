@@ -5,9 +5,11 @@ import {
   insertReport,
   insertReview,
   insertScan,
+  insertSuggestion,
   listByStatus,
   listOverrides,
   listReportsByStatus,
+  listSuggestionsByStatus,
 } from "@/lib/db/queries";
 import type { Db } from "@/lib/db";
 
@@ -23,6 +25,7 @@ const { GET: LIST, POST: MODERATE } = await import("../reviews/route");
 const { GET: SCANS } = await import("../scans/route");
 const { GET: SYSTEM } = await import("../system/route");
 const { GET: REPORTS, POST: REPORTS_ACTION } = await import("../reports/route");
+const { GET: SUGGESTIONS, POST: SUGGESTIONS_ACTION } = await import("../suggestions/route");
 
 const SECRET = "test-admin-secret";
 
@@ -271,6 +274,62 @@ describe("POST /api/admin/reports (actions)", () => {
     expect(
       (await REPORTS_ACTION(actionReq({ action: "override", spotId: "clover-grill", kind: "boom" }))).status,
     ).toBe(400);
+  });
+});
+
+describe("/api/admin/suggestions", () => {
+  async function seedSuggestion(): Promise<void> {
+    await insertSuggestion(holder.db!, {
+      name: "Bywater Bakery",
+      lat: 29.9635,
+      lng: -90.0503,
+      category: "customers",
+      tip: "Grab a slice, use the restroom.",
+      hoursText: "7am–3pm",
+      nickname: "Becky",
+      ipHash: "seed",
+    });
+  }
+
+  function actionReq(body: unknown, withCookie = true): Request {
+    return new Request("http://x/api/admin/suggestions", {
+      method: "POST",
+      headers: { "content-type": "application/json", ...(withCookie ? { cookie: cookie() } : {}) },
+      body: JSON.stringify(body),
+    });
+  }
+
+  it("401s without a cookie", async () => {
+    expect((await SUGGESTIONS(new Request("http://x/api/admin/suggestions"))).status).toBe(401);
+  });
+
+  it("lists new suggestions with a count", async () => {
+    await seedSuggestion();
+    const res = await SUGGESTIONS(
+      new Request("http://x/api/admin/suggestions", { headers: { cookie: cookie() } }),
+    );
+    expect(res.status).toBe(200);
+    expect(res.headers.get("cache-control")).toBe("no-store");
+    const data = await res.json();
+    expect(data.counts.new).toBe(1);
+    expect(data.suggestions[0].name).toBe("Bywater Bakery");
+  });
+
+  it("accepts a suggestion (status → accepted)", async () => {
+    await seedSuggestion();
+    const [s] = await listSuggestionsByStatus(holder.db!, "new");
+    const res = await SUGGESTIONS_ACTION(actionReq({ id: s.id, action: "accept" }));
+    expect(res.status).toBe(200);
+    expect(await listSuggestionsByStatus(holder.db!, "new")).toHaveLength(0);
+    expect(await listSuggestionsByStatus(holder.db!, "accepted")).toHaveLength(1);
+  });
+
+  it("401s without a cookie; 400 on bad action; 404 on a missing id", async () => {
+    await seedSuggestion();
+    const [s] = await listSuggestionsByStatus(holder.db!, "new");
+    expect((await SUGGESTIONS_ACTION(actionReq({ id: s.id, action: "accept" }, false))).status).toBe(401);
+    expect((await SUGGESTIONS_ACTION(actionReq({ id: s.id, action: "explode" }))).status).toBe(400);
+    expect((await SUGGESTIONS_ACTION(actionReq({ id: 999999, action: "accept" }))).status).toBe(404);
   });
 });
 
