@@ -106,6 +106,35 @@ export async function aggregateForSpot(db: Db, spotId: string): Promise<Aggregat
   return { avg: Number(row?.avg ?? 0), count: Number(row?.count ?? 0) };
 }
 
+export interface SpotAggregate {
+  spotId: string;
+  avg: number;
+  count: number;
+  /** ISO timestamp of the most recent approved review — powers "recently reviewed". */
+  lastAt: string;
+}
+
+/** Per-spot rating rollups for every spot with ≥1 approved review (list badges + sort). */
+export async function aggregatesAll(db: Db): Promise<SpotAggregate[]> {
+  const rows = await db
+    .select({
+      spotId: reviews.spotId,
+      avg: sql<string>`avg(${reviews.rating})`,
+      count: sql<string>`count(*)`,
+      lastAt: sql<string>`max(${reviews.createdAt})`,
+    })
+    .from(reviews)
+    .where(eq(reviews.status, "approved"))
+    .groupBy(reviews.spotId);
+  return rows.map((r) => ({
+    spotId: r.spotId,
+    avg: Number(r.avg),
+    count: Number(r.count),
+    // Driver returns Date (PGlite) or string (Neon) — normalise to ISO either way.
+    lastAt: new Date(r.lastAt as unknown as string).toISOString(),
+  }));
+}
+
 export async function listRecentApproved(db: Db, limit = 30): Promise<PublicReview[]> {
   const rows = await db
     .select({

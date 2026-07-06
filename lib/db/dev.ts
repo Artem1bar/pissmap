@@ -50,6 +50,12 @@ const SEED_REVIEWS: SeedReview[] = [
   { spotId: "nopl-main-library", rating: 5, body: "Free, clean, air-conditioned, zero purchase. Public libraries are the unsung heroes of this whole map.", nickname: "TaxpayerFunded", status: "approved", ago: 1 * DAY + 3 * HOUR },
   { spotId: "cafe-envie-decatur", rating: 4, body: "Solid Quarter standby. Cortado's good, the restroom's better than it has any right to be.", nickname: "Envie4Life", status: "approved", ago: 2 * DAY },
   { spotId: "french-market-dutch-alley", rating: 4, body: "Actual public restrooms in the Quarter?? Bless the French Market. Can get busy midday.", nickname: null, status: "approved", ago: 2 * DAY + 6 * HOUR },
+  // A couple more so clover-grill and caesars cross the ≥3 threshold that lights
+  // up the list-row droplet badges and makes the Top/Recent sorts demoable.
+  { spotId: "clover-grill", rating: 5, body: "The 24-hour griddle hero of the Quarter. Bathroom's small but it's THERE at 3am.", nickname: "GriddleGuy", status: "approved", ago: 7 * HOUR },
+  { spotId: "clover-grill", rating: 4, body: "Reliable. Order the pancake cooked under a hubcap while you're at it.", nickname: null, status: "approved", ago: 1 * DAY + 8 * HOUR },
+  { spotId: "caesars-casino", rating: 4, body: "Marble, mirrors, and blessed air conditioning. Just look like you're headed to the tables.", nickname: "PokerFace", status: "approved", ago: 14 * HOUR },
+  { spotId: "caesars-casino", rating: 5, body: "The gold standard for a late-night Quarter emergency. Never closes, never judges.", nickname: null, status: "approved", ago: 1 * DAY + 2 * HOUR },
   // Two pending reviews so the /admin queue has something to moderate.
   { spotId: "clover-grill", rating: 2, body: "Was closed when I went?? Maybe just a bad night but I was in trouble.", nickname: "Skeptical", status: "pending", ago: 12 * MIN },
   { spotId: "caesars-casino", rating: 5, body: "Lifesaver during Carnival. Walked in like I belonged, walked out a new person.", nickname: "MardiGrasSurvivor", status: "pending", ago: 40 * MIN },

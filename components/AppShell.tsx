@@ -6,13 +6,13 @@ import {
   applyFilters,
   DEFAULT_FILTERS,
   rankByUrgency,
-  sortByDistance,
   type Filters,
   type RankedSpot,
 } from "@/lib/filters";
 import { haversineMeters } from "@/lib/geo";
 import { nolaTime } from "@/lib/hours";
 import { NOLA_CENTER } from "@/lib/constants";
+import type { SortMode } from "@/lib/listSort";
 import { visibleSpots as withoutHidden, warnFor } from "@/lib/overrides";
 import { spotPath } from "@/lib/site";
 import { isKnownSpotId, SPOTS } from "@/lib/spots";
@@ -25,6 +25,7 @@ import Header from "./Header";
 import SpotDetail, { type OriginKind } from "./SpotDetail";
 import SpotList, { type SpotListItem } from "./SpotList";
 import { ChevronIcon } from "./icons";
+import { useAggregates } from "./reviews/useAggregates";
 import { useNolaTime } from "./useNolaTime";
 import { useOverrides } from "./useOverrides";
 import { addUserSpot, removeUserSpot, useUserSpots } from "./useUserSpots";
@@ -83,6 +84,7 @@ interface AppShellProps {
 export default function AppShell({ initialSpotId }: AppShellProps) {
   const [filters, setFilters] = useState<Filters>(DEFAULT_FILTERS);
   const [selectedId, setSelectedId] = useState<string | null>(initialSpotId ?? null);
+  const [sort, setSort] = useState<SortMode>("default");
   const now = useNolaTime();
   const [userLoc, setUserLoc] = useState<LatLng | null>(null);
   const [locating, setLocating] = useState(false);
@@ -95,6 +97,7 @@ export default function AppShell({ initialSpotId }: AppShellProps) {
   const mapCenterRef = useRef<LatLng>(NOLA_CENTER);
   const userSpots = useUserSpots();
   const overrides = useOverrides();
+  const ratings = useAggregates();
   // "Near me" and "GOTTA GEAUX" both geolocate; the newest request wins and
   // a superseded one must never apply its result.
   const geoSeqRef = useRef(0);
@@ -124,10 +127,22 @@ export default function AppShell({ initialSpotId }: AppShellProps) {
     return filtered;
   }, [filtered, selectedSpot]);
 
-  const listItems = useMemo<SpotListItem[]>(() => {
-    if (userLoc) return sortByDistance(filtered, userLoc);
-    return filtered.map((spot) => ({ spot, meters: null }));
-  }, [filtered, userLoc]);
+  // Base items carry distance (when located); SpotList applies the chosen sort
+  // or neighborhood grouping. Located visitors default to nearest-first.
+  const listItems = useMemo<SpotListItem[]>(
+    () =>
+      filtered.map((spot) => ({
+        spot,
+        meters: userLoc ? haversineMeters(userLoc, spot) : null,
+      })),
+    [filtered, userLoc],
+  );
+
+  // Locating flips the default (neighborhood) sort to nearest-first; an explicit
+  // choice sticks. Done here (not in an effect) to avoid a set-state-in-effect.
+  const preferNearest = useCallback(() => {
+    setSort((current) => (current === "default" ? "nearest" : current));
+  }, []);
 
   const handleSelect = useCallback((id: string | null) => {
     setSelectedId(id);
@@ -178,6 +193,7 @@ export default function AppShell({ initialSpotId }: AppShellProps) {
         setLocationError("You don't seem to be in New Orleans yet — showing the full list.");
       } else {
         setUserLoc(loc);
+        preferNearest();
       }
     } catch (error: unknown) {
       if (seq !== geoSeqRef.current) return;
@@ -187,7 +203,7 @@ export default function AppShell({ initialSpotId }: AppShellProps) {
     } finally {
       setLocating(false);
     }
-  }, [locating]);
+  }, [locating, preferNearest]);
 
   const gottaGeaux = useCallback(async () => {
     if (finding) return;
@@ -205,6 +221,7 @@ export default function AppShell({ initialSpotId }: AppShellProps) {
         origin = loc;
         originKind = "gps";
         setUserLoc(loc);
+        preferNearest();
       } else {
         originKind = "remote";
       }
@@ -222,7 +239,7 @@ export default function AppShell({ initialSpotId }: AppShellProps) {
       setSheetOpen(true);
     }
     setFinding(false);
-  }, [finding, now, allSpots]);
+  }, [finding, now, allSpots, preferNearest]);
 
   const emergencyNext = useCallback(() => {
     if (!emergency || emergency.index >= emergency.ranked.length - 1) return;
@@ -355,6 +372,9 @@ export default function AppShell({ initialSpotId }: AppShellProps) {
                 locationError={locationError}
                 onLocate={locate}
                 onReset={() => setFilters(DEFAULT_FILTERS)}
+                sort={sort}
+                onSortChange={setSort}
+                ratings={ratings}
               />
             )}
           </div>

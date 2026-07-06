@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { reviews, scans } from "../schema";
 import {
   aggregateForSpot,
+  aggregatesAll,
   countByStatus,
   countRecentByIp,
   countRecentReportsByIp,
@@ -91,6 +92,25 @@ describe("aggregateForSpot", () => {
   it("reports zeros for a spot with no reviews", async () => {
     const db = await createTestDb();
     expect(await aggregateForSpot(db, "nowhere")).toEqual({ avg: 0, count: 0 });
+  });
+});
+
+describe("aggregatesAll", () => {
+  it("rolls up avg/count/lastAt per spot, approved only", async () => {
+    const db = await createTestDb();
+    await seedApproved(db, "erin-rose", 5);
+    await seedApproved(db, "erin-rose", 3);
+    await seedApproved(db, "cafe-du-monde", 4);
+    await insertReview(db, { ...base, spotId: "erin-rose", rating: 1 }); // pending, excluded
+
+    const all = await aggregatesAll(db);
+    const erin = all.find((a) => a.spotId === "erin-rose");
+    expect(erin?.count).toBe(2);
+    expect(erin?.avg).toBeCloseTo(4, 5);
+    expect(typeof erin?.lastAt).toBe("string");
+    expect(new Date(erin!.lastAt).toString()).not.toBe("Invalid Date");
+    // Only spots with ≥1 approved review appear.
+    expect(all.map((a) => a.spotId).sort()).toEqual(["cafe-du-monde", "erin-rose"]);
   });
 });
 

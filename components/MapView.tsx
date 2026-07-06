@@ -42,6 +42,9 @@ function pinButtonOf(marker: maplibregl.Marker): HTMLButtonElement | null {
   return marker.getElement().querySelector("button.pin");
 }
 
+/** Below this zoom, downtown pins overlap badly — shrink them to dots (CSS). */
+const LOW_ZOOM_DOTS = 12.5;
+
 export default function MapView({
   spots,
   selectedSpot,
@@ -97,6 +100,12 @@ export default function MapView({
       const c = map.getCenter();
       onMoveEndRef.current({ lat: c.lat, lng: c.lng });
     });
+    // Declutter: at city-overview zoom, non-selected pins collapse to dots (CSS).
+    const applyZoomClass = () => {
+      map.getContainer().classList.toggle("map-far", map.getZoom() < LOW_ZOOM_DOTS);
+    };
+    map.on("zoom", applyZoomClass);
+    applyZoomClass();
     mapRef.current = map;
     if (process.env.NODE_ENV !== "production") {
       // Handle for dev tooling / QA scripts.

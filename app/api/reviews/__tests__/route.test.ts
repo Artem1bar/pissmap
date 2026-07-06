@@ -16,6 +16,7 @@ vi.mock("@/lib/db", () => ({
 
 const { GET, POST } = await import("../route");
 const { GET: GET_RECENT } = await import("../recent/route");
+const { GET: GET_AGGREGATES } = await import("../aggregates/route");
 
 const SPOT = "washington-artillery-park";
 
@@ -150,5 +151,32 @@ describe("GET /api/reviews/recent", () => {
   it("returns 503 with no database", async () => {
     holder.db = null;
     expect((await GET_RECENT()).status).toBe(503);
+  });
+});
+
+describe("GET /api/reviews/aggregates", () => {
+  it("returns per-spot rollups with a cache header", async () => {
+    const { id } = await insertReview(holder.db!, {
+      spotId: SPOT,
+      rating: 4,
+      body: "Clean and quick.",
+      nickname: null,
+      ipHash: "seed",
+    });
+    await setReviewStatus(holder.db!, id, "approved");
+
+    const res = await GET_AGGREGATES();
+    expect(res.status).toBe(200);
+    expect(res.headers.get("cache-control")).toContain("s-maxage=300");
+    const data = await res.json();
+    expect(data.aggregates).toHaveLength(1);
+    expect(data.aggregates[0]).toMatchObject({ spotId: SPOT, count: 1 });
+  });
+
+  it("degrades to an empty list (never 503) with no database", async () => {
+    holder.db = null;
+    const res = await GET_AGGREGATES();
+    expect(res.status).toBe(200);
+    expect(await res.json()).toEqual({ ok: true, aggregates: [] });
   });
 });

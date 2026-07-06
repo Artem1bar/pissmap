@@ -110,6 +110,16 @@ body {
   }
 }
 
+/* Low-zoom declutter: at city-overview zoom, non-selected pins collapse to dots
+   so downtown stops being a wall of overlapping teardrops. The selected pin and
+   GOTTA GEAUX's pick stay full size; the existing transition keeps it smooth. */
+.map-far .pin:not(.pin--selected) {
+  transform: scale(0.3);
+}
+.map-far .pin:not(.pin--selected):hover {
+  transform: scale(0.6);
+}
+
 .user-dot {
   width: 16px;
   height: 16px;
