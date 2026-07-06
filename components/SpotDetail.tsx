@@ -4,8 +4,10 @@ import { useState } from "react";
 import { CATEGORY_META } from "@/lib/categories";
 import { formatDistance, walkMinutes, walkingDirectionsUrl } from "@/lib/geo";
 import { DAY_NAMES, dayHoursLabel } from "@/lib/hours";
+import type { SpotOverride } from "@/lib/overrides";
 import type { LocalTime, Spot } from "@/lib/types";
 import { suggestIssueUrl } from "@/lib/userSpots";
+import { ReportProblem } from "./ReportProblem";
 import StatusBadge from "./StatusBadge";
 import { DropletScoreChip } from "./reviews/Droplets";
 import { TheBowl } from "./reviews/TheBowl";
@@ -29,6 +31,8 @@ interface SpotDetailProps {
   meters: number | null;
   emergency: EmergencyInfo | null;
   onBack: () => void;
+  /** An active `warn` override — shows an amber "verifying" banner. */
+  warn?: SpotOverride | null;
   /** Present only for spots the visitor added themselves. */
   onDelete?: () => void;
 }
@@ -50,7 +54,7 @@ function Pill({ children, title }: { children: React.ReactNode; title?: string }
   );
 }
 
-export default function SpotDetail({ spot, now, meters, emergency, onBack, onDelete }: SpotDetailProps) {
+export default function SpotDetail({ spot, now, meters, emergency, onBack, warn, onDelete }: SpotDetailProps) {
   const [copied, setCopied] = useState(false);
   const category = CATEGORY_META[spot.category];
   // Curated spots have reviews; a visitor's private pins don't.
@@ -97,6 +101,18 @@ export default function SpotDetail({ spot, now, meters, emergency, onBack, onDel
               Next nearest →
             </button>
           ) : null}
+        </div>
+      ) : null}
+
+      {warn ? (
+        <div
+          role="alert"
+          className="mb-3 rounded-xl border border-soon/50 bg-soon/10 px-3 py-2 text-xs font-medium leading-relaxed text-soon"
+        >
+          <span aria-hidden="true">⚠️</span>{" "}
+          {warn.note && warn.note.length > 0
+            ? warn.note
+            : "A visitor flagged this spot — double-check before you rely on it."}
         </div>
       ) : null}
 
@@ -216,7 +232,10 @@ export default function SpotDetail({ spot, now, meters, emergency, onBack, onDel
       ) : null}
 
       {!spot.userAdded ? (
-        <TheBowl spotId={spot.id} spotName={spot.name} data={reviews} />
+        <>
+          <TheBowl spotId={spot.id} spotName={spot.name} data={reviews} />
+          <ReportProblem spotId={spot.id} disabled={reviews.status === "unconfigured"} />
+        </>
       ) : null}
 
       {spot.userAdded ? (

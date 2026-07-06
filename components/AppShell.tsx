@@ -13,6 +13,7 @@ import {
 import { haversineMeters } from "@/lib/geo";
 import { nolaTime } from "@/lib/hours";
 import { NOLA_CENTER } from "@/lib/constants";
+import { visibleSpots as withoutHidden, warnFor } from "@/lib/overrides";
 import { spotPath } from "@/lib/site";
 import { isKnownSpotId, SPOTS } from "@/lib/spots";
 import type { LatLng, LocalTime } from "@/lib/types";
@@ -25,6 +26,7 @@ import SpotDetail, { type OriginKind } from "./SpotDetail";
 import SpotList, { type SpotListItem } from "./SpotList";
 import { ChevronIcon } from "./icons";
 import { useNolaTime } from "./useNolaTime";
+import { useOverrides } from "./useOverrides";
 import { addUserSpot, removeUserSpot, useUserSpots } from "./useUserSpots";
 import type { UserSpotDraft } from "@/lib/userSpots";
 
@@ -92,11 +94,17 @@ export default function AppShell({ initialSpotId }: AppShellProps) {
   const [addFlow, setAddFlow] = useState<AddFlow | null>(null);
   const mapCenterRef = useRef<LatLng>(NOLA_CENTER);
   const userSpots = useUserSpots();
+  const overrides = useOverrides();
   // "Near me" and "GOTTA GEAUX" both geolocate; the newest request wins and
   // a superseded one must never apply its result.
   const geoSeqRef = useRef(0);
 
-  const allSpots = useMemo(() => [...userSpots, ...SPOTS], [userSpots]);
+  // Hidden spots drop out everywhere (map, list, GOTTA GEAUX); a visitor's own
+  // pins are never overridden. Warn overrides pass through and surface on detail.
+  const allSpots = useMemo(
+    () => withoutHidden([...userSpots, ...SPOTS], overrides),
+    [userSpots, overrides],
+  );
 
   const filtered = useMemo(
     () => applyFilters(allSpots, filters, now ?? FALLBACK_TIME),
@@ -320,6 +328,7 @@ export default function AppShell({ initialSpotId }: AppShellProps) {
                 spot={selectedSpot}
                 now={now}
                 meters={detailMeters}
+                warn={warnFor(overrides, selectedSpot.id)}
                 onDelete={selectedSpot.userAdded ? deleteSelectedUserSpot : undefined}
                 emergency={
                   emergencyCurrent

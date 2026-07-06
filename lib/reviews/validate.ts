@@ -1,14 +1,14 @@
-import { createHash } from "node:crypto";
+import { hasLink, isHoneypot, tooFast } from "../antispam";
 import { isKnownSpotId } from "../spots";
 import { BODY_MAX, MIN_COMPOSE_MS, NICKNAME_MAX, RATE_DAY_MAX, RATE_HOUR_MAX } from "./limits";
 
-// All review anti-spam lives here as pure functions — no database, no request
-// object — so every rejection path is unit-testable in isolation. The POST route
-// is a thin shell that calls validateReview(), hashes the IP, checks the DB rate
-// limit, and inserts. Defense in depth mirrors the DB check constraints.
+// Review-specific validation composed over the shared anti-spam kit (lib/antispam).
+// The POST route is a thin shell that calls validateReview(), hashes the IP,
+// checks the DB rate limit, and inserts. Defense in depth mirrors the DB checks.
 
 // Re-exported so existing importers (and tests) keep a single entry point.
 export { BODY_MAX, MIN_COMPOSE_MS, NICKNAME_MAX, RATE_DAY_MAX, RATE_HOUR_MAX };
+export { clientIp, hashIp } from "../antispam";
 
 /** Raw, untrusted shape straight off `request.json()`. Everything is `unknown`. */
 export interface RawReviewInput {
@@ -34,16 +34,13 @@ export type ValidationResult =
   | { kind: "invalid"; status: number; error: string }
   | { kind: "valid"; value: CleanReview };
 
-/** Any http(s):// or bare www. link — the whole point of a pee map is not link spam. */
-const URL_RE = /(https?:\/\/|www\.)/i;
-
 function invalid(error: string, status = 400): ValidationResult {
   return { kind: "invalid", status, error };
 }
 
 export function validateReview(input: RawReviewInput): ValidationResult {
   // 1. Honeypot — return a silent, cheerful non-answer so bots learn nothing.
-  if (typeof input.website === "string" && input.website.trim().length > 0) {
+  if (isHoneypot(input.website)) {
     return { kind: "honeypot" };
   }
 
@@ -71,7 +68,7 @@ export function validateReview(input: RawReviewInput): ValidationResult {
   }
 
   // 5. No links — kills the entire link-spam category at the door.
-  if (URL_RE.test(body)) {
+  if (hasLink(body)) {
     return invalid("Links aren't allowed — just tell us about the bathroom.");
   }
 
@@ -86,7 +83,7 @@ export function validateReview(input: RawReviewInput): ValidationResult {
   }
 
   // 7. Composer must have been open long enough to be a real human.
-  if (typeof input.t !== "number" || !Number.isFinite(input.t) || input.t < MIN_COMPOSE_MS) {
+  if (tooFast(input.t, MIN_COMPOSE_MS)) {
     return invalid("Whoa there, speed racer — take a breath and try again.", 429);
   }
 
@@ -96,16 +93,4 @@ export function validateReview(input: RawReviewInput): ValidationResult {
 /** True when this hashed IP has hit its hourly or daily cap. */
 export function exceedsRateLimit(counts: { lastHour: number; lastDay: number }): boolean {
   return counts.lastHour >= RATE_HOUR_MAX || counts.lastDay >= RATE_DAY_MAX;
-}
-
-/** Stable, non-reversible IP fingerprint: sha256(salt:ip) truncated to 16 hex. */
-export function hashIp(ip: string, salt: string): string {
-  return createHash("sha256").update(`${salt}:${ip}`).digest("hex").slice(0, 16);
-}
-
-/** First value of an X-Forwarded-For header, or "unknown" when absent. */
-export function clientIp(forwardedFor: string | null): string {
-  if (!forwardedFor) return "unknown";
-  const first = forwardedFor.split(",")[0]?.trim();
-  return first && first.length > 0 ? first : "unknown";
 }

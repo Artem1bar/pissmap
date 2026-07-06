@@ -9,7 +9,7 @@ import { displayName, relativeTime } from "@/lib/reviews/format";
 // entirely cookie-based (httpOnly), so this component never sees the secret
 // after login.
 
-type Tab = "pending" | "approved" | "scans" | "system";
+type Tab = "pending" | "approved" | "reports" | "scans" | "system";
 type Screen = "checking" | "disabled" | "no-db" | "unauthed" | "ready" | "error";
 
 interface AdminReview {
@@ -44,11 +44,37 @@ interface SystemData {
   commit: string;
   reviews: { pending: number; approved: number; rejected: number };
   scans: { total: number; last7: number };
+  reportsOpen: number;
 }
+
+interface AdminReportRow {
+  id: number;
+  reason: string;
+  detail: string | null;
+  ipHash: string;
+  createdAt: string;
+}
+
+interface ReportGroup {
+  spotId: string;
+  spotName: string;
+  count: number;
+  reasons: Record<string, number>;
+  reports: AdminReportRow[];
+  override: { spotId: string; kind: "hide" | "warn"; note: string | null } | null;
+}
+
+const REASON_LABELS: Record<string, string> = {
+  closed: "Closed / gone",
+  "wrong-hours": "Wrong hours",
+  "no-restroom": "No restroom",
+  other: "Something else",
+};
 
 const TAB_ENDPOINTS: Record<Tab, string> = {
   pending: "/api/admin/reviews?status=pending",
   approved: "/api/admin/reviews?status=approved",
+  reports: "/api/admin/reports",
   scans: "/api/admin/scans",
   system: "/api/admin/system",
 };
@@ -59,6 +85,8 @@ export default function AdminConsole() {
   const [reviews, setReviews] = useState<AdminReview[]>([]);
   const [scans, setScans] = useState<ScanRow[]>([]);
   const [system, setSystem] = useState<SystemData | null>(null);
+  const [reportGroups, setReportGroups] = useState<ReportGroup[]>([]);
+  const [reportsOpen, setReportsOpen] = useState(0);
   const [counts, setCounts] = useState<Counts>({ pending: 0, approved: 0 });
   const [busyId, setBusyId] = useState<string | null>(null);
 
@@ -89,6 +117,11 @@ export default function AdminConsole() {
         setScans(data.scans);
       } else if (tab === "system") {
         setSystem(data.system);
+        setReportsOpen(data.system.reportsOpen);
+      } else if (tab === "reports") {
+        const groups: ReportGroup[] = data.groups ?? [];
+        setReportGroups(groups);
+        setReportsOpen(groups.reduce((n, g) => n + g.count, 0));
       } else {
         setReviews(data.reviews);
         setCounts(data.counts);
@@ -110,6 +143,20 @@ export default function AdminConsole() {
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ id, action }),
       });
+    } finally {
+      setBusyId(null);
+    }
+  };
+
+  const reportAction = async (spotId: string, payload: Record<string, unknown>) => {
+    setBusyId(spotId);
+    try {
+      await fetch("/api/admin/reports", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ spotId, ...payload }),
+      });
+      reload();
     } finally {
       setBusyId(null);
     }
@@ -183,6 +230,9 @@ export default function AdminConsole() {
         <TabButton active={tab === "approved"} onClick={() => setTab("approved")}>
           Approved <Badge muted>{counts.approved}</Badge>
         </TabButton>
+        <TabButton active={tab === "reports"} onClick={() => setTab("reports")}>
+          Reports {reportsOpen > 0 ? <Badge>{reportsOpen}</Badge> : null}
+        </TabButton>
         <TabButton active={tab === "scans"} onClick={() => setTab("scans")}>
           Scans
         </TabButton>
@@ -194,6 +244,8 @@ export default function AdminConsole() {
       <div className="mt-4 space-y-3">
         {tab === "system" ? (
           <SystemPanel system={system} />
+        ) : tab === "reports" ? (
+          <ReportsPanel groups={reportGroups} busyId={busyId} onAction={reportAction} />
         ) : tab === "scans" ? (
           <ScansTable scans={scans} />
         ) : reviews.length === 0 ? (
@@ -248,6 +300,159 @@ function ScansTable({ scans }: { scans: ScanRow[] }) {
   );
 }
 
+interface ReportsPanelProps {
+  groups: ReportGroup[];
+  busyId: string | null;
+  onAction: (spotId: string, payload: Record<string, unknown>) => void;
+}
+
+function ReportsPanel({ groups, busyId, onAction }: ReportsPanelProps) {
+  if (groups.length === 0) {
+    return (
+      <p className="py-16 text-center text-sm text-ink-500">
+        No open reports. The map&apos;s holding up. <span aria-hidden="true">🚽</span>
+      </p>
+    );
+  }
+  return (
+    <div className="space-y-3">
+      {groups.map((group) => (
+        <ReportGroupCard
+          key={group.spotId}
+          group={group}
+          busy={busyId === group.spotId}
+          onAction={onAction}
+        />
+      ))}
+    </div>
+  );
+}
+
+function OverrideTag({ kind }: { kind: "hide" | "warn" }) {
+  return kind === "hide" ? (
+    <span className="shrink-0 rounded-full bg-shut/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-shut">
+      Hidden
+    </span>
+  ) : (
+    <span className="shrink-0 rounded-full bg-soon/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-soon">
+      Warned
+    </span>
+  );
+}
+
+function ReportGroupCard({
+  group,
+  busy,
+  onAction,
+}: {
+  group: ReportGroup;
+  busy: boolean;
+  onAction: (spotId: string, payload: Record<string, unknown>) => void;
+}) {
+  const setWarn = () => {
+    const note = window.prompt("Warn note shown to visitors (≤140 chars):", group.override?.note ?? "");
+    if (note === null) return;
+    onAction(group.spotId, { action: "override", kind: "warn", note: note.slice(0, 140) });
+  };
+
+  return (
+    <article
+      className={`rounded-2xl border border-night-600 bg-night-900 p-3.5 transition-opacity ${
+        busy ? "opacity-40" : ""
+      }`}
+    >
+      <div className="flex items-center justify-between gap-2">
+        <span className="truncate text-sm font-semibold text-ink-100">{group.spotName}</span>
+        <div className="flex shrink-0 items-center gap-1.5">
+          {group.override ? <OverrideTag kind={group.override.kind} /> : null}
+          {group.count > 0 ? (
+            <span className="rounded-full bg-shut/15 px-2 py-0.5 text-[11px] font-bold text-shut">
+              {group.count} open
+            </span>
+          ) : null}
+        </div>
+      </div>
+
+      {group.count > 0 ? (
+        <div className="mt-2 flex flex-wrap gap-1.5">
+          {Object.entries(group.reasons).map(([reason, n]) => (
+            <span
+              key={reason}
+              className="rounded-full border border-night-600 px-2 py-0.5 text-[11px] text-ink-300"
+            >
+              {REASON_LABELS[reason] ?? reason} {n > 1 ? `·${n}` : ""}
+            </span>
+          ))}
+        </div>
+      ) : null}
+
+      {group.reports.some((r) => r.detail) ? (
+        <ul className="mt-2 space-y-1">
+          {group.reports
+            .filter((r) => r.detail)
+            .map((r) => (
+              <li key={r.id} className="rounded-lg bg-night-800 px-2.5 py-1.5 text-xs text-ink-300">
+                <span className="text-ink-100">“{r.detail}”</span>
+                <span className="ml-1.5 text-ink-500">· {relativeTime(r.createdAt)}</span>
+              </li>
+            ))}
+        </ul>
+      ) : null}
+
+      {group.count > 0 ? (
+        <div className="mt-3 flex gap-2">
+          <button
+            type="button"
+            disabled={busy}
+            onClick={() => onAction(group.spotId, { action: "resolve" })}
+            className="flex-1 rounded-xl bg-open/90 py-2 text-sm font-bold text-night-950 transition-colors hover:bg-open disabled:opacity-50"
+          >
+            ✓ Resolve
+          </button>
+          <button
+            type="button"
+            disabled={busy}
+            onClick={() => onAction(group.spotId, { action: "dismiss" })}
+            className="flex-1 rounded-xl border border-night-600 py-2 text-sm font-medium text-ink-300 transition-colors hover:border-night-400 disabled:opacity-50"
+          >
+            Dismiss
+          </button>
+        </div>
+      ) : null}
+
+      <div className="mt-2 flex flex-wrap items-center gap-2 border-t border-night-800 pt-2">
+        <span className="text-[11px] text-ink-500">Live override:</span>
+        <button
+          type="button"
+          disabled={busy}
+          onClick={() => onAction(group.spotId, { action: "override", kind: "hide" })}
+          className="rounded-full border border-shut/40 px-2.5 py-0.5 text-[11px] font-medium text-shut transition-colors hover:bg-shut/10 disabled:opacity-50"
+        >
+          Hide
+        </button>
+        <button
+          type="button"
+          disabled={busy}
+          onClick={setWarn}
+          className="rounded-full border border-soon/40 px-2.5 py-0.5 text-[11px] font-medium text-soon transition-colors hover:bg-soon/10 disabled:opacity-50"
+        >
+          Warn…
+        </button>
+        {group.override ? (
+          <button
+            type="button"
+            disabled={busy}
+            onClick={() => onAction(group.spotId, { action: "clear-override" })}
+            className="rounded-full border border-night-600 px-2.5 py-0.5 text-[11px] font-medium text-ink-300 transition-colors hover:border-night-400 disabled:opacity-50"
+          >
+            Clear
+          </button>
+        ) : null}
+      </div>
+    </article>
+  );
+}
+
 const DB_LABELS: Record<SystemData["db"], { label: string; color: string }> = {
   connected: { label: "Connected", color: "text-open" },
   unconfigured: { label: "Not configured", color: "text-soon" },
@@ -285,6 +490,13 @@ function SystemPanel({ system }: { system: SystemData | null }) {
           </ConfigRow>
           <ConfigRow label="Spots">
             <span className="font-mono text-ink-300">{system.spots}</span>
+          </ConfigRow>
+          <ConfigRow label="Open reports">
+            <span
+              className={`font-mono ${system.reportsOpen > 0 ? "text-shut" : "text-ink-300"}`}
+            >
+              {system.reportsOpen}
+            </span>
           </ConfigRow>
         </dl>
       </section>

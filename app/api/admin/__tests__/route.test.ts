@@ -1,7 +1,14 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { ADMIN_COOKIE, adminToken } from "@/lib/admin/auth";
 import { createTestDb } from "@/lib/db/__tests__/testdb";
-import { insertReview, insertScan, listByStatus } from "@/lib/db/queries";
+import {
+  insertReport,
+  insertReview,
+  insertScan,
+  listByStatus,
+  listOverrides,
+  listReportsByStatus,
+} from "@/lib/db/queries";
 import type { Db } from "@/lib/db";
 
 const holder = vi.hoisted(() => ({ db: null as Db | null }));
@@ -15,6 +22,7 @@ const { POST: LOGIN } = await import("../login/route");
 const { GET: LIST, POST: MODERATE } = await import("../reviews/route");
 const { GET: SCANS } = await import("../scans/route");
 const { GET: SYSTEM } = await import("../system/route");
+const { GET: REPORTS, POST: REPORTS_ACTION } = await import("../reports/route");
 
 const SECRET = "test-admin-secret";
 
@@ -195,6 +203,74 @@ describe("GET /api/admin/system", () => {
     expect(system.db).toBe("error");
     expect(system.reviews).toEqual({ pending: 0, approved: 0, rejected: 0 });
     expect(system.scans).toEqual({ total: 0, last7: 0 });
+  });
+});
+
+describe("GET /api/admin/reports (grouped)", () => {
+  async function seedReports() {
+    await insertReport(holder.db!, { spotId: "clover-grill", reason: "closed", detail: "Padlocked.", ipHash: "a" });
+    await insertReport(holder.db!, { spotId: "clover-grill", reason: "no-restroom", detail: null, ipHash: "b" });
+    await insertReport(holder.db!, { spotId: "erin-rose", reason: "wrong-hours", detail: null, ipHash: "c" });
+  }
+
+  it("401s without a cookie", async () => {
+    expect((await REPORTS(new Request("http://x/api/admin/reports"))).status).toBe(401);
+  });
+
+  it("groups open reports by spot with counts, reasons, and resolved names", async () => {
+    await seedReports();
+    const res = await REPORTS(new Request("http://x/api/admin/reports", { headers: { cookie: cookie() } }));
+    expect(res.status).toBe(200);
+    expect(res.headers.get("cache-control")).toBe("no-store");
+    const { groups } = await res.json();
+    expect(groups).toHaveLength(2);
+    const clover = groups.find((g: { spotId: string }) => g.spotId === "clover-grill");
+    expect(clover.count).toBe(2);
+    expect(clover.spotName).toBe("Clover Grill");
+    expect(clover.reasons).toEqual({ closed: 1, "no-restroom": 1 });
+  });
+});
+
+describe("POST /api/admin/reports (actions)", () => {
+  function actionReq(body: unknown, withCookie = true): Request {
+    return new Request("http://x/api/admin/reports", {
+      method: "POST",
+      headers: { "content-type": "application/json", ...(withCookie ? { cookie: cookie() } : {}) },
+      body: JSON.stringify(body),
+    });
+  }
+
+  it("resolves every open report for a spot", async () => {
+    await insertReport(holder.db!, { spotId: "clover-grill", reason: "closed", detail: null, ipHash: "a" });
+    await insertReport(holder.db!, { spotId: "clover-grill", reason: "other", detail: null, ipHash: "b" });
+    const res = await REPORTS_ACTION(actionReq({ action: "resolve", spotId: "clover-grill" }));
+    expect(res.status).toBe(200);
+    expect((await res.json()).touched).toBe(2);
+    expect(await listReportsByStatus(holder.db!, "open")).toHaveLength(0);
+    expect(await listReportsByStatus(holder.db!, "resolved")).toHaveLength(2);
+  });
+
+  it("sets and clears a warn override", async () => {
+    const set = await REPORTS_ACTION(
+      actionReq({ action: "override", spotId: "clover-grill", kind: "warn", note: "  verifying  " }),
+    );
+    expect(set.status).toBe(200);
+    expect(await listOverrides(holder.db!)).toEqual([
+      { spotId: "clover-grill", kind: "warn", note: "verifying" },
+    ]);
+
+    const clear = await REPORTS_ACTION(actionReq({ action: "clear-override", spotId: "clover-grill" }));
+    expect(clear.status).toBe(200);
+    expect(await listOverrides(holder.db!)).toHaveLength(0);
+  });
+
+  it("401s without a cookie, 400 on unknown spot / bad action / bad kind", async () => {
+    expect((await REPORTS_ACTION(actionReq({ action: "resolve", spotId: "clover-grill" }, false))).status).toBe(401);
+    expect((await REPORTS_ACTION(actionReq({ action: "resolve", spotId: "nope" }))).status).toBe(400);
+    expect((await REPORTS_ACTION(actionReq({ action: "explode", spotId: "clover-grill" }))).status).toBe(400);
+    expect(
+      (await REPORTS_ACTION(actionReq({ action: "override", spotId: "clover-grill", kind: "boom" }))).status,
+    ).toBe(400);
   });
 });
 

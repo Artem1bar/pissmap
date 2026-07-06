@@ -2,7 +2,7 @@ import { PGlite } from "@electric-sql/pglite";
 import { drizzle } from "drizzle-orm/pglite";
 import { migrate } from "drizzle-orm/pglite/migrator";
 import * as schema from "./schema";
-import { reviews, scans } from "./schema";
+import { overrides, reports, reviews, scans } from "./schema";
 import type { Db } from "./index";
 
 // A local, in-memory Postgres for dogfooding reviews + moderation without Neon.
@@ -64,6 +64,25 @@ const SEED_SCANS: Array<{ slug: string; ago: number }> = [
   { slug: "mollys-at-the-market", ago: 30 * MIN },
 ];
 
+interface SeedReport {
+  spotId: string;
+  reason: "closed" | "wrong-hours" | "no-restroom" | "other";
+  detail: string | null;
+  ago: number;
+}
+
+// A few open reports so the /admin Reports tab has something to triage.
+const SEED_REPORTS: SeedReport[] = [
+  { spotId: "clover-grill", reason: "closed", detail: "Padlocked when I went by around 2am.", ago: 25 * MIN },
+  { spotId: "clover-grill", reason: "no-restroom", detail: null, ago: 3 * HOUR },
+  { spotId: "cafe-beignet-royal", reason: "wrong-hours", detail: "Closed at 6, app said 10.", ago: 1 * DAY },
+];
+
+// One live warn override so the amber detail banner is demoable out of the box.
+const SEED_OVERRIDES: Array<{ spotId: string; kind: "hide" | "warn"; note: string | null }> = [
+  { spotId: "mollys-at-the-market", kind: "warn", note: "Reported closed for a private event — verifying." },
+];
+
 async function seed(db: Db): Promise<void> {
   const now = Date.now();
   await db.insert(reviews).values(
@@ -80,4 +99,14 @@ async function seed(db: Db): Promise<void> {
   await db.insert(scans).values(
     SEED_SCANS.map((s) => ({ slug: s.slug, createdAt: new Date(now - s.ago) })),
   );
+  await db.insert(reports).values(
+    SEED_REPORTS.map((r) => ({
+      spotId: r.spotId,
+      reason: r.reason,
+      detail: r.detail,
+      ipHash: "seed",
+      createdAt: new Date(now - r.ago),
+    })),
+  );
+  await db.insert(overrides).values(SEED_OVERRIDES);
 }

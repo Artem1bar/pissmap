@@ -4,18 +4,27 @@ import {
   aggregateForSpot,
   countByStatus,
   countRecentByIp,
+  countRecentReportsByIp,
+  countReportsByStatus,
+  deleteOverride,
+  insertReport,
   insertReview,
   insertScan,
   listApprovedForSpot,
   listByStatus,
+  listOverrides,
   listRecentApproved,
+  listReportsByStatus,
   pingDb,
   reviewCountsByStatus,
   scanStats,
   scanTotals,
+  setOpenReportsStatus,
   setReviewStatus,
+  upsertOverride,
 } from "../queries";
 import { createTestDb } from "./testdb";
+import { reports } from "../schema";
 import type { Db } from "../index";
 
 const base = {
@@ -205,5 +214,63 @@ describe("pingDb", () => {
   it("resolves against a live connection", async () => {
     const db = await createTestDb();
     await expect(pingDb(db)).resolves.toBeUndefined();
+  });
+});
+
+describe("reports lifecycle", () => {
+  it("inserts open reports and lists them newest-first by status", async () => {
+    const db = await createTestDb();
+    await insertReport(db, { spotId: "clover-grill", reason: "closed", detail: "Padlocked.", ipHash: "ip1" });
+    await insertReport(db, { spotId: "clover-grill", reason: "wrong-hours", detail: null, ipHash: "ip2" });
+
+    const open = await listReportsByStatus(db, "open");
+    expect(open).toHaveLength(2);
+    expect(await countReportsByStatus(db, "open")).toBe(2);
+    expect(typeof open[0].createdAt).toBe("string");
+    expect(open[0].reason).toBe("wrong-hours"); // newest first
+  });
+
+  it("resolves all open reports for one spot without touching others", async () => {
+    const db = await createTestDb();
+    await insertReport(db, { spotId: "clover-grill", reason: "closed", detail: null, ipHash: "a" });
+    await insertReport(db, { spotId: "clover-grill", reason: "other", detail: null, ipHash: "b" });
+    await insertReport(db, { spotId: "erin-rose", reason: "closed", detail: null, ipHash: "c" });
+
+    const touched = await setOpenReportsStatus(db, "clover-grill", "resolved");
+    expect(touched).toBe(2);
+    expect(await countReportsByStatus(db, "open")).toBe(1); // erin-rose survives
+    expect(await countReportsByStatus(db, "resolved")).toBe(2);
+  });
+
+  it("counts a hashed IP's reports in the last day", async () => {
+    const db = await createTestDb();
+    const now = Date.now();
+    for (const offset of [0, -1000, -2 * 86_400_000]) {
+      await db.insert(reports).values({
+        spotId: "clover-grill",
+        reason: "closed",
+        detail: null,
+        ipHash: "rate-ip",
+        createdAt: new Date(now + offset),
+      });
+    }
+    expect((await countRecentReportsByIp(db, "rate-ip")).lastDay).toBe(2);
+  });
+});
+
+describe("overrides", () => {
+  it("upserts, lists, and deletes a spot override", async () => {
+    const db = await createTestDb();
+    await upsertOverride(db, "clover-grill", "warn", "Reported closed — verifying");
+    let all = await listOverrides(db);
+    expect(all).toEqual([{ spotId: "clover-grill", kind: "warn", note: "Reported closed — verifying" }]);
+
+    // Upsert replaces in place (still one row), flipping warn → hide.
+    await upsertOverride(db, "clover-grill", "hide", null);
+    all = await listOverrides(db);
+    expect(all).toEqual([{ spotId: "clover-grill", kind: "hide", note: null }]);
+
+    await deleteOverride(db, "clover-grill");
+    expect(await listOverrides(db)).toHaveLength(0);
   });
 });

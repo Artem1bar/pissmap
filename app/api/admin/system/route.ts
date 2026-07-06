@@ -1,6 +1,11 @@
 import { guardAdmin } from "@/lib/admin/guard";
 import { resolveDb } from "@/lib/db";
-import { reviewCountsByStatus, scanTotals, type ScanTotals } from "@/lib/db/queries";
+import {
+  countReportsByStatus,
+  reviewCountsByStatus,
+  scanTotals,
+  type ScanTotals,
+} from "@/lib/db/queries";
 import type { ReviewStatus } from "@/lib/db/schema";
 import { dbStatus } from "@/lib/db/status";
 import { jsonResponse } from "@/lib/reviews/http";
@@ -23,10 +28,15 @@ export async function GET(request: Request): Promise<Response> {
   // the counts stay zero and dbStatus() below independently reports "error".
   let reviews: Record<ReviewStatus, number> = { pending: 0, approved: 0, rejected: 0 };
   let scans: ScanTotals = { total: 0, last7: 0 };
+  let reportsOpen = 0;
   try {
     const db = await resolveDb();
     if (db) {
-      [reviews, scans] = await Promise.all([reviewCountsByStatus(db), scanTotals(db)]);
+      [reviews, scans, reportsOpen] = await Promise.all([
+        reviewCountsByStatus(db),
+        scanTotals(db),
+        countReportsByStatus(db, "open"),
+      ]);
     }
   } catch {
     // Swallowed on purpose; the db field below surfaces the error state.
@@ -43,6 +53,7 @@ export async function GET(request: Request): Promise<Response> {
         commit: process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7) ?? "dev",
         reviews,
         scans,
+        reportsOpen,
       },
     },
     { cache: NO_STORE },

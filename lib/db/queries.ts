@@ -1,7 +1,17 @@
 import { and, desc, eq, sql } from "drizzle-orm";
+import type { SpotOverride } from "../overrides";
 import type { PublicReview } from "../reviews/types";
 import type { Db } from "./index";
-import { reviews, scans, type ReviewStatus } from "./schema";
+import {
+  overrides,
+  reports,
+  reviews,
+  scans,
+  type OverrideKind,
+  type ReportReason,
+  type ReportStatus,
+  type ReviewStatus,
+} from "./schema";
 
 // Every database read/write the app performs lives here, typed against the
 // Drizzle client `getDb()` returns. Tests drive the exact same functions against
@@ -238,4 +248,127 @@ export async function reviewCountsByStatus(db: Db): Promise<Record<ReviewStatus,
 /** A cheap liveness probe: resolves when the connection answers, throws otherwise. */
 export async function pingDb(db: Db): Promise<void> {
   await db.execute(sql`select 1`);
+}
+
+// ——— Problem reports (Phase 2) ———
+
+export interface NewReport {
+  spotId: string;
+  reason: ReportReason;
+  detail: string | null;
+  ipHash: string;
+}
+
+export interface AdminReport {
+  id: number;
+  spotId: string;
+  reason: ReportReason;
+  detail: string | null;
+  ipHash: string;
+  status: ReportStatus;
+  createdAt: string;
+}
+
+export async function insertReport(db: Db, report: NewReport): Promise<void> {
+  await db.insert(reports).values({
+    spotId: report.spotId,
+    reason: report.reason,
+    detail: report.detail,
+    ipHash: report.ipHash,
+  });
+}
+
+/** Rolling daily report count for one hashed IP — the raw material for the 5/day cap. */
+export async function countRecentReportsByIp(
+  db: Db,
+  ipHash: string,
+): Promise<{ lastDay: number }> {
+  const [row] = await db
+    .select({
+      lastDay: sql<string>`count(*) filter (where ${reports.createdAt} >= now() - interval '24 hours')`,
+    })
+    .from(reports)
+    .where(eq(reports.ipHash, ipHash));
+  return { lastDay: Number(row?.lastDay ?? 0) };
+}
+
+export async function listReportsByStatus(
+  db: Db,
+  status: ReportStatus,
+  limit = 300,
+): Promise<AdminReport[]> {
+  const rows = await db
+    .select({
+      id: reports.id,
+      spotId: reports.spotId,
+      reason: reports.reason,
+      detail: reports.detail,
+      ipHash: reports.ipHash,
+      status: reports.status,
+      createdAt: reports.createdAt,
+    })
+    .from(reports)
+    .where(eq(reports.status, status))
+    .orderBy(desc(reports.createdAt))
+    .limit(limit);
+  return rows.map((r) => ({
+    id: r.id,
+    spotId: r.spotId,
+    reason: r.reason as ReportReason,
+    detail: r.detail,
+    ipHash: r.ipHash,
+    status: r.status as ReportStatus,
+    createdAt: iso(r.createdAt),
+  }));
+}
+
+export async function countReportsByStatus(db: Db, status: ReportStatus): Promise<number> {
+  const [row] = await db
+    .select({ count: sql<string>`count(*)` })
+    .from(reports)
+    .where(eq(reports.status, status));
+  return Number(row?.count ?? 0);
+}
+
+/** Resolve or dismiss every open report for a spot at once. Returns rows touched. */
+export async function setOpenReportsStatus(
+  db: Db,
+  spotId: string,
+  status: Exclude<ReportStatus, "open">,
+): Promise<number> {
+  const updated = await db
+    .update(reports)
+    .set({ status })
+    .where(and(eq(reports.spotId, spotId), eq(reports.status, "open")))
+    .returning({ id: reports.id });
+  return updated.length;
+}
+
+// ——— Live spot overrides (Phase 2) ———
+
+export async function listOverrides(db: Db): Promise<SpotOverride[]> {
+  const rows = await db
+    .select({ spotId: overrides.spotId, kind: overrides.kind, note: overrides.note })
+    .from(overrides);
+  return rows.map((r) => ({ spotId: r.spotId, kind: r.kind as OverrideKind, note: r.note }));
+}
+
+/** Set (or replace) a spot's override. `note` is only meaningful for `warn`. */
+export async function upsertOverride(
+  db: Db,
+  spotId: string,
+  kind: OverrideKind,
+  note: string | null,
+): Promise<void> {
+  await db
+    .insert(overrides)
+    .values({ spotId, kind, note })
+    .onConflictDoUpdate({
+      target: overrides.spotId,
+      set: { kind, note, updatedAt: sql`now()` },
+    });
+}
+
+export async function deleteOverride(db: Db, spotId: string): Promise<void> {
+  await db.delete(overrides).where(eq(overrides.spotId, spotId));
 }
